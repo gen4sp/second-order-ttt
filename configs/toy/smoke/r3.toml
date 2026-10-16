@@ -1,0 +1,85 @@
+experiment = "ttt"
+seed = 0
+
+[ttt]
+quick_par = true
+process_name = "TTM-r3-01-smoke"
+device = "cpu"
+max_minutes = 60
+d_model = 16
+n_layers = 1
+n_heads = 2
+backbone_mult = 2
+fast_mult = 2
+window = 8
+chunk = 8
+n_bins = 4
+g_clip = 10.0
+batch = 2
+n_eval = 2
+n_quick_eval = 2
+eval_batch = 2
+warmup = 2
+quick_every = 2
+cells = [
+  # R3: echo_off binding test, interleaved by seed so a time-budget
+  # stop keeps the three arms balanced; diagnostics on every echo_off cell.
+  { task = "echo_off", seed = 0, arm = "e2e2", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 0, arm = "jac2so", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 0, arm = "e2e1", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 1, arm = "e2e2", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 1, arm = "jac2so", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 1, arm = "e2e1", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 2, arm = "e2e2", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 2, arm = "jac2so", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 2, arm = "e2e1", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 3, arm = "e2e2", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 3, arm = "jac2so", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 3, arm = "e2e1", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 4, arm = "e2e2", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 4, arm = "jac2so", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 4, arm = "e2e1", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 5, arm = "e2e2", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 5, arm = "jac2so", eta_base = 10, steps = 4, tag = "R3 binding" },
+  { task = "echo_off", seed = 5, arm = "e2e1", eta_base = 10, steps = 4, tag = "R3 binding" },
+  # Story B loophole: does any eta rescue first order on echo (R2b echo settings)?
+  { task = "echo", seed = 0, arm = "e2e1", eta_base = 3, steps = 4, tag = "eta rescue", diag = false },
+  { task = "echo", seed = 1, arm = "e2e1", eta_base = 3, steps = 4, tag = "eta rescue", diag = false },
+  { task = "echo", seed = 2, arm = "e2e1", eta_base = 3, steps = 4, tag = "eta rescue", diag = false },
+  { task = "echo", seed = 0, arm = "e2e1", eta_base = 30, steps = 4, tag = "eta rescue", diag = false },
+  { task = "echo", seed = 1, arm = "e2e1", eta_base = 30, steps = 4, tag = "eta rescue", diag = false },
+  { task = "echo", seed = 2, arm = "e2e1", eta_base = 30, steps = 4, tag = "eta rescue", diag = false },
+  # lr control: echo e2e2 at the echo_off stabiliser lr (seeds that bound in R2b), so
+  # an echo_off 'not learned' can be told apart from 'lr 5e-4 is too slow'.
+  { task = "echo", seed = 0, arm = "e2e2", eta_base = 10, steps = 4, lr = 5e-4, lr_total = 8, tag = "lr control", diag = false },
+  { task = "echo", seed = 3, arm = "e2e2", eta_base = 10, steps = 4, lr = 5e-4, lr_total = 8, tag = "lr control", diag = false },
+  { task = "echo", seed = 5, arm = "e2e2", eta_base = 10, steps = 4, lr = 5e-4, lr_total = 8, tag = "lr control", diag = false },
+]
+
+
+[ttt.icl_mc]
+T = 24
+n_vocab = 8
+alpha = 0.1
+
+[ttt.echo]
+T = 64
+n_keys = 4
+
+lr_total = 8
+[ttt.echo_ctrl]
+T = 64
+n_keys = 4
+
+[ttt.echo_off]
+T = 80
+n_keys = 4
+prefix_min = 16
+prefix_max = 24
+
+lr = 5e-4
+lr_total = 8
+
+[ttt.echo_ctrl_nor]
+T = 64
+n_keys = 4

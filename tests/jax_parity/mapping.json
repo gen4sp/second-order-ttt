@@ -1,0 +1,549 @@
+[
+  {
+    "official": "language_model.model.wte.weight",
+    "torch": "wte.weight",
+    "transform": "identity",
+    "shape": [
+      101,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.ln_f.weight",
+    "torch": "ln_f.weight",
+    "transform": "identity",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wq.weight",
+    "torch": "layers.0.attn.wq.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wq.weight",
+    "torch": "layers.1.attn.wq.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wq.weight",
+    "torch": "layers.2.attn.wq.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wq.weight",
+    "torch": "layers.3.attn.wq.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wk.weight",
+    "torch": "layers.0.attn.wk.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wk.weight",
+    "torch": "layers.1.attn.wk.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wk.weight",
+    "torch": "layers.2.attn.wk.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wk.weight",
+    "torch": "layers.3.attn.wk.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wv.weight",
+    "torch": "layers.0.attn.wv.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wv.weight",
+    "torch": "layers.1.attn.wv.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wv.weight",
+    "torch": "layers.2.attn.wv.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wv.weight",
+    "torch": "layers.3.attn.wv.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wo.weight",
+    "torch": "layers.0.attn.wo.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wo.weight",
+    "torch": "layers.1.attn.wo.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wo.weight",
+    "torch": "layers.2.attn.wo.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.wo.weight",
+    "torch": "layers.3.attn.wo.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.q_norm.weight",
+    "torch": "layers.0.attn.q_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.q_norm.weight",
+    "torch": "layers.1.attn.q_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.q_norm.weight",
+    "torch": "layers.2.attn.q_norm.weight",
+    "transform": "slice [2]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.q_norm.weight",
+    "torch": "layers.3.attn.q_norm.weight",
+    "transform": "slice [3]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.k_norm.weight",
+    "torch": "layers.0.attn.k_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.k_norm.weight",
+    "torch": "layers.1.attn.k_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.k_norm.weight",
+    "torch": "layers.2.attn.k_norm.weight",
+    "transform": "slice [2]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_modeling_block.k_norm.weight",
+    "torch": "layers.3.attn.k_norm.weight",
+    "transform": "slice [3]",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w1.weight",
+    "torch": "layers.0.feed_forward.w1.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w1.weight",
+    "torch": "layers.1.feed_forward.w1.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w1.weight",
+    "torch": "layers.2.feed_forward.w1.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w1.weight",
+    "torch": "layers.3.feed_forward.w1.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w2.weight",
+    "torch": "layers.0.feed_forward.w2.weight",
+    "transform": "slice [0]",
+    "shape": [
+      40,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w2.weight",
+    "torch": "layers.1.feed_forward.w2.weight",
+    "transform": "slice [1]",
+    "shape": [
+      40,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w2.weight",
+    "torch": "layers.2.feed_forward.w2.weight",
+    "transform": "slice [2]",
+    "shape": [
+      40,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w2.weight",
+    "torch": "layers.3.feed_forward.w2.weight",
+    "transform": "slice [3]",
+    "shape": [
+      40,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w3.weight",
+    "torch": "layers.0.feed_forward.w3.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w3.weight",
+    "torch": "layers.1.feed_forward.w3.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w3.weight",
+    "torch": "layers.2.feed_forward.w3.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.feed_forward.w3.weight",
+    "torch": "layers.3.feed_forward.w3.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_norm.weight",
+    "torch": "layers.0.seq_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_norm.weight",
+    "torch": "layers.1.seq_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_norm.weight",
+    "torch": "layers.2.seq_norm.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_norm.weight",
+    "torch": "layers.3.seq_norm.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_norm.weight",
+    "torch": "layers.0.ffn_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_norm.weight",
+    "torch": "layers.1.ffn_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_norm.weight",
+    "torch": "layers.2.ffn_norm.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_norm.weight",
+    "torch": "layers.3.ffn_norm.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_post_norm.weight",
+    "torch": "layers.0.seq_post_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_post_norm.weight",
+    "torch": "layers.1.seq_post_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_post_norm.weight",
+    "torch": "layers.2.seq_post_norm.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.seq_post_norm.weight",
+    "torch": "layers.3.seq_post_norm.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_post_norm.weight",
+    "torch": "layers.0.ffn_post_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_post_norm.weight",
+    "torch": "layers.1.ffn_post_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_post_norm.weight",
+    "torch": "layers.2.ffn_post_norm.weight",
+    "transform": "slice [2]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.blocks.ffn_post_norm.weight",
+    "torch": "layers.3.ffn_post_norm.weight",
+    "transform": "slice [3]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.ffn_prime_norm.weight",
+    "torch": "layers.2.ffn_prime_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.ffn_prime_norm.weight",
+    "torch": "layers.3.ffn_prime_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.ffn_prime_post_norm.weight",
+    "torch": "layers.2.ffn_prime_post_norm.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.ffn_prime_post_norm.weight",
+    "torch": "layers.3.ffn_prime_post_norm.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.feed_forward_prime.w1.weight",
+    "torch": "layers.2.feed_forward_prime.w1.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.feed_forward_prime.w1.weight",
+    "torch": "layers.3.feed_forward_prime.w1.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.feed_forward_prime.w2.weight",
+    "torch": "layers.2.feed_forward_prime.w2.weight",
+    "transform": "slice [0]",
+    "shape": [
+      40,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.feed_forward_prime.w2.weight",
+    "torch": "layers.3.feed_forward_prime.w2.weight",
+    "transform": "slice [1]",
+    "shape": [
+      40,
+      32
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.feed_forward_prime.w3.weight",
+    "torch": "layers.2.feed_forward_prime.w3.weight",
+    "transform": "slice [0]",
+    "shape": [
+      32,
+      40
+    ]
+  },
+  {
+    "official": "language_model.model.h.prime_storage.feed_forward_prime.w3.weight",
+    "torch": "layers.3.feed_forward_prime.w3.weight",
+    "transform": "slice [1]",
+    "shape": [
+      32,
+      40
+    ]
+  }
+]

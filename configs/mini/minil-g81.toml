@@ -1,0 +1,45 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_late"
+process_name = "TTM-min-81-minil"
+process_nn = 81
+data_dir = "data/p2data"
+device = "cuda"
+out_dir = "outputs/mini/matrix/minil/mini-m"
+max_hours = 2.5
+production_configs = { "mini-m/e2e1-ce" = "configs/mini/e2e1-ce-m.toml", "mini-m/e2e2" = "configs/mini/e2e2-m.toml" }
+
+[[p2.items]]
+cell = "mini-m/L-FO/s0"
+preset = "mini-m"
+init_arm = "e2e1-ce"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/mini/matrix/minil/mini-m/L-FO/s0"
+estimate_wall_s = 1170
+
+[[p2.items]]
+cell = "mini-m/L-SO/s0"
+preset = "mini-m"
+init_arm = "e2e1-ce"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/mini/matrix/minil/mini-m/L-SO/s0"
+estimate_wall_s = 2610
+
+[[p2.items]]
+cell = "mini-m/L-REF/s0"
+preset = "mini-m"
+init_arm = "e2e2"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e2/s0/model_step1200.pt"
+out = "outputs/mini/matrix/minil/mini-m/L-REF/s0"
+estimate_wall_s = 2610

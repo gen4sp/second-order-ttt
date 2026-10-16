@@ -1,0 +1,72 @@
+experiment = "ttt"
+seed = 0
+
+# P0.0: is the lin inner loss free on a
+# task where CE is the natural loss? icl_mc (V 32, T 1024, exact Bayes ceiling), the R1
+# schedule (4000 steps, warmup 200, cosine to 0.1), eta_base pinned to 0.3 as in R1/R2b.
+# Arms: e2e1 (CE inner loss), e2e1_lin (linear token loss at every position, no frozen
+# code), e2e2. Seeds 0-5, interleaved by seed so a time-budget stop keeps the pairing.
+# Registered gate: seed-paired one-sided 95% upper bound of lin - CE < 0.01 nats
+# on both eval CE and late CE (intersection-union).
+[ttt]
+process_name = "TTM-p00-02"
+device = "auto"
+workers = 6
+max_minutes = 150
+# TF32 off, asserted per worker, as in R4-2L/R4-3.
+tf32 = false
+# inert on CUDA; caps an accidental local MPS launch
+mps_memory_fraction = 0.20
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+n_bins = 16
+g_clip = 10.0
+late_frac = 0.25
+eta_lr = 0.01
+lr = 0.001
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.01
+warmup = 200
+lr_floor = 0.1
+lr_total = 0
+grad_clip = 1.0
+batch = 32
+quick_every = 250
+probe_every = 0
+checkpoint_steps = [500, 1000, 2000, 3000]
+cells = [
+  { task = "icl_mc", seed = 0, arm = "e2e1", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 0, arm = "e2e1_lin", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 0, arm = "e2e2", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 1, arm = "e2e1", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 1, arm = "e2e1_lin", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 1, arm = "e2e2", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 2, arm = "e2e1", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 2, arm = "e2e1_lin", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 2, arm = "e2e2", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 3, arm = "e2e1", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 3, arm = "e2e1_lin", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 3, arm = "e2e2", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 4, arm = "e2e1", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 4, arm = "e2e1_lin", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 4, arm = "e2e2", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 5, arm = "e2e1", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 5, arm = "e2e1_lin", eta_base = 0.3, diag = false },
+  { task = "icl_mc", seed = 5, arm = "e2e2", eta_base = 0.3, diag = false },
+]
+
+[ttt.icl_mc]
+T = 1024
+n_vocab = 32
+alpha = 0.1
+steps = 4000
+n_eval = 512
+n_val = 128
+n_quick_eval = 64
+eval_batch = 32

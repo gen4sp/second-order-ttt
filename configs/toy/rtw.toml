@@ -1,0 +1,710 @@
+# RTW toy wave
+experiment = "rtw"
+seed = 300
+
+[rtw]
+process_name = "TTM-rtw-06-w0"
+device = "cuda"
+workers = 8
+threads_per_worker = 2
+tf32 = false
+resume = true
+output_root = "outputs/rtw/wave-06"
+steps = 1500
+batch = 32
+T = 512
+chunk = 64
+window = 64
+n_keys = 16
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+eta_base = 40.0
+eta_lr = 0.0
+g_clip = 10.0
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+grad_clip = 1.0
+log_every = 5
+quick_every = 25
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+seeds = [300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311]
+arms = ["A0", "SO", "G-hi", "G-lo", "G-scalar", "G-sg", "G-hi-c", "M-p125", "M-p25", "M-p50", "M-late", "M-early", "RP-all", "NC-all"]
+[[rtw.cells]]
+arm = "A0"
+seed = 300
+
+[[rtw.cells]]
+arm = "A0"
+seed = 301
+
+[[rtw.cells]]
+arm = "A0"
+seed = 302
+
+[[rtw.cells]]
+arm = "A0"
+seed = 303
+
+[[rtw.cells]]
+arm = "A0"
+seed = 304
+
+[[rtw.cells]]
+arm = "A0"
+seed = 305
+
+[[rtw.cells]]
+arm = "A0"
+seed = 306
+
+[[rtw.cells]]
+arm = "A0"
+seed = 307
+
+[[rtw.cells]]
+arm = "A0"
+seed = 308
+
+[[rtw.cells]]
+arm = "A0"
+seed = 309
+
+[[rtw.cells]]
+arm = "A0"
+seed = 310
+
+[[rtw.cells]]
+arm = "A0"
+seed = 311
+
+[[rtw.cells]]
+arm = "SO"
+seed = 300
+
+[[rtw.cells]]
+arm = "SO"
+seed = 301
+
+[[rtw.cells]]
+arm = "SO"
+seed = 302
+
+[[rtw.cells]]
+arm = "SO"
+seed = 303
+
+[[rtw.cells]]
+arm = "SO"
+seed = 304
+
+[[rtw.cells]]
+arm = "SO"
+seed = 305
+
+[[rtw.cells]]
+arm = "SO"
+seed = 306
+
+[[rtw.cells]]
+arm = "SO"
+seed = 307
+
+[[rtw.cells]]
+arm = "SO"
+seed = 308
+
+[[rtw.cells]]
+arm = "SO"
+seed = 309
+
+[[rtw.cells]]
+arm = "SO"
+seed = 310
+
+[[rtw.cells]]
+arm = "SO"
+seed = 311
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 301
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 302
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 303
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 304
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 305
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 306
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 307
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 308
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 309
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 310
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 311
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 301
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 302
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 303
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 304
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 305
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 306
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 307
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 308
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 309
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 310
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 311
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 301
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 302
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 303
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 304
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 305
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 306
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 307
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 308
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 309
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 310
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 311
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 301
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 302
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 303
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 304
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 305
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 306
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 307
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 308
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 309
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 310
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 311
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 301
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 302
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 303
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 304
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 305
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 306
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 307
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 308
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 309
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 310
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 311
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 301
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 302
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 303
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 304
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 305
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 306
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 307
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 308
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 309
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 310
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 311
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 301
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 302
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 303
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 304
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 305
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 306
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 307
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 308
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 309
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 310
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 311
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 301
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 302
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 303
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 304
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 305
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 306
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 307
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 308
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 309
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 310
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 311
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 301
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 302
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 303
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 304
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 305
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 306
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 307
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 308
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 309
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 310
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 311
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 301
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 302
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 303
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 304
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 305
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 306
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 307
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 308
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 309
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 310
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 311
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 300
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 301
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 302
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 303
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 304
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 305
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 306
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 307
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 308
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 309
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 310
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 311
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 300
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 301
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 302
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 303
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 304
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 305
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 306
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 307
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 308
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 309
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 310
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 311

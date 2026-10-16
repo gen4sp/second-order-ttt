@@ -1,0 +1,12 @@
+arm,late_ce_seed0,late_ce_seed1,gain_vs_swa_seed0,gain_se_seed0,gain_vs_swa_seed1,share_of_bayes_gap,ms_per_step,train_seconds
+exact Bayes (full context),1.962,,,,,1.00,,
+Bayes-w_eff (253 tokens),2.310,2.310,,,,0.00,,
+fa,3.299,,-0.649,0.005,,-2.84,28.1,160
+swa,2.649,2.643,0,,,-0.97,43.2,216
+naive (dyn. eval),2.577,,+0.072,0.001,,-0.77,,
+e2e2,1.990,1.989,+0.660,0.003,+0.654,0.92,98.3,439
+e2e1,2.018,2.018,+0.632,0.003,+0.625,0.84,81.0,374
+"jac1, seq. eval",2.241,,+0.408,0.003,,0.20,55.0,265
+"jac1, parallel eval",2.258,,+0.391,0.004,,,,
+"jac2, seq. eval",2.026,,+0.623,0.003,,0.82,63.3,298
+"jac2, parallel eval",2.081,,+0.569,0.004,,,,

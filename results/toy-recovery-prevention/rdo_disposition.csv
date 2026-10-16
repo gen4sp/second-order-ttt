@@ -1,0 +1,33 @@
+block,disposition,seed
+S1,eligible,200
+t_acq,enrolled,200
+S1,no-acquisition,201
+t_acq,no-acquisition,201
+S1,eligible,202
+t_acq,enrolled,202
+S1,eligible,203
+t_acq,enrolled,203
+S1,eligible,204
+t_acq,enrolled,204
+S1,eligible,205
+t_acq,enrolled,205
+S1,eligible,206
+t_acq,enrolled,206
+S1,eligible,207
+t_acq,enrolled,207
+S1,eligible,208
+t_acq,enrolled,208
+S1,eligible,209
+t_acq,enrolled,209
+S1,eligible,210
+t_acq,enrolled,210
+S1,eligible,211
+t_acq,enrolled,211
+S1,eligible,212
+t_acq,enrolled,212
+S1,not needed,213
+t_acq,not needed,213
+S1,not needed,214
+t_acq,not needed,214
+S1,not needed,215
+t_acq,not needed,215

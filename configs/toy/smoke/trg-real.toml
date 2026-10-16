@@ -1,0 +1,38 @@
+experiment = "trg"
+seed = 0
+
+[trg]
+process_name = "TTM-trg-73-replay"
+device = "cpu"
+workers = 1
+threads_per_worker = 2
+smoke_only = true
+smoke_steps = 2
+resume = false
+probes = true
+output_dir = "outputs/trg-smoke"
+eta = 40.0
+so_end = 660
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 1500
+batch = 32
+n_keys = 16
+n_quick_eval = 64
+eval_batch = 32
+n_probe = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0
+grad_clip = 1.0
+g_clip = 10.0
+chr_log_path = "outputs/chr/data/chr-full.log.gz"
+cells = [{family = "FO", seed = 0, arm = "e2e1emb", state_file = "outputs/chr/checkpoints/echo__s0__e2e1emb__eta40__st1500__fork_state_step360.pt"}]

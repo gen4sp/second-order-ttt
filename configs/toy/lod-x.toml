@@ -1,0 +1,62 @@
+experiment = "lod"
+seed = 0
+
+[lod]
+protocol = "lodx"
+mode = "production"
+process_name = "TTM-lodx-80"
+device = "cuda"
+output_dir = "outputs_lodx"
+smoke_output_dir = "outputs_lodx_podsmoke"
+smoke_receipt = "outputs/lod-x-gpu-smoke/rates.json"
+workers = 5
+threads_per_worker = 2
+tf32 = false
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+pool = 256
+n_probe = 16
+events_per_chunk = 16
+gap = 268
+control_load = 128
+steps = 3000
+full_eval_steps = [1500, 3000]
+batch = 32
+n_eval = 512
+n_quick_eval = 64
+n_geometry = 128
+eval_batch = 32
+log_every = 25
+lr = 0.001
+eta_lr = 0.0
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.01
+warmup = 200
+lr_total = 3000
+lr_floor = 0.1
+grad_clip = 1.0
+g_clip = 10.0
+budget_usd = 3.0
+hourly_usd = 0.50
+setup_hours = 0.45
+shutdown_minutes = 5.0
+eval_factor = 1.08
+vocab_factor = 1.05
+diagnostic_factor = 1.03
+tier_order = ["X"]
+tier_rule = "X only if projected session cost <= budget; measured smoke rates only; no fallback"
+addon_rule = "disabled"
+
+[lod.tiers.X]
+core_seeds = 12
+loads = [16, 32, 64]
+arms = ["lin", "so"]
+cells = 72
+evaluable = ["X1", "X2", "X3", "X4", "R"]
+automatic_fallback = false

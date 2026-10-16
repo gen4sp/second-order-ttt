@@ -1,0 +1,230 @@
+# SOQ-N3B step 3 of 3: the two-sided frontier reads, eval-only, mini_g0 machinery.
+# Documents as G0: M on the first 1024 eligible eval documents, adapted L on the first 128 ho documents
+# (CAL = even, TEST = odd, in the analysis); H_LM (no-adapt, η-independent) on the 256 ho documents of
+# the training-layout eval, once per checkpoint at the arm's operating checkpoint.  Per read npz:
+# M_doc, fP_focal, fP_nonfocal, L_adapt_sum / L_adapt_count, clip-binding per document (clip_bind_fP_*,
+# L_clip_bind_doc) and κ (kz_* centred logits, klp_* log-probs: probe-row K x |Y_doc| matrices, foils,
+# per-probe n_src / y_mult / segment; G0_KAPPA line).  Reads named etaNNN are plain CE at η x NNN/100,
+# so the adaptive top (eta800, eta1000, eta1200, eta1600) and refinement midpoints (e.g. eta160,
+# eta450) are config-only additions to an item's ``reads``.
+#
+# Hard parity (G0_PARITY, |ΔM| <= 1e-3, |ΔL| <= 2e-4 against the stored G0 reads, same documents):
+# SO x1 (G0) and x1.5 (G0c), FO-CE x1 (G0) and x3 (G0b).  A failure stops that item.
+#
+# Groups (run_groups selects; default all): "existing" = SO and FO-CE at 1200 (can run on a second GPU while
+# FO-CM trains; no N_CM needed); "focm-s0/1/2" = FO-CM at N_CM (+ descriptive 1200 / 2400), needing the
+# FO-CM run outputs and its n_cm.json.  Per-job files: configs/soq/n3b/.
+#
+# GPU time (RTX 4090, 157-166 s per read as measured in G0/G0b/G0c, + ~1 min per item setup, + κ ≈ 3 %):
+#   existing: 3 x (8 SO + 7 FO-CE) = 45 reads ≈ 2.2 h; FO-CM: 3 x (11 + 1 + 3) = 45 reads ≈ 2.2 h;
+#   H_LM 9 x ~0.5 min.  Total ≈ 4.5 GPU-h (+ ~3 min per adaptive top / refinement read).
+experiment = "p2"
+seed = 0
+
+[p2]
+run_groups = ["existing"]
+mode = "soq_n3b_reads"
+process_name = "TTM-n3b-40-reads"
+process_nn = 4                # G0 accepts 1..9 only; the process name stays TTM-n3b-40-*
+data_dir = "data/p2data"
+device = "cuda"
+out_dir = "outputs/mini/matrix/n3b-reads"
+n_cm_file = "outputs/mini/matrix/n3b/n_cm.json"
+max_hours = 3.3
+n_docs = 1024
+n_ho_adapt = 128
+sigma_cap = 4.0
+kappa_reads = "all"
+kappa_foils = 8
+kappa_boot = 10000
+kappa_boot_seed = 0
+parity_tol_M = 1e-3
+parity_tol_L = 2e-4
+setup_cache = true
+production_configs = { "mini-m/e2e2" = "configs/mini/e2e2-m.toml", "mini-m/e2e1-ce" = "configs/mini/e2e1-ce-m.toml" }
+
+[[p2.items]]
+group = "existing"
+cell = "mini-m/so/s0"
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+step = 1200
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e2/s0/model_step1200.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/so/s0"
+reads = ["ce", "eta090", "eta110", "eta125", "eta150", "eta175", "eta200", "eta250", "eta300"]
+g0_ref = { ce = "outputs/mini/matrix/g0/mini-m/e2e2/s0/g0_read_ce.npz", eta150 = "outputs/mini/matrix/g0c/mini-m/e2e2/s0/g0_read_eta150.npz", eta200 = "outputs/mini/matrix/g0/mini-m/e2e2/s0/g0_read_eta200.npz" }
+hlm = true
+estimate_wall_s = 1450
+
+[[p2.items]]
+group = "existing"
+cell = "mini-m/so/s1"
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 1
+data_seed = 1
+step = 1200
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e2/s1/model_step1200.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/so/s1"
+reads = ["ce", "eta090", "eta110", "eta125", "eta150", "eta175", "eta200", "eta250", "eta300"]
+g0_ref = { ce = "outputs/mini/matrix/g0/mini-m/e2e2/s1/g0_read_ce.npz", eta150 = "outputs/mini/matrix/g0c/mini-m/e2e2/s1/g0_read_eta150.npz", eta200 = "outputs/mini/matrix/g0/mini-m/e2e2/s1/g0_read_eta200.npz" }
+hlm = true
+estimate_wall_s = 1450
+
+[[p2.items]]
+group = "existing"
+cell = "mini-m/so/s2"
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+step = 1200
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e2/s2/model_step1200.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/so/s2"
+reads = ["ce", "eta090", "eta110", "eta125", "eta150", "eta175", "eta200", "eta250", "eta300"]
+g0_ref = { ce = "outputs/mini/matrix/g0/mini-m/e2e2/s2/g0_read_ce.npz", eta150 = "outputs/mini/matrix/g0c/mini-m/e2e2/s2/g0_read_eta150.npz", eta200 = "outputs/mini/matrix/g0/mini-m/e2e2/s2/g0_read_eta200.npz" }
+hlm = true
+estimate_wall_s = 1450
+
+[[p2.items]]
+group = "existing"
+cell = "mini-m/fo-ce/s0"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+step = 1200
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-ce/s0"
+reads = ["ce", "eta075", "eta250", "eta300", "eta350", "eta400", "eta500", "eta600", "eta800"]
+g0_ref = { ce = "outputs/mini/matrix/g0/mini-m/e2e1-ce/s0/g0_read_ce.npz", eta300 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s0/g0_read_eta300.npz", eta250 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s0/g0_read_eta250.npz", eta400 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s0/g0_read_eta400.npz" }
+hlm = true
+estimate_wall_s = 1300
+
+[[p2.items]]
+group = "existing"
+cell = "mini-m/fo-ce/s1"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+step = 1200
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e1-ce/s1/model_step1200.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-ce/s1"
+reads = ["ce", "eta075", "eta250", "eta300", "eta350", "eta400", "eta500", "eta600", "eta800"]
+g0_ref = { ce = "outputs/mini/matrix/g0/mini-m/e2e1-ce/s1/g0_read_ce.npz", eta300 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s1/g0_read_eta300.npz", eta250 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s1/g0_read_eta250.npz", eta400 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s1/g0_read_eta400.npz" }
+hlm = true
+estimate_wall_s = 1300
+
+[[p2.items]]
+group = "existing"
+cell = "mini-m/fo-ce/s2"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+step = 1200
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e1-ce/s2/model_step1200.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-ce/s2"
+reads = ["ce", "eta075", "eta250", "eta300", "eta350", "eta400", "eta500", "eta600", "eta800"]
+g0_ref = { ce = "outputs/mini/matrix/g0/mini-m/e2e1-ce/s2/g0_read_ce.npz", eta300 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s2/g0_read_eta300.npz", eta250 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s2/g0_read_eta250.npz", eta400 = "outputs/mini/matrix/g0b/mini-m/e2e1-ce/s2/g0_read_eta400.npz" }
+hlm = true
+estimate_wall_s = 1300
+
+[[p2.items]]
+group = "focm-s0"
+cell = "mini-m/fo-cm/s0/ncm"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+step = "{N_CM}"
+overrides = { steps = "{N_CM}" }
+ckpt = "outputs/mini/matrix/n3b/runs/mini-m/e2e1-ce/s0/model_step{N_CM:04d}.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-cm/s0/ncm"
+reads = ["ce", "eta075", "eta125", "eta150", "eta200", "eta250", "eta300", "eta350", "eta400", "eta500", "eta600", "eta800", "eta1000", "eta1200"]
+hlm = true
+estimate_wall_s = 2000
+
+
+[[p2.items]]
+group = "focm-s0"
+cell = "mini-m/fo-cm/s0/step2400"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+step = 2400
+overrides = { steps = "{N_CM}" }
+ckpt = "outputs/mini/matrix/n3b/runs/mini-m/e2e1-ce/s0/model_step2400.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-cm/s0/step2400"
+reads = ["ce", "eta200", "eta400"]
+hlm = false
+estimate_wall_s = 560
+drop_if_n_cm_at_most = 2400
+
+[[p2.items]]
+group = "focm-s1"
+cell = "mini-m/fo-cm/s1/ncm"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+step = "{N_CM}"
+overrides = { steps = "{N_CM}" }
+ckpt = "outputs/mini/matrix/n3b/runs/mini-m/e2e1-ce/s1/model_step{N_CM:04d}.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-cm/s1/ncm"
+reads = ["ce", "eta075", "eta125", "eta150", "eta200", "eta250", "eta300", "eta350", "eta400", "eta500", "eta600", "eta800", "eta1000", "eta1200"]
+hlm = true
+estimate_wall_s = 2000
+
+
+[[p2.items]]
+group = "focm-s1"
+cell = "mini-m/fo-cm/s1/step2400"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+step = 2400
+overrides = { steps = "{N_CM}" }
+ckpt = "outputs/mini/matrix/n3b/runs/mini-m/e2e1-ce/s1/model_step2400.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-cm/s1/step2400"
+reads = ["ce", "eta200", "eta400"]
+hlm = false
+estimate_wall_s = 560
+drop_if_n_cm_at_most = 2400
+
+[[p2.items]]
+group = "focm-s2"
+cell = "mini-m/fo-cm/s2/ncm"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+step = "{N_CM}"
+overrides = { steps = "{N_CM}" }
+ckpt = "outputs/mini/matrix/n3b/runs/mini-m/e2e1-ce/s2/model_step{N_CM:04d}.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-cm/s2/ncm"
+reads = ["ce", "eta075", "eta125", "eta150", "eta200", "eta250", "eta300", "eta350", "eta400", "eta500", "eta600", "eta800", "eta1000", "eta1200"]
+hlm = true
+estimate_wall_s = 2000
+
+
+[[p2.items]]
+group = "focm-s2"
+cell = "mini-m/fo-cm/s2/step2400"
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+step = 2400
+overrides = { steps = "{N_CM}" }
+ckpt = "outputs/mini/matrix/n3b/runs/mini-m/e2e1-ce/s2/model_step2400.pt"
+out = "outputs/mini/matrix/n3b-reads/mini-m/fo-cm/s2/step2400"
+reads = ["ce", "eta200", "eta400"]
+hlm = false
+estimate_wall_s = 560
+drop_if_n_cm_at_most = 2400

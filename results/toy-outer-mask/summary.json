@@ -1,0 +1,98 @@
+{
+ "contrasts": {
+  "acq_anchor_perm": {
+   "ci95": [
+    0.290390024296432,
+    1.0
+   ],
+   "difference": 1.0,
+   "mcnemar_one_sided": 0.0009765625,
+   "n": 10,
+   "negative": 0,
+   "positive": 10
+  },
+  "acq_kvm_anchor": {
+   "ci95": [
+    -0.35480498785178394,
+    0.35480498785178394
+   ],
+   "difference": 0.0,
+   "mcnemar_one_sided": 1.0,
+   "n": 10,
+   "negative": 0,
+   "positive": 0
+  },
+  "ret_kvm_anchor": {
+   "ci95": [
+    0.290390024296432,
+    1.0
+   ],
+   "difference": 1.0,
+   "mcnemar_one_sided": 0.0009765625,
+   "n": 10,
+   "negative": 0,
+   "positive": 10
+  },
+  "ret_kvm_rnd": {
+   "ci95": [
+    0.290390024296432,
+    1.0
+   ],
+   "difference": 1.0,
+   "mcnemar_one_sided": 0.0009765625,
+   "n": 10,
+   "negative": 0,
+   "positive": 10
+  }
+ },
+ "counts": {
+  "e2e1_kvm": {
+   "ever": 0,
+   "final": 0,
+   "n": 10
+  },
+  "e2e1emb": {
+   "ever": 10,
+   "final": 0,
+   "n": 10
+  },
+  "e2e1embP": {
+   "ever": 0,
+   "final": 0,
+   "n": 10
+  },
+  "e2e1emb_kvm": {
+   "ever": 10,
+   "final": 10,
+   "n": 10
+  },
+  "e2e1emb_rnd": {
+   "ever": 8,
+   "final": 0,
+   "n": 10
+  }
+ },
+ "details": {
+  "m1_pass_count": 10,
+  "m2_final_pass_count": 6,
+  "m2_window_pass_count": 7,
+  "m3_pass": 10,
+  "m3_retained": 10,
+  "p_geometry": true,
+  "p_validity_count": 10,
+  "plain_p_kv_median": 1.4343480216894022e-06,
+  "plain_t_addr_lost_median": 50.0
+ },
+ "issues": [],
+ "labels": {
+  "H": "H-rescue",
+  "M1": true,
+  "M2": false,
+  "M3": true,
+  "P": "P-supports",
+  "TB": "TB-holds",
+  "V2": "holds",
+  "mediation": "kv-mask effect; mechanism not established"
+ },
+ "n_complete": 10
+}

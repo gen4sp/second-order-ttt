@@ -1,0 +1,7 @@
+arm,echo_query_ce,echo_accuracy_percent,echo_ctrl_query_ce,echo_ctrl_accuracy_percent
+chance (ln 16),2.773,6.25,2.773,6.25
+fa,1.675,31.1,2.773,6.5
+swa,2.773,6.6,2.773,6.5
+e2e1,2.684,10.0,2.489,18.1
+e2e2,0.005,99.9,2.382,19.5
+jac2,2.571,13.7,2.688,8.4

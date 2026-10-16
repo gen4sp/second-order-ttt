@@ -1,0 +1,54 @@
+experiment = "ttt"
+seed = 0
+
+# Pre-full-run GPU smoke (registered pre-launch check): six
+# cells at 100 steps under the run's own six-way contention. It confirms the in-run S5
+# under fp32 with TF32 off, create_graph through e, the second-order mask path, and gives
+# the real ms/step and peak CUDA memory of the RTX 5080. One cell per arm at seed 0: the
+# five first-order / +emb arms plus the masked second-order anchor. These cells do not
+# count as results.
+[ttt]
+process_name = "TTM-r43-00-smoke"
+device = "auto"
+workers = 6
+max_minutes = 30
+tf32 = false
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 100
+batch = 32
+n_keys = 16
+n_eval = 64
+n_val = 16
+n_quick_eval = 32
+eval_batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 25
+probe_every = 25
+n_probe = 32
+# the run's checkpoint list starts at step 200, which a 100-step smoke never reaches, so
+# it is pulled back to 50/100; the second-order list keeps the run's 100/200/300... start
+# relative to itself, i.e. 25/50 here. Checkpoints let the S5 fallback and the descriptive
+# ek_share script run on the smoke output.
+checkpoint_steps = [50, 100]
+checkpoint_steps_so = [25, 50]
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1e_emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1k_emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_kvm", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e2_kvm", eta_base = 10, diag = false },
+]

@@ -1,0 +1,53 @@
+# G0c: inverse sigma x eta frontier lift, job 1 of 2 (single CUDA GPU).
+# ce first (V0).
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_g0"
+process_name = "TTM-g0c-01"
+process_nn = 1
+data_dir = "data/p2data"
+device = "cuda"
+out_dir = "outputs/mini/matrix/g0c/pod01"
+max_hours = 1.2
+n_docs = 1024
+n_ho_adapt = 128
+sigma_cap = 4.0
+production_configs = { "mini-m/e2e2" = "configs/mini/e2e2-m.toml", "mini-m/e2e1-ce" = "configs/mini/e2e1-ce-m.toml" }
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+step = 1200
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/mini/matrix/g0c/mini-m/e2e1-ce/s0"
+reads = ["ce", "isig4_eta150", "isig4_eta250", "isig4_eta300", "isig4_eta400"]
+split = false
+estimate_wall_s = 840
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+step = 1200
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e1-ce/s1/model_step1200.pt"
+out = "outputs/mini/matrix/g0c/mini-m/e2e1-ce/s1"
+reads = ["ce", "isig4_eta150", "isig4_eta250", "isig4_eta300", "isig4_eta400"]
+split = false
+estimate_wall_s = 840
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+step = 1200
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e2/s2/model_step1200.pt"
+out = "outputs/mini/matrix/g0c/mini-m/e2e2/s2"
+reads = ["ce", "eta150", "isig4_eta150", "isig4_eta200"]
+split = false
+estimate_wall_s = 680

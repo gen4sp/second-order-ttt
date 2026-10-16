@@ -1,0 +1,13 @@
+{
+ "kappa": 3,
+ "qualifying_units": 6,
+ "median_j": {
+  "3": 0.7378416081441559,
+  "5": 0.6701050262565641,
+  "10": 0.524763923352633
+ },
+ "no_data_default": false,
+ "active_step_domain": "finite post-fork observations after ten finite warm-up observations, step <= 597",
+ "smoke_only": false,
+ "stage": "i"
+}

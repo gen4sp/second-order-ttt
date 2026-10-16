@@ -1,0 +1,58 @@
+# SOQ-D P3-a: toy write-rule control for claim D (registered before any run).
+# One CUDA GPU run: V0 parity -> CAL (3 seeds, K = 200, 3 rounds) -> automatic logged freeze
+# (P3A_FREEZE, cal/multipliers.json) -> 72 main cells (seed-major) -> analysis.
+experiment = "p3a"
+seed = 330
+
+[p3a]
+process_name = "TTM-s3a-01"
+device = "cuda"
+workers = 8
+threads_per_worker = 2
+tf32 = false
+resume = true
+output_root = "outputs/soq/p3a"
+max_hours = 1.4          # no new cell starts after max_hours - cutoff_margin_s
+cutoff_margin_s = 420
+estimate_wall_s = 3900
+stall_s = 1800           # abort if no cell finishes for 30 min
+parity = true            # V0 against the inherited recurrences; ABORT P3A_PARITY on failure
+parity_batch = 4
+profile_steps = 5
+run_analysis = true
+# POOL geometry and schedule (as in the POOL production config, configs/toy/pool.toml)
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+n_keys = 16
+steps = 1500
+batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+grad_clip = 1.0
+eta_base = 40.0
+eta_lr = 0.0
+g_clip = 10.0
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+quick_every = 25
+qual_every = 100
+log_every = 5
+# design
+rules = ["ce", "lin", "own"]
+orders = ["FO", "SO"]
+tasks = ["echo", "echo_ctrl"]
+seeds = [330, 331, 332, 333, 334, 335]
+cal_seeds = [340, 341, 342]
+cal_steps = 200          # K
+cal_rounds = 3           # frozen multiplier = tested round closest to the CE target
+cal_start = { lin = 1.0, own = 0.01 }   # round-0 multipliers (smoke-seed pilots)

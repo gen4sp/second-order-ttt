@@ -1,0 +1,27 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_matrix"
+preset = "mini-m"
+out_dir = "outputs/mini/matrix/g45"
+workers = 1
+max_hours = 4.1
+process_nn = 45
+process_name = "TTM-min-45-matrix"
+gpu_mem_budget_gb = 21
+concurrency_slowdown = 1.0
+memory_peaks_gb = { "mini-s/e2e2" = 6.2, "mini-s/e2e1-ce" = 6.9, "mini-s/e2e1-rp" = 6.9, "mini-s/e2e1-nc" = 6.9, "mini-m/e2e2" = 9.3, "mini-m/e2e1-ce" = 11.5, "mini-m/e2e1-rp" = 11.5, "mini-m/e2e1-nc" = 11.5, "mini-s/e2e2-mix" = 6.2, "mini-s/e2e1-ce-mix" = 6.9, "mini-m/e2e2-mix" = 9.3, "mini-m/e2e1-ce-mix" = 11.5 }
+podsmoke_hours = { "mini-s/e2e2" = 2.0, "mini-s/e2e1-ce" = 0.65, "mini-s/e2e1-rp" = 0.96, "mini-s/e2e1-nc" = 1.01, "mini-m/e2e2" = 2.48, "mini-m/e2e1-ce" = 0.91, "mini-m/e2e1-rp" = 1.27, "mini-m/e2e1-nc" = 1.34, "mini-s/e2e2-mix" = 2.05, "mini-s/e2e1-ce-mix" = 0.71, "mini-m/e2e2-mix" = 2.55, "mini-m/e2e1-ce-mix" = 0.97 }
+
+[[p2.cells]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+
+[[p2.cells]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2

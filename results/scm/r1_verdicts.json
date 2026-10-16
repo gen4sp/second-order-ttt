@@ -1,0 +1,7977 @@
+{
+ "scores": {
+  "CHECK": {
+   "expected": 60,
+   "records": 60,
+   "scored": 60,
+   "complete": 60,
+   "incomplete": [],
+   "failed": {},
+   "missing": [],
+   "unexpected": [],
+   "replaced": [],
+   "identical_duplicates": 0,
+   "unregistered_arm": [],
+   "outside_registered": [],
+   "registered_base_not_expected": 0
+  },
+  "SO_competence": {
+   "SO-CE:eta10": {
+    "U": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "S": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "X": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "A": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "Fp": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "T": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "G": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "Au": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "Fu": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "N": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    }
+   },
+   "SO-CE-boundary:eta10": {
+    "U": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "S": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "X": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "A": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "Fp": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "T": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "G": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "Au": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "Fu": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    },
+    "N": {
+     "ok": true,
+     "retained": 6,
+     "k": 6
+    }
+   },
+   "SO-CE:eta40": {
+    "U": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "S": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "X": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "A": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "Fp": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "T": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "G": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "Au": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "Fu": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    },
+    "N": {
+     "ok": false,
+     "retained": 3,
+     "k": 3
+    }
+   },
+   "SO-CE-boundary:eta40": {
+    "U": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "S": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "X": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "A": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "Fp": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "T": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "G": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "Au": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "Fu": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    },
+    "N": {
+     "ok": false,
+     "retained": 2,
+     "k": 2
+    }
+   }
+  },
+  "FO-CE:A_lost_stale:eta10": {
+   "prediction": "FO-CE loses A with stale reversion",
+   "account": "both",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.0056419999999999994,
+   "median_stale_err": 0.996516,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:Fp_lost_stale:eta10": {
+   "prediction": "FO-CE loses Fp with stale reversion",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.0056419999999999994,
+   "median_stale_err": 0.994326,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:Fp_retained:eta10": {
+   "prediction": "FO-CE retains Fp",
+   "account": "PUT-marker",
+   "primary": true,
+   "verdict": "F",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.0056419999999999994,
+   "median_stale_err": 0.994326,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:Fu_lost:eta10": {
+   "prediction": "FO-CE loses Fu (changed subset)",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.2779835,
+   "median_stale_err": 0.996202,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:Fu_retained:eta10": {
+   "prediction": "FO-CE retains Fu (changed subset)",
+   "account": "PUT-marker",
+   "primary": true,
+   "verdict": "F",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.2779835,
+   "median_stale_err": 0.996202,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:Au_lost:eta10": {
+   "prediction": "FO-CE loses Au (changed subset)",
+   "account": "both",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.20579999999999998,
+   "median_stale_err": 0.9986280000000001,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:N_lost:eta10": {
+   "prediction": "FO-CE loses N",
+   "account": "both",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.14453100000000002,
+   "median_stale_err": null,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:X_retained:eta10": {
+   "prediction": "FO-CE retains X",
+   "account": "both",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 6,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 1.0,
+   "median_stale_err": 1.0,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:agency_A_Fp:eta10": {
+   "prediction": "agency null: per seed |acc_A - acc_Fp| <= .10",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "within": 6,
+   "diff_by_seed": {
+    "10": 0.0017,
+    "11": 0.0,
+    "12": 0.0069,
+    "13": 0.0009,
+    "14": 0.0043,
+    "15": -0.0017
+   },
+   "contrast": {
+    "mean": 0.0020256666666666665,
+    "lo": -0.00014466666666666664,
+    "hi": 0.004485333333333333,
+    "n_seeds": 6
+   },
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:agency_Au_Fu:eta10": {
+   "prediction": "agency null: per seed |acc_Au_chg - acc_Fu_chg| <= .10",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "within": 5,
+   "diff_by_seed": {
+    "10": -0.0518,
+    "11": -0.1208,
+    "12": -0.0318,
+    "13": -0.0107,
+    "14": -0.0236,
+    "15": 0.0075
+   },
+   "contrast": {
+    "mean": -0.038536333333333346,
+    "lo": -0.07474716666666667,
+    "hi": -0.010321166666666682,
+    "n_seeds": 6
+   },
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE:contrasts:eta10": {
+   "A-Fp": {
+    "by_seed": {
+     "10": 0.0017,
+     "11": 0.0,
+     "12": 0.0069,
+     "13": 0.0009,
+     "14": 0.0043,
+     "15": -0.0017
+    },
+    "mean": 0.0020256666666666665,
+    "lo": -0.00014466666666666664,
+    "hi": 0.004485333333333333,
+    "n_seeds": 6
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": -0.0518,
+     "11": -0.1208,
+     "12": -0.0318,
+     "13": -0.0107,
+     "14": -0.0236,
+     "15": 0.0075
+    },
+    "mean": -0.038536333333333346,
+    "lo": -0.07474716666666667,
+    "hi": -0.010321166666666682,
+    "n_seeds": 6
+   },
+   "T-G": {
+    "by_seed": {
+     "10": 0.0087,
+     "11": 0.0009,
+     "12": -0.0078,
+     "13": 0.0069,
+     "14": -0.0017,
+     "15": -0.0009
+    },
+    "mean": 0.0010126666666666802,
+    "lo": -0.0033276666666666363,
+    "hi": 0.005352999999999997,
+    "n_seeds": 6
+   }
+  },
+  "FO-CE:TG_descriptive:eta10": {
+   "T": {
+    "k": 6,
+    "categories": {
+     "retained": 6
+    },
+    "median_acc": 0.9813365000000001,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.06861600000000001,
+    "median_p0_gv0_at_write": 0.06306899999999999,
+    "median_p_v0_at_write": 0.1609235,
+    "median_oldlr": 1.0425784999999999,
+    "median_oldlr0": 0.002391,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6912,
+      "acc": 0.974971,
+      "stale": 0.025029,
+      "pg": 0.06983116666666667,
+      "pg0": 0.06346833333333333,
+      "pv0": 0.17220833333333335
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 6,
+    "categories": {
+     "retained": 6
+    },
+    "median_acc": 0.9787325,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.0688305,
+    "median_p0_gv0_at_write": 0.06321500000000002,
+    "median_p_v0_at_write": 0.161656,
+    "median_oldlr": 1.0464470000000001,
+    "median_oldlr0": 0.003819,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6912,
+      "acc": 0.9739583333333334,
+      "stale": 0.026041666666666668,
+      "pg": 0.06987116666666666,
+      "pg0": 0.06359133333333333,
+      "pv0": 0.17081133333333334
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "FO-CE:P9:eta10": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 6,
+     "never_acquired": 0,
+     "acquired_and_kept": 0,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 6,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 600,
+      "last": 0.1481,
+      "paths": {
+       "resid0_wb": 525,
+       "resid0_N": 550
+      },
+      "ordered": true
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 825,
+      "last": 0.1204,
+      "paths": {
+       "resid0_wb": 750,
+       "resid0_N": 775
+      },
+      "ordered": true
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 275,
+      "lost": 575,
+      "last": 0.1852,
+      "paths": {
+       "resid0_wb": 500,
+       "resid0_N": 525
+      },
+      "ordered": true
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 225,
+      "lost": 575,
+      "last": 0.1481,
+      "paths": {
+       "resid0_wb": 500,
+       "resid0_N": 525
+      },
+      "ordered": true
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 650,
+      "last": 0.1574,
+      "paths": {
+       "resid0_wb": 600,
+       "resid0_N": 600
+      },
+      "ordered": true
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 450,
+      "last": 0.1574,
+      "paths": {
+       "resid0_wb": 400,
+       "resid0_N": 400
+      },
+      "ordered": true
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 0,
+     "acquired_and_kept": 4,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_and_kept",
+      "acquired": 300,
+      "lost": null,
+      "last": 0.9444,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 300,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 300,
+      "lost": 375,
+      "last": 0.9444,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 275,
+      "lost": null,
+      "last": 0.9907,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 350,
+      "lost": 475,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 275,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 3,
+     "never_acquired": 0,
+     "acquired_and_kept": 3,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 300,
+      "lost": 375,
+      "last": 0.9352,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 300,
+      "lost": 375,
+      "last": 0.9259,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 275,
+      "lost": null,
+      "last": 0.9352,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 350,
+      "lost": 550,
+      "last": 0.9907,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 275,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "FO-CE:readouts:eta10": {
+   "k": 6,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 562.5,
+     "timing_ok": 6,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 550,
+       "broke": null,
+       "stable": 550,
+       "ok": true
+      },
+      "11": {
+       "formed": 775,
+       "broke": null,
+       "stable": 775,
+       "ok": true
+      },
+      "12": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "13": {
+       "formed": 550,
+       "broke": null,
+       "stable": 550,
+       "ok": true
+      },
+      "14": {
+       "formed": 650,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      },
+      "15": {
+       "formed": 450,
+       "broke": null,
+       "stable": 450,
+       "ok": true
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": 587.5,
+     "timing_ok": 6,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "11": {
+       "formed": 800,
+       "broke": null,
+       "stable": 800,
+       "ok": true
+      },
+      "12": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "13": {
+       "formed": 600,
+       "broke": null,
+       "stable": 600,
+       "ok": true
+      },
+      "14": {
+       "formed": 650,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      },
+      "15": {
+       "formed": 450,
+       "broke": null,
+       "stable": 525,
+       "ok": true
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": 587.5,
+     "timing_ok": 6,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "11": {
+       "formed": 800,
+       "broke": null,
+       "stable": 800,
+       "ok": true
+      },
+      "12": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "13": {
+       "formed": 600,
+       "broke": null,
+       "stable": 600,
+       "ok": true
+      },
+      "14": {
+       "formed": 650,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      },
+      "15": {
+       "formed": 450,
+       "broke": null,
+       "stable": 525,
+       "ok": true
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": 575.0,
+     "timing_ok": 6,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "11": {
+       "formed": 800,
+       "broke": null,
+       "stable": 800,
+       "ok": true
+      },
+      "12": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "13": {
+       "formed": 550,
+       "broke": null,
+       "stable": 550,
+       "ok": true
+      },
+      "14": {
+       "formed": 650,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      },
+      "15": {
+       "formed": 450,
+       "broke": null,
+       "stable": 525,
+       "ok": true
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.4607155,
+    "resid0": 0.9367635,
+    "ptgt": 0.4607155,
+    "oldlr": 2.556245,
+    "oldlr0": 0.0018414999999999998,
+    "oldtop": 1.0,
+    "cew": 0.796567
+   },
+   "X": {
+    "pnew": 0.0360225,
+    "resid0": 0.937485,
+    "ptgt": 0.46048449999999996,
+    "oldlr": 2.554563,
+    "oldlr0": 0.0006355,
+    "oldtop": 1.0,
+    "cew": 3.3839930000000003
+   },
+   "A": {
+    "pnew": 0.9917735,
+    "resid0": 0.0031305,
+    "ptgt": 0.004599499999999999,
+    "oldlr": 1.808347,
+    "oldlr0": -0.7059925,
+    "oldtop": 0.5251735,
+    "cew": 0.008824499999999999
+   },
+   "Fp": {
+    "pnew": 0.992752,
+    "resid0": 0.0033115,
+    "ptgt": 0.003484,
+    "oldlr": 1.72967,
+    "oldlr0": -0.7982130000000001,
+    "oldtop": 0.5099825,
+    "cew": 0.0074919999999999995
+   },
+   "T": {
+    "pnew": 0.06861600000000001,
+    "resid0": 0.936931,
+    "ptgt": 0.06861600000000001,
+    "oldlr": 1.0425784999999999,
+    "oldlr0": 0.002391,
+    "oldtop": 1.0,
+    "cew": 2.68731
+   },
+   "G": {
+    "pnew": 0.0688305,
+    "resid0": 0.936785,
+    "ptgt": 0.0688305,
+    "oldlr": 1.0464470000000001,
+    "oldlr0": 0.003819,
+    "oldtop": 1.0,
+    "cew": 2.6833425
+   },
+   "Au": {
+    "pnew": 0.060805,
+    "resid0": 0.937476,
+    "ptgt": 0.08701,
+    "oldlr": 0.3519935,
+    "oldlr0": -3.250000000000003e-05,
+    "oldtop": 0.945313,
+    "cew": 2.8043044999999998
+   },
+   "Fu": {
+    "pnew": 0.060874,
+    "resid0": 0.937548,
+    "ptgt": 0.08805750000000001,
+    "oldlr": 0.3662335,
+    "oldlr0": 0.0010475,
+    "oldtop": 0.952257,
+    "cew": 2.802639
+   },
+   "N": {
+    "pnew": 0.996266,
+    "resid0": 0.0034005,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 0.0037475
+   },
+   "resid0_wb": {
+    "": 0.002785,
+    "P": 0.0028205,
+    "F": 0.0027505,
+    "O": 0.8737509999999999,
+    "T": 0.761128,
+    "G": 0.74378
+   }
+  },
+  "FO-CE:gates:eta10": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 6,
+   "V2_A": 6,
+   "V2s_A": 6,
+   "L_A": 0,
+   "V2_Fp": 6,
+   "V2s_Fp": 6,
+   "L_Fp": 0,
+   "V2_N": 6,
+   "V2s_N": 6,
+   "L_N": 0,
+   "ACQ_N": 6
+  },
+  "FO-CE-lesion:N_retained:eta10": {
+   "prediction": "FO-CE-lesion retains N",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 6,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 0.9926215,
+   "median_stale_err": null,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE-lesion:A_lost:eta10": {
+   "prediction": "FO-CE-lesion loses A",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.157552,
+   "median_stale_err": 0.9983120000000001,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE-lesion:Fp_lost:eta10": {
+   "prediction": "FO-CE-lesion loses Fp",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.1280385,
+   "median_stale_err": 0.9987485,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE-lesion:Au_lost:eta10": {
+   "prediction": "FO-CE-lesion loses Au (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 6,
+   "intermediate": 0,
+   "median_acc": 0.1169315,
+   "median_stale_err": 0.9986619999999999,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE-lesion:Fu_lost:eta10": {
+   "prediction": "FO-CE-lesion loses Fu (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 0,
+   "lost": 6,
+   "severe": 5,
+   "intermediate": 1,
+   "median_acc": 0.1285845,
+   "median_stale_err": 0.9979815000000001,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE-lesion:X_retained:eta10": {
+   "prediction": "FO-CE-lesion retains X",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 6,
+   "retained": 6,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 1.0,
+   "median_stale_err": 1.0,
+   "excluded": {},
+   "so_competent": true
+  },
+  "FO-CE-lesion:contrasts:eta10": {
+   "A-Fp": {
+    "by_seed": {
+     "10": 0.0,
+     "11": 0.059,
+     "12": 0.0885,
+     "13": 0.0104,
+     "14": -0.0087,
+     "15": -0.0026
+    },
+    "mean": 0.02445,
+    "lo": -0.0018809999999999983,
+    "hi": 0.055410833333333326,
+    "n_seeds": 6
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": -0.0268,
+     "11": -0.1019,
+     "12": 0.0166,
+     "13": 0.0113,
+     "14": 0.1354,
+     "15": -0.0298
+    },
+    "mean": 0.000807166666666667,
+    "lo": -0.05186166666666667,
+    "hi": 0.060659500000000005,
+    "n_seeds": 6
+   },
+   "T-G": {
+    "by_seed": {
+     "10": 0.0417,
+     "11": -0.0043,
+     "12": 0.0,
+     "13": 0.0,
+     "14": 0.0,
+     "15": 0.0
+    },
+    "mean": 0.0062211666666666665,
+    "lo": -0.0021700000000000053,
+    "hi": 0.020833500000000005,
+    "n_seeds": 6
+   }
+  },
+  "FO-CE-lesion:TG_descriptive:eta10": {
+   "T": {
+    "k": 6,
+    "categories": {
+     "intermediate": 1,
+     "retained": 5
+    },
+    "median_acc": 0.99783,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.07622699999999999,
+    "median_p0_gv0_at_write": 0.06341949999999996,
+    "median_p_v0_at_write": 0.208038,
+    "median_oldlr": 1.347597,
+    "median_oldlr0": 0.0029555,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6896,
+      "acc": 0.9750580974477958,
+      "stale": 0.024941902552204177,
+      "pg": 0.07593051044083526,
+      "pg0": 0.06608480974477958,
+      "pv0": 0.19382332482598608
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 16,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.237119,
+      "pg0": 0.21131,
+      "pv0": 0.254869
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 6,
+    "categories": {
+     "intermediate": 1,
+     "retained": 5
+    },
+    "median_acc": 1.0,
+    "median_stale_err": 0.997382,
+    "median_p_gv0_at_write": 0.076343,
+    "median_p0_gv0_at_write": 0.06328800000000001,
+    "median_p_v0_at_write": 0.20300400000000002,
+    "median_oldlr": 1.3107929999999999,
+    "median_oldlr0": 0.0035505,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6895,
+      "acc": 0.968817974764322,
+      "stale": 0.031037001885424218,
+      "pg": 0.07586818955765047,
+      "pg0": 0.06626354097171863,
+      "pv0": 0.1903295089195069
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 17,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.2201,
+      "pg0": 0.191321,
+      "pv0": 0.23788200000000004
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "FO-CE-lesion:P9:eta10": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 0,
+     "never_acquired": 0,
+     "acquired_and_kept": 6,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 500,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 775,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 0.9815,
+      "paths": {
+       "resid0_wb": 600,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 225,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 450,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 550,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 400,
+       "resid0_N": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 0,
+     "acquired_and_kept": 4,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 275,
+      "lost": 400,
+      "last": 0.8704,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 350,
+      "lost": 375,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 1,
+     "never_acquired": 0,
+     "acquired_and_kept": 5,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 275,
+      "lost": 425,
+      "last": 0.8056,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 625,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 350,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 0.9815,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "FO-CE-lesion:readouts:eta10": {
+   "k": 6,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 575.0,
+     "timing_ok": 6,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 525,
+       "broke": null,
+       "stable": 525,
+       "ok": true
+      },
+      "11": {
+       "formed": 800,
+       "broke": null,
+       "stable": 800,
+       "ok": true
+      },
+      "12": {
+       "formed": 625,
+       "broke": null,
+       "stable": 625,
+       "ok": true
+      },
+      "13": {
+       "formed": 475,
+       "broke": null,
+       "stable": 475,
+       "ok": true
+      },
+      "14": {
+       "formed": 700,
+       "broke": null,
+       "stable": 775,
+       "ok": true
+      },
+      "15": {
+       "formed": 425,
+       "broke": null,
+       "stable": 425,
+       "ok": true
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.4262475,
+    "resid0": 0.9363360000000001,
+    "ptgt": 0.4262475,
+    "oldlr": 2.40348,
+    "oldlr0": 0.003992,
+    "oldtop": 0.999504,
+    "cew": 0.8929315
+   },
+   "X": {
+    "pnew": 0.0379,
+    "resid0": 0.9375530000000001,
+    "ptgt": 0.427632,
+    "oldlr": 2.4094365,
+    "oldlr0": 0.0044535,
+    "oldtop": 0.999504,
+    "cew": 3.3647345
+   },
+   "A": {
+    "pnew": 0.061613,
+    "resid0": 0.9375805,
+    "ptgt": 0.07428799999999999,
+    "oldlr": 0.1821025,
+    "oldlr0": -0.001053,
+    "oldtop": 0.7855905000000001,
+    "cew": 2.789352
+   },
+   "Fp": {
+    "pnew": 0.061523,
+    "resid0": 0.9375935,
+    "ptgt": 0.0743705,
+    "oldlr": 0.182584,
+    "oldlr0": -0.0006115000000000001,
+    "oldtop": 0.7265625,
+    "cew": 2.7911390000000003
+   },
+   "T": {
+    "pnew": 0.07622699999999999,
+    "resid0": 0.9365805,
+    "ptgt": 0.07622699999999999,
+    "oldlr": 1.347597,
+    "oldlr0": 0.0029555,
+    "oldtop": 0.997396,
+    "cew": 2.601433
+   },
+   "G": {
+    "pnew": 0.076343,
+    "resid0": 0.936712,
+    "ptgt": 0.076343,
+    "oldlr": 1.3107929999999999,
+    "oldlr0": 0.0035505,
+    "oldtop": 0.996094,
+    "cew": 2.5988559999999996
+   },
+   "Au": {
+    "pnew": 0.0615955,
+    "resid0": 0.9374775,
+    "ptgt": 0.0748475,
+    "oldlr": 0.18964150000000002,
+    "oldlr0": 0.0012425000000000001,
+    "oldtop": 0.7756075,
+    "cew": 2.7899380000000003
+   },
+   "Fu": {
+    "pnew": 0.061564999999999995,
+    "resid0": 0.9375785,
+    "ptgt": 0.07602049999999999,
+    "oldlr": 0.2068325,
+    "oldlr0": 0.001163,
+    "oldtop": 0.749566,
+    "cew": 2.7909664999999997
+   },
+   "N": {
+    "pnew": 0.0625005,
+    "resid0": 0.937493,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 2.77499
+   },
+   "resid0_wb": {
+    "": 0.005752,
+    "P": 0.005726,
+    "F": 0.0058105,
+    "O": 0.8808229999999999,
+    "T": 0.774772,
+    "G": 0.7588165
+   }
+  },
+  "FO-CE-lesion:gates:eta10": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 6,
+   "V2_A": 0,
+   "V2s_A": 0,
+   "L_A": 6,
+   "V2_Fp": 0,
+   "V2s_Fp": 0,
+   "L_Fp": 6,
+   "V2_N": 0,
+   "V2s_N": 0,
+   "L_N": 6,
+   "ACQ_N": 6
+  },
+  "FO-CE-boundary:A_lost:eta10": {
+   "prediction": "FO-CE-boundary loses A",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 5,
+   "retained": 0,
+   "lost": 5,
+   "severe": 5,
+   "intermediate": 0,
+   "median_acc": 0.00434,
+   "median_stale_err": 0.993025,
+   "excluded": {
+    "14": [
+     "V2wb(resid0_wb=0.089,formed=1575>1500,above@1500)",
+     "V2_A(resid0_A=0.114,formed=1625>1500,above@1500)"
+    ]
+   },
+   "so_competent": true
+  },
+  "FO-CE-boundary:Fp_lost:eta10": {
+   "prediction": "FO-CE-boundary loses Fp",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 4,
+   "retained": 0,
+   "lost": 4,
+   "severe": 4,
+   "intermediate": 0,
+   "median_acc": 0.001302,
+   "median_stale_err": 0.9952035,
+   "excluded": {
+    "12": [
+     "V2_Fp(resid0_Fp=0.00754,formed=725,above@1500)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.089,formed=1575>1500,above@1500)",
+     "V2_Fp(resid0_Fp=0.117,formed=1675>1500,above@1500)"
+    ]
+   },
+   "so_competent": true
+  },
+  "FO-CE-boundary:N_lost:eta10": {
+   "prediction": "FO-CE-boundary loses N",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 5,
+   "retained": 0,
+   "lost": 5,
+   "severe": 5,
+   "intermediate": 0,
+   "median_acc": 0.154514,
+   "median_stale_err": null,
+   "excluded": {
+    "14": [
+     "V2wb(resid0_wb=0.089,formed=1575>1500,above@1500)",
+     "V2_N(resid0_N=0.114,formed=1675>1500,above@1500)"
+    ]
+   },
+   "so_competent": true
+  },
+  "FO-CE-boundary:Au_lost:eta10": {
+   "prediction": "FO-CE-boundary loses Au (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 5,
+   "retained": 0,
+   "lost": 5,
+   "severe": 5,
+   "intermediate": 0,
+   "median_acc": 0.040225,
+   "median_stale_err": 0.99696,
+   "excluded": {
+    "14": [
+     "V2wb(resid0_wb=0.089,formed=1575>1500,above@1500)"
+    ]
+   },
+   "so_competent": true
+  },
+  "FO-CE-boundary:Fu_lost:eta10": {
+   "prediction": "FO-CE-boundary loses Fu (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 5,
+   "retained": 0,
+   "lost": 5,
+   "severe": 5,
+   "intermediate": 0,
+   "median_acc": 0.054579,
+   "median_stale_err": 0.999022,
+   "excluded": {
+    "14": [
+     "V2wb(resid0_wb=0.089,formed=1575>1500,above@1500)"
+    ]
+   },
+   "so_competent": true
+  },
+  "FO-CE-boundary:X_retained:eta10": {
+   "prediction": "FO-CE-boundary retains X",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "k": 5,
+   "retained": 5,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 0.999008,
+   "median_stale_err": 1.0,
+   "excluded": {
+    "14": [
+     "V2wb(resid0_wb=0.089,formed=1575>1500,above@1500)"
+    ]
+   },
+   "so_competent": true
+  },
+  "FO-CE-boundary:contrasts:eta10": {
+   "A-Fp": {
+    "by_seed": {
+     "10": -0.0087,
+     "11": 0.0035,
+     "13": -0.0009,
+     "15": 0.0009
+    },
+    "mean": -0.0013022499999999998,
+    "lo": -0.00629375,
+    "hi": 0.0023870000000000002,
+    "n_seeds": 4
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": -0.0144,
+     "11": -0.0261,
+     "12": -0.0071,
+     "13": 0.0152,
+     "15": -0.0001
+    },
+    "mean": -0.006476000000000001,
+    "lo": -0.018483199999999998,
+    "hi": 0.006237999999999999,
+    "n_seeds": 5
+   },
+   "T-G": {
+    "by_seed": {
+     "10": -0.0182,
+     "11": -0.0122,
+     "12": -0.0408,
+     "13": 0.0009,
+     "15": -0.0113
+    },
+    "mean": -0.016319199999999978,
+    "lo": -0.029339999999999988,
+    "hi": -0.005554999999999977,
+    "n_seeds": 5
+   }
+  },
+  "FO-CE-boundary:TG_descriptive:eta10": {
+   "T": {
+    "k": 5,
+    "categories": {
+     "intermediate": 5
+    },
+    "median_acc": 0.696181,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.070194,
+    "median_p0_gv0_at_write": 0.06248699999999996,
+    "median_p_v0_at_write": 0.160843,
+    "median_oldlr": 0.996033,
+    "median_oldlr0": -0.004295,
+    "cells_by_write_stratum": {
+     "< .2": 5,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 5760,
+      "acc": 0.6848960000000001,
+      "stale": 0.315104,
+      "pg": 0.0713328,
+      "pg0": 0.0625062,
+      "pv0": 0.1726708
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 5,
+    "categories": {
+     "intermediate": 5
+    },
+    "median_acc": 0.71441,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.069671,
+    "median_p0_gv0_at_write": 0.06234600000000001,
+    "median_p_v0_at_write": 0.163627,
+    "median_oldlr": 1.014865,
+    "median_oldlr0": -0.00503,
+    "cells_by_write_stratum": {
+     "< .2": 5,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 5760,
+      "acc": 0.7012152,
+      "stale": 0.2987848,
+      "pg": 0.0709984,
+      "pg0": 0.0624052,
+      "pv0": 0.1708606
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "FO-CE-boundary:P9:eta10": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 6,
+     "never_acquired": 0,
+     "acquired_and_kept": 0,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 6,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 625,
+      "last": 0.2222,
+      "paths": {
+       "resid0_wb": 475,
+       "resid0_N": 550
+      },
+      "ordered": true
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 750,
+      "last": 0.1389,
+      "paths": {
+       "resid0_wb": 650,
+       "resid0_N": 725
+      },
+      "ordered": true
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 275,
+      "lost": 650,
+      "last": 0.1204,
+      "paths": {
+       "resid0_wb": 550,
+       "resid0_N": 575
+      },
+      "ordered": true
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 525,
+      "last": 0.2037,
+      "paths": {
+       "resid0_wb": 500,
+       "resid0_N": 525
+      },
+      "ordered": true
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 1675,
+      "last": 0.2037,
+      "paths": {
+       "resid0_wb": 1525,
+       "resid0_N": 1575
+      },
+      "ordered": true
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 275,
+      "lost": 600,
+      "last": 0.1296,
+      "paths": {
+       "resid0_wb": 550,
+       "resid0_N": 575
+      },
+      "ordered": true
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 2,
+     "acquired_and_kept": 0,
+     "censored": 2
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 500,
+      "lost": 1550,
+      "last": 0.7407,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "censored",
+      "acquired": 1300,
+      "lost": null,
+      "last": 0.7593,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 825,
+      "lost": 900,
+      "last": 0.6852,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.7222,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.287,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "censored",
+      "acquired": 600,
+      "lost": null,
+      "last": 0.7222,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 4,
+     "never_acquired": 1,
+     "acquired_and_kept": 0,
+     "censored": 1
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 450,
+      "lost": 1550,
+      "last": 0.7685,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "censored",
+      "acquired": 1225,
+      "lost": null,
+      "last": 0.787,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 825,
+      "lost": 900,
+      "last": 0.6944,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 575,
+      "lost": 650,
+      "last": 0.7037,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 425,
+      "lost": 650,
+      "last": 0.3889,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.7593,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "FO-CE-boundary:readouts:eta10": {
+   "k": 5,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 637.5,
+     "timing_ok": 5,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 625,
+       "broke": null,
+       "stable": 625,
+       "ok": true
+      },
+      "11": {
+       "formed": 675,
+       "broke": null,
+       "stable": 675,
+       "ok": true
+      },
+      "12": {
+       "formed": 650,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      },
+      "13": {
+       "formed": 525,
+       "broke": null,
+       "stable": 525,
+       "ok": true
+      },
+      "14": {
+       "formed": 1575,
+       "broke": 1500,
+       "stable": 1575,
+       "ok": false
+      },
+      "15": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": 687.5,
+     "timing_ok": 5,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 650,
+       "broke": null,
+       "stable": 650,
+       "ok": true
+      },
+      "11": {
+       "formed": 750,
+       "broke": null,
+       "stable": 750,
+       "ok": true
+      },
+      "12": {
+       "formed": 725,
+       "broke": null,
+       "stable": 800,
+       "ok": true
+      },
+      "13": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "14": {
+       "formed": 1625,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 600,
+       "broke": null,
+       "stable": 600,
+       "ok": true
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": 687.5,
+     "timing_ok": 4,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 650,
+       "broke": null,
+       "stable": 925,
+       "ok": true
+      },
+      "11": {
+       "formed": 750,
+       "broke": null,
+       "stable": 750,
+       "ok": true
+      },
+      "12": {
+       "formed": 725,
+       "broke": 1500,
+       "stable": 1525,
+       "ok": false
+      },
+      "13": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "14": {
+       "formed": 1675,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 600,
+       "broke": null,
+       "stable": 600,
+       "ok": true
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": 700.0,
+     "timing_ok": 5,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 675,
+       "broke": null,
+       "stable": 925,
+       "ok": true
+      },
+      "11": {
+       "formed": 750,
+       "broke": null,
+       "stable": 750,
+       "ok": true
+      },
+      "12": {
+       "formed": 725,
+       "broke": null,
+       "stable": 725,
+       "ok": true
+      },
+      "13": {
+       "formed": 575,
+       "broke": null,
+       "stable": 575,
+       "ok": true
+      },
+      "14": {
+       "formed": 1675,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 600,
+       "broke": null,
+       "stable": 600,
+       "ok": true
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.337941,
+    "resid0": 0.937563,
+    "ptgt": 0.337941,
+    "oldlr": 1.954026,
+    "oldlr0": -0.007307,
+    "oldtop": 1.0,
+    "cew": 1.275259
+   },
+   "X": {
+    "pnew": 0.044327,
+    "resid0": 0.937537,
+    "ptgt": 0.333774,
+    "oldlr": 1.927958,
+    "oldlr0": -0.006168,
+    "oldtop": 1.0,
+    "cew": 3.299304
+   },
+   "A": {
+    "pnew": 0.973717,
+    "resid0": 0.016327,
+    "ptgt": 0.009139,
+    "oldlr": 1.199863,
+    "oldlr0": -0.376509,
+    "oldtop": 0.372396,
+    "cew": 0.027009
+   },
+   "Fp": {
+    "pnew": 0.97447,
+    "resid0": 0.015805,
+    "ptgt": 0.008676,
+    "oldlr": 1.107037,
+    "oldlr0": -0.434657,
+    "oldtop": 0.351562,
+    "cew": 0.026692
+   },
+   "T": {
+    "pnew": 0.070194,
+    "resid0": 0.937513,
+    "ptgt": 0.070194,
+    "oldlr": 0.996033,
+    "oldlr0": -0.004295,
+    "oldtop": 1.0,
+    "cew": 2.665347
+   },
+   "G": {
+    "pnew": 0.069671,
+    "resid0": 0.937654,
+    "ptgt": 0.069671,
+    "oldlr": 1.014865,
+    "oldlr0": -0.00503,
+    "oldtop": 1.0,
+    "cew": 2.672637
+   },
+   "Au": {
+    "pnew": 0.060934,
+    "resid0": 0.93749,
+    "ptgt": 0.08388,
+    "oldlr": 0.294126,
+    "oldlr0": -0.000997,
+    "oldtop": 0.834201,
+    "cew": 2.802675
+   },
+   "Fu": {
+    "pnew": 0.060791,
+    "resid0": 0.937492,
+    "ptgt": 0.085286,
+    "oldlr": 0.311521,
+    "oldlr0": -0.001966,
+    "oldtop": 0.863715,
+    "cew": 2.806562
+   },
+   "N": {
+    "pnew": 0.983408,
+    "resid0": 0.016122,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 0.016744
+   },
+   "resid0_wb": {
+    "": 0.012231,
+    "P": 0.012145,
+    "F": 0.012318,
+    "O": 0.873786,
+    "T": 0.786552,
+    "G": 0.772197
+   }
+  },
+  "FO-CE-boundary:gates:eta10": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 5,
+   "V2_A": 5,
+   "V2s_A": 6,
+   "L_A": 0,
+   "V2_Fp": 4,
+   "V2s_Fp": 6,
+   "L_Fp": 0,
+   "V2_N": 5,
+   "V2s_N": 6,
+   "L_N": 0,
+   "ACQ_N": 6
+  },
+  "SO-CE:keeps_all:eta10": {
+   "prediction": "SO-CE retains every scored type",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "unconditional": {
+    "verdict": "S",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "X": 6,
+     "A": 6,
+     "Fp": 6,
+     "Au": 6,
+     "Fu": 6,
+     "N": 6
+    },
+    "k": 6,
+    "excluded": {}
+   },
+   "copy_formed": {
+    "verdict": "S",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "X": 6,
+     "A": 6,
+     "Fp": 6,
+     "Au": 6,
+     "Fu": 6,
+     "N": 6
+    },
+    "k": 6,
+    "excluded": {}
+   }
+  },
+  "SO-CE:contrasts:eta10": {
+   "A-Fp": {
+    "by_seed": {
+     "10": 0.0,
+     "11": -0.0017,
+     "12": 0.0009,
+     "13": -0.0017,
+     "14": 0.0061,
+     "15": 0.0017
+    },
+    "mean": 0.0008679999999999984,
+    "lo": -0.0010126666666666802,
+    "hi": 0.003182666666666704,
+    "n_seeds": 6
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": 0.0,
+     "11": 0.0,
+     "12": -0.0019,
+     "13": 0.0,
+     "14": -0.0009,
+     "15": 0.0
+    },
+    "mean": -0.0004676666666666625,
+    "lo": -0.0010913333333333146,
+    "hi": 0.0,
+    "n_seeds": 6
+   },
+   "T-G": {
+    "by_seed": {
+     "10": 0.0,
+     "11": 0.0,
+     "12": 0.0,
+     "13": 0.0,
+     "14": 0.0,
+     "15": 0.0
+    },
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n_seeds": 6
+   }
+  },
+  "SO-CE:TG_descriptive:eta10": {
+   "T": {
+    "k": 6,
+    "categories": {
+     "retained": 6
+    },
+    "median_acc": 1.0,
+    "median_stale_err": null,
+    "median_p_gv0_at_write": 0.1195185,
+    "median_p0_gv0_at_write": 0.0629825,
+    "median_p_v0_at_write": 0.4143845,
+    "median_oldlr": 2.524284,
+    "median_oldlr0": -0.011846,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6783,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.11542166887807755,
+      "pg0": 0.06274996402771635,
+      "pv0": 0.4114059482529854
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 129,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.21775302325581397,
+      "pg0": 0.079190496124031,
+      "pv0": 0.4092494573643411
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 6,
+    "categories": {
+     "retained": 6
+    },
+    "median_acc": 1.0,
+    "median_stale_err": null,
+    "median_p_gv0_at_write": 0.118885,
+    "median_p0_gv0_at_write": 0.06293199999999999,
+    "median_p_v0_at_write": 0.4137965,
+    "median_oldlr": 2.519064,
+    "median_oldlr0": -0.0185865,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6791,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.11490796009424238,
+      "pg0": 0.06251931718450891,
+      "pv0": 0.40782109807097633
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 121,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.2170062644628099,
+      "pg0": 0.07998267768595041,
+      "pv0": 0.4118016033057851
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "SO-CE:P9:eta10": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 0,
+     "never_acquired": 0,
+     "acquired_and_kept": 6,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 700,
+       "resid0_N": 700
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 650,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 900,
+       "resid0_N": 925
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 525,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 625,
+       "resid0_N": 650
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 450,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 750,
+       "resid0_N": 750
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 200,
+      "lost": null,
+      "last": 0.9907,
+      "paths": {
+       "resid0_wb": 725,
+       "resid0_N": 725
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 750,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 875,
+       "resid0_N": 875
+      },
+      "ordered": null
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 0,
+     "never_acquired": 0,
+     "acquired_and_kept": 6,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 650,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 525,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 450,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 750,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 0,
+     "never_acquired": 0,
+     "acquired_and_kept": 6,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 650,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 525,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 450,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 750,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "SO-CE:readouts:eta10": {
+   "k": 6,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 750.0,
+     "timing_ok": 6,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 725,
+       "broke": null,
+       "stable": 725,
+       "ok": true
+      },
+      "11": {
+       "formed": 925,
+       "broke": null,
+       "stable": 925,
+       "ok": true
+      },
+      "12": {
+       "formed": 650,
+       "broke": null,
+       "stable": 650,
+       "ok": true
+      },
+      "13": {
+       "formed": 750,
+       "broke": null,
+       "stable": 750,
+       "ok": true
+      },
+      "14": {
+       "formed": 750,
+       "broke": null,
+       "stable": 750,
+       "ok": true
+      },
+      "15": {
+       "formed": 925,
+       "broke": null,
+       "stable": 925,
+       "ok": true
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": 1612.5,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1575,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": 1725,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": 1625,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": 1200,
+       "broke": 1500,
+       "stable": 2000,
+       "ok": false
+      },
+      "14": {
+       "formed": 1600,
+       "broke": 1500,
+       "stable": 1750,
+       "ok": false
+      },
+      "15": {
+       "formed": 1700,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": 1500.0,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1500,
+       "broke": 1525,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": 1725,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": 1500,
+       "broke": 1525,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": 1200,
+       "broke": 1500,
+       "stable": 2000,
+       "ok": false
+      },
+      "14": {
+       "formed": 1375,
+       "broke": 1500,
+       "stable": 1750,
+       "ok": false
+      },
+      "15": {
+       "formed": 1700,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": 1600,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1575,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": 1725,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": 1200,
+       "broke": 1500,
+       "stable": 2000,
+       "ok": false
+      },
+      "14": {
+       "formed": 1600,
+       "broke": 1500,
+       "stable": 1950,
+       "ok": false
+      },
+      "15": {
+       "formed": 1700,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.42823500000000003,
+    "resid0": 0.937318,
+    "ptgt": 0.42823500000000003,
+    "oldlr": 2.415343,
+    "oldlr0": -0.01467,
+    "oldtop": 1.0,
+    "cew": 0.8582784999999999
+   },
+   "X": {
+    "pnew": 0.038068000000000005,
+    "resid0": 0.9375169999999999,
+    "ptgt": 0.426898,
+    "oldlr": 2.410988,
+    "oldlr0": -0.013764499999999999,
+    "oldtop": 1.0,
+    "cew": 3.4277569999999997
+   },
+   "A": {
+    "pnew": 0.7659385000000001,
+    "resid0": 0.1220785,
+    "ptgt": 0.10379,
+    "oldlr": 2.546378,
+    "oldlr0": -0.4042165,
+    "oldtop": 0.8567705,
+    "cew": 0.282563
+   },
+   "Fp": {
+    "pnew": 0.773837,
+    "resid0": 0.115924,
+    "ptgt": 0.100001,
+    "oldlr": 2.4923640000000002,
+    "oldlr0": -0.464148,
+    "oldtop": 0.861979,
+    "cew": 0.271188
+   },
+   "T": {
+    "pnew": 0.1195185,
+    "resid0": 0.9370175000000001,
+    "ptgt": 0.1195185,
+    "oldlr": 2.524284,
+    "oldlr0": -0.011846,
+    "oldtop": 1.0,
+    "cew": 2.1620274999999998
+   },
+   "G": {
+    "pnew": 0.118885,
+    "resid0": 0.937068,
+    "ptgt": 0.118885,
+    "oldlr": 2.519064,
+    "oldlr0": -0.0185865,
+    "oldtop": 1.0,
+    "cew": 2.1670999999999996
+   },
+   "Au": {
+    "pnew": 0.058678,
+    "resid0": 0.937534,
+    "ptgt": 0.11583,
+    "oldlr": 0.6678525,
+    "oldlr0": -0.002515,
+    "oldtop": 0.998264,
+    "cew": 2.84734
+   },
+   "Fu": {
+    "pnew": 0.0592415,
+    "resid0": 0.937601,
+    "ptgt": 0.1164675,
+    "oldlr": 0.6776070000000001,
+    "oldlr0": -0.000573,
+    "oldtop": 0.999566,
+    "cew": 2.839891
+   },
+   "N": {
+    "pnew": 0.8604625,
+    "resid0": 0.1391785,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 0.1546495
+   },
+   "resid0_wb": {
+    "": 0.0023085,
+    "P": 0.002359,
+    "F": 0.0022579999999999996,
+    "O": 0.879448,
+    "T": 0.786755,
+    "G": 0.7754885
+   }
+  },
+  "SO-CE:gates:eta10": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 6,
+   "V2_A": 0,
+   "V2s_A": 6,
+   "L_A": 0,
+   "V2_Fp": 0,
+   "V2s_Fp": 6,
+   "L_Fp": 0,
+   "V2_N": 0,
+   "V2s_N": 6,
+   "L_N": 0,
+   "ACQ_N": 6
+  },
+  "SO-CE-boundary:keeps_all:eta10": {
+   "prediction": "SO-CE-boundary retains every scored type",
+   "account": "registered",
+   "primary": true,
+   "verdict": "S",
+   "unconditional": {
+    "verdict": "S",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "X": 6,
+     "A": 6,
+     "Fp": 6,
+     "Au": 6,
+     "Fu": 6,
+     "N": 6
+    },
+    "k": 6,
+    "excluded": {}
+   },
+   "copy_formed": {
+    "verdict": "S",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "X": 6,
+     "A": 6,
+     "Fp": 6,
+     "Au": 6,
+     "Fu": 6,
+     "N": 6
+    },
+    "k": 6,
+    "excluded": {}
+   }
+  },
+  "SO-CE-boundary:contrasts:eta10": {
+   "A-Fp": {
+    "by_seed": {
+     "10": 0.0009,
+     "11": 0.0052,
+     "12": -0.0017,
+     "13": -0.0017,
+     "14": -0.0043,
+     "15": 0.0061
+    },
+    "mean": 0.0007233333333333536,
+    "lo": -0.0021699999999999684,
+    "hi": 0.0037613333333333387,
+    "n_seeds": 6
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": 0.0,
+     "11": 0.0,
+     "12": 0.0,
+     "13": 0.0009,
+     "14": 0.0,
+     "15": 0.0
+    },
+    "mean": 0.00015416666666665893,
+    "lo": 0.0,
+    "hi": 0.0004624999999999768,
+    "n_seeds": 6
+   },
+   "T-G": {
+    "by_seed": {
+     "10": 0.0,
+     "11": 0.0,
+     "12": 0.0,
+     "13": 0.0,
+     "14": 0.0,
+     "15": 0.0
+    },
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n_seeds": 6
+   }
+  },
+  "SO-CE-boundary:TG_descriptive:eta10": {
+   "T": {
+    "k": 6,
+    "categories": {
+     "retained": 6
+    },
+    "median_acc": 1.0,
+    "median_stale_err": null,
+    "median_p_gv0_at_write": 0.1216815,
+    "median_p0_gv0_at_write": 0.06242900000000001,
+    "median_p_v0_at_write": 0.425257,
+    "median_oldlr": 2.5859335,
+    "median_oldlr0": -0.011132,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6674,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.11872929053041653,
+      "pg0": 0.062100664219358705,
+      "pv0": 0.4186106113275397
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 238,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.2171635336134454,
+      "pg0": 0.07079846218487396,
+      "pv0": 0.45664568907563025
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 6,
+    "categories": {
+     "retained": 6
+    },
+    "median_acc": 1.0,
+    "median_stale_err": null,
+    "median_p_gv0_at_write": 0.1214485,
+    "median_p0_gv0_at_write": 0.0623475,
+    "median_p_v0_at_write": 0.42727800000000005,
+    "median_oldlr": 2.5916135000000002,
+    "median_oldlr0": -0.0194685,
+    "cells_by_write_stratum": {
+     "< .2": 6,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 6651,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.1177394417380845,
+      "pg0": 0.0618903014584273,
+      "pv0": 0.42065254578258904
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 261,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.21725983141762453,
+      "pg0": 0.07168876628352491,
+      "pv0": 0.44894028352490417
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "SO-CE-boundary:P9:eta10": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 3,
+     "never_acquired": 0,
+     "acquired_and_kept": 3,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 0,
+    "not_ordered": 3,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 450,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 675,
+       "resid0_N": 700
+      },
+      "ordered": false
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 650,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 850,
+       "resid0_N": 900
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 775,
+       "resid0_N": 825
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 225,
+      "lost": 325,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 675,
+       "resid0_N": 700
+      },
+      "ordered": false
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 250,
+      "lost": 425,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 625,
+       "resid0_N": 625
+      },
+      "ordered": false
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 675,
+       "resid0_N": 675
+      },
+      "ordered": null
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 0,
+     "acquired_and_kept": 4,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 275,
+      "lost": 450,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 650,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 225,
+      "lost": 325,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 0,
+     "acquired_and_kept": 4,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 300,
+      "lost": 450,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 650,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 225,
+      "lost": 325,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 250,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "SO-CE-boundary:readouts:eta10": {
+   "k": 6,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 700.0,
+     "timing_ok": 6,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 700,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      },
+      "11": {
+       "formed": 900,
+       "broke": null,
+       "stable": 975,
+       "ok": true
+      },
+      "12": {
+       "formed": 800,
+       "broke": null,
+       "stable": 800,
+       "ok": true
+      },
+      "13": {
+       "formed": 700,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      },
+      "14": {
+       "formed": 625,
+       "broke": null,
+       "stable": 625,
+       "ok": true
+      },
+      "15": {
+       "formed": 700,
+       "broke": null,
+       "stable": 700,
+       "ok": true
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": 1800,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1625,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": 1850,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": 1800,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": 1550,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1950,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": 1550,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1625,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": 1850,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": 1475,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": 1550,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1425,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": 1800,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1600,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": 1850,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": 1800,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": 1550,
+       "broke": 1500,
+       "stable": 2000,
+       "ok": false
+      },
+      "15": {
+       "formed": 1875,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.396069,
+    "resid0": 0.9375745,
+    "ptgt": 0.396069,
+    "oldlr": 2.252877,
+    "oldlr0": -0.0142135,
+    "oldtop": 0.999876,
+    "cew": 0.9749075
+   },
+   "X": {
+    "pnew": 0.0401555,
+    "resid0": 0.9375249999999999,
+    "ptgt": 0.39490349999999996,
+    "oldlr": 2.2485654999999998,
+    "oldlr0": -0.010693999999999999,
+    "oldtop": 1.0,
+    "cew": 3.376783
+   },
+   "A": {
+    "pnew": 0.7347635,
+    "resid0": 0.1273995,
+    "ptgt": 0.12403549999999999,
+    "oldlr": 2.653942,
+    "oldlr0": -0.40597150000000004,
+    "oldtop": 0.858073,
+    "cew": 0.33360999999999996
+   },
+   "Fp": {
+    "pnew": 0.7492354999999999,
+    "resid0": 0.11394750000000001,
+    "ptgt": 0.11576149999999999,
+    "oldlr": 2.5846635,
+    "oldlr0": -0.44067350000000005,
+    "oldtop": 0.855035,
+    "cew": 0.31030199999999997
+   },
+   "T": {
+    "pnew": 0.1216815,
+    "resid0": 0.9375709999999999,
+    "ptgt": 0.1216815,
+    "oldlr": 2.5859335,
+    "oldlr0": -0.011132,
+    "oldtop": 1.0,
+    "cew": 2.147381
+   },
+   "G": {
+    "pnew": 0.1214485,
+    "resid0": 0.9376525,
+    "ptgt": 0.1214485,
+    "oldlr": 2.5916135000000002,
+    "oldlr0": -0.0194685,
+    "oldtop": 1.0,
+    "cew": 2.1490015
+   },
+   "Au": {
+    "pnew": 0.0561615,
+    "resid0": 0.93748,
+    "ptgt": 0.1536005,
+    "oldlr": 0.990218,
+    "oldlr0": -0.004717,
+    "oldtop": 1.0,
+    "cew": 2.9017855
+   },
+   "Fu": {
+    "pnew": 0.0572955,
+    "resid0": 0.937573,
+    "ptgt": 0.153302,
+    "oldlr": 0.9905915000000001,
+    "oldlr0": -0.0073615,
+    "oldtop": 0.999566,
+    "cew": 2.8858110000000003
+   },
+   "N": {
+    "pnew": 0.8700915,
+    "resid0": 0.126444,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 0.1487375
+   },
+   "resid0_wb": {
+    "": 0.0020175,
+    "P": 0.002007,
+    "F": 0.0020280000000000003,
+    "O": 0.880254,
+    "T": 0.7816730000000001,
+    "G": 0.7688465
+   }
+  },
+  "SO-CE-boundary:gates:eta10": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 6,
+   "V2_A": 0,
+   "V2s_A": 6,
+   "L_A": 0,
+   "V2_Fp": 0,
+   "V2s_Fp": 6,
+   "L_Fp": 0,
+   "V2_N": 0,
+   "V2s_N": 6,
+   "L_N": 0,
+   "ACQ_N": 6
+  },
+  "FO-CE:A_lost_stale:eta40": {
+   "prediction": "FO-CE loses A with stale reversion",
+   "account": "both",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 0,
+   "lost": 3,
+   "severe": 3,
+   "intermediate": 0,
+   "median_acc": 0.003472,
+   "median_stale_err": 0.997378,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)",
+     "V2_A(resid0_A=0.0936,formed=never)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_A(resid0_A=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)",
+     "V2_A(resid0_A=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: A retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:Fp_lost_stale:eta40": {
+   "prediction": "FO-CE loses Fp with stale reversion",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 0,
+   "lost": 3,
+   "severe": 3,
+   "intermediate": 0,
+   "median_acc": 0.007812,
+   "median_stale_err": 0.996497,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)",
+     "V2_Fp(resid0_Fp=0.0979,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_Fp(resid0_Fp=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)",
+     "V2_Fp(resid0_Fp=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fp retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:Fp_retained:eta40": {
+   "prediction": "FO-CE retains Fp",
+   "account": "PUT-marker",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 0,
+   "lost": 3,
+   "severe": 3,
+   "intermediate": 0,
+   "median_acc": 0.007812,
+   "median_stale_err": 0.996497,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)",
+     "V2_Fp(resid0_Fp=0.0979,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_Fp(resid0_Fp=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)",
+     "V2_Fp(resid0_Fp=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fp retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:Fu_lost:eta40": {
+   "prediction": "FO-CE loses Fu (changed subset)",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 0,
+   "lost": 3,
+   "severe": 3,
+   "intermediate": 0,
+   "median_acc": 0.018501,
+   "median_stale_err": 0.997172,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fu retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:Fu_retained:eta40": {
+   "prediction": "FO-CE retains Fu (changed subset)",
+   "account": "PUT-marker",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 0,
+   "lost": 3,
+   "severe": 3,
+   "intermediate": 0,
+   "median_acc": 0.018501,
+   "median_stale_err": 0.997172,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fu retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:Au_lost:eta40": {
+   "prediction": "FO-CE loses Au (changed subset)",
+   "account": "both",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 0,
+   "lost": 3,
+   "severe": 3,
+   "intermediate": 0,
+   "median_acc": 0.018709,
+   "median_stale_err": 0.996454,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Au retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:N_lost:eta40": {
+   "prediction": "FO-CE loses N",
+   "account": "both",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 0,
+   "lost": 3,
+   "severe": 3,
+   "intermediate": 0,
+   "median_acc": 0.109375,
+   "median_stale_err": null,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)",
+     "V2_N(resid0_N=0.0926,formed=never)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_N(resid0_N=0.937,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)",
+     "V2_N(resid0_N=0.937,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: N retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:X_retained:eta40": {
+   "prediction": "FO-CE retains X",
+   "account": "both",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "retained": 3,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 1.0,
+   "median_stale_err": 0.0,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: X retained in 3 of 3 evaluable SO seeds; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:agency_A_Fp:eta40": {
+   "prediction": "agency null: per seed |acc_A - acc_Fp| <= .10",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "within": 3,
+   "diff_by_seed": {
+    "10": -0.0017,
+    "11": -0.0009,
+    "15": -0.0043
+   },
+   "contrast": {
+    "mean": -0.002315,
+    "lo": -0.00434,
+    "hi": -0.0008680000000000002,
+    "n_seeds": 3
+   },
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)",
+     "V2_A(resid0_A=0.0936,formed=never)",
+     "V2_Fp(resid0_Fp=0.0979,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_A(resid0_A=0.938,formed=never)",
+     "V2_Fp(resid0_Fp=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)",
+     "V2_A(resid0_A=0.938,formed=never)",
+     "V2_Fp(resid0_Fp=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: A retained in 3 of 3, Fp retained in 3 of 3; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:agency_Au_Fu:eta40": {
+   "prediction": "agency null: per seed |acc_Au_chg - acc_Fu_chg| <= .10",
+   "account": "write-signal",
+   "primary": true,
+   "verdict": "NE",
+   "k": 3,
+   "within": 3,
+   "diff_by_seed": {
+    "10": 0.0002,
+    "11": 0.08,
+    "15": 0.0057
+   },
+   "contrast": {
+    "mean": 0.028659000000000004,
+    "lo": 0.00020799999999999985,
+    "hi": 0.08002100000000001,
+    "n_seeds": 3
+   },
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.0459,formed=2000>1500,above@1500)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.937,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Au retained in 3 of 3, Fu retained in 3 of 3; 3 evaluable seeds < 4 (3 excluded, reasons listed)"
+  },
+  "FO-CE:contrasts:eta40": {
+   "A-Fp": {
+    "by_seed": {
+     "10": -0.0017,
+     "11": -0.0009,
+     "15": -0.0043
+    },
+    "mean": -0.002315,
+    "lo": -0.00434,
+    "hi": -0.0008680000000000002,
+    "n_seeds": 3
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": 0.0002,
+     "11": 0.08,
+     "15": 0.0057
+    },
+    "mean": 0.028659000000000004,
+    "lo": 0.00020799999999999985,
+    "hi": 0.08002100000000001,
+    "n_seeds": 3
+   },
+   "T-G": {
+    "by_seed": {
+     "10": -0.0009,
+     "11": -0.0017,
+     "15": -0.0087
+    },
+    "mean": -0.003761666666666663,
+    "lo": -0.00868100000000005,
+    "hi": -0.0008679999999999799,
+    "n_seeds": 3
+   }
+  },
+  "FO-CE:TG_descriptive:eta40": {
+   "T": {
+    "k": 3,
+    "categories": {
+     "retained": 3
+    },
+    "median_acc": 0.989583,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.090016,
+    "median_p0_gv0_at_write": 0.06259099999999995,
+    "median_p_v0_at_write": 0.285242,
+    "median_oldlr": 1.791022,
+    "median_oldlr0": -0.00793,
+    "cells_by_write_stratum": {
+     "< .2": 3,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 3339,
+      "acc": 0.985624494159928,
+      "stale": 0.01407613656783468,
+      "pg": 0.08731129110512129,
+      "pg0": 0.0627604707996406,
+      "pv0": 0.24920492003593891
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 117,
+      "acc": 0.9914529230769231,
+      "stale": 0.0,
+      "pg": 0.23844066666666666,
+      "pg0": 0.07018771794871796,
+      "pv0": 0.40023674358974354
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 3,
+    "categories": {
+     "retained": 3
+    },
+    "median_acc": 0.990451,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.089768,
+    "median_p0_gv0_at_write": 0.06252500000000005,
+    "median_p_v0_at_write": 0.281932,
+    "median_oldlr": 1.771028,
+    "median_oldlr0": -0.012141,
+    "cells_by_write_stratum": {
+     "< .2": 3,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 3368,
+      "acc": 0.9893112651425178,
+      "stale": 0.010688734857482186,
+      "pg": 0.08733251929928741,
+      "pg0": 0.06267270160332541,
+      "pv0": 0.24731844685273158
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 88,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.2368045681818182,
+      "pg0": 0.06864698863636363,
+      "pv0": 0.4246537045454545
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "FO-CE:P9:eta40": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 3,
+     "never_acquired": 0,
+     "acquired_and_kept": 3,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 3,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 425,
+      "lost": 650,
+      "last": 0.0556,
+      "paths": {
+       "resid0_wb": 600,
+       "resid0_N": 600
+      },
+      "ordered": true
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 375,
+      "lost": 725,
+      "last": 0.1389,
+      "paths": {
+       "resid0_wb": 600,
+       "resid0_N": 650
+      },
+      "ordered": true
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 450,
+      "lost": null,
+      "last": 0.963,
+      "paths": {
+       "resid0_wb": 1950,
+       "resid0_N": 1975
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 425,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 400,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 375,
+      "lost": 1050,
+      "last": 0.1111,
+      "paths": {
+       "resid0_wb": 1000,
+       "resid0_N": 1000
+      },
+      "ordered": true
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 5,
+     "never_acquired": 0,
+     "acquired_and_kept": 1,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 450,
+      "lost": 525,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 625,
+      "lost": 750,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 475,
+      "lost": 500,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 475,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 525,
+      "lost": 650,
+      "last": 0.9352,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 475,
+      "lost": 575,
+      "last": 0.9907,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 5,
+     "never_acquired": 0,
+     "acquired_and_kept": 1,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 450,
+      "lost": 500,
+      "last": 0.9815,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 625,
+      "lost": 750,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 475,
+      "lost": 550,
+      "last": 0.9907,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 475,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 525,
+      "lost": 650,
+      "last": 0.9167,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 475,
+      "lost": 575,
+      "last": 0.9537,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "FO-CE:readouts:eta40": {
+   "k": 3,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 825.0,
+     "timing_ok": 3,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 625,
+       "broke": null,
+       "stable": 625,
+       "ok": true
+      },
+      "11": {
+       "formed": 625,
+       "broke": null,
+       "stable": 625,
+       "ok": true
+      },
+      "12": {
+       "formed": 2000,
+       "broke": 1500,
+       "stable": 2000,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1025,
+       "broke": null,
+       "stable": 1025,
+       "ok": true
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": 725,
+     "timing_ok": 3,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 650,
+       "broke": null,
+       "stable": 650,
+       "ok": true
+      },
+      "11": {
+       "formed": 725,
+       "broke": null,
+       "stable": 725,
+       "ok": true
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1025,
+       "broke": null,
+       "stable": 1025,
+       "ok": true
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": 875.0,
+     "timing_ok": 3,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 650,
+       "broke": null,
+       "stable": 650,
+       "ok": true
+      },
+      "11": {
+       "formed": 725,
+       "broke": null,
+       "stable": 725,
+       "ok": true
+      },
+      "12": {
+       "formed": 2000,
+       "broke": 1500,
+       "stable": 2000,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1025,
+       "broke": null,
+       "stable": 1025,
+       "ok": true
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": 675,
+     "timing_ok": 3,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 650,
+       "broke": null,
+       "stable": 650,
+       "ok": true
+      },
+      "11": {
+       "formed": 675,
+       "broke": null,
+       "stable": 675,
+       "ok": true
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1025,
+       "broke": null,
+       "stable": 1025,
+       "ok": true
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.429569,
+    "resid0": 0.937726,
+    "ptgt": 0.429569,
+    "oldlr": 2.438373,
+    "oldlr0": -0.010024,
+    "oldtop": 1.0,
+    "cew": 0.889708
+   },
+   "X": {
+    "pnew": 0.037955,
+    "resid0": 0.937435,
+    "ptgt": 0.431542,
+    "oldlr": 2.467166,
+    "oldlr0": -0.006064,
+    "oldtop": 1.0,
+    "cew": 3.412537
+   },
+   "A": {
+    "pnew": 0.99054,
+    "resid0": 0.003383,
+    "ptgt": 0.005877,
+    "oldlr": 1.502867,
+    "oldlr0": -0.921577,
+    "oldtop": 0.393229,
+    "cew": 0.010004
+   },
+   "Fp": {
+    "pnew": 0.988322,
+    "resid0": 0.003724,
+    "ptgt": 0.008013,
+    "oldlr": 1.377424,
+    "oldlr0": -0.953194,
+    "oldtop": 0.380208,
+    "cew": 0.012569
+   },
+   "T": {
+    "pnew": 0.090016,
+    "resid0": 0.937409,
+    "ptgt": 0.090016,
+    "oldlr": 1.791022,
+    "oldlr0": -0.00793,
+    "oldtop": 1.0,
+    "cew": 2.460873
+   },
+   "G": {
+    "pnew": 0.089768,
+    "resid0": 0.937475,
+    "ptgt": 0.089768,
+    "oldlr": 1.771028,
+    "oldlr0": -0.012141,
+    "oldtop": 1.0,
+    "cew": 2.46366
+   },
+   "Au": {
+    "pnew": 0.060481,
+    "resid0": 0.937726,
+    "ptgt": 0.088443,
+    "oldlr": 0.35705,
+    "oldlr0": -0.004656,
+    "oldtop": 0.967014,
+    "cew": 2.808852
+   },
+   "Fu": {
+    "pnew": 0.060824,
+    "resid0": 0.937601,
+    "ptgt": 0.088977,
+    "oldlr": 0.362939,
+    "oldlr0": -0.000517,
+    "oldtop": 0.952257,
+    "cew": 2.803793
+   },
+   "N": {
+    "pnew": 0.996419,
+    "resid0": 0.003536,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 0.003598
+   },
+   "resid0_wb": {
+    "": 0.00262,
+    "P": 0.002545,
+    "F": 0.002695,
+    "O": 0.884415,
+    "T": 0.812989,
+    "G": 0.807178
+   }
+  },
+  "FO-CE:gates:eta40": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 3,
+   "V2_A": 3,
+   "V2s_A": 4,
+   "L_A": 2,
+   "V2_Fp": 3,
+   "V2s_Fp": 4,
+   "L_Fp": 2,
+   "V2_N": 3,
+   "V2s_N": 4,
+   "L_N": 2,
+   "ACQ_N": 6
+  },
+  "FO-CE-lesion:N_retained:eta40": {
+   "prediction": "FO-CE-lesion retains N",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 2,
+   "retained": 2,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 0.9986980000000001,
+   "median_stale_err": null,
+   "excluded": {
+    "10": [
+     "V2wb(resid0_wb=0.518,formed=never)"
+    ],
+    "12": [
+     "V2wb(resid0_wb=0.00808,formed=1375,above@1625)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "15": [
+     "V2wb(resid0_wb=0.0109,formed=1825>1500,above@1500)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: N retained in 3 of 3 evaluable SO seeds; 2 evaluable seeds < 4 (4 excluded, reasons listed)"
+  },
+  "FO-CE-lesion:A_lost:eta40": {
+   "prediction": "FO-CE-lesion loses A",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 2,
+   "retained": 0,
+   "lost": 2,
+   "severe": 2,
+   "intermediate": 0,
+   "median_acc": 0.059028,
+   "median_stale_err": 0.9977415000000001,
+   "excluded": {
+    "10": [
+     "V2wb(resid0_wb=0.518,formed=never)"
+    ],
+    "12": [
+     "V2wb(resid0_wb=0.00808,formed=1375,above@1625)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "15": [
+     "V2wb(resid0_wb=0.0109,formed=1825>1500,above@1500)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: A retained in 3 of 3 evaluable SO seeds; 2 evaluable seeds < 4 (4 excluded, reasons listed)"
+  },
+  "FO-CE-lesion:Fp_lost:eta40": {
+   "prediction": "FO-CE-lesion loses Fp",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 2,
+   "retained": 0,
+   "lost": 2,
+   "severe": 2,
+   "intermediate": 0,
+   "median_acc": 0.077691,
+   "median_stale_err": 0.9995080000000001,
+   "excluded": {
+    "10": [
+     "V2wb(resid0_wb=0.518,formed=never)"
+    ],
+    "12": [
+     "V2wb(resid0_wb=0.00808,formed=1375,above@1625)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "15": [
+     "V2wb(resid0_wb=0.0109,formed=1825>1500,above@1500)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fp retained in 3 of 3 evaluable SO seeds; 2 evaluable seeds < 4 (4 excluded, reasons listed)"
+  },
+  "FO-CE-lesion:Au_lost:eta40": {
+   "prediction": "FO-CE-lesion loses Au (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 2,
+   "retained": 0,
+   "lost": 2,
+   "severe": 2,
+   "intermediate": 0,
+   "median_acc": 0.080449,
+   "median_stale_err": 0.9967945,
+   "excluded": {
+    "10": [
+     "V2wb(resid0_wb=0.518,formed=never)"
+    ],
+    "12": [
+     "V2wb(resid0_wb=0.00808,formed=1375,above@1625)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "15": [
+     "V2wb(resid0_wb=0.0109,formed=1825>1500,above@1500)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Au retained in 3 of 3 evaluable SO seeds; 2 evaluable seeds < 4 (4 excluded, reasons listed)"
+  },
+  "FO-CE-lesion:Fu_lost:eta40": {
+   "prediction": "FO-CE-lesion loses Fu (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 2,
+   "retained": 0,
+   "lost": 2,
+   "severe": 2,
+   "intermediate": 0,
+   "median_acc": 0.0712305,
+   "median_stale_err": 0.9968980000000001,
+   "excluded": {
+    "10": [
+     "V2wb(resid0_wb=0.518,formed=never)"
+    ],
+    "12": [
+     "V2wb(resid0_wb=0.00808,formed=1375,above@1625)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "15": [
+     "V2wb(resid0_wb=0.0109,formed=1825>1500,above@1500)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fu retained in 3 of 3 evaluable SO seeds; 2 evaluable seeds < 4 (4 excluded, reasons listed)"
+  },
+  "FO-CE-lesion:X_retained:eta40": {
+   "prediction": "FO-CE-lesion retains X",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 2,
+   "retained": 2,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 0.999752,
+   "median_stale_err": 1.0,
+   "excluded": {
+    "10": [
+     "V2wb(resid0_wb=0.518,formed=never)"
+    ],
+    "12": [
+     "V2wb(resid0_wb=0.00808,formed=1375,above@1625)"
+    ],
+    "13": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ],
+    "15": [
+     "V2wb(resid0_wb=0.0109,formed=1825>1500,above@1500)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: X retained in 3 of 3 evaluable SO seeds; 2 evaluable seeds < 4 (4 excluded, reasons listed)"
+  },
+  "FO-CE-lesion:contrasts:eta40": {
+   "A-Fp": {
+    "by_seed": {
+     "11": -0.013,
+     "14": -0.0243
+    },
+    "mean": -0.018662999999999996,
+    "lo": -0.024305999999999994,
+    "hi": -0.013019999999999997,
+    "n_seeds": 2
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "11": -0.0044,
+     "14": 0.0229
+    },
+    "mean": 0.0092185,
+    "lo": -0.004427999999999998,
+    "hi": 0.022864999999999996,
+    "n_seeds": 2
+   },
+   "T-G": {
+    "by_seed": {
+     "11": 0.0,
+     "14": 0.0
+    },
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n_seeds": 2
+   }
+  },
+  "FO-CE-lesion:TG_descriptive:eta40": {
+   "T": {
+    "k": 2,
+    "categories": {
+     "retained": 2
+    },
+    "median_acc": 0.999566,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.0835685,
+    "median_p0_gv0_at_write": 0.06329450000000003,
+    "median_p_v0_at_write": 0.2421595,
+    "median_oldlr": 1.590526,
+    "median_oldlr0": 0.002581,
+    "cells_by_write_stratum": {
+     "< .2": 2,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 2304,
+      "acc": 0.999566,
+      "stale": 0.000434,
+      "pg": 0.0835685,
+      "pg0": 0.0632945,
+      "pv0": 0.24215950000000003
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 2,
+    "categories": {
+     "retained": 2
+    },
+    "median_acc": 0.999566,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.08326049999999999,
+    "median_p0_gv0_at_write": 0.06333299999999997,
+    "median_p_v0_at_write": 0.242348,
+    "median_oldlr": 1.5885295,
+    "median_oldlr0": 0.0009425000000000002,
+    "cells_by_write_stratum": {
+     "< .2": 2,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 2304,
+      "acc": 0.999566,
+      "stale": 0.000434,
+      "pg": 0.08326049999999999,
+      "pg0": 0.06333299999999999,
+      "pv0": 0.24234799999999998
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "FO-CE-lesion:P9:eta40": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 0,
+     "never_acquired": 0,
+     "acquired_and_kept": 6,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_and_kept",
+      "acquired": 375,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_and_kept",
+      "acquired": 375,
+      "lost": null,
+      "last": 0.9907,
+      "paths": {
+       "resid0_wb": 825,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 425,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 1150,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 450,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 400,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 1125,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_and_kept",
+      "acquired": 375,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": 1725,
+       "resid0_N": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 4,
+     "never_acquired": 0,
+     "acquired_and_kept": 2,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 475,
+      "lost": 625,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 425,
+      "lost": 775,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 425,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 425,
+      "lost": null,
+      "last": 0.9722,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 500,
+      "lost": 525,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 375,
+      "lost": 425,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 3,
+     "never_acquired": 0,
+     "acquired_and_kept": 3,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 475,
+      "lost": 625,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 425,
+      "lost": 775,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 425,
+      "lost": null,
+      "last": 0.9815,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 425,
+      "lost": null,
+      "last": 0.9259,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 500,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 375,
+      "lost": 425,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "FO-CE-lesion:readouts:eta40": {
+   "k": 2,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 1275.0,
+     "timing_ok": 2,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": 850,
+       "broke": null,
+       "stable": 850,
+       "ok": true
+      },
+      "12": {
+       "formed": 1375,
+       "broke": 1625,
+       "stable": 1650,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": 1175,
+       "broke": null,
+       "stable": 1175,
+       "ok": true
+      },
+      "15": {
+       "formed": 1825,
+       "broke": 1500,
+       "stable": 1825,
+       "ok": false
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.4442645,
+    "resid0": 0.9372865,
+    "ptgt": 0.4442645,
+    "oldlr": 2.4970775,
+    "oldlr0": -0.0066485,
+    "oldtop": 1.0,
+    "cew": 0.8330565
+   },
+   "X": {
+    "pnew": 0.03707,
+    "resid0": 0.9373305000000001,
+    "ptgt": 0.4435935,
+    "oldlr": 2.4911135,
+    "oldlr0": -0.0032805000000000004,
+    "oldtop": 1.0,
+    "cew": 3.389471
+   },
+   "A": {
+    "pnew": 0.061173000000000005,
+    "resid0": 0.9375295,
+    "ptgt": 0.082372,
+    "oldlr": 0.2935365,
+    "oldlr0": -0.000742,
+    "oldtop": 0.9917535,
+    "cew": 2.7967705
+   },
+   "Fp": {
+    "pnew": 0.060967,
+    "resid0": 0.9375925,
+    "ptgt": 0.0819585,
+    "oldlr": 0.288348,
+    "oldlr0": -0.003441,
+    "oldtop": 0.9839405,
+    "cew": 2.8000745
+   },
+   "T": {
+    "pnew": 0.0835685,
+    "resid0": 0.9367055,
+    "ptgt": 0.0835685,
+    "oldlr": 1.590526,
+    "oldlr0": 0.002581,
+    "oldtop": 1.0,
+    "cew": 2.501136
+   },
+   "G": {
+    "pnew": 0.08326049999999999,
+    "resid0": 0.936667,
+    "ptgt": 0.08326049999999999,
+    "oldlr": 1.5885295,
+    "oldlr0": 0.0009425000000000002,
+    "oldtop": 1.0,
+    "cew": 2.50648
+   },
+   "Au": {
+    "pnew": 0.0610775,
+    "resid0": 0.9375145,
+    "ptgt": 0.082758,
+    "oldlr": 0.299111,
+    "oldlr0": -0.0005319999999999999,
+    "oldtop": 0.9882815,
+    "cew": 2.798316
+   },
+   "Fu": {
+    "pnew": 0.061232999999999996,
+    "resid0": 0.9375659999999999,
+    "ptgt": 0.08288300000000001,
+    "oldlr": 0.301023,
+    "oldlr0": 0.003745,
+    "oldtop": 0.9917535,
+    "cew": 2.795991
+   },
+   "N": {
+    "pnew": 0.062438,
+    "resid0": 0.937561,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 2.775572
+   },
+   "resid0_wb": {
+    "": 0.006177,
+    "P": 0.006139,
+    "F": 0.0062145,
+    "O": 0.8940025,
+    "T": 0.8286495,
+    "G": 0.822011
+   }
+  },
+  "FO-CE-lesion:gates:eta40": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 2,
+   "V2_A": 0,
+   "V2s_A": 0,
+   "L_A": 6,
+   "V2_Fp": 0,
+   "V2s_Fp": 0,
+   "L_Fp": 6,
+   "V2_N": 0,
+   "V2s_N": 0,
+   "L_N": 6,
+   "ACQ_N": 6
+  },
+  "FO-CE-boundary:A_lost:eta40": {
+   "prediction": "FO-CE-boundary loses A",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 4,
+   "retained": 0,
+   "lost": 4,
+   "severe": 4,
+   "intermediate": 0,
+   "median_acc": 0.013021000000000001,
+   "median_stale_err": 0.9991220000000001,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.105,formed=never)",
+     "V2_A(resid0_A=0.236,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_A(resid0_A=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: A retained in 2 of 2 evaluable SO seeds"
+  },
+  "FO-CE-boundary:Fp_lost:eta40": {
+   "prediction": "FO-CE-boundary loses Fp",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 4,
+   "retained": 0,
+   "lost": 4,
+   "severe": 4,
+   "intermediate": 0,
+   "median_acc": 0.014757,
+   "median_stale_err": 0.9982285,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.105,formed=never)",
+     "V2_Fp(resid0_Fp=0.238,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_Fp(resid0_Fp=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fp retained in 2 of 2 evaluable SO seeds"
+  },
+  "FO-CE-boundary:N_lost:eta40": {
+   "prediction": "FO-CE-boundary loses N",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 4,
+   "retained": 0,
+   "lost": 4,
+   "severe": 4,
+   "intermediate": 0,
+   "median_acc": 0.18663200000000002,
+   "median_stale_err": null,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.105,formed=never)",
+     "V2_N(resid0_N=0.239,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.938,formed=never)",
+     "V2_N(resid0_N=0.937,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: N retained in 2 of 2 evaluable SO seeds"
+  },
+  "FO-CE-boundary:Au_lost:eta40": {
+   "prediction": "FO-CE-boundary loses Au (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 4,
+   "retained": 0,
+   "lost": 4,
+   "severe": 4,
+   "intermediate": 0,
+   "median_acc": 0.0215155,
+   "median_stale_err": 0.999063,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.105,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Au retained in 2 of 2 evaluable SO seeds"
+  },
+  "FO-CE-boundary:Fu_lost:eta40": {
+   "prediction": "FO-CE-boundary loses Fu (changed subset)",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 4,
+   "retained": 0,
+   "lost": 4,
+   "severe": 4,
+   "intermediate": 0,
+   "median_acc": 0.0212765,
+   "median_stale_err": 0.9985815,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.105,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: Fu retained in 2 of 2 evaluable SO seeds"
+  },
+  "FO-CE-boundary:X_retained:eta40": {
+   "prediction": "FO-CE-boundary retains X",
+   "account": "registered",
+   "primary": true,
+   "verdict": "NE",
+   "k": 4,
+   "retained": 4,
+   "lost": 0,
+   "severe": 0,
+   "intermediate": 0,
+   "median_acc": 0.998884,
+   "median_stale_err": 0.625,
+   "excluded": {
+    "12": [
+     "V2wb(resid0_wb=0.105,formed=never)"
+    ],
+    "14": [
+     "V2wb(resid0_wb=0.938,formed=never)"
+    ]
+   },
+   "so_competent": false,
+   "ne_reason": "SO competence: X retained in 2 of 2 evaluable SO seeds"
+  },
+  "FO-CE-boundary:contrasts:eta40": {
+   "A-Fp": {
+    "by_seed": {
+     "10": -0.0087,
+     "11": 0.0078,
+     "13": 0.0026,
+     "15": 0.0148
+    },
+    "mean": 0.0041235,
+    "lo": -0.00455675,
+    "hi": 0.01171875,
+    "n_seeds": 4
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": -0.0027,
+     "11": 0.0032,
+     "13": 0.0019,
+     "15": 0.0109
+    },
+    "mean": 0.0033155000000000016,
+    "lo": -0.0012264999999999995,
+    "hi": 0.008652500000000004,
+    "n_seeds": 4
+   },
+   "T-G": {
+    "by_seed": {
+     "10": -0.0391,
+     "11": -0.0243,
+     "13": -0.0026,
+     "15": 0.0069
+    },
+    "mean": -0.014756999999999992,
+    "lo": -0.03168399999999999,
+    "hi": 0.0021700000000000053,
+    "n_seeds": 4
+   }
+  },
+  "FO-CE-boundary:TG_descriptive:eta40": {
+   "T": {
+    "k": 4,
+    "categories": {
+     "intermediate": 4
+    },
+    "median_acc": 0.7265625,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.07341600000000001,
+    "median_p0_gv0_at_write": 0.06245899999999999,
+    "median_p_v0_at_write": 0.20079,
+    "median_oldlr": 1.247729,
+    "median_oldlr0": -0.0043454999999999995,
+    "cells_by_write_stratum": {
+     "< .2": 4,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 4608,
+      "acc": 0.734158,
+      "stale": 0.265625,
+      "pg": 0.0745045,
+      "pg0": 0.06247175,
+      "pv0": 0.21577325
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 4,
+    "categories": {
+     "intermediate": 4
+    },
+    "median_acc": 0.7582465,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.07335649999999999,
+    "median_p0_gv0_at_write": 0.06243899999999997,
+    "median_p_v0_at_write": 0.19979249999999998,
+    "median_oldlr": 1.2477885,
+    "median_oldlr0": -0.0039475000000000005,
+    "cells_by_write_stratum": {
+     "< .2": 4,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 4608,
+      "acc": 0.748915,
+      "stale": 0.25086775,
+      "pg": 0.07432325000000001,
+      "pg0": 0.06245225,
+      "pv0": 0.21568674999999998
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "FO-CE-boundary:P9:eta40": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 4,
+     "never_acquired": 0,
+     "acquired_and_kept": 1,
+     "censored": 1
+    },
+    "path": "resid0_wb",
+    "ordered": 4,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 400,
+      "lost": 950,
+      "last": 0.0741,
+      "paths": {
+       "resid0_wb": 650,
+       "resid0_N": 900
+      },
+      "ordered": true
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 400,
+      "lost": 1325,
+      "last": 0.1667,
+      "paths": {
+       "resid0_wb": 1250,
+       "resid0_N": 1250
+      },
+      "ordered": true
+     },
+     "12": {
+      "category": "censored",
+      "acquired": 575,
+      "lost": null,
+      "last": 0.8889,
+      "paths": {
+       "resid0_wb": 1725,
+       "resid0_N": 1750
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 400,
+      "lost": 875,
+      "last": 0.1944,
+      "paths": {
+       "resid0_wb": 725,
+       "resid0_N": 825
+      },
+      "ordered": true
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 450,
+      "lost": null,
+      "last": 0.9907,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "acquired_then_lost",
+      "acquired": 500,
+      "lost": 1000,
+      "last": 0.2963,
+      "paths": {
+       "resid0_wb": 925,
+       "resid0_N": 950
+      },
+      "ordered": true
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 2,
+     "acquired_and_kept": 0,
+     "censored": 2
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 850,
+      "lost": 1975,
+      "last": 0.7593,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "censored",
+      "acquired": 1250,
+      "lost": null,
+      "last": 0.7685,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "censored",
+      "acquired": 925,
+      "lost": null,
+      "last": 0.8519,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 625,
+      "lost": 1025,
+      "last": 0.8241,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.213,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.75,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 4,
+     "never_acquired": 0,
+     "acquired_and_kept": 1,
+     "censored": 1
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 850,
+      "lost": 1975,
+      "last": 0.7407,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 625,
+      "lost": 650,
+      "last": 0.7963,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 925,
+      "lost": null,
+      "last": 0.9074,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_then_lost",
+      "acquired": 750,
+      "lost": 1025,
+      "last": 0.7778,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_then_lost",
+      "acquired": 500,
+      "lost": 525,
+      "last": 0.1204,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "censored",
+      "acquired": 1425,
+      "lost": null,
+      "last": 0.7407,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "FO-CE-boundary:readouts:eta40": {
+   "k": 4,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 937.5,
+     "timing_ok": 4,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 900,
+       "broke": null,
+       "stable": 1000,
+       "ok": true
+      },
+      "11": {
+       "formed": 1275,
+       "broke": null,
+       "stable": 1275,
+       "ok": true
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": 825,
+       "broke": null,
+       "stable": 825,
+       "ok": true
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 975,
+       "broke": null,
+       "stable": 975,
+       "ok": true
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": 1012.5,
+     "timing_ok": 4,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1025,
+       "broke": null,
+       "stable": 1025,
+       "ok": true
+      },
+      "11": {
+       "formed": 1325,
+       "broke": null,
+       "stable": 1325,
+       "ok": true
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": 900,
+       "broke": null,
+       "stable": 900,
+       "ok": true
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1000,
+       "broke": null,
+       "stable": 1000,
+       "ok": true
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": 1012.5,
+     "timing_ok": 4,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1025,
+       "broke": null,
+       "stable": 1025,
+       "ok": true
+      },
+      "11": {
+       "formed": 1325,
+       "broke": null,
+       "stable": 1325,
+       "ok": true
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": 925,
+       "broke": null,
+       "stable": 925,
+       "ok": true
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1000,
+       "broke": null,
+       "stable": 1000,
+       "ok": true
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": 1012.5,
+     "timing_ok": 4,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 1025,
+       "broke": null,
+       "stable": 1025,
+       "ok": true
+      },
+      "11": {
+       "formed": 1325,
+       "broke": null,
+       "stable": 1325,
+       "ok": true
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": 900,
+       "broke": null,
+       "stable": 900,
+       "ok": true
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": 1000,
+       "broke": null,
+       "stable": 1000,
+       "ok": true
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.3853,
+    "resid0": 0.9375115,
+    "ptgt": 0.3853,
+    "oldlr": 2.1909165,
+    "oldlr0": -0.006366999999999999,
+    "oldtop": 1.0,
+    "cew": 1.0889755
+   },
+   "X": {
+    "pnew": 0.041195999999999997,
+    "resid0": 0.9374560000000001,
+    "ptgt": 0.38176,
+    "oldlr": 2.1733815,
+    "oldlr0": -0.0061975,
+    "oldtop": 1.0,
+    "cew": 3.3095195
+   },
+   "A": {
+    "pnew": 0.966418,
+    "resid0": 0.012171,
+    "ptgt": 0.019116,
+    "oldlr": 1.618707,
+    "oldlr0": -0.756633,
+    "oldtop": 0.405816,
+    "cew": 0.037596000000000004
+   },
+   "Fp": {
+    "pnew": 0.9688745000000001,
+    "resid0": 0.011845,
+    "ptgt": 0.0150645,
+    "oldlr": 1.4341415,
+    "oldlr0": -0.9177925,
+    "oldtop": 0.36501700000000004,
+    "cew": 0.032632
+   },
+   "T": {
+    "pnew": 0.07341600000000001,
+    "resid0": 0.937541,
+    "ptgt": 0.07341600000000001,
+    "oldlr": 1.247729,
+    "oldlr0": -0.0043454999999999995,
+    "oldtop": 1.0,
+    "cew": 2.622264
+   },
+   "G": {
+    "pnew": 0.07335649999999999,
+    "resid0": 0.9375610000000001,
+    "ptgt": 0.07335649999999999,
+    "oldlr": 1.2477885,
+    "oldlr0": -0.0039475000000000005,
+    "oldtop": 0.998264,
+    "cew": 2.6231185000000004
+   },
+   "Au": {
+    "pnew": 0.060242000000000004,
+    "resid0": 0.9376074999999999,
+    "ptgt": 0.094526,
+    "oldlr": 0.42095000000000005,
+    "oldlr0": -0.0040785000000000005,
+    "oldtop": 0.93316,
+    "cew": 2.8131105
+   },
+   "Fu": {
+    "pnew": 0.060511499999999996,
+    "resid0": 0.9375895000000001,
+    "ptgt": 0.0944765,
+    "oldlr": 0.4262165,
+    "oldlr0": -0.0032395,
+    "oldtop": 0.9375,
+    "cew": 2.8090835
+   },
+   "N": {
+    "pnew": 0.9878985,
+    "resid0": 0.011754,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 0.012351500000000001
+   },
+   "resid0_wb": {
+    "": 0.007168000000000001,
+    "P": 0.007213499999999999,
+    "F": 0.007123,
+    "O": 0.910827,
+    "T": 0.857686,
+    "G": 0.8509420000000001
+   }
+  },
+  "FO-CE-boundary:gates:eta40": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 6,
+   "V2wb": 4,
+   "V2_A": 4,
+   "V2s_A": 5,
+   "L_A": 1,
+   "V2_Fp": 4,
+   "V2s_Fp": 5,
+   "L_Fp": 1,
+   "V2_N": 4,
+   "V2s_N": 5,
+   "L_N": 1,
+   "ACQ_N": 6
+  },
+  "SO-CE:keeps_all:eta40": {
+   "prediction": "SO-CE retains every scored type",
+   "account": "registered",
+   "primary": true,
+   "verdict": "F",
+   "unconditional": {
+    "verdict": "F",
+    "retained": {
+     "U": 3,
+     "S": 4,
+     "X": 4,
+     "A": 3,
+     "Fp": 3,
+     "Au": 4,
+     "Fu": 4,
+     "N": 4
+    },
+    "k": 6,
+    "excluded": {}
+   },
+   "copy_formed": {
+    "verdict": "NE",
+    "retained": {
+     "U": 0,
+     "S": 0,
+     "X": 0,
+     "A": 0,
+     "Fp": 0,
+     "Au": 0,
+     "Fu": 0,
+     "N": 0
+    },
+    "k": 0,
+    "excluded": {
+     "10": [
+      "V2wb(resid0_wb=0.933,formed=never)"
+     ],
+     "11": [
+      "V2wb(resid0_wb=0.938,formed=never)"
+     ],
+     "12": [
+      "V2wb(resid0_wb=0.47,formed=never)"
+     ],
+     "13": [
+      "V2wb(resid0_wb=0.949,formed=never)"
+     ],
+     "14": [
+      "V2wb(resid0_wb=0.937,formed=never)"
+     ],
+     "15": [
+      "V2wb(resid0_wb=0.944,formed=never)"
+     ]
+    }
+   }
+  },
+  "SO-CE:contrasts:eta40": {
+   "A-Fp": {
+    "by_seed": {
+     "10": 0.0,
+     "11": 0.0026,
+     "14": 0.0009
+    },
+    "mean": 0.0011573333333333435,
+    "lo": 0.0,
+    "hi": 0.0026040000000000507,
+    "n_seeds": 3
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": 0.0,
+     "11": -0.0019,
+     "14": -0.0009
+    },
+    "mean": -0.0009389999999999862,
+    "lo": -0.001870999999999956,
+    "hi": 0.0,
+    "n_seeds": 3
+   },
+   "T-G": {
+    "by_seed": {
+     "10": 0.0,
+     "11": 0.0043,
+     "14": -0.0009
+    },
+    "mean": 0.0011573333333333065,
+    "lo": -0.0008680000000000909,
+    "hi": 0.0043400000000000105,
+    "n_seeds": 3
+   }
+  },
+  "SO-CE:TG_descriptive:eta40": {
+   "T": {
+    "k": 3,
+    "categories": {
+     "retained": 3
+    },
+    "median_acc": 0.998264,
+    "median_stale_err": 0.0,
+    "median_p_gv0_at_write": 0.070172,
+    "median_p0_gv0_at_write": 0.06204900000000002,
+    "median_p_v0_at_write": 0.38142,
+    "median_oldlr": 2.277896,
+    "median_oldlr0": -0.002609,
+    "cells_by_write_stratum": {
+     "< .2": 3,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 3456,
+      "acc": 0.9982639999999999,
+      "stale": 0.00028933333333333334,
+      "pg": 0.06971,
+      "pg0": 0.060288666666666664,
+      "pv0": 0.37844900000000004
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 3,
+    "categories": {
+     "retained": 3
+    },
+    "median_acc": 0.998264,
+    "median_stale_err": 0.0,
+    "median_p_gv0_at_write": 0.070805,
+    "median_p0_gv0_at_write": 0.06215800000000005,
+    "median_p_v0_at_write": 0.37933,
+    "median_oldlr": 2.26903,
+    "median_oldlr0": -0.006852,
+    "cells_by_write_stratum": {
+     "< .2": 3,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 3456,
+      "acc": 0.9971066666666667,
+      "stale": 0.00028933333333333334,
+      "pg": 0.06992000000000001,
+      "pg0": 0.060306,
+      "pv0": 0.375794
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "SO-CE:P9:eta40": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 3,
+     "never_acquired": 2,
+     "acquired_and_kept": 1,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 0,
+    "not_ordered": 1,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 1775,
+      "lost": 1825,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 1625,
+      "lost": 1800,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_then_lost",
+      "acquired": 1600,
+      "lost": 1975,
+      "last": 0.9444,
+      "paths": {
+       "resid0_wb": 2000,
+       "resid0_N": null
+      },
+      "ordered": false
+     },
+     "13": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1019,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 1700,
+      "lost": null,
+      "last": 0.9815,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1296,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 2,
+     "acquired_and_kept": 2,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 1800,
+      "lost": 1825,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 1625,
+      "lost": 1800,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 1575,
+      "lost": null,
+      "last": 0.963,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.0648,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 1725,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.0926,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 2,
+     "never_acquired": 2,
+     "acquired_and_kept": 2,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 1875,
+      "lost": 1950,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "acquired_then_lost",
+      "acquired": 1625,
+      "lost": 1800,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "acquired_and_kept",
+      "acquired": 1625,
+      "lost": null,
+      "last": 0.9537,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1389,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "acquired_and_kept",
+      "acquired": 1700,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1389,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "SO-CE:readouts:eta40": {
+   "k": 3,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.385846,
+    "resid0": 0.937777,
+    "ptgt": 0.385846,
+    "oldlr": 2.243023,
+    "oldlr0": -0.002792,
+    "oldtop": 1.0,
+    "cew": 0.964131
+   },
+   "X": {
+    "pnew": 0.040603,
+    "resid0": 0.937933,
+    "ptgt": 0.385519,
+    "oldlr": 2.241727,
+    "oldlr0": -0.003451,
+    "oldtop": 1.0,
+    "cew": 3.237553
+   },
+   "A": {
+    "pnew": 0.04532,
+    "resid0": 0.937645,
+    "ptgt": 0.336387,
+    "oldlr": 2.026136,
+    "oldlr0": -0.004197,
+    "oldtop": 1.0,
+    "cew": 3.126042
+   },
+   "Fp": {
+    "pnew": 0.044432,
+    "resid0": 0.937824,
+    "ptgt": 0.332621,
+    "oldlr": 2.008969,
+    "oldlr0": -0.003822,
+    "oldtop": 1.0,
+    "cew": 3.139731
+   },
+   "T": {
+    "pnew": 0.070172,
+    "resid0": 0.937951,
+    "ptgt": 0.070172,
+    "oldlr": 2.277896,
+    "oldlr0": -0.002609,
+    "oldtop": 1.0,
+    "cew": 2.667905
+   },
+   "G": {
+    "pnew": 0.070805,
+    "resid0": 0.937842,
+    "ptgt": 0.070805,
+    "oldlr": 2.26903,
+    "oldlr0": -0.006852,
+    "oldtop": 1.0,
+    "cew": 2.659646
+   },
+   "Au": {
+    "pnew": 0.042953,
+    "resid0": 0.937797,
+    "ptgt": 0.347679,
+    "oldlr": 2.075599,
+    "oldlr0": -0.000946,
+    "oldtop": 1.0,
+    "cew": 3.173137
+   },
+   "Fu": {
+    "pnew": 0.044128,
+    "resid0": 0.937935,
+    "ptgt": 0.340865,
+    "oldlr": 2.044458,
+    "oldlr0": -0.001832,
+    "oldtop": 1.0,
+    "cew": 3.149928
+   },
+   "N": {
+    "pnew": 0.062245,
+    "resid0": 0.937469,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 2.781792
+   },
+   "resid0_wb": {
+    "": 0.937447,
+    "P": 0.937421,
+    "F": 0.937473,
+    "O": 0.937398,
+    "T": 0.93771,
+    "G": 0.937592
+   }
+  },
+  "SO-CE:gates:eta40": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 3,
+   "V2wb": 0,
+   "V2_A": 0,
+   "V2s_A": 0,
+   "L_A": 5,
+   "V2_Fp": 0,
+   "V2s_Fp": 0,
+   "L_Fp": 5,
+   "V2_N": 0,
+   "V2s_N": 0,
+   "L_N": 5,
+   "ACQ_N": 4
+  },
+  "SO-CE-boundary:keeps_all:eta40": {
+   "prediction": "SO-CE-boundary retains every scored type",
+   "account": "registered",
+   "primary": true,
+   "verdict": "F",
+   "unconditional": {
+    "verdict": "F",
+    "retained": {
+     "U": 2,
+     "S": 2,
+     "X": 2,
+     "A": 2,
+     "Fp": 2,
+     "Au": 2,
+     "Fu": 2,
+     "N": 2
+    },
+    "k": 6,
+    "excluded": {}
+   },
+   "copy_formed": {
+    "verdict": "NE",
+    "retained": {
+     "U": 0,
+     "S": 0,
+     "X": 0,
+     "A": 0,
+     "Fp": 0,
+     "Au": 0,
+     "Fu": 0,
+     "N": 0
+    },
+    "k": 0,
+    "excluded": {
+     "10": [
+      "V2wb(resid0_wb=0.1,formed=2000>1500,above@1500)"
+     ],
+     "11": [
+      "V2wb(resid0_wb=0.941,formed=never)"
+     ],
+     "12": [
+      "V2wb(resid0_wb=0.956,formed=never)"
+     ],
+     "13": [
+      "V2wb(resid0_wb=0.938,formed=never)"
+     ],
+     "14": [
+      "V2wb(resid0_wb=0.948,formed=never)"
+     ],
+     "15": [
+      "V2wb(resid0_wb=0.953,formed=never)"
+     ]
+    }
+   }
+  },
+  "SO-CE-boundary:contrasts:eta40": {
+   "A-Fp": {
+    "by_seed": {
+     "10": -0.0009,
+     "13": 0.0061
+    },
+    "mean": 0.0026045000000000096,
+    "lo": -0.0008679999999999799,
+    "hi": 0.006076999999999999,
+    "n_seeds": 2
+   },
+   "Au-Fu": {
+    "by_seed": {
+     "10": -0.0009,
+     "13": 0.0009
+    },
+    "mean": -2.6000000000026002e-05,
+    "lo": -0.0009350000000000191,
+    "hi": 0.0008829999999999671,
+    "n_seeds": 2
+   },
+   "T-G": {
+    "by_seed": {
+     "10": 0.0,
+     "13": -0.0017
+    },
+    "mean": -0.0008679999999999799,
+    "lo": -0.0017359999999999598,
+    "hi": 0.0,
+    "n_seeds": 2
+   }
+  },
+  "SO-CE-boundary:TG_descriptive:eta40": {
+   "T": {
+    "k": 2,
+    "categories": {
+     "retained": 2
+    },
+    "median_acc": 0.99566,
+    "median_stale_err": 0.75,
+    "median_p_gv0_at_write": 0.07485149999999999,
+    "median_p0_gv0_at_write": 0.05958550000000001,
+    "median_p_v0_at_write": 0.3255765,
+    "median_oldlr": 2.0268755,
+    "median_oldlr0": -0.019824500000000002,
+    "cells_by_write_stratum": {
+     "< .2": 2,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 2304,
+      "acc": 0.9956600000000001,
+      "stale": 0.0039059999999999997,
+      "pg": 0.0748515,
+      "pg0": 0.05958549999999999,
+      "pv0": 0.3255765
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   },
+   "G": {
+    "k": 2,
+    "categories": {
+     "retained": 2
+    },
+    "median_acc": 0.9965280000000001,
+    "median_stale_err": 1.0,
+    "median_p_gv0_at_write": 0.0753295,
+    "median_p0_gv0_at_write": 0.0601815,
+    "median_p_v0_at_write": 0.3305595,
+    "median_oldlr": 2.050855,
+    "median_oldlr0": -0.016527,
+    "cells_by_write_stratum": {
+     "< .2": 2,
+     ".2-.8": 0,
+     "> .8": 0
+    },
+    "write_strata": [
+     {
+      "stratum": "< .2",
+      "writes": 2303,
+      "acc": 0.9965262466348241,
+      "stale": 0.003473753365175857,
+      "pg": 0.07526654146765088,
+      "pg0": 0.060128452887537986,
+      "pv0": 0.3305665861919236
+     },
+     {
+      "stratum": ".2-.8",
+      "writes": 1,
+      "acc": 1.0,
+      "stale": 0.0,
+      "pg": 0.220851,
+      "pg0": 0.182442,
+      "pv0": 0.314584
+     },
+     {
+      "stratum": "> .8",
+      "writes": 0,
+      "acc": null,
+      "stale": null,
+      "pg": null,
+      "pg0": null,
+      "pv0": null
+     }
+    ]
+   }
+  },
+  "SO-CE-boundary:P9:eta40": {
+   "N": {
+    "counts": {
+     "acquired_then_lost": 1,
+     "never_acquired": 4,
+     "acquired_and_kept": 1,
+     "censored": 0
+    },
+    "path": "resid0_wb",
+    "ordered": 0,
+    "not_ordered": 1,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 1350,
+      "lost": 1475,
+      "last": 0.9907,
+      "paths": {
+       "resid0_wb": 1750,
+       "resid0_N": 1850
+      },
+      "ordered": false
+     },
+     "11": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1389,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1481,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 1950,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1111,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1296,
+      "paths": {
+       "resid0_wb": null,
+       "resid0_N": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "T": {
+    "counts": {
+     "acquired_then_lost": 1,
+     "never_acquired": 4,
+     "acquired_and_kept": 1,
+     "censored": 0
+    },
+    "path": "resid0_T",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 1375,
+      "lost": 1475,
+      "last": 1.0,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.0833,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.0556,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 1950,
+      "lost": null,
+      "last": 0.9815,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.0556,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.0556,
+      "paths": {
+       "resid0_T": null,
+       "resid0_wbT": null
+      },
+      "ordered": null
+     }
+    }
+   },
+   "G": {
+    "counts": {
+     "acquired_then_lost": 1,
+     "never_acquired": 4,
+     "acquired_and_kept": 1,
+     "censored": 0
+    },
+    "path": "resid0_G",
+    "ordered": 0,
+    "not_ordered": 0,
+    "seeds": {
+     "10": {
+      "category": "acquired_then_lost",
+      "acquired": 1350,
+      "lost": 1475,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "11": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1204,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "12": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1667,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "13": {
+      "category": "acquired_and_kept",
+      "acquired": 1950,
+      "lost": null,
+      "last": 1.0,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "14": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1296,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     },
+     "15": {
+      "category": "never_acquired",
+      "acquired": null,
+      "lost": null,
+      "last": 0.1296,
+      "paths": {
+       "resid0_G": null,
+       "resid0_wbG": null
+      },
+      "ordered": null
+     }
+    }
+   }
+  },
+  "SO-CE-boundary:readouts:eta40": {
+   "k": 2,
+   "formation": {
+    "resid0_wb": {
+     "median_formed": 2000,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": 2000,
+       "broke": 1500,
+       "stable": 2000,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_A": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_Fp": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    },
+    "resid0_N": {
+     "median_formed": null,
+     "timing_ok": 0,
+     "n": 6,
+     "seeds": {
+      "10": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "11": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "12": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "13": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "14": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      },
+      "15": {
+       "formed": null,
+       "broke": 1500,
+       "stable": null,
+       "ok": false
+      }
+     }
+    }
+   },
+   "S": {
+    "pnew": 0.32951600000000003,
+    "resid0": 0.9398975,
+    "ptgt": 0.32951600000000003,
+    "oldlr": 1.992255,
+    "oldlr0": -0.011694,
+    "oldtop": 1.0,
+    "cew": 1.1256285
+   },
+   "X": {
+    "pnew": 0.044349,
+    "resid0": 0.9398565,
+    "ptgt": 0.3288895,
+    "oldlr": 1.9891770000000002,
+    "oldlr0": -0.007884,
+    "oldtop": 1.0,
+    "cew": 3.1673869999999997
+   },
+   "A": {
+    "pnew": 0.2045645,
+    "resid0": 0.6629674999999999,
+    "ptgt": 0.326421,
+    "oldlr": 2.2754510000000003,
+    "oldlr0": -0.469401,
+    "oldtop": 0.8650175,
+    "cew": 2.1011885
+   },
+   "Fp": {
+    "pnew": 0.20497,
+    "resid0": 0.6660405,
+    "ptgt": 0.3272715,
+    "oldlr": 2.2745284999999997,
+    "oldlr0": -0.40491499999999997,
+    "oldtop": 0.875,
+    "cew": 2.103638
+   },
+   "T": {
+    "pnew": 0.07485149999999999,
+    "resid0": 0.9404144999999999,
+    "ptgt": 0.07485149999999999,
+    "oldlr": 2.0268755,
+    "oldlr0": -0.019824500000000002,
+    "oldtop": 1.0,
+    "cew": 2.6217245
+   },
+   "G": {
+    "pnew": 0.0753295,
+    "resid0": 0.9398185,
+    "ptgt": 0.0753295,
+    "oldlr": 2.050855,
+    "oldlr0": -0.016527,
+    "oldtop": 1.0,
+    "cew": 2.6197305
+   },
+   "Au": {
+    "pnew": 0.043604500000000004,
+    "resid0": 0.939756,
+    "ptgt": 0.3414255,
+    "oldlr": 2.0406265,
+    "oldlr0": -0.023782499999999998,
+    "oldtop": 1.0,
+    "cew": 3.2115210000000003
+   },
+   "Fu": {
+    "pnew": 0.044736,
+    "resid0": 0.939883,
+    "ptgt": 0.33037700000000003,
+    "oldlr": 1.9930165,
+    "oldlr0": -0.035522,
+    "oldtop": 0.99783,
+    "cew": 3.186503
+   },
+   "N": {
+    "pnew": 0.334586,
+    "resid0": 0.6612875,
+    "ptgt": null,
+    "oldlr": null,
+    "oldlr0": null,
+    "oldtop": null,
+    "cew": 1.6550235
+   },
+   "resid0_wb": {
+    "": 0.5189865,
+    "P": 0.5192315000000001,
+    "F": 0.518742,
+    "O": 0.9271455,
+    "T": 0.9311400000000001,
+    "G": 0.9303295
+   }
+  },
+  "SO-CE-boundary:gates:eta40": {
+   "k": 6,
+   "failed": 0,
+   "V1": 6,
+   "V3": 2,
+   "V2wb": 0,
+   "V2_A": 0,
+   "V2s_A": 0,
+   "L_A": 5,
+   "V2_Fp": 0,
+   "V2s_Fp": 0,
+   "L_Fp": 5,
+   "V2_N": 0,
+   "V2s_N": 1,
+   "L_N": 5,
+   "ACQ_N": 2
+  },
+  "KEYS": {
+   "etas": [
+    "eta10",
+    "eta40"
+   ],
+   "per_eta": 24,
+   "missing": []
+  },
+  "EXTEND": []
+ },
+ "n_cells": 60
+}

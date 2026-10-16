@@ -1,0 +1,149 @@
+{
+ "P3.1 kv CE equals -log(1-s)": {
+  "symbolic_zero": false,
+  "numeric_max_abs": 8.881784197001252e-16,
+  "passed": true
+ },
+ "P3.2 FO a-field G_FO = dlW/da = -s": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P3.3 ds/da = -s(1-s)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 3.2959746043559335e-16,
+  "passed": true
+ },
+ "P3.4 (V=5) e_v-p = s*(e_v - (1-e_v)/(V-1))": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 1.232595164407831e-32,
+  "passed": true
+ },
+ "P3.5 (V=5) ||e_v-p||^2 = s^2 V/(V-1)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 8.326672684688674e-17,
+  "passed": true
+ },
+ "P3.6 (V=5) query margin = b eta V/(V-1) s": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 5.054484803531356e-15,
+  "passed": true
+ },
+ "P3.7 (V=5) query CE = log(1+(V-1)exp(-kappa s))": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 3.552713678800501e-15,
+  "passed": true
+ },
+ "P3.4 (V=16) e_v-p = s*(e_v - (1-e_v)/(V-1))": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 2.8888949165808538e-33,
+  "passed": true
+ },
+ "P3.5 (V=16) ||e_v-p||^2 = s^2 V/(V-1)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 1.3877787807814457e-17,
+  "passed": true
+ },
+ "P3.6 (V=16) query margin = b eta V/(V-1) s": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 1.4754357624632871e-15,
+  "passed": true
+ },
+ "P3.7 (V=16) query CE = log(1+(V-1)exp(-kappa s))": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 8.881784197001252e-16,
+  "passed": true
+ },
+ "P4.1 G_SO = s (f(s) - 1)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 7.600060554225481e-14,
+  "passed": true
+ },
+ "P4.2 f(0) = lam b eta": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P4.3 f'(s) = -lam kappa[(1-pi) + (1-s) kappa pi (1-pi)] (<0)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 3.785370524028305e-12,
+  "passed": true
+ },
+ "P4.4 f(s)=1 <=> E*(lam kappa(1-s)-1) = 1  [identity f-1 = (E(lk(1-s)-1)-1)/(1+E)]": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 2.842170943040401e-14,
+  "passed": true
+ },
+ "P5.1 G_SO(a) = -s(1-s) dP/ds": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 3.1234455791217475e-14,
+  "passed": true
+ },
+ "P5.2 P'(0+) = 1 - lam b eta": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P5.3 squared loss: P'(0) = -lam eta (<0 always)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P5.4 squared loss: r* = lam eta/(1+lam eta^2) -> a_SO = 1 - r* (P0.2 at rho=1)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P6.1 FO a-field (noisy) = sigma_V(a) - q": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P6.2 a_FO = log(q(V-1)/(1-q)) zeroes it": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 1.1102230246251565e-16,
+  "passed": true
+ },
+ "P6.3 E||e_v-p||^2 at FO point = (1-lam_ch^2)(V-1)/V (= measured 'Bayes residual')": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 3.3306690738754696e-16,
+  "passed": true
+ },
+ "P6.4 margins per (b eta), V=16, q=.97": {
+  "clean": 0.032,
+  "corrupted_vs_other": 1.0,
+  "corrupted_vs_copy": 1.968
+ },
+ "P6.4 clean margin = (1-q)V/(V-1); corrupted margin vs others = 1": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P7.1 curvature of kv loss in a: gamma(a) = s(1-s) -> 0 as s->0": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P7.2 Thm4.3 ratio 2 Lz eps/gamma (a-coords, at s) = 2 lam b eta": {
+  "symbolic_zero": false,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P7.3 Thm4.3 ratio (s-coords, gamma_s(0)=1) = 2 lam b eta": {
+  "symbolic_zero": false,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P8.1 FO zeta-field: -dQ/dzeta = m (1 - pi(m))": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 8.396061623727746e-16,
+  "passed": true
+ },
+ "P8.2 small-m: lam m (1-pi(m)) = lam b eta s + O(s^2)": {
+  "symbolic_zero": true,
+  "numeric_max_abs": 0.0,
+  "passed": true
+ },
+ "P8.3 note": "d log m/dt = s(lam b eta - 1 + s) + O(s^2): the FO write margin grows under a free log-step iff lam b eta > 1 - s; eta' = lam b eta^2 s (1+O(s)) > 0 always.",
+ "ALL_PASSED": true
+}

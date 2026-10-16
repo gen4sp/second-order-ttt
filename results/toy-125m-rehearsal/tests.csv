@@ -1,0 +1,16 @@
+a,a_only,alternative,b,b_only,init,mode_a,mode_b,n,n_expected,p_exact,p_holm,paired_seeds,reject_holm_05,retained_a,retained_b,status,test
+e2e2emb,4,greater,e2e1emb,0,e2e2emb,floor,floor,10,10,0.0625,0.75,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,6,complete,C1_floor
+e2e2emb,10,greater,e2e1emb,0,e2e2emb,rewarm,rewarm,10,10,0.0009765625,0.0146484375,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,10,0,complete,C1_rewarm
+e2e2emb,0,two-sided,e2e2emb,0,e2e2emb,floor,rewarm,10,10,1.0,1.0,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,10,complete,C2_e2e2emb_e2e2emb
+e2e1emb,6,two-sided,e2e1emb,0,e2e2emb,floor,rewarm,10,10,0.03125,0.40625,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,6,0,complete,C2_e2e2emb_e2e1emb
+e2e1emb_lin,0,two-sided,e2e1emb_lin,0,e2e2emb,floor,rewarm,10,10,1.0,1.0,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,10,complete,C2_e2e2emb_e2e1emb_lin
+e2e2,0,two-sided,e2e2,0,e2e2,floor,rewarm,9,9,1.0,1.0,"[0, 5, 6, 7, 8, 11, 15, 17, 19]",False,9,9,complete,C2_e2e2_e2e2
+e2e1,1,two-sided,e2e1,1,e2e2,floor,rewarm,9,9,1.0,1.0,"[0, 5, 6, 7, 8, 11, 15, 17, 19]",False,7,7,complete,C2_e2e2_e2e1
+e2e1_lin,0,two-sided,e2e1_lin,0,e2e2,floor,rewarm,9,9,1.0,1.0,"[0, 5, 6, 7, 8, 11, 15, 17, 19]",False,9,9,complete,C2_e2e2_e2e1_lin
+e2e1_code,1,two-sided,e2e1_code,1,e2e2,floor,rewarm,9,9,1.0,1.0,"[0, 5, 6, 7, 8, 11, 15, 17, 19]",False,7,7,complete,C2_e2e2_e2e1_code
+e2e1emb_lin,4,greater,e2e1emb,0,e2e2emb,floor,floor,10,10,0.0625,0.75,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,6,complete,C3_e2e1emb_floor
+e2e1emb_lin,0,two-sided,e2e2emb,0,e2e2emb,floor,floor,10,10,1.0,1.0,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,10,complete,C3_e2e2emb_floor
+e2e1_code,0,greater,e2e1,0,e2e2,floor,floor,9,9,1.0,1.0,"[0, 5, 6, 7, 8, 11, 15, 17, 19]",False,7,7,complete,C4_floor
+e2e1emb_lin,10,greater,e2e1emb,0,e2e2emb,rewarm,rewarm,10,10,0.0009765625,0.0146484375,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,10,0,complete,C3_e2e1emb_rewarm
+e2e1emb_lin,0,two-sided,e2e2emb,0,e2e2emb,rewarm,rewarm,10,10,1.0,1.0,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,10,complete,C3_e2e2emb_rewarm
+e2e1_code,0,greater,e2e1,0,e2e2,rewarm,rewarm,9,9,1.0,1.0,"[0, 5, 6, 7, 8, 11, 15, 17, 19]",False,7,7,complete,C4_rewarm

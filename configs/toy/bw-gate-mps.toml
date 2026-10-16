@@ -1,0 +1,59 @@
+# BW1 profiling gate: MPS, 2 workers (outputs discarded, never scored).
+# Model, task and optimiser settings as in configs/toy/r4-4a.toml, with eta_lr = 0, no checkpoints
+# and 2 workers.
+experiment = "ttt"
+seed = 0
+
+[ttt]
+process_name = "TTM-pgm2-02"
+device = "mps"
+workers = 2
+max_minutes = 30  # profile: 200-step cells; a cell is skipped only if it STARTS after 30 min
+# TF32 off for matmul and cuDNN, asserted and logged by every worker before any
+# allocation, so the in-run S5 identity check holds at 1e-4.
+tf32 = false
+# torch's MPS fraction is relative to Metal's recommendedMaxWorkingSetSize (logged per
+# worker as MPS_CAP), not to RAM.
+mps_memory_fraction = 0.20
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 1500
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0  # freezes shared rho (all four fast-tensor etas = eta_base)
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 25
+probe_every = 25
+n_probe = 32
+kamin_switch = 500
+copy_noise_q = [0.99, 0.97, 0.95, 0.90]
+rf_probability = 0.05
+kv_eta_lr = 0.01
+kv_eta10_lr = 0.1
+d1_n_eval = 256
+checkpoint_steps = []
+checkpoint_dense = []
+checkpoint_dense_arms = []
+checkpoint_dense_max_seed = 4
+checkpoint_arm_steps = []
+cells = [
+  { task = "echo", seed = 100, arm = "e2e1emb_cn95", eta_base = 40, diag = false, steps = 200 },
+  { task = "echo", seed = 101, arm = "e2e1emb_cn95", eta_base = 40, diag = false, steps = 200 },
+  { task = "echo", seed = 100, arm = "e2e1emb", eta_base = 40, diag = false, steps = 200 },
+  { task = "echo", seed = 101, arm = "e2e1emb", eta_base = 40, diag = false, steps = 200 },
+]

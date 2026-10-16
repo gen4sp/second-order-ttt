@@ -1,0 +1,107 @@
+# CHR full run: chronology of FO write starvation (pre-registered protocol).
+# Toy and training are BW1a/TH-RC's (R4-4b toy, fixed eta: eta_lr = 0). Runs on one
+# CUDA GPU (TF32 off); FO-CE and cn97 cells fork at their first quick acc >= .90.
+experiment = "chr"
+seed = 0
+
+[chr]
+process_name = "TTM-chr-01"
+protocol = "chr-full-v2"
+require_cuda = true  # the full protocol runs on CUDA only
+hard_grace_minutes = 60  # watchdog: hard stop at max_minutes + this
+device = "auto"
+workers = 5
+threads_per_worker = 2
+max_minutes = 150  # checked at each cell start
+tf32 = false
+mps_memory_fraction = 0.20  # inert on CUDA
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 1500
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+n_probe = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0
+grad_clip = 1.0
+g_clip = 10.0
+copy_noise_q = [0.99, 0.97, 0.95, 0.90]
+rf_probability = 0.05
+# CHR logging and forks (exp_chr.CHR_DEFAULTS)
+log_every = 5
+probe_every = 25
+cross_every = 25
+chunk_early = 5
+chunk_late = 6
+fork_arms = ["e2e1emb", "e2e1emb_cn97"]
+fork_acc = 0.90
+rp_cap = 1000.0
+mediation_p = 0.5  # G2 per-event mediation set (eval-only, every main final)
+mediation_cap = 1000.0
+ckpt_steps = [100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+ckpt_dense_arms = ["e2e1emb"]
+ckpt_steps_sparse = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+branch_ckpt_every = 100
+branch_ckpt_tags = ["rp03", "nc03"]
+# primary seeds 0-5 interleaved across arms; FO reserves 6-9 last
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 1, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 1, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 2, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 2, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 2, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 3, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 3, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 3, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 4, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 4, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 4, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 5, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 5, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 5, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 6, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 7, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 8, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 9, arm = "e2e1emb", eta_base = 40 },
+]
+# Per-arm rule tables (after `cells`: TOML keys below a header belong to that table).
+[chr.forks]
+e2e1emb = [
+  { rule = "ce" },
+  { rule = "rp", r_min = 0.03 },
+  { rule = "nc", r_min = 0.03 },
+  { rule = "rp", r_min = 0.10 },
+  { rule = "nc", r_min = 0.10 },
+]
+e2e1emb_cn97 = [
+  { rule = "ce" },
+  { rule = "rs", r_cap = 0.01 },
+  { rule = "ns", r_cap = 0.01 },
+]
+
+[chr.cross_rules]
+e2e1emb = ["rp03"]
+e2e2emb = ["rp03"]
+e2e1emb_cn97 = ["rs01"]
+
+[chr.final_rules]
+e2e1emb = ["rp03", "rp10"]
+e2e2emb = ["rp03", "rp10"]
+e2e1emb_cn97 = ["rs01", "rp03"]

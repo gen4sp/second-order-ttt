@@ -1,0 +1,128 @@
+{
+ "A0": {
+  "ever_acquired": 8,
+  "ms_step": 198.27448832802474,
+  "n": 12,
+  "peak_memory_mb": 990.4,
+  "retained": 0,
+  "retained_ce": 0,
+  "retained_own": 0
+ },
+ "G-hi": {
+  "ever_acquired": 0,
+  "ms_step": 244.5902122029414,
+  "n": 12,
+  "peak_memory_mb": 1023.4,
+  "retained": 0,
+  "retained_ce": 0,
+  "retained_own": 0
+ },
+ "G-hi-c": {
+  "ever_acquired": 0,
+  "ms_step": 248.3292903440694,
+  "n": 12,
+  "peak_memory_mb": 1023.4,
+  "retained": 0,
+  "retained_ce": 0,
+  "retained_own": 0
+ },
+ "G-lo": {
+  "ever_acquired": 10,
+  "ms_step": 243.52099824075898,
+  "n": 12,
+  "peak_memory_mb": 1023.4,
+  "retained": 0,
+  "retained_ce": 0,
+  "retained_own": 0
+ },
+ "G-scalar": {
+  "ever_acquired": 5,
+  "ms_step": 239.37713773921132,
+  "n": 12,
+  "peak_memory_mb": 1015.3,
+  "retained": 0,
+  "retained_ce": 0,
+  "retained_own": 0
+ },
+ "G-sg": {
+  "ever_acquired": 0,
+  "ms_step": 242.18685125621656,
+  "n": 12,
+  "peak_memory_mb": 1023.3,
+  "retained": 0,
+  "retained_ce": 0,
+  "retained_own": 0
+ },
+ "M-early": {
+  "ever_acquired": 11,
+  "ms_step": 205.3930334125956,
+  "n": 12,
+  "peak_memory_mb": 1085.0,
+  "retained": 1,
+  "retained_ce": 1,
+  "retained_own": 1
+ },
+ "M-late": {
+  "ever_acquired": 12,
+  "ms_step": 218.9162262560179,
+  "n": 12,
+  "peak_memory_mb": 1085.0,
+  "retained": 12,
+  "retained_ce": 12,
+  "retained_own": 12
+ },
+ "M-p125": {
+  "ever_acquired": 12,
+  "ms_step": 248.23794576028982,
+  "n": 12,
+  "peak_memory_mb": 972.3,
+  "retained": 11,
+  "retained_ce": 11,
+  "retained_own": 11
+ },
+ "M-p25": {
+  "ever_acquired": 12,
+  "ms_step": 249.98218341109654,
+  "n": 12,
+  "peak_memory_mb": 993.6,
+  "retained": 11,
+  "retained_ce": 11,
+  "retained_own": 11
+ },
+ "M-p50": {
+  "ever_acquired": 11,
+  "ms_step": 250.37673162296414,
+  "n": 12,
+  "peak_memory_mb": 1013.6,
+  "retained": 11,
+  "retained_ce": 11,
+  "retained_own": 11
+ },
+ "NC-all": {
+  "ever_acquired": 9,
+  "ms_step": 290.1257037495573,
+  "n": 12,
+  "peak_memory_mb": 943.1,
+  "retained": 0,
+  "retained_ce": 0,
+  "retained_own": 0
+ },
+ "RP-all": {
+  "ever_acquired": 12,
+  "ms_step": 246.65855173952878,
+  "n": 12,
+  "peak_memory_mb": 910.9,
+  "retained": 12,
+  "retained_ce": 0,
+  "retained_own": 12
+ },
+ "SO": {
+  "ever_acquired": 12,
+  "ms_step": 213.04268677098057,
+  "n": 12,
+  "peak_memory_mb": 1076.7,
+  "retained": 12,
+  "retained_ce": 12,
+  "retained_own": 12
+ }
+}

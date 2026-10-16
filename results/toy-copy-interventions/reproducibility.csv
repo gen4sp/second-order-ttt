@@ -1,0 +1,11 @@
+available,bound_ever,bound_ever_differs,bound_final,bound_final_differs,first_batch_sha1,first_batch_sha1_differs,r42l_bound_ever,r42l_bound_final,r42l_t_lose,seed,t_lose,t_lose_differs
+True,True,False,False,False,3381d736d365c1355e5c39a8e363bcaead47f994,False,True,False,250,0,250,False
+True,True,False,False,False,146f24225fe0a535a8be58c5864fbaafc211e99b,False,True,False,250,1,250,False
+True,True,False,False,False,f8dd416cd21a7191d915a7a9ec2c4fdf19d61601,False,True,False,425,2,300,True
+True,True,False,False,False,a33f9ce49282257bb535f90e892a7a043b4eb00e,False,True,False,250,3,275,True
+True,True,False,False,False,280a99503f9b6d78fe4fc25253e7284c9d36f150,False,True,False,300,4,300,False
+True,True,False,False,False,d6e14eb399949c3ce0744338351d372ec32a7336,False,True,False,275,5,275,False
+True,True,False,False,False,9ccfe67ed1cce51b6f7d12873b06dc750a298349,False,True,False,300,6,300,False
+True,True,False,False,False,32c3c66866388224399d0af577ad1ddeaf5bb27e,False,True,False,250,7,275,True
+True,True,False,False,False,590ae8820950ed2f9e52a6ef3a4701c15f06e988,False,True,False,275,8,300,True
+True,True,False,False,False,49abb571bbdd4c776f1b30abc0ad0bbd65e5d620,False,True,False,300,9,275,True

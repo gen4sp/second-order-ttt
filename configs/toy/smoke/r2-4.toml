@@ -1,0 +1,18 @@
+experiment = "wab"
+seed = 0
+
+[wab]
+process_name = "TTM-wab-00-smoke"
+device = "cpu"
+ckpt_root = "outputs"
+smoke = true
+checkpoints = [
+  { path = "r2b/checkpoints/echo__s0__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2b-e2e2-s0" },
+  { path = "r2b/checkpoints/echo__s0__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.13208, label = "r2b-e2e1-s0" },
+]
+
+[wab.echo]
+T = 512
+n_keys = 16
+n_eval = 32
+eval_batch = 32

@@ -1,0 +1,48 @@
+experiment = "p01"
+seed = 0
+
+[p01]
+process_name = "TTM-p01-95"
+device = "cpu"
+# CPU only, sized for a container with a 23.8-CPU cgroup quota (nproc shows the host's 112).
+# A spawn pool over checkpoints, 4 torch threads each, 20 threads in total.
+# exp_p01 refuses workers > 1 on macOS.
+workers = 5
+# Fixed full evaluation; --smoke is the only CLI override.
+n_eval = 256
+eval_seed = 20250308
+eval_batch = 4
+n_heads = 4
+n_layers = 4
+n_keys = 16
+T = 512
+window = 64
+chunk = 64
+g_clip = 10.0
+out_dir = "outputs/p0-1"
+loss_times = "outputs/r4-2l/data/r42l-sc-times.csv"
+smoke_checkpoints = [
+  "outputs/r4-2l/checkpoints/echo__s0__e2e1emb__eta10__st1500__step200.pt",
+  "outputs/r4-2l/checkpoints/echo__s0__e2e1emb__eta10__st1500__step300.pt",
+  "outputs/r4-3/checkpoints/echo__s0__e2e2emb__eta10__st1500.pt",
+]
+
+[[p01.sources]]
+name = "r42l"
+root = "outputs/r4-2l/checkpoints"
+arms = ["e2e1emb", "e2e1emb_w600", "e2e1emb_linkv", "e2e1emb_lin"]
+
+[[p01.sources]]
+name = "r41"
+root = "outputs/r4-1/checkpoints"
+arms = ["e2e2emb", "e2e2", "e2e1emb", "e2e1"]
+
+[[p01.sources]]
+name = "r43"
+root = "outputs/r4-3/checkpoints"
+arms = ["e2e2emb", "e2e2", "e2e1emb", "e2e1", "e2e1emb_kvm"]
+
+[[p01.sources]]
+name = "r42"
+root = "outputs/r4-2/checkpoints"
+arms = ["e2e1emb_kvm"]

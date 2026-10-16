@@ -1,0 +1,57 @@
+# P3-a CPU smoke (local only; smoke seeds, tiny geometry): exercises parity -> CAL ->
+# logged freeze -> 12 main configurations x 2 seeds -> analysis through python -m tttmem.run.
+# Not a measurement.  Output root is overridden on the command line or edited per run.
+experiment = "p3a"
+seed = 0
+
+[p3a]
+smoke = true
+process_name = "TTM-s3a-19-smoke"
+device = "cpu"
+workers = 1
+threads_per_worker = 4
+tf32 = false
+resume = true
+output_root = "outputs/p3a/smoke"
+max_hours = 1.0
+cutoff_margin_s = 60
+estimate_wall_s = 900
+stall_s = 900
+parity = true
+parity_batch = 2
+profile_steps = 1
+run_analysis = true
+d_model = 32
+n_layers = 2
+n_heads = 2
+backbone_mult = 2
+fast_mult = 2
+window = 16
+chunk = 16
+T = 128
+n_keys = 4
+steps = 6
+batch = 4
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+grad_clip = 1.0
+eta_base = 40.0
+eta_lr = 0.0
+g_clip = 10.0
+n_eval = 8
+n_val = 8
+n_quick_eval = 4
+eval_batch = 4
+quick_every = 3
+qual_every = 3
+log_every = 1
+rules = ["ce", "lin", "own"]
+orders = ["FO", "SO"]
+tasks = ["echo", "echo_ctrl"]
+seeds = [0, 1]
+cal_seeds = [2]
+cal_steps = 3
+cal_rounds = 2
+cal_start = { lin = 1.0, own = 0.01 }

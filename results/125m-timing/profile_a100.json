@@ -1,0 +1,423 @@
+[
+ {
+  "kind": "env",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "mem_gb": 79.249755859375,
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "threads": 252,
+  "cfg": {
+   "preset": "125m",
+   "seq_len": 8192,
+   "device": "cuda",
+   "arms": [
+    "e2e2",
+    "e2e1-ce",
+    "e2e1-lin",
+    "e2e1-aice"
+   ],
+   "micro_batches": [
+    1,
+    2,
+    4,
+    8
+   ],
+   "timed_steps": 3,
+   "eval_batches": [
+    8,
+    16,
+    32
+   ],
+   "eval_modes": [
+    "ce",
+    "lin",
+    "aice",
+    "noadapt",
+    "heldout"
+   ],
+   "validate": false,
+   "val_seq": 4096,
+   "exact_so_seq": 3072,
+   "compile_check": false,
+   "loader_check": false,
+   "max_minutes": 12,
+   "trunc_check": true
+  }
+ },
+ {
+  "kind": "model",
+  "params": {
+   "total": 184363776,
+   "embedding": 98500608,
+   "non_embedding": 85863168,
+   "fast": 11501568
+  }
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.9534971516927083,
+  "s_opt": 0.006148320198059082,
+  "peak_alloc_micro_gb": 15.59561014175415,
+  "tok_per_s": 8591.530646375864,
+  "s_per_step_gb64": 61.02996602853139,
+  "peak_alloc_gb": 15.59561014175415,
+  "peak_reserved_gb": 17.693359375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 1.7905138346354166,
+  "s_opt": 0.008596511840820312,
+  "peak_alloc_micro_gb": 27.963823795318604,
+  "tok_per_s": 9150.445912827086,
+  "s_per_step_gb64": 57.30503922017415,
+  "peak_alloc_gb": 27.963823795318604,
+  "peak_reserved_gb": 33.109375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 3.4753678385416666,
+  "s_opt": 0.005621632099151611,
+  "peak_alloc_micro_gb": 52.7494912147522,
+  "tok_per_s": 9428.642239421224,
+  "s_per_step_gb64": 55.611507048765816,
+  "peak_alloc_gb": 52.7494912147522,
+  "peak_reserved_gb": 63.732421875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 8,
+  "oom": true
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.3753746337890625,
+  "s_opt": 0.005418879985809326,
+  "peak_alloc_micro_gb": 10.260307312011719,
+  "tok_per_s": 21823.531114261175,
+  "s_per_step_gb64": 24.02939544248581,
+  "peak_alloc_gb": 10.260307312011719,
+  "peak_reserved_gb": 10.623046875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.515669677734375,
+  "s_opt": 0.005529695987701416,
+  "peak_alloc_micro_gb": 17.296630859375,
+  "tok_per_s": 31772.277307411336,
+  "s_per_step_gb64": 16.5069593834877,
+  "peak_alloc_gb": 17.296630859375,
+  "peak_reserved_gb": 17.8046875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.8943373209635417,
+  "s_opt": 0.006151360034942627,
+  "peak_alloc_micro_gb": 31.384536743164062,
+  "tok_per_s": 36639.419189949935,
+  "s_per_step_gb64": 14.31554849545161,
+  "peak_alloc_gb": 31.384536743164062,
+  "peak_reserved_gb": 33.083984375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 8,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 1.75221630859375,
+  "s_opt": 0.006991712093353272,
+  "peak_alloc_micro_gb": 59.56779479980469,
+  "tok_per_s": 37401.774928459745,
+  "s_per_step_gb64": 14.024722180843353,
+  "peak_alloc_gb": 59.56779479980469,
+  "peak_reserved_gb": 63.61328125
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.46888765462239584,
+  "s_opt": 0.006429024219512939,
+  "peak_alloc_micro_gb": 10.261290550231934,
+  "tok_per_s": 17471.136037047454,
+  "s_per_step_gb64": 30.015238920052848,
+  "peak_alloc_gb": 10.261290550231934,
+  "peak_reserved_gb": 10.736328125
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.5673722330729166,
+  "s_opt": 0.005639520168304444,
+  "peak_alloc_micro_gb": 17.29816722869873,
+  "tok_per_s": 28876.98594494734,
+  "s_per_step_gb64": 18.161550978501637,
+  "peak_alloc_gb": 17.29816722869873,
+  "peak_reserved_gb": 17.84765625
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.966001953125,
+  "s_opt": 0.005963103771209717,
+  "peak_alloc_micro_gb": 31.384615898132324,
+  "tok_per_s": 33921.256467438885,
+  "s_per_step_gb64": 15.46199435377121,
+  "peak_alloc_gb": 31.384615898132324,
+  "peak_reserved_gb": 33.064453125
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 8,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 1.8995821940104165,
+  "s_opt": 0.005780447959899902,
+  "peak_alloc_micro_gb": 59.57289409637451,
+  "tok_per_s": 34500.218104087275,
+  "s_per_step_gb64": 15.202438000043232,
+  "peak_alloc_gb": 59.57289409637451,
+  "peak_reserved_gb": 63.6171875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.5380072428385417,
+  "s_opt": 0.00660364818572998,
+  "peak_alloc_micro_gb": 10.842711448669434,
+  "tok_per_s": 15226.560811298323,
+  "s_per_step_gb64": 34.4390671898524,
+  "peak_alloc_gb": 10.842711448669434,
+  "peak_reserved_gb": 11.41796875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.6804707438151042,
+  "s_opt": 0.005709216117858886,
+  "peak_alloc_micro_gb": 18.43075466156006,
+  "tok_per_s": 24077.449543446968,
+  "s_per_step_gb64": 21.78077301820119,
+  "peak_alloc_gb": 18.43075466156006,
+  "peak_reserved_gb": 19.37109375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 1.1892980143229166,
+  "s_opt": 0.00595420789718628,
+  "peak_alloc_micro_gb": 33.637221336364746,
+  "tok_per_s": 27552.387715584697,
+  "s_per_step_gb64": 19.034722437063852,
+  "peak_alloc_gb": 33.637221336364746,
+  "peak_reserved_gb": 36.216796875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 8,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 2.3343435872395832,
+  "s_opt": 0.00727558422088623,
+  "peak_alloc_micro_gb": 64.05650234222412,
+  "tok_per_s": 28074.7017526661,
+  "s_per_step_gb64": 18.68202428213755,
+  "peak_alloc_gb": 64.05650234222412,
+  "peak_reserved_gb": 65.9375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 1,
+  "trunc_kv": true,
+  "so_fused_forward": false,
+  "s_per_micro": 0.2809608154296875,
+  "s_opt": 0.0057588801383972165,
+  "peak_alloc_micro_gb": 10.253776550292969,
+  "tok_per_s": 29157.090776062716,
+  "s_per_step_gb64": 17.987251067638397,
+  "peak_alloc_gb": 10.253776550292969,
+  "peak_reserved_gb": 10.623046875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": true,
+  "s_per_micro": 0.8905474446614584,
+  "s_opt": 0.00658787202835083,
+  "peak_alloc_micro_gb": 15.59255838394165,
+  "tok_per_s": 9198.836119409885,
+  "s_per_step_gb64": 57.001624330361686,
+  "peak_alloc_gb": 15.59255838394165,
+  "peak_reserved_gb": 17.873046875
+ },
+ {
+  "kind": "eval",
+  "mode": "ce",
+  "batch": 8,
+  "s_per_batch": 0.7986549072265625,
+  "tok_per_s": 82057.96947718339,
+  "peak_alloc_gb": 16.935625076293945
+ },
+ {
+  "kind": "eval",
+  "mode": "ce",
+  "batch": 16,
+  "s_per_batch": 1.5590130615234374,
+  "tok_per_s": 84073.70228952345,
+  "peak_alloc_gb": 31.736619472503662
+ },
+ {
+  "kind": "eval",
+  "mode": "ce",
+  "batch": 32,
+  "s_per_batch": 3.07558349609375,
+  "tok_per_s": 85233.90775537226,
+  "peak_alloc_gb": 61.34367513656616
+ },
+ {
+  "kind": "eval",
+  "mode": "lin",
+  "batch": 8,
+  "s_per_batch": 0.44478741455078125,
+  "tok_per_s": 147342.29849149156,
+  "peak_alloc_gb": 5.778524398803711
+ },
+ {
+  "kind": "eval",
+  "mode": "lin",
+  "batch": 16,
+  "s_per_batch": 0.8396810302734375,
+  "tok_per_s": 156097.36944672564,
+  "peak_alloc_gb": 9.401235580444336
+ },
+ {
+  "kind": "eval",
+  "mode": "lin",
+  "batch": 32,
+  "s_per_batch": 1.614789306640625,
+  "tok_per_s": 162339.44510405452,
+  "peak_alloc_gb": 16.673636436462402
+ },
+ {
+  "kind": "eval",
+  "mode": "aice",
+  "batch": 8,
+  "s_per_batch": 1.0264095458984375,
+  "tok_per_s": 63849.75691417112,
+  "peak_alloc_gb": 21.075334548950195
+ },
+ {
+  "kind": "eval",
+  "mode": "aice",
+  "batch": 16,
+  "s_per_batch": 2.012703857421875,
+  "tok_per_s": 65122.3474912467,
+  "peak_alloc_gb": 40.01011800765991
+ },
+ {
+  "kind": "eval",
+  "mode": "aice",
+  "batch": 32,
+  "oom": true
+ },
+ {
+  "kind": "eval",
+  "mode": "noadapt",
+  "batch": 8,
+  "s_per_batch": 0.29891998291015626,
+  "tok_per_s": 219242.61925204773,
+  "peak_alloc_gb": 3.9177732467651367
+ },
+ {
+  "kind": "eval",
+  "mode": "noadapt",
+  "batch": 16,
+  "s_per_batch": 0.5699813842773438,
+  "tok_per_s": 229958.38744133874,
+  "peak_alloc_gb": 5.739619255065918
+ },
+ {
+  "kind": "eval",
+  "mode": "noadapt",
+  "batch": 32,
+  "s_per_batch": 1.0981793212890625,
+  "tok_per_s": 238707.82750879947,
+  "peak_alloc_gb": 9.382275104522705
+ },
+ {
+  "kind": "eval",
+  "mode": "heldout",
+  "batch": 8,
+  "s_per_batch": 0.876037109375,
+  "tok_per_s": 74809.616280703,
+  "peak_alloc_gb": 17.411027908325195
+ },
+ {
+  "kind": "eval",
+  "mode": "heldout",
+  "batch": 16,
+  "s_per_batch": 1.726277099609375,
+  "tok_per_s": 75927.55533260517,
+  "peak_alloc_gb": 32.67302083969116
+ },
+ {
+  "kind": "eval",
+  "mode": "heldout",
+  "batch": 32,
+  "s_per_batch": 3.414308837890625,
+  "tok_per_s": 76778.05741848289,
+  "peak_alloc_gb": 63.21836996078491
+ },
+ {
+  "kind": "done",
+  "wall_s": 173.91494870185852,
+  "skipped": []
+ }
+]

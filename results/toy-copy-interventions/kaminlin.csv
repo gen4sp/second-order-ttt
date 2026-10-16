@@ -1,0 +1,11 @@
+bound_final,query_acc,seed,stage2_ever_bound,stage2_first_bound
+True,0.999756,0,True,900
+True,0.999756,1,True,750
+True,1.0,2,True,825
+True,1.0,3,True,725
+True,1.0,4,True,725
+True,0.999756,5,True,850
+True,1.0,6,True,725
+True,1.0,7,True,775
+True,1.0,8,True,700
+True,1.0,9,True,700

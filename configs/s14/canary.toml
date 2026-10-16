@@ -1,0 +1,63 @@
+# S14 canary: 30-step run of every arm plus read and passkey batch benchmarks (single CUDA GPU).
+# Expected 25-35 minutes on an RTX 4090; max_hours caps it at 40 minutes.
+experiment = "p2"
+seed = 3
+[p2]
+mode = "s14_pod_job"
+process_name = "TTM-s14-63"
+process_nn = 63
+layout = "R"
+preset = "mini-m"
+out_dir = "outputs/s14"
+data_dir = "data/p2data"
+device = "cuda"
+base_steps = 1200
+max_hours = 0.66666667
+passkey = true
+passkey_docs = 8
+passkey_seed = 1014
+read_batch = 8
+passkey_batch = 8
+[p2.data]
+mode = "uploaded"
+rebuild_c = false
+verify_c = true
+workers = 1
+c_rows = 25600
+expected_hashes = "configs/s14/data/expected-sha256.json"
+expected_c_hashes = "configs/s14/data/expected-c-sha256.json"
+[p2.pilot]
+enabled = false
+[p2.canary]
+enabled = true
+steps = 30
+guard_every = 10
+micro_batch = 4
+so_micro_batch = 1
+n_docs = 8
+ho_docs = 8
+read_etas = [1, 2, 4] # two frontier eta + kappa 1/2/4; H_LM once
+passkey_etas = [1, 2]
+benchmark_docs = 256
+benchmark_ho_docs = 128
+benchmark_hlm_docs = 256
+read_batches = [2, 4, 8, 16]
+passkey_batches = [1, 8, 16]
+[[p2.cells]]
+armdir = "so"
+seed = 3
+[[p2.cells]]
+armdir = "fo-ce"
+seed = 3
+[[p2.cells]]
+armdir = "fo-cm"
+seed = 3
+[[p2.cells]]
+armdir = "mini-p"
+seed = 3
+[[p2.cells]]
+armdir = "wsd-1200"
+seed = 3
+[[p2.cells]]
+armdir = "wsd-3469"
+seed = 3

@@ -1,0 +1,24 @@
+experiment = "p2"
+seed = 0
+
+# P2-1 rule-dose calibration (A6) on a single CUDA GPU; runs before FO-CE.
+[p2]
+mode = "calibrate"
+process_name = "TTM-p21-08-calib"
+init = "data/ckpt/init.pt"
+init_label = "P2-1: official 8K init"
+data_dir = "data/p2data"
+out_dir = "outputs/p21/calibrate"
+preset = "125m"
+dtype = "bf16"
+device = "cuda"
+seq_len = 8192
+split = "calib"
+docs = 128
+batch = 4
+fused_attn = true
+inner_lr = 1.0
+inner_clip = 1.0
+rules = ["lin", "aice"]
+grid = [1.0, 0.5, 0.25, 0.125, 0.0625, 0.03125, 0.015625]
+ce_grid = [2.0, 1.0, 0.5, 0.25]

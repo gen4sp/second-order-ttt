@@ -1,0 +1,93 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_ckpt_eval"
+process_name = "TTM-min-60-minie"
+process_nn = 60
+data_dir = "data/p2data"
+device = "cuda"
+out_dir = "outputs/mini/matrix/minie"
+max_hours = 1.5
+estimate_wall_s = 450
+production_configs = { "mini-s/e2e1-ce" = "configs/mini/e2e1-ce.toml", "mini-m/e2e1-ce" = "configs/mini/e2e1-ce-m.toml" }
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g40/runs/mini-s/e2e1-ce/s0/model_step1200.pt"
+rules = ["ce", "rp"]
+out = "outputs/mini/matrix/minie/mini-s/e2e1-ce/s0"
+estimate_wall_s = 450
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+ckpt = "outputs/mini/matrix/g41/runs/mini-s/e2e1-ce/s1/model_step1200.pt"
+rules = ["ce", "rp"]
+out = "outputs/mini/matrix/minie/mini-s/e2e1-ce/s1"
+estimate_wall_s = 450
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+ckpt = "outputs/mini/matrix/g42/runs/mini-s/e2e1-ce/s2/model_step1200.pt"
+rules = ["ce", "rp"]
+out = "outputs/mini/matrix/minie/mini-s/e2e1-ce/s2"
+estimate_wall_s = 450
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g40/runs/mini-s/e2e1-ce/s0/model_step1200.pt"
+rules = ["nc"]
+out = "outputs/mini/matrix/minie/mini-s/e2e1-ce/s0"
+estimate_wall_s = 220
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+rules = ["ce", "rp"]
+out = "outputs/mini/matrix/minie/mini-m/e2e1-ce/s0"
+estimate_wall_s = 550
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e1-ce/s1/model_step1200.pt"
+rules = ["ce", "rp"]
+out = "outputs/mini/matrix/minie/mini-m/e2e1-ce/s1"
+estimate_wall_s = 550
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e1-ce/s2/model_step1200.pt"
+rules = ["ce", "rp"]
+out = "outputs/mini/matrix/minie/mini-m/e2e1-ce/s2"
+estimate_wall_s = 550
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+rules = ["nc"]
+out = "outputs/mini/matrix/minie/mini-m/e2e1-ce/s0"
+estimate_wall_s = 265

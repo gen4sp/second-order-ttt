@@ -1,0 +1,52 @@
+experiment = "p2"
+seed = 0
+
+# TBB V2-V4 on a single CUDA GPU: one sequential matrix.
+# SO + FO-CE seeds 0-2, then p125 seeds 0-2, then RP seed 0. Data in data/tbb.
+[p2]
+mode = "mini_matrix"
+preset = "micro16k"
+device = "cuda"
+out_dir = "outputs/tbb/runs"
+registered_root = "outputs/tbb/runs"
+resume_root = "outputs/tbb/resume"
+process_prefix = "TTM-tbb"
+process_nn = 10
+workers = 1
+max_hours = 2.85
+gpu_mem_budget_gb = 21.0
+production_configs = { e2e2 = "configs/tbb/e2e2.toml", e2e1-ce = "configs/tbb/e2e1-ce.toml", e2e12-p125 = "configs/tbb/e2e12-p125.toml", e2e1-rp = "configs/tbb/e2e1-rp.toml" }
+# First-cell estimates (h) from local MPS V0 x1200 steps plus evals; replaced by measured wall_s once an arm finishes.
+podsmoke_hours = { "micro16k/e2e2" = 0.45, "micro16k/e2e1-ce" = 0.25, "micro16k/e2e12-p125" = 0.30, "micro16k/e2e1-rp" = 0.30 }
+memory_peaks_gb = { "micro16k/e2e2" = 4.0, "micro16k/e2e1-ce" = 3.0, "micro16k/e2e12-p125" = 4.0, "micro16k/e2e1-rp" = 3.0 }
+
+[[p2.cells]]
+arm = "e2e2"
+init_seed = 0
+[[p2.cells]]
+arm = "e2e1-ce"
+init_seed = 0
+[[p2.cells]]
+arm = "e2e2"
+init_seed = 1
+[[p2.cells]]
+arm = "e2e1-ce"
+init_seed = 1
+[[p2.cells]]
+arm = "e2e2"
+init_seed = 2
+[[p2.cells]]
+arm = "e2e1-ce"
+init_seed = 2
+[[p2.cells]]
+arm = "e2e12-p125"
+init_seed = 0
+[[p2.cells]]
+arm = "e2e12-p125"
+init_seed = 1
+[[p2.cells]]
+arm = "e2e12-p125"
+init_seed = 2
+[[p2.cells]]
+arm = "e2e1-rp"
+init_seed = 0

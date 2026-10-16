@@ -1,0 +1,55 @@
+{
+ "description": "GRU (arm R) and E2E-SO (arm T-E2E-SO-lo) trained on the same training episodes and read on the same evaluation episodes (hold_N, hold_X, hold_S, 150 each), original training seeds 0, 1, 2, final checkpoints (20000 steps). These are the evaluation sets of the training run, not the fresh-episode sets of original_seeds_fresh_episodes_summary.json.",
+ "metric": "AUROC of the imagined lift beyond the window, query delays L = 12, 24, 48 pooled; chance .5. Lists are per seed 0, 1, 2; *_mean is their unweighted mean.",
+ "timing": "s_per_step: seconds per training step for one process, measured over 20 calibration steps on one RTX 4090.",
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "arms": {
+  "R": {
+   "N": [
+    0.999558024691358,
+    0.9993950617283951,
+    0.9976567901234569
+   ],
+   "X": [
+    0.8893407407407407,
+    0.6985456790123457,
+    0.8739827160493827
+   ],
+   "S": [
+    0.9894740740740741,
+    0.9921876543209875,
+    0.994358024691358
+   ],
+   "N_mean": 0.9988699588477367,
+   "X_mean": 0.8206230452674896,
+   "S_mean": 0.9920065843621398,
+   "s_per_step": 0.030644168611615896
+  },
+  "T-E2E-SO-lo": {
+   "N": [
+    0.9881382716049384,
+    0.9974049382716049,
+    0.9966469135802469
+   ],
+   "X": [
+    0.7358370370370371,
+    0.8438395061728395,
+    0.7217506172839506
+   ],
+   "S": [
+    0.9998222222222222,
+    0.998874074074074,
+    0.9998419753086419
+   ],
+   "N_mean": 0.9940633744855968,
+   "X_mean": 0.7671423868312758,
+   "S_mean": 0.999512757201646,
+   "s_per_step": 0.3853681618347764
+  }
+ },
+ "step_time_ratio_so_over_gru": 12.575578953337953
+}

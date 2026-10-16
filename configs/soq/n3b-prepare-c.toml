@@ -1,0 +1,45 @@
+# SOQ-N3B step 1 of 3: extend the P2-1 store with train split C (CPU only).
+# FO-CM reads 16 x N_CM rows (N_CM ~ 3550 at r = 2.96: ~56 800 rows) but A + B hold 51 200; C adds
+# 25 600 documents >= 8193 tokens under the store's own filters (meta.json: min_chars, seed, SEQ,
+# DCLM and tokenizer revisions), sha1-deduplicated against every split, near-duplicate-filtered
+# against eval / ho / calib.  Then FO-CM (configs/soq/n3b-fo-cm.toml), then the reads
+# (configs/soq/n3b-reads.toml).
+#
+# In place, not a new directory: extend_store writes C into a staging directory inside the store,
+# verifies it, publishes it with os.replace, and checks that every pre-existing file (A, B, eval,
+# ho, calib, excluded_vocab, meta, manifests) is byte-identical before and after (sha256, also
+# against prepare_summary.json).  A new directory would need a full 5.6 GB copy of A/B/eval and
+# a second set of paths in every config, with no extra safety.  The record goes to
+# data/p2data/extensions.json; C alone is also packed to data/p2data-C.tar (+ .sha256)
+# for the FO-CM job.  A later split D: extend_quotas = { D = n }.
+#
+# Estimate (CPU machine, >= 8 vCPU / 16 GB RAM): ~14 DCLM shards (P2-1: 30 shards -> 55 168 documents,
+# ~1 840 per shard, 289 s at 1 worker); ~5-15 min including downloads.  Memory: the holdout
+# 64-gram index (32.2 M hashes) + tokenizer peaked at 3.1 GB RSS in the local smoke (no shard
+# workers); add ~2 GB per shard worker.  Disk +0.84 GB (C.bin) +0.84 GB (pack).
+# Input: data/p2data (the P2-1 store: meta.json, prepare_summary.json, A/B/eval/ho/calib).
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "prepare"
+process_name = "TTM-n3b-01-prep"
+out_dir = "data/p2data"
+dataset_repo = "mlfoundations/dclm-baseline-1.0-parquet"
+dataset_revision = "817d6752765f6a41261085171dd546b104f60626"
+tokenizer_repo = "NousResearch/Meta-Llama-3-8B"
+tokenizer_revision = "315b20096dc791d381d514deb5f8bd9c8d6d3061"
+min_chars = 30000
+seed = 0
+near_dup_stride = 32
+near_dup_n = 64
+workers = 4 # ~3 GB + ~2 GB per shard worker: 4 workers need ~11 GB RAM
+batch_size = 16
+log_every = 1000
+compute_eligible = true
+min_probes = 5
+extend = true
+extend_pack_path = "data/p2data-C.tar"
+
+[p2.extend_quotas]
+C = 25600

@@ -1,0 +1,27 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "prepare_code"
+process_name = "TTM-min-07-code"
+out_dir = "data/mini-code"
+splits = ["code_train", "code_eval"]
+shards = ["00000"]
+train_shards = ["00001", "00002", "00003", "00004", "00005", "00006", "00007", "00008", "00009"]
+quota = 1024
+train_quota = 10080
+pool_quota = 10000
+min_chars = 12000
+workers = 4
+dataset_repo = "codeparrot/github-code-clean"
+dataset_revision = "c48d40f9e70f0196f8236901ee35807f7d6c44c0"
+tokenizer_repo = "NousResearch/Meta-Llama-3-8B"
+tokenizer_revision = "315b20096dc791d381d514deb5f8bd9c8d6d3061"
+
+[[p2.train_refs]]
+data_dir = "data/mini-code"
+split = "code_train"
+
+[[p2.train_refs]]
+data_dir = "data/p2data"
+split = "A"

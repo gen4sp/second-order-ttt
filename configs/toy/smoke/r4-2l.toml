@@ -1,0 +1,60 @@
+experiment = "ttt"
+seed = 0
+
+# CPU smoke of the R4-2L harness: all seven arms, two seeds, tiny model,
+# 30 steps. One CPU worker; launch only after the process and memory checks.
+[ttt]
+process_name = "TTM-r42L-00-smoke"
+device = "cpu"
+workers = 1
+max_minutes = 10
+tf32 = false
+mps_memory_fraction = 0.20
+d_model = 32
+n_layers = 1
+n_heads = 4
+backbone_mult = 2
+fast_mult = 2
+window = 16
+chunk = 16
+T = 128
+steps = 30
+batch = 2
+n_keys = 4
+n_eval = 4
+n_val = 4
+n_quick_eval = 4
+eval_batch = 2
+lr = 0.001
+lr_total = 60
+warmup = 4
+lr_floor = 0.1
+eta_lr = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 10
+probe_every = 10
+n_probe = 4
+# tiny checkpoint lists, same config keys as the run: base steps, the dense window for
+# three arms at seeds 0-4, and w600's extra steps (all inside the 30 steps)
+checkpoint_steps = [10, 20, 30]
+checkpoint_dense = [15, 20, 25]
+checkpoint_dense_arms = ["e2e1emb", "e2e1emb_linkv", "e2e1emb_w600"]
+checkpoint_dense_max_seed = 4
+checkpoint_arm_steps = [{ arm = "e2e1emb_w600", steps = [25] }]
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_lin", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_linvW", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_linxkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_w600", eta_base = 10, diag = false },
+  { task = "echo_ctrl", seed = 0, arm = "e2e1emb_ctrl", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_lin", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_linvW", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_linxkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_w600", eta_base = 10, diag = false },
+  { task = "echo_ctrl", seed = 1, arm = "e2e1emb_ctrl", eta_base = 10, diag = false },
+]

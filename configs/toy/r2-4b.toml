@@ -1,0 +1,193 @@
+experiment = "kag"
+seed = 0
+
+[kag]
+process_name = "TTM-kag-01"
+device = "cpu"
+ckpt_root = "outputs"
+checkpoints = [
+  { path = "r2b/checkpoints/echo__s0__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2b-e2e2-s0" },
+  { path = "r2b/checkpoints/echo__s1__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.22998, label = "r2b-e2e2-s1" },
+  { path = "r2b/checkpoints/echo__s2__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.188477, label = "r2b-e2e2-s2" },
+  { path = "r2b/checkpoints/echo__s3__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2b-e2e2-s3" },
+  { path = "r2b/checkpoints/echo__s4__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.185059, label = "r2b-e2e2-s4" },
+  { path = "r2b/checkpoints/echo__s5__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.999756, label = "r2b-e2e2-s5" },
+  { path = "r2b/checkpoints/echo__s0__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.13208, label = "r2b-e2e1-s0" },
+  { path = "r2b/checkpoints/echo__s1__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.12085, label = "r2b-e2e1-s1" },
+  { path = "r2b/checkpoints/echo__s2__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.131836, label = "r2b-e2e1-s2" },
+  { path = "r2b/checkpoints/echo__s3__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.123779, label = "r2b-e2e1-s3" },
+  { path = "r2b/checkpoints/echo__s4__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.124756, label = "r2b-e2e1-s4" },
+  { path = "r2b/checkpoints/echo__s5__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.082764, label = "r2b-e2e1-s5" },
+  { path = "r2b/checkpoints/echo__s0__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.999512, label = "r2b-skip-e2e2-s0" },
+  { path = "r2b/checkpoints/echo__s1__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.186279, label = "r2b-skip-e2e2-s1" },
+  { path = "r2b/checkpoints/echo__s2__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.207764, label = "r2b-skip-e2e2-s2" },
+  { path = "r2b/checkpoints/echo__s3__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.946045, label = "r2b-skip-e2e2-s3" },
+  { path = "r2b/checkpoints/echo__s4__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.186523, label = "r2b-skip-e2e2-s4" },
+  { path = "r2b/checkpoints/echo__s5__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2b-skip-e2e2-s5" },
+  { path = "r2/checkpoints/echo__s0__e2e2__eta10__st3000.pt", arm = "e2e2", eta_base = 10, ref = 0.1907, label = "r2-e2e2-s0" },
+  { path = "r2/checkpoints/echo__s1__e2e2__eta10__st3000.pt", arm = "e2e2", eta_base = 10, ref = 0.1907, label = "r2-e2e2-s1" },
+  { path = "r2/checkpoints/echo__s2__e2e2__eta10__st3000.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2-e2e2-s2" },
+]
+
+[kag.echo]
+T = 512
+n_keys = 16
+n_eval = 256
+eval_batch = 32
+
+[kag.echo_ctrl]
+T = 512
+n_keys = 16
+n_eval = 256
+eval_batch = 32
+
+[kag.echo_ctrl_nor]
+T = 512
+n_keys = 16
+n_eval = 256
+eval_batch = 32
+
+[kag.echo_off]
+T = 640
+n_keys = 16
+n_eval = 256
+eval_batch = 32
+prefix_min = 64
+prefix_max = 192
+
+[wab]
+process_name = "TTM-wab-01"
+device = "cpu"
+ckpt_root = "outputs"
+checkpoints = [
+  { path = "r2b/checkpoints/echo__s0__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2b-e2e2-s0" },
+  { path = "r2b/checkpoints/echo__s1__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.22998, label = "r2b-e2e2-s1" },
+  { path = "r2b/checkpoints/echo__s2__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.188477, label = "r2b-e2e2-s2" },
+  { path = "r2b/checkpoints/echo__s3__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2b-e2e2-s3" },
+  { path = "r2b/checkpoints/echo__s4__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.185059, label = "r2b-e2e2-s4" },
+  { path = "r2b/checkpoints/echo__s5__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, ref = 0.999756, label = "r2b-e2e2-s5" },
+  { path = "r2b/checkpoints/echo__s0__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.13208, label = "r2b-e2e1-s0" },
+  { path = "r2b/checkpoints/echo__s1__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.12085, label = "r2b-e2e1-s1" },
+  { path = "r2b/checkpoints/echo__s2__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.131836, label = "r2b-e2e1-s2" },
+  { path = "r2b/checkpoints/echo__s3__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.123779, label = "r2b-e2e1-s3" },
+  { path = "r2b/checkpoints/echo__s4__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.124756, label = "r2b-e2e1-s4" },
+  { path = "r2b/checkpoints/echo__s5__e2e1__eta10__st1500.pt", arm = "e2e1", eta_base = 10, ref = 0.082764, label = "r2b-e2e1-s5" },
+  { path = "r2b/checkpoints/echo__s0__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.999512, label = "r2b-skip-e2e2-s0" },
+  { path = "r2b/checkpoints/echo__s1__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.186279, label = "r2b-skip-e2e2-s1" },
+  { path = "r2b/checkpoints/echo__s2__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.207764, label = "r2b-skip-e2e2-s2" },
+  { path = "r2b/checkpoints/echo__s3__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.946045, label = "r2b-skip-e2e2-s3" },
+  { path = "r2b/checkpoints/echo__s4__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 0.186523, label = "r2b-skip-e2e2-s4" },
+  { path = "r2b/checkpoints/echo__s5__e2e2__eta10__st1500__skip10.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2b-skip-e2e2-s5" },
+  { path = "r2/checkpoints/echo__s0__e2e2__eta10__st3000.pt", arm = "e2e2", eta_base = 10, ref = 0.1907, label = "r2-e2e2-s0" },
+  { path = "r2/checkpoints/echo__s1__e2e2__eta10__st3000.pt", arm = "e2e2", eta_base = 10, ref = 0.1907, label = "r2-e2e2-s1" },
+  { path = "r2/checkpoints/echo__s2__e2e2__eta10__st3000.pt", arm = "e2e2", eta_base = 10, ref = 1.0, label = "r2-e2e2-s2" },
+]
+
+[wab.echo]
+T = 512
+n_keys = 16
+n_eval = 256
+eval_batch = 32
+
+[ttt]
+process_name = "TTM-r2b-01"
+device = "auto"
+max_minutes = 50
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+n_bins = 16
+g_clip = 10.0
+late_frac = 0.25
+eta_lr = 0.01
+lr = 1e-3
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.01
+warmup = 200
+lr_floor = 0.1
+grad_clip = 1.0
+batch = 32
+quick_every = 500
+cells = [
+  # R2b: seeds are the unit on echo. Interleaved by seed so a
+  # time-budget stop keeps the e2e1/e2e2 comparison balanced; diagnostics on seeds 0-1 only.
+  { task = "echo", seed = 0, arm = "e2e2", eta_base = 10, steps = 1500, tag = "seeds-as-unit" },
+  { task = "echo", seed = 0, arm = "e2e1", eta_base = 10, steps = 1500, tag = "seeds-as-unit" },
+  { task = "echo", seed = 1, arm = "e2e2", eta_base = 10, steps = 1500, tag = "seeds-as-unit" },
+  { task = "echo", seed = 1, arm = "e2e1", eta_base = 10, steps = 1500, tag = "seeds-as-unit" },
+  { task = "echo", seed = 2, arm = "e2e2", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "echo", seed = 2, arm = "e2e1", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "echo", seed = 3, arm = "e2e2", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "echo", seed = 3, arm = "e2e1", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "echo", seed = 4, arm = "e2e2", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "echo", seed = 4, arm = "e2e1", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "echo", seed = 5, arm = "e2e2", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "echo", seed = 5, arm = "e2e1", eta_base = 10, steps = 1500, tag = "seeds-as-unit", diag = false },
+  { task = "icl_mc", seed = 0, arm = "jac2so", eta_base = 0.3, steps = 4000, tag = "R2-2 main" },
+  # spike probe: drop the update when the outer norm exceeds 10x the median of the previous 50
+  { task = "echo", seed = 0, arm = "e2e2", eta_base = 10, steps = 1500, spike_skip = 10, tag = "spike skip", diag = false },
+  { task = "echo", seed = 1, arm = "e2e2", eta_base = 10, steps = 1500, spike_skip = 10, tag = "spike skip", diag = false },
+  { task = "echo", seed = 2, arm = "e2e2", eta_base = 10, steps = 1500, spike_skip = 10, tag = "spike skip", diag = false },
+  { task = "echo", seed = 3, arm = "e2e2", eta_base = 10, steps = 1500, spike_skip = 10, tag = "spike skip", diag = false },
+  { task = "echo", seed = 4, arm = "e2e2", eta_base = 10, steps = 1500, spike_skip = 10, tag = "spike skip", diag = false },
+  { task = "echo", seed = 5, arm = "e2e2", eta_base = 10, steps = 1500, spike_skip = 10, tag = "spike skip", diag = false },
+]
+
+[ttt.icl_mc]
+T = 1024
+n_vocab = 32
+alpha = 0.1
+steps = 4000
+n_eval = 512
+n_val = 128
+n_quick_eval = 64
+eval_batch = 32
+
+[ttt.echo]
+T = 512
+steps = 3000
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+quick_every = 50
+# the 1500-step cells follow the first half of the round-1 3000-step lr schedule
+lr_total = 3000
+
+[ttt.echo_ctrl]
+T = 512
+steps = 3000
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+quick_every = 250
+
+[ttt.echo_off]
+T = 640
+steps = 3000
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+quick_every = 250
+prefix_min = 64
+prefix_max = 192
+
+[ttt.echo_ctrl_nor]
+T = 512
+steps = 3000
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+quick_every = 250

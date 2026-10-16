@@ -1,0 +1,133 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_align"
+process_name = "TTM-min-80-minia"
+process_nn = 80
+data_dir = "data/p2data"
+device = "cuda"
+out_dir = "outputs/mini/matrix/minia"
+max_hours = 1.5
+estimate_wall_s = 180
+production_configs = { "mini-s/e2e2" = "configs/mini/e2e2.toml", "mini-s/e2e1-ce" = "configs/mini/e2e1-ce.toml", "mini-m/e2e2" = "configs/mini/e2e2-m.toml", "mini-m/e2e1-ce" = "configs/mini/e2e1-ce-m.toml" }
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g40/runs/mini-s/e2e2/s0/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-s/e2e2/s0"
+n_docs = 256
+estimate_wall_s = 120
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e2"
+init_seed = 1
+data_seed = 1
+ckpt = "outputs/mini/matrix/g41/runs/mini-s/e2e2/s1/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-s/e2e2/s1"
+n_docs = 256
+estimate_wall_s = 120
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+ckpt = "outputs/mini/matrix/g42/runs/mini-s/e2e2/s2/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-s/e2e2/s2"
+n_docs = 256
+estimate_wall_s = 120
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g40/runs/mini-s/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-s/e2e1-ce/s0"
+n_docs = 256
+estimate_wall_s = 120
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+ckpt = "outputs/mini/matrix/g41/runs/mini-s/e2e1-ce/s1/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-s/e2e1-ce/s1"
+n_docs = 256
+estimate_wall_s = 120
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+ckpt = "outputs/mini/matrix/g42/runs/mini-s/e2e1-ce/s2/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-s/e2e1-ce/s2"
+n_docs = 256
+estimate_wall_s = 120
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e2/s0/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-m/e2e2/s0"
+n_docs = 256
+estimate_wall_s = 240
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 1
+data_seed = 1
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e2/s1/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-m/e2e2/s1"
+n_docs = 256
+estimate_wall_s = 240
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e2/s2/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-m/e2e2/s2"
+n_docs = 256
+estimate_wall_s = 240
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-m/e2e1-ce/s0"
+n_docs = 256
+estimate_wall_s = 240
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e1-ce/s1/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-m/e2e1-ce/s1"
+n_docs = 256
+estimate_wall_s = 240
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e1-ce/s2/model_step1200.pt"
+out = "outputs/mini/matrix/minia/mini-m/e2e1-ce/s2"
+n_docs = 256
+estimate_wall_s = 240

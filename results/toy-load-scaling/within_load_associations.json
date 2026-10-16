@@ -1,0 +1,22 @@
+[
+ {
+  "load": 64,
+  "n": 12,
+  "correlations": {
+   "shared_mean_cos": 0.1635793622624318,
+   "write_probe_cos": 0.6119666013734955,
+   "participation_ratio": 0.8995615266335885,
+   "write_norm": -0.6461473261011792
+  }
+ },
+ {
+  "load": 128,
+  "n": 12,
+  "correlations": {
+   "shared_mean_cos": -0.08529319968969962,
+   "write_probe_cos": 0.4517661434861826,
+   "participation_ratio": 0.7225179494240094,
+   "write_norm": -0.5611423676843343
+  }
+ }
+]

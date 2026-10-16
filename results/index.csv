@@ -1,0 +1,58 @@
+series,description,outcome,bears_on,folder
+"SOQ-N3B (+pilot, 3 FO-CM seeds, 4 read jobs)","original study: FO-CM at equal GPU-seconds, frontier reads, κ",not covered (large); x no closer; damage flag on all seeds,"§3.1, Table 1",results/text-original-study/
+A0 cross-fit audit,cross-fit selection on the original study's reads (no training),labels unchanged; seed 2 FO-CM moves in one fold,"§2, App. C",results/text-crossfit-audit/
+S14-R (12 GPU jobs),"replication: 6 arms × seeds 3–5, training, reads, passkey","FO-CM replicates (.139); x below FO-CE, narrow (§3.2); WSD not covered; SO-2/16 underpowered; passkey interval","§3, §5",results/text-replication/
+Equal-token check,post hoc re-reading of the original study at equal tokens,two-sided frontier; η-inflation controls,§3.4,results/text-equal-token-check/
+XPO-0,"exposure of cross-segment repeats, DCLM vs code",1.61% of DCLM targets,§3.4,results/text-repeat-exposure/
+MINI,"from-scratch mini-m/mini-s: SO, FO-CE, residual-floor arms",equal-step gap ΔM(1)=.173; floors ≤3%,"§3.3, Table 5",results/text-mini-baseline/
+MINI-D,copyable vs distance split of the deficit,distance-like,§5,results/text-copyability-distance/
+MINI-A,write–read alignment,alignment hypothesis not supported,§5,results/text-write-read-alignment/
+MINI-E,eval-carried read of the residual floors,C̄_E≈0; starvation class NE; cotangent .935 (F),Table 5,results/text-floors-eval-read/
+MINI-P,partial SO (2/16 rows) at equal steps,φ=.20; no transfer at equal steps,Table 5,results/text-partial-so-equal-steps/
+MINI-L,300 late SO steps after FO-CE,late-fails (ψ=.196),Table 5,results/text-late-so/
+TBB,reduced-vocabulary micro testbed,not qualified (relative gap only),background,results/text-micro-testbed/
+G0,write-gain split; eval-time η and σ-CE,partial dose; σ-CE adverse,"§5, Table 5",results/text-write-gain/
+G0b,matched-loss frontier; inverse-σ rule,frontier match at SO's default η only; inverse σ .176,"§3.4, Table 5",results/text-matched-loss-frontier/
+G0c,inverse-σ × η frontier lift,unresolved (.071),Table 5,results/text-inverse-sigma-lift/
+SOQ-FS,mini-s matched-loss frontier,ρ_match=−.249; gap trends up with size,App. C,results/text-mini-s-frontier/
+SOQ-V1,echo-in-text template validity,"registered fail, instrument-caused",§5,results/text-echo-template/
+"SOQ-P1-0, -0c",injected-binding pilot,fail through a design shortcut (key-agnostic priming),App. C,results/text-injected-binding-pilot/
+"SOQ-P1-v3, -v3x, -v3p",injected binding v3; late-storage check; post hoc reads,not learnable; no late storage,§5,results/text-injected-binding/
+P2-0,port and timing profile of the released 125M,SO/FO step time 3.7×,App. F,results/125m-timing/
+P2-1,"400-step continuation, SO vs FO-CE",small FO deficit (D=+.0180); copy contrast not passed,"§5, App. D",results/125m-continuation/
+P2-2,write/read swap,split .0070 / .0077,App. D,results/125m-write-read-swap/
+R1,first FO vs SO comparison (1–2 seeds),FO does not bind on echo; on the Markov task FO keeps 96% of SO's gain,§4.1,results/toy-first-comparison/
+R2 bundle,"random-prefix layout, Jacobian-SO, copy-free control",anchor gate fired; SO bistable,background,results/toy-layout-bundle/
+R2b,six-seed contrast,"SO binds 4/6, FO 0/6",§4.1,results/toy-six-seed-contrast/
+R3,random-prefix binding; η sweep,I: no random-prefix arm binds (0/6 each); η sweep 0/3 each,App. B,results/toy-random-prefix/
+R2-4,write-position ablation (eval only),"kv write necessary and sufficient, 7/7",§4.2,results/toy-write-ablation/
+R2-4b,key addressability probes,"FO: content-failure criterion 4/6, address criterion 0/6 (mixed)",§4.1,results/toy-key-address/
+R4-0,write-code rank diagnostics,codes collapsed; marker supplies the answer,background,results/toy-write-code-rank/
+R4-1,key/error/embedding arms ×10,"SO 7/10 acq., 6/10 ret.; FO+emb 10/10 acq., 0/10 ret.",Table 3,results/toy-key-code-arms/
+TH-RC,fixed-η retention,FO-CE 0/18 vs SO 15/18,Table 3,results/toy-fixed-eta-retention/
+FRS-A,"fresh-seed pool (FO 200–215, SO/noise 200–211)",headline replicated,§4.1,results/toy-fresh-seed-replication/
+R4-2,outer-loss mask at kv,10/10 vs 0/10; mediator 6/10 (req. 8/10),Table 2,results/toy-outer-mask/
+R4-2L,"linear inner loss, schedule and copy-free controls",10/10 at kv and everywhere; site control 0/10,"Table 2, §4.5",results/toy-linear-inner-loss/
+R4-3,second-order halves; mask replication,10/10 and 9/10; mask 10/10 vs 0/10,App. B,results/toy-so-halves/
+R4-4a,"copy-edge mask, copy noise, Kamin two-stage (Kamin, 1969), kv step size",rows of Table 2,Table 2,results/toy-copy-interventions/
+R4-4b,"AICE rule, Kamin repeat (Kamin, 1969)",AICE equals linear in chunk 0; joint criterion not met,App. A,results/toy-aice-kamin/
+R4-4c,toy rehearsal of the 125M continuation,re-warmed SO 10/10 vs FO-CE 0/10; linear 10/10,App. D,results/toy-125m-rehearsal/
+"BW1a, BW1b",fixed-η copy noise,"threshold in (1%,3%]",App. B,results/toy-noise-floor/
+CHR,dense chronology and acquisition forks,starvation-starts prediction F (0/6),"§4.3, Fig. 3",results/toy-chronology/
+TRG,trigger of the loss,trigger not identified; outer mask prevents 14/15,§4.3,results/toy-trigger/
+RDO-RPE,recovery dose and prevention floors,floor .03: 12/12 vs 1/12; prevention not kv-specific,"§4.3, App. B",results/toy-recovery-prevention/
+POOL,"combined fresh-seed runs (40 main runs, 316 forks)","runs for FRS-A, TRG, RDO-RPE",§4.3,results/toy-fresh-seed-pool/
+P0.0,Markov-task cost of the linear loss,linear beats FO-CE by .026,§4.5,results/toy-markov-cost/
+P0.1,"mechanism probes (logit split, copy edge, re-assignment)",gate pass 9/9; linear keeps old map,§4.5,results/toy-mechanism-probes/
+SOQ-D (P3-a),write-rule control,DiD +.454; own-residual fails control 4/6,§4.5,results/toy-write-rule-control/
+FRS-B,"plain echo × {CE, linear}",linear without code 0/12,§4.5,results/toy-plain-echo-linear/
+B9,address auxiliary,12/12 vs 0/12 filler,§4.5,results/toy-address-auxiliary/
+LOD,"load scaling, N=16–128",linear behind SO at 32,App. B,results/toy-load-scaling/
+LOD-X,budget extension to 3000 steps,32-pair price not reproduced (fragile),App. B,results/toy-load-extension/
+RTW,per-token write-gain gate; partial-SO screen,"gate closed (0/12); p=1/8 11/12, late 12/12, early 1/12",App. B,results/toy-partial-so-screen/
+RTW-C,registered partial-SO confirmation,p=1/8 12/12; late 12/12,App. B,results/toy-partial-so/
+"E1-VE, -D, -D2, -D3, -D4",world-model echo; diagnostics,predecessor of SCM,App. E,results/visual-echo/
+SCM,"symbolic world stream, separate project",SO keeps A/Au/N 6/6; action-selective FO linear write 6/6 (post-result),"§4.5, App. E",results/scm/
+WM2,"visual hidden object, separate project","keep/revise pattern confirmed (5/5, 5/5, 4/5)","§4.5, App. E",results/wm2/
+"Theory loops A, B",performative correspondence; key–pair model; reduced model,derived and checked; reduced model's discriminating predictions F,App. A,results/theory-checks/
+Parameter check,parameter counts of the text models,counts confirmed,§2,results/text-param-counts/

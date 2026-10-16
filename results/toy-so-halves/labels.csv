@@ -1,0 +1,20 @@
+label,value
+V3a,holds
+V3b,holds
+V3c,holds
+FM,FM-rescue
+E,E-retains
+MS1_E,True
+MS2_E,False
+MS_reading_E,E resists starvation by keeping surprise at the write
+K,K-retains
+MS1_K,False
+MS2_K,False
+MS_reading_K,K keeps the binding by another route
+EK_joint,Both retain: either half suffices.
+S2-acq,the mask helps second order acquire
+S2-ret,untestable at this n
+S2-overall,label (S2-acq or S2-ret fired)
+S2_wilcoxon,"descriptive; paired Wilcoxon on final query accuracy over 20 pairs, one-sided p=0.0002899169921875"
+FM_S2_joint,FM-rescue and S2-ret untestable: no reading for second-order retention.
+S2_acq_note,"S2-acq fired: the mask also acts on the first barrier (address) in second order, a different mechanism from starvation; reported separately."

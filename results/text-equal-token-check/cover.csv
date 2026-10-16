@@ -1,0 +1,11 @@
+model,quantity,seed0,seed1,seed2,mean
+mini-s,R_B_budget_0.01,0.045,0.031,0.083,+0.053
+mini-s,cover_FO_gets_plus_0.01_L,0.039,0.023,0.069,+0.044
+mini-s,SO_M_at_floor_plus_0.01_minus_FO_max_M_any_eta,-0.026,-0.087,-0.024,-0.046
+mini-s,M_SO_minus_M_FO_each_at_own_floor_plus_0.01,0.162,0.141,0.176,+0.160
+mini-s,adapted_L_floor_gap_SO_minus_FO,0.07,0.068,0.045,+0.061
+mini-m,R_B_budget_0.01,0.125,0.082,0.1,+0.103
+mini-m,cover_FO_gets_plus_0.01_L,0.115,0.075,0.091,+0.094
+mini-m,SO_M_at_floor_plus_0.01_minus_FO_max_M_any_eta,0.082,0.056,0.085,+0.075
+mini-m,M_SO_minus_M_FO_each_at_own_floor_plus_0.01,0.203,0.173,0.179,+0.185
+mini-m,adapted_L_floor_gap_SO_minus_FO,0.037,0.052,0.05,+0.046

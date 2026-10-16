@@ -1,0 +1,54 @@
+# S14 layout R, job 8 of 12 (single CUDA GPU).
+# Each job file runs on its own GPU: python -m tttmem.run <this file>.
+# Estimated 3.934 GPU-h.
+experiment = "p2"
+seed = 4
+
+[p2]
+mode = "s14_pod_job"
+process_name = "TTM-s14-58"
+process_nn = 58
+layout = "R"
+preset = "mini-m"
+out_dir = "outputs/s14"
+data_dir = "data/p2data"
+device = "cuda"
+base_steps = 1200
+max_hours = 6.87540000
+passkey = true
+passkey_docs = 256
+passkey_seed = 1014
+read_batch = 2
+passkey_batch = 1
+n_p_file = "outputs/s14/pilot/n_p.json"
+# MINI-P jobs need n_p and the pilot-selected p_micro_batch/p_so_micro_batch before
+# starting: either the pilot's n_p.json at n_p_file or the keys below, which hold the
+# timing pilot's selection and measured step times.
+n_p = 2793
+p_micro_batch = 4
+p_so_micro_batch = 2
+t_so_pilot_s = 6.548893551342189
+t_arm_pilot_s = 2.813288143835962
+
+[p2.data]
+mode = "uploaded"  # fallback: "rebuild" using pinned revisions
+rebuild_c = false
+verify_c = true
+audit_shingles = true
+workers = 1
+c_rows = 25600
+expected_hashes = "configs/s14/data/expected-sha256.json"
+expected_c_hashes = "configs/s14/data/expected-c-sha256.json"
+
+[p2.pilot]
+enabled = false
+so_micro_batch = [1, 2]
+fo_micro_batch = [2, 4]
+p_micro_batch = [2, 4]
+p_so_micro_batch = [1, 2]
+warmup_steps = 10
+timed_steps = 50
+
+[[p2.cells]]
+armdir = "mini-p"
+seed = 4

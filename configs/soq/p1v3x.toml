@@ -1,0 +1,87 @@
+# SOQ-P1-v3x, exploratory.
+# Full-state resume of the P1 v3 SO run (configs/soq/p1v3-so.toml) from its kept
+# resume_step2400.pt (model + Adam + RNG + cursor): rows [38400, 51200) of perm(A)+perm(B) (the end of
+# A+B, so 3200 is the data limit), outer LR re-warmed floor -> 1e-3 over 120 steps from step 2400, cosine
+# to the floor at 3200.  Echo reads N / A at 2400 (loaded parent), 2800, 3200; P at 3200.
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "train"
+process_name = "TTM-pv3-05"
+arm = "e2e2"
+preset = "mini-m"
+init_seed = 0
+data_seed = 0
+data_dir = "data/p2data"
+out_dir = "outputs/soq/p1v3/so-s0-a1g-x3200"
+device = "cuda"
+steps = 2400                    # the parent continuation's endpoint (its continue_steps)
+global_batch = 16
+micro_batch = 1
+seq_len = 8192
+warmup = 120
+lr_peak = 3e-3
+inner_lr = 1.0
+inner_clip = 1.0
+barriers = [2, 4, 6]
+segment_len = 2048
+fused_attn = false
+eval_steps = [2800, 3200]
+full_eval_steps = [3200]
+trajectory_docs = 256
+n_eval = 1024
+ho_docs = 256
+pilot_docs = 64
+save_checkpoints = true
+
+crossover_rules = []
+assay_gate = false
+pilot_steps = [2440, 2480, 2520, 2560, 2600, 2640]
+# Divergence-only guard: the calib-rise guard (.10) is built for from-scratch SO instability and
+# trips on this continuation while train loss falls, so the guard here is calib rise > .5 or
+# non-finite, or logged train loss > first logged + .5 or non-finite.  Calib drift is reported as an LM cost.
+pilot_max_rise = 0.5
+train_loss_max_rise = 0.5
+attempt = 1
+sizing_steps = []
+inner_warmup = 120
+eval_batch = 2
+
+ho_trajectory_docs = 64
+eval_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+trajectory_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+full_extra_modes = []
+resume_every = 100
+
+# --- continuation ---------------------------------------------------------------------
+continue_from = "outputs/soq/p1v3/so-s0-a1g/resume_step2400.pt"
+continue_parent_run_id = "p1v3-so-s0"
+continue_steps = 3200
+continue_lr_peak = 1e-3         # the parent's attempt-1 peak (registered fallback, applies to all cells)
+keep_final_state = true
+extra_train_splits = ["B"]
+echo_version = 3
+echo_f = 0.5
+echo_p = 0.5
+echo_lookup_share = 0.25
+echo_slots = 16
+echo_seed = 0
+echo_manifest_sha256 = "fa45d88d9c103c204f8711de7b8ed11fd5afc092ef28af185006a3d9868ced38"
+echo_eval_docs = 256
+echo_eval_split = "ho"
+echo_eval_offset = 256
+echo_eval_p = 0.5
+parity_ref = "outputs/soq/p1v3/so-s0-a1g/eval_step2400.npz"
+parity_docs = 64
+parity_tol = 0.01
+# echo_diagnostics = true is what runs the step-2400 (loaded parent) echo read; under v3 it runs
+# no v2 streams, and the echo_train_eval_* keys are inert.
+echo_diagnostics = true
+echo_eval_steps = [2400, 2800, 3200]
+echo_train_eval_split = "eval"
+echo_train_eval_offset = 2048
+echo_train_eval_seed = 1000003
+# max_hours is a safety cap outside the resume contract (parent: 9 540 s for 1200 steps at 7.4 s/step).
+max_hours = 2.6
+estimate_wall_s = 6700

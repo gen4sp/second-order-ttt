@@ -1,0 +1,23 @@
+# Analysis-only entrypoint for the completed single production pool session.
+experiment = "rdo_rpe"
+seed = 0
+
+[rdo_rpe]
+process_name = "TTM-pool-76-reanalysis"
+protocol = "rdo-rpe-v2"
+device = "cuda"
+require_cuda = true
+workers = 5
+threads_per_worker = 2
+max_minutes = 180
+hard_grace_minutes = 10
+smoke_only = false
+horizon = 400
+late_horizon = 300
+late = true
+limit = 12
+candidate_seeds = [200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215]
+pool_config = "config.toml"
+pool_output_dir = "outputs/pool-output"
+output_dir = "outputs/pool-output/reanalysis/rdo-rpe"
+resume = false

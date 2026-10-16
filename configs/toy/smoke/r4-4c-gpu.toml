@@ -1,0 +1,55 @@
+experiment = "c1"
+seed = 0
+
+[c1]
+# R4-4c (pre-registered).
+process_name = "TTM-r44c-01-podsmoke"
+device = "cuda"
+workers = 6
+max_minutes = 15
+torch_threads = 2
+tf32 = false
+steps = 20
+schedule_steps = 375
+warmup = 25
+lr = 1e-3
+lr_floor = 0.1
+eta_lr = 0.01
+gamma0 = 0.5
+gamma_lr = 0.01
+eta_base = 10.0
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+batch = 32
+data_seed_offset = 50000
+eval_seed = 991
+T = 512
+n_keys = 16
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+n_probe = 32
+quick_every = 10
+probe_every = 10
+checkpoint_steps = [10]
+checkpoint_dir = "outputs/r4-3/checkpoints"
+# Embedded source final QUICK references; the run needs only 19 final .pt files.
+cells = [
+  { seed = 0, init = "e2e2emb", rule = "e2e2emb", lr_mode = "floor", reference_quick_acc = 1.0 },
+  { seed = 0, init = "e2e2emb", rule = "e2e1emb", lr_mode = "rewarm", reference_quick_acc = 1.0 },
+  { seed = 0, init = "e2e2emb", rule = "e2e1emb_lin", lr_mode = "floor", reference_quick_acc = 1.0 },
+  { seed = 0, init = "e2e2", rule = "e2e1_code", lr_mode = "rewarm", reference_quick_acc = 1.0 },
+  { seed = 8, init = "e2e2emb", rule = "e2e2emb", lr_mode = "floor", reference_quick_acc = 0.999023 },
+  { seed = 15, init = "e2e2", rule = "e2e2", lr_mode = "floor", reference_quick_acc = 0.999023 },
+]

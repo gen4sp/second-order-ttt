@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "A": 25600,
+    "B": 25600,
+    "calib": 256,
+    "eval": 3200,
+    "ho": 512
+  },
+  "dataset_revision": "817d6752765f6a41261085171dd546b104f60626",
+  "schema": "P2-1 registered manifests (before chars_per_token field)",
+  "sha256": {
+    "A.bin": "ec46d4d2b2c0dd75308b4a6c4d6a75a916f9de7489485199e1969e70bc74e719",
+    "A.jsonl": "1778d43d5afb06d2bfbc658645f5e254ade3c4f1e894922968332b12604fba7a",
+    "B.bin": "18ca188939e079676b97e51f0ec89539a621fa617ed33cdbb0aef6a9072a4aef",
+    "B.jsonl": "88caeaf81aab0c1dff526629e69a3ffce52f8e46b4d93f6d3487cd9b17ad703e",
+    "calib.bin": "d01f8ddab4957f281093290b3efac2d7c1799fedf7f4e8ae35539fc0e99f7c92",
+    "calib.jsonl": "00c32722ced7217d4b8aed6a9eaec6762861ea7250053cf8d2313099e5ec6079",
+    "eval.bin": "d713bbd0cd418a6541a8d2f7a84313cf8a02ec03d99944435d5fb3ebbaca23d1",
+    "eval.jsonl": "78fb80f8c627a4744dcfe74bc01a92c3b467c6bf51e1b8f041f2bd0ca79fab98",
+    "excluded_vocab.npy": "b845b69fa4875b1178c8e30dec2c52354da9ed00794b564a46dc6b60b672cb1f",
+    "ho.bin": "079798bacd9a9359c99afb60f238f736d48b9601d05ccfe37603ff3bd6ecd709",
+    "ho.jsonl": "03dfbaa79b9797477ed8915d68957f8c569f2912ab786b15e83a4cdcb93f359c",
+    "meta.json": "1c6ad50ff7717830ada14df2a6b4128f4355e76885ff47e9412152c432c5ac6d",
+    "prepare_summary.json": "7bdaa6aaba88480a2a9eadda5f48cfa431760f2d3a943d722a594864b7053170"
+  },
+  "tokenizer_revision": "315b20096dc791d381d514deb5f8bd9c8d6d3061"
+}

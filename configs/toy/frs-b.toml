@@ -1,0 +1,128 @@
+experiment = "frsb"
+seed = 0
+
+[frsb]
+process_name = "TTM-frb-80"
+output_dir = "outputs/frsb-output"
+smoke = false
+device = "cuda"
+workers = 5
+threads = 2
+max_minutes = 480
+tf32 = false
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 1500
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 256
+n_quick_eval = 64
+eval_batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.01
+eta_lr = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 25
+probe_every = 25
+n_probe = 32
+checkpoint_steps = [200, 400, 600, 1000]
+seeds = [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211]
+cells = [
+  { task = "echo", block = "core", seed = 200, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 200, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 200, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 200, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 200, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 201, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 201, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 201, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 201, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 201, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 202, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 202, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 202, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 202, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 202, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 203, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 203, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 203, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 203, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 203, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 204, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 204, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 204, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 204, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 204, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 205, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 205, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 205, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 205, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 205, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 206, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 206, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 206, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 206, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 206, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 207, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 207, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 207, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 207, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 207, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 208, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 208, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 208, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 208, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 208, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 209, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 209, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 209, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 209, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 209, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 210, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 210, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 210, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 210, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 210, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 211, arm = "e2e1emb", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 211, arm = "e2e1emb_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 211, arm = "e2e1", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 211, arm = "e2e1_lin", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 211, arm = "e2e2", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "B40", seed = 200, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 200, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 201, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 201, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 202, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 202, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 203, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 203, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 204, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 204, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 205, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 205, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 206, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 206, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 207, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 207, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 208, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 208, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 209, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 209, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 210, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 210, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 211, arm = "e2e1emb_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+  { task = "echo", block = "B40", seed = 211, arm = "e2e1_lin", eta_base = 40, eta_lr = 0.0, diag = false },
+]

@@ -1,0 +1,78 @@
+# SOQ-N3B step 2 of 3: FO at equal training GPU-seconds (FO-CM), mini-m e2e1-ce, seeds 0-2.
+# One CUDA GPU (RTX 4090), sequential (workers = 1).  Needs data/p2data with split C
+# (configs/soq/n3b-prepare-c.toml), checked before any GPU time: C present, non-empty, rows cover 16 x N_CM, and no C
+# document shares a sha1 or its first 256 tokens with eval / ho / calib.  B's counts are logged, not
+# enforced: the registered B shares a 256-token prefix with 20 eval / 3 ho / 1 calib rows (A: 21 /
+# 3 / 1), all flagged near_dup in the P2-1 manifests; FO-CM is the only arm that reads B.
+#
+# 1. Page-cache read of A/B/C, then the timing pilot (same job): SO at micro_batch {1, 2} and FO-CE
+#    at {2, 4} (out-of-memory settings are recorded and skipped), 10 warm-up + 50 timed steps,
+#    median step time; one micro-batch of each arm under torch's FLOP counter.
+#    r = t(fastest SO) / t(fastest FO), N_CM = round(1200 r); |r / 2.96 - 1| > .05 is flagged
+#    (N3B_R_FLAG) and the pilot r is still used.  n_cm.json is reused if the job restarts.
+#    Four-job layout (configs/soq/n3b/): the pilot job runs this file with pilot_only = true; each
+#    FO-CM job runs it with seeds = [k] and n_cm_file = <the pilot's n_cm.json>.
+# 2. FO-CM seeds 0, 1, 2 = the g43/g44/g45 init and data seeds (steps 1-1200 read the FO-CE rows;
+#    A+B rows [0, 51200) first, C from step 3201): FO-CE recipe with the cosine stretched to N_CM,
+#    warmup = inner warmup = round(0.1 N_CM), the fastest FO micro_batch (global batch 16 by
+#    accumulation), full evals at 1200, 2400, N_CM; model weights at 1200, 2400 (+ N_CM);
+#    the endpoint resume state kept; resume_keep3200.pt kept (A+B/C boundary); rolling
+#    resume_step*.pt every 100 steps; P2_TIME per-step training seconds, checked +-2 % against
+#    t_SO x 1200 at N_CM; from-scratch guard (running minimum of the adapted calib loss every
+#    50 steps, > .10 at 2 consecutive probes: <= step 200 restart at attempt 1 (peak 1e-3),
+#    later FO-UNSTABLE, descriptive; the probe uses the 64 calib docs of pilot_docs);
+#    G-div (one reload of the last state, then DIVERGED).
+#
+# GPU time (RTX 4090; MINI g43-g45: SO 7.2-7.4 s/step, FO-CE ~2.5 s/step; prior r = 2.96):
+#   pilot ~0.25 h (4 settings x ~2 min + startup + FLOP count);
+#   per seed: N_CM ~3552 steps x 2.45 s = 2.42 h training + evals (5 trajectory + 3 full, ~0.25 h)
+#   + 71 guard probes (64 calib docs, ~0.15 h) + startup ~ 2.85 h; 3 seeds ~ 8.6 h; total ~ 8.9 h.
+#   An attempt-1 restart, if the guard asks for one, adds up to one seed's time.
+experiment = "p2"
+seed = 0
+
+[p2]
+pilot_only = true
+mode = "soq_n3b_fo_cm"
+process_name = "TTM-n3b-30-pilot"
+process_nn = 30
+name_prefix = "TTM-n3b"
+out_dir = "outputs/mini/matrix/n3b"
+data_dir = "data/p2data"
+device = "cuda"
+preset = "mini-m"
+seeds = [0, 1, 2]
+base_steps = 1200
+r_prior = 2.96
+r_flag_tol = 0.05                # registered tolerance
+hours_margin = 1.25
+max_hours = 1.0
+gpu_mem_budget_gb = 23.0
+memory_peaks_gb = { "mini-m/e2e1-ce" = 14.0 }
+auto_attempt1 = false           # a guard trip stops the seed; no automatic attempt-1 restart
+contamination_check = true
+production_configs = { "mini-m/e2e2" = "configs/mini/e2e2-m.toml", "mini-m/e2e1-ce" = "configs/mini/e2e1-ce-m.toml" }
+
+[p2.pilot]
+so_micro_batch = [1, 2]
+fo_micro_batch = [2, 4]
+warmup_steps = 10
+timed_steps = 50
+count_flops = true
+max_peak_gb = 20.0               # a setting "fits" only with <= 20 GB pilot peak on the 24 GB 4090
+
+# Every FO-CM cell: these keys on top of configs/mini/e2e1-ce-m.toml and the computed schedule.
+[p2.fo_cm]
+extra_train_splits = ["B", "C"]
+contamination_check = true
+resume_every = 100
+guard_every = 50
+guard_first = 50
+guard_dense_every = 0
+guard_max_rise = 0.10
+guard_consecutive = 2
+guard_restart_until = 200
+train_loss_guard = "running_min"
+train_loss_max_rise = 0.5
+gdiv = true
+guard_fo_stop = true             # any FO-CM guard trip stops the seed (a trip calls for a repair, not a reading)

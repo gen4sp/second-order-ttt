@@ -1,0 +1,25 @@
+# Analysis-only entrypoint for the completed combined CUDA smoke.
+experiment = "rdo_rpe"
+seed = 0
+
+[rdo_rpe]
+process_name = "TTM-pool-76-pod-reanalysis"
+protocol = "rdo-rpe-smoke-v2"
+device = "cuda"
+require_cuda = true
+workers = 5
+threads_per_worker = 2
+max_minutes = 15
+hard_grace_minutes = 10
+smoke_only = true
+horizon = 40
+late_horizon = 15 # S1=25, S2=65: within the 80-step smoke cap
+late = true
+limit = 1
+candidate_seeds = [0]
+pool_config = "config_pool_podsmoke.toml"
+pool_output_dir = "outputs/pool-podsmoke"
+output_dir = "outputs/pool-podsmoke/reanalysis/rdo-rpe"
+resume = false
+prepare_pool_smoke = false # this driver never trains
+smoke_minimal = false

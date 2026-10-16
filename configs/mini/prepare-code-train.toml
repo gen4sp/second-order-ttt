@@ -1,0 +1,22 @@
+experiment = "p2"
+
+[p2]
+mode = "prepare_code"
+process_name = "TTM-min-07-code-train"
+split = "code_train"
+out_dir = "data/mini-code"
+splits = ["code_train"]
+train_shards = ["00001", "00002", "00003", "00004", "00005", "00006", "00007", "00008", "00009"]
+train_quota = 10080
+quota = 10080
+workers = 4
+batch_size = 256
+min_chars = 12000
+
+[[p2.train_refs]]
+data_dir = "data/mini-code"
+split = "code_train"
+
+[[p2.train_refs]]
+data_dir = "data/p2data"
+split = "A"

@@ -1,0 +1,423 @@
+[
+ {
+  "kind": "env",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "mem_gb": 79.1787109375,
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "threads": 104,
+  "cfg": {
+   "preset": "125m",
+   "seq_len": 8192,
+   "device": "cuda",
+   "arms": [
+    "e2e2",
+    "e2e1-ce",
+    "e2e1-lin",
+    "e2e1-aice"
+   ],
+   "micro_batches": [
+    1,
+    2,
+    4,
+    8
+   ],
+   "timed_steps": 3,
+   "eval_batches": [
+    8,
+    16,
+    32
+   ],
+   "eval_modes": [
+    "ce",
+    "lin",
+    "aice",
+    "noadapt",
+    "heldout"
+   ],
+   "validate": false,
+   "val_seq": 4096,
+   "exact_so_seq": 3072,
+   "compile_check": false,
+   "loader_check": false,
+   "max_minutes": 12,
+   "trunc_check": true
+  }
+ },
+ {
+  "kind": "model",
+  "params": {
+   "total": 184363776,
+   "embedding": 98500608,
+   "non_embedding": 85863168,
+   "fast": 11501568
+  }
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.5402840169270834,
+  "s_opt": 0.006172128200531006,
+  "peak_alloc_micro_gb": 15.6385178565979,
+  "tok_per_s": 15162.395598138877,
+  "s_per_step_gb64": 34.58434921153387,
+  "peak_alloc_gb": 15.6385178565979,
+  "peak_reserved_gb": 17.634765625
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.8418863932291667,
+  "s_opt": 0.005167935848236084,
+  "peak_alloc_micro_gb": 28.012468814849854,
+  "tok_per_s": 19461.058085470417,
+  "s_per_step_gb64": 26.94553251918157,
+  "peak_alloc_gb": 28.012468814849854,
+  "peak_reserved_gb": 33.150390625
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 1.5869392903645834,
+  "s_opt": 0.0036415998935699465,
+  "peak_alloc_micro_gb": 52.8046669960022,
+  "tok_per_s": 20648.552971721987,
+  "s_per_step_gb64": 25.394670245726903,
+  "peak_alloc_gb": 52.8046669960022,
+  "peak_reserved_gb": 64.42578125
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 8,
+  "oom": true
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.3175997721354167,
+  "s_opt": 0.0059136638641357426,
+  "peak_alloc_micro_gb": 10.302360534667969,
+  "tok_per_s": 25793.469387336758,
+  "s_per_step_gb64": 20.332299080530802,
+  "peak_alloc_gb": 10.302360534667969,
+  "peak_reserved_gb": 10.68359375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.3422452799479167,
+  "s_opt": 0.00435152006149292,
+  "peak_alloc_micro_gb": 17.336669921875,
+  "tok_per_s": 47872.099222210854,
+  "s_per_step_gb64": 10.956200478394827,
+  "peak_alloc_gb": 17.336669921875,
+  "peak_reserved_gb": 17.845703125
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.47973380533854165,
+  "s_opt": 0.0031788480281829835,
+  "peak_alloc_micro_gb": 31.424453735351562,
+  "tok_per_s": 68304.54647004929,
+  "s_per_step_gb64": 7.678919733444849,
+  "peak_alloc_gb": 31.424453735351562,
+  "peak_reserved_gb": 33.140625
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 8,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.87462890625,
+  "s_opt": 0.0031030399799346926,
+  "peak_alloc_micro_gb": 59.61747741699219,
+  "tok_per_s": 74930.06408968089,
+  "s_per_step_gb64": 7.000134289979934,
+  "peak_alloc_gb": 59.61747741699219,
+  "peak_reserved_gb": 63.68359375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.4771814778645833,
+  "s_opt": 0.0061571202278137204,
+  "peak_alloc_micro_gb": 10.317320823669434,
+  "tok_per_s": 17167.472712184277,
+  "s_per_step_gb64": 30.545771703561147,
+  "peak_alloc_gb": 10.317320823669434,
+  "peak_reserved_gb": 10.7578125
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.5162389322916666,
+  "s_opt": 0.004361343860626221,
+  "peak_alloc_micro_gb": 17.34730052947998,
+  "tok_per_s": 31737.2421472918,
+  "s_per_step_gb64": 16.52400717719396,
+  "peak_alloc_gb": 17.34730052947998,
+  "peak_reserved_gb": 17.927734375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.5292282307942708,
+  "s_opt": 0.003518208026885986,
+  "peak_alloc_micro_gb": 31.430270195007324,
+  "tok_per_s": 61916.5760504149,
+  "s_per_step_gb64": 8.47116990073522,
+  "peak_alloc_gb": 31.430270195007324,
+  "peak_reserved_gb": 33.12109375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-lin",
+  "micro_batch": 8,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.9489805501302083,
+  "s_opt": 0.003157183885574341,
+  "peak_alloc_micro_gb": 59.61842632293701,
+  "tok_per_s": 69059.37112305188,
+  "s_per_step_gb64": 7.595001584927241,
+  "peak_alloc_gb": 59.61842632293701,
+  "peak_reserved_gb": 63.689453125
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.484250732421875,
+  "s_opt": 0.00569974422454834,
+  "peak_alloc_micro_gb": 10.882811546325684,
+  "tok_per_s": 16916.856189415532,
+  "s_per_step_gb64": 30.997746619224547,
+  "peak_alloc_gb": 10.882811546325684,
+  "peak_reserved_gb": 11.458984375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 2,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.5317801513671875,
+  "s_opt": 0.004902304172515869,
+  "peak_alloc_micro_gb": 18.47317409515381,
+  "tok_per_s": 30809.72457862019,
+  "s_per_step_gb64": 17.021867147922514,
+  "peak_alloc_gb": 18.47317409515381,
+  "peak_reserved_gb": 19.412109375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 4,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 0.6235267333984374,
+  "s_opt": 0.0038928000926971434,
+  "peak_alloc_micro_gb": 33.684767723083496,
+  "tok_per_s": 52552.678569855394,
+  "s_per_step_gb64": 9.980320534467696,
+  "peak_alloc_gb": 33.684767723083496,
+  "peak_reserved_gb": 36.26171875
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-aice",
+  "micro_batch": 8,
+  "trunc_kv": false,
+  "so_fused_forward": false,
+  "s_per_micro": 1.1623094889322918,
+  "s_opt": 0.0033047039508819582,
+  "peak_alloc_micro_gb": 64.11271572113037,
+  "tok_per_s": 56384.29404908496,
+  "s_per_step_gb64": 9.301780615409216,
+  "peak_alloc_gb": 64.11271572113037,
+  "peak_reserved_gb": 65.994140625
+ },
+ {
+  "kind": "train",
+  "arm": "e2e1-ce",
+  "micro_batch": 1,
+  "trunc_kv": true,
+  "so_fused_forward": false,
+  "s_per_micro": 0.18208555094401044,
+  "s_opt": 0.004370912075042725,
+  "peak_alloc_micro_gb": 10.302177429199219,
+  "tok_per_s": 44989.84108035547,
+  "s_per_step_gb64": 11.65784617249171,
+  "peak_alloc_gb": 10.302177429199219,
+  "peak_reserved_gb": 10.68359375
+ },
+ {
+  "kind": "train",
+  "arm": "e2e2",
+  "micro_batch": 1,
+  "trunc_kv": false,
+  "so_fused_forward": true,
+  "s_per_micro": 0.5580387369791667,
+  "s_opt": 0.0053003840446472165,
+  "peak_alloc_micro_gb": 15.64419412612915,
+  "tok_per_s": 14679.98448341738,
+  "s_per_step_gb64": 35.719779550711316,
+  "peak_alloc_gb": 15.64419412612915,
+  "peak_reserved_gb": 17.93359375
+ },
+ {
+  "kind": "eval",
+  "mode": "ce",
+  "batch": 8,
+  "s_per_batch": 0.4015672302246094,
+  "tok_per_s": 163200.56784350562,
+  "peak_alloc_gb": 16.985063552856445
+ },
+ {
+  "kind": "eval",
+  "mode": "ce",
+  "batch": 16,
+  "s_per_batch": 0.78388671875,
+  "tok_per_s": 167207.83356172915,
+  "peak_alloc_gb": 31.786485195159912
+ },
+ {
+  "kind": "eval",
+  "mode": "ce",
+  "batch": 32,
+  "s_per_batch": 1.5335543212890625,
+  "tok_per_s": 170938.84211395207,
+  "peak_alloc_gb": 61.39030599594116
+ },
+ {
+  "kind": "eval",
+  "mode": "lin",
+  "batch": 8,
+  "s_per_batch": 0.27592816162109374,
+  "tok_per_s": 237511.09569596755,
+  "peak_alloc_gb": 5.827901840209961
+ },
+ {
+  "kind": "eval",
+  "mode": "lin",
+  "batch": 16,
+  "s_per_batch": 0.4456453247070313,
+  "tok_per_s": 294117.30076191685,
+  "peak_alloc_gb": 9.450185775756836
+ },
+ {
+  "kind": "eval",
+  "mode": "lin",
+  "batch": 32,
+  "s_per_batch": 0.8389619140625,
+  "tok_per_s": 312462.33661623776,
+  "peak_alloc_gb": 16.720145225524902
+ },
+ {
+  "kind": "eval",
+  "mode": "aice",
+  "batch": 8,
+  "s_per_batch": 0.5117316284179687,
+  "tok_per_s": 128067.12808158097,
+  "peak_alloc_gb": 21.122636795043945
+ },
+ {
+  "kind": "eval",
+  "mode": "aice",
+  "batch": 16,
+  "s_per_batch": 1.0015638427734375,
+  "tok_per_s": 130867.34404972888,
+  "peak_alloc_gb": 40.06089925765991
+ },
+ {
+  "kind": "eval",
+  "mode": "aice",
+  "batch": 32,
+  "oom": true
+ },
+ {
+  "kind": "eval",
+  "mode": "noadapt",
+  "batch": 8,
+  "s_per_batch": 0.1520299835205078,
+  "tok_per_s": 431072.8613027814,
+  "peak_alloc_gb": 3.9692182540893555
+ },
+ {
+  "kind": "eval",
+  "mode": "noadapt",
+  "batch": 16,
+  "s_per_batch": 0.29085348510742187,
+  "tok_per_s": 450646.13873060775,
+  "peak_alloc_gb": 5.788386344909668
+ },
+ {
+  "kind": "eval",
+  "mode": "noadapt",
+  "batch": 32,
+  "s_per_batch": 0.5585553588867187,
+  "tok_per_s": 469325.0110830389,
+  "peak_alloc_gb": 9.431164264678955
+ },
+ {
+  "kind": "eval",
+  "mode": "heldout",
+  "batch": 8,
+  "s_per_batch": 0.43623526000976565,
+  "tok_per_s": 150230.86395751892,
+  "peak_alloc_gb": 17.453081130981445
+ },
+ {
+  "kind": "eval",
+  "mode": "heldout",
+  "batch": 16,
+  "s_per_batch": 0.8572634887695313,
+  "tok_per_s": 152895.81525061044,
+  "peak_alloc_gb": 32.72233724594116
+ },
+ {
+  "kind": "eval",
+  "mode": "heldout",
+  "batch": 32,
+  "s_per_batch": 1.6903868408203124,
+  "tok_per_s": 155079.29526521073,
+  "peak_alloc_gb": 63.26548910140991
+ },
+ {
+  "kind": "done",
+  "wall_s": 87.91162323951721,
+  "skipped": []
+ }
+]

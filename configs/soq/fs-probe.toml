@@ -1,0 +1,30 @@
+# SOQ-FS timing probe (single CUDA GPU).
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_g0"
+fs_protocol = true   # SOQ-FS V0 gate and no-adapt held-out read
+process_name = "TTM-sfs-01"
+process_nn = 1
+data_dir = "data/p2data"
+code_data_dir = "data/p2data"
+device = "cuda"
+out_dir = "outputs/soq/fs-probe"
+max_hours = 0.3
+n_docs = 1024
+n_ho_adapt = 128
+sigma_cap = 4.0
+production_configs = { "mini-s/e2e2" = "configs/mini/e2e2.toml", "mini-s/e2e1-ce" = "configs/mini/e2e1-ce.toml" }
+
+[[p2.items]]
+preset = "mini-s"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+step = 1200
+ckpt = "outputs/mini/matrix/g40/runs/mini-s/e2e2/s0/model_step1200.pt"
+out = "outputs/soq/fs-probe/mini-s/e2e2/s0"
+reads = ["ce"]
+split = false
+estimate_wall_s = 120

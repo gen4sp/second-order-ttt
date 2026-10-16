@@ -1,0 +1,146 @@
+{
+ "A_P2": {
+  "per_eta": {
+   "10": {
+    "n_acq": 6,
+    "retained_among_acq": 0,
+    "retained_all": 0,
+    "verdict": "supports"
+   },
+   "40": {
+    "n_acq": 5,
+    "retained_among_acq": 0,
+    "retained_all": 0,
+    "verdict": "supports"
+   },
+   "160": {
+    "n_acq": 5,
+    "retained_among_acq": 0,
+    "retained_all": 0,
+    "verdict": "supports"
+   }
+  },
+  "overall": "SUPPORTED"
+ },
+ "A_P2_SO_companion": {
+  "retained": {
+   "10": 6,
+   "40": 6,
+   "160": 3
+  },
+  "verdict": "FALSIFIED",
+  "median_kv_resid": {
+   "10": 0.03574889898300171,
+   "40": 0.08543439209461212,
+   "160": 0.0921672135591507
+  }
+ },
+ "B_P3": {
+  "V1": "PASS",
+  "a": {
+   "n_acq": {
+    "10": 6,
+    "40": 5,
+    "160": 5
+   },
+   "verdict": "supported"
+  },
+  "b": {
+   "retained": {
+    "10": 0,
+    "40": 0,
+    "160": 0
+   },
+   "verdict": "supported"
+  },
+  "c": {
+   "median_first_bound": {
+    "10": 200.0,
+    "40": 325,
+    "160": 550
+   },
+   "verdict": "falsified",
+   "model_expect": "225 [200,275] @10; [50,150] @40"
+  },
+  "d": {
+   "n_lost": {
+    "10": 6,
+    "160": 5
+   },
+   "median_first_loss": {
+    "10": 275.0,
+    "160": 650
+   },
+   "verdict": "supported"
+  }
+ },
+ "B_P6": {
+  "V1": "PASS",
+  "a": {
+   "retained": {
+    "10": 6,
+    "40": 6,
+    "160": 3
+   },
+   "n_acq": {
+    "10": 6,
+    "40": 6,
+    "160": 3
+   },
+   "verdict": "falsified"
+  },
+  "b": {
+   "median_kv_resid": {
+    "10": 0.03574889898300171,
+    "40": 0.08543439209461212,
+    "160": 0.0921672135591507
+   },
+   "verdict": "falsified"
+  },
+  "c": {
+   "median_kv_resid_eta10": 0.03574889898300171,
+   "interval": [
+    0.06,
+    0.3
+   ],
+   "verdict": "inconclusive"
+  },
+  "d": {
+   "dips": {
+    "10": 5,
+    "160": 2
+   },
+   "verdict": "supported"
+  }
+ },
+ "timing": {
+  "e2e1emb@10": {
+   "ms_step_median": 249.736,
+   "train_s_median": 432.8
+  },
+  "e2e1emb@40": {
+   "ms_step_median": 269.233,
+   "train_s_median": 462.25
+  },
+  "e2e1emb@160": {
+   "ms_step_median": 245.216,
+   "train_s_median": 441.4
+  },
+  "e2e2emb@10": {
+   "ms_step_median": 276.097,
+   "train_s_median": 447.1
+  },
+  "e2e2emb@40": {
+   "ms_step_median": 286.9945,
+   "train_s_median": 488.2
+  },
+  "e2e2emb@160": {
+   "ms_step_median": 306.7165,
+   "train_s_median": 513.9
+  },
+  "e2e1emb_linkv@10": {
+   "ms_step_median": 224.506,
+   "train_s_median": 367.45000000000005
+  }
+ }
+}

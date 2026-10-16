@@ -1,0 +1,82 @@
+# SOQ-P1-0: P1 pilot = SO seed 0, mini-m from scratch, echo injection
+# f = .25, p = .5, the 1200-step MINI schedule.
+# Production MINI keys are copied verbatim from configs/mini/e2e2-m.toml.
+# The endpoint state is kept (keep_final_state).  V0: the step-0 read must reproduce the
+# MINI SO seed-0 step-0 read (g43) within .01 nats, else ABORT before training.
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "train"
+process_name = "TTM-sp1-01"
+arm = "e2e2"
+preset = "mini-m"
+init_seed = 0
+data_seed = 0
+data_dir = "data/p2data"
+out_dir = "outputs/soq/p1/pilot-s0"
+device = "cuda"
+steps = 1200
+global_batch = 16
+micro_batch = 1
+seq_len = 8192
+warmup = 120
+lr_peak = 3e-3
+inner_lr = 1.0
+inner_clip = 1.0
+barriers = [2, 4, 6]
+segment_len = 2048
+fused_attn = false
+eval_steps = [300, 600, 1200]
+full_eval_steps = [1200]
+trajectory_docs = 256
+n_eval = 1024
+ho_docs = 256
+pilot_docs = 64
+save_checkpoints = true
+
+crossover_rules = []
+assay_gate = false
+pilot_steps = []
+sizing_steps = []
+inner_warmup = 120
+eval_batch = 2
+
+ho_trajectory_docs = 64
+eval_at_init = true
+init_eval_docs = 256
+init_ho_docs = 64
+init_eval_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+init_crossover_rules = []
+eval_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+trajectory_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+full_extra_modes = []
+resume_every = 100
+
+# --- SOQ P1 additions ---------------------------------------------------------------
+keep_final_state = true
+# Stream = permutation(A) then permutation(B) (registered stream definition): rows [0, 19200)
+# are exactly MINI's; B extends the stream beyond len(A) = 25600 rows.
+extra_train_splits = ["B"]
+echo_f = 0.25
+echo_p = 0.5
+echo_seed = 0
+# manifest_sha256 (generator v2: params + token tables c41cbf19...) of
+# echo_text.make_injector(split="train", f=.25, p=.5, seed=0, T=8192, S=2048) with
+# data/p2data/excluded_vocab.npy; a different generator aborts the run at start
+# (P2_ABORT reason echo_manifest).
+echo_manifest_sha256 = "db7b7578c723e3d8c62746d54f4c771b127bba7ed7c0a40371306d4eb479eeeb"
+# Echo read at every eval step (0/300/600/1200): TEST templates (p = .5) in ho rows 256..511,
+# disjoint from the held-out LM read ho[:256].
+echo_eval_docs = 256
+echo_eval_split = "ho"
+echo_eval_offset = 256
+echo_eval_p = 0.5
+parity_ref = "outputs/mini/matrix/g43/runs/mini-m/e2e2/s0/eval_step0000.npz"
+parity_docs = 256
+parity_tol = 0.01
+# One job: max_hours = 3.0 is a safety cap above the 9.5 ks estimate (MINI g43 SO s0 cell
+# 9250 s + echo reads).  After an early stop, the same config with resume = true continues from
+# the last resume_step state (saved every 100 steps).
+max_hours = 3.0
+estimate_wall_s = 9500

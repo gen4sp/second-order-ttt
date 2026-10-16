@@ -1,0 +1,45 @@
+experiment = "ttt"
+seed = 0
+
+[ttt]
+process_name = "TTM-r42-00-smoke"
+device = "cpu"
+workers = 1
+max_minutes = 10
+d_model = 32
+n_layers = 1
+n_heads = 4
+backbone_mult = 2
+fast_mult = 2
+window = 16
+chunk = 16
+T = 128
+steps = 30
+batch = 2
+n_keys = 4
+n_eval = 4
+n_val = 4
+n_quick_eval = 4
+eval_batch = 2
+lr = 0.001
+lr_total = 60
+warmup = 4
+lr_floor = 0.1
+eta_lr = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 10
+probe_every = 10
+n_probe = 4
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_kvm", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_rnd", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1_kvm", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1embP", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_kvm", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_rnd", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1_kvm", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1embP", eta_base = 10, diag = false },
+]

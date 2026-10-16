@@ -1,0 +1,1273 @@
+{
+ "D_dose_order": {
+  "rp10": {
+   "NL2": 0,
+   "descriptive": true,
+   "n": 12
+  },
+  "rpf100": {
+   "NL2": 11,
+   "descriptive": true,
+   "n": 12
+  },
+  "rpf30": {
+   "NL2": 12,
+   "descriptive": true,
+   "n": 12
+  }
+ },
+ "R_replication": {
+  "CHR_NL2": 2,
+  "CHR_n": 9,
+  "NL2": 0,
+  "classes": {
+   "count_label": "SHORTENS-FAST",
+   "n": 12,
+   "shortens_sign_p_unadjusted": 0.000244140625,
+   "tier": "LOW"
+  },
+  "descriptive": true,
+  "n": 12,
+  "outcome_counts": {
+   "FAST LOSS": 12
+  }
+ },
+ "doses": {
+  "100": {
+   "adverse": {
+    "ci": [
+     0.6152038348490558,
+     0.9978924067681398
+    ],
+    "count_label": "PREVENTS",
+    "k": 11,
+    "kv_specific_descriptive": true,
+    "manipulation": "OK",
+    "n": 12,
+    "ncf": 0,
+    "p": 0.00048828125,
+    "paired_ncf": {
+     "ci": [
+      0.5533502838441807,
+      0.9851349055950828
+     ],
+     "control": 0,
+     "control_ci": [
+      0.0,
+      0.264648469397051
+     ],
+     "difference": 0.9166666666666666,
+     "n": 12,
+     "p": 0.00048828125,
+     "table": {
+      "a": 0,
+      "b": 11,
+      "c": 0,
+      "d": 1
+     },
+     "treated": 11,
+     "treated_ci": [
+      0.6152038348490558,
+      0.9978924067681398
+     ]
+    },
+    "paired_twin": {
+     "ci": [
+      0.5533502838441807,
+      0.9851349055950828
+     ],
+     "control": 0,
+     "control_ci": [
+      0.0,
+      0.264648469397051
+     ],
+     "difference": 0.9166666666666666,
+     "n": 12,
+     "p": 0.00048828125,
+     "table": {
+      "a": 0,
+      "b": 11,
+      "c": 0,
+      "d": 1
+     },
+     "treated": 11,
+     "treated_ci": [
+      0.6152038348490558,
+      0.9978924067681398
+     ]
+    },
+    "rapid_false": 0,
+    "rapid_missing": 0,
+    "rapid_reversal_compatible": false,
+    "shortens_count": 12,
+    "shortens_sign_p_unadjusted": 0.000244140625,
+    "speed": "FAST",
+    "tier": "HIGH",
+    "twin": 0,
+    "verdict": "PREVENTS",
+    "write_gate": true
+   },
+   "ci": [
+    0.6152038348490558,
+    0.9978924067681398
+   ],
+   "count_label": "PREVENTS",
+   "eval_carried_overlap": {
+    "ci": [
+     0.3112784502468613,
+     0.8303384262446691
+    ],
+    "control": 3,
+    "control_ci": [
+     0.05486064452799272,
+     0.571858461878189
+    ],
+    "difference": 0.6666666666666666,
+    "n": 12,
+    "p": 0.00390625,
+    "table": {
+     "a": 3,
+     "b": 8,
+     "c": 0,
+     "d": 1
+    },
+    "treated": 11,
+    "treated_ci": [
+     0.6152038348490558,
+     0.9978924067681398
+    ]
+   },
+   "holm_pass": true,
+   "k": 11,
+   "kv_specific_descriptive": true,
+   "manipulation": "OK",
+   "n": 12,
+   "ncf": 0,
+   "p": 0.00048828125,
+   "paired_ncf": {
+    "ci": [
+     0.5533502838441807,
+     0.9851349055950828
+    ],
+    "control": 0,
+    "control_ci": [
+     0.0,
+     0.264648469397051
+    ],
+    "difference": 0.9166666666666666,
+    "n": 12,
+    "p": 0.00048828125,
+    "table": {
+     "a": 0,
+     "b": 11,
+     "c": 0,
+     "d": 1
+    },
+    "treated": 11,
+    "treated_ci": [
+     0.6152038348490558,
+     0.9978924067681398
+    ]
+   },
+   "paired_twin": {
+    "ci": [
+     0.5533502838441807,
+     0.9851349055950828
+    ],
+    "control": 0,
+    "control_ci": [
+     0.0,
+     0.264648469397051
+    ],
+    "difference": 0.9166666666666666,
+    "n": 12,
+    "p": 0.00048828125,
+    "table": {
+     "a": 0,
+     "b": 11,
+     "c": 0,
+     "d": 1
+    },
+    "treated": 11,
+    "treated_ci": [
+     0.6152038348490558,
+     0.9978924067681398
+    ]
+   },
+   "rapid_false": 0,
+   "rapid_missing": 0,
+   "rapid_reversal_compatible": false,
+   "seeds": [
+    200,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212
+   ],
+   "selectivity": "not-kv-specific",
+   "shortens_count": 12,
+   "shortens_sign_p_unadjusted": 0.000244140625,
+   "speed": "FAST",
+   "tier": "HIGH",
+   "timing": {
+    "equal": 0,
+    "m": 1,
+    "status": "insufficient failures",
+    "within10": 0
+   },
+   "twin": 0,
+   "verdict": "PREVENTS",
+   "write_gate": true
+  },
+  "30": {
+   "adverse": {
+    "ci": [
+     0.7353515306029488,
+     1.0
+    ],
+    "count_label": "PREVENTS",
+    "k": 12,
+    "kv_specific_descriptive": true,
+    "manipulation": "OK",
+    "n": 12,
+    "ncf": 0,
+    "p": 0.000244140625,
+    "paired_ncf": {
+     "ci": [
+      0.6570616869939667,
+      1.0
+     ],
+     "control": 0,
+     "control_ci": [
+      0.0,
+      0.264648469397051
+     ],
+     "difference": 1.0,
+     "n": 12,
+     "p": 0.000244140625,
+     "table": {
+      "a": 0,
+      "b": 12,
+      "c": 0,
+      "d": 0
+     },
+     "treated": 12,
+     "treated_ci": [
+      0.7353515306029488,
+      1.0
+     ]
+    },
+    "paired_twin": {
+     "ci": [
+      0.6570616869939667,
+      1.0
+     ],
+     "control": 0,
+     "control_ci": [
+      0.0,
+      0.264648469397051
+     ],
+     "difference": 1.0,
+     "n": 12,
+     "p": 0.000244140625,
+     "table": {
+      "a": 0,
+      "b": 12,
+      "c": 0,
+      "d": 0
+     },
+     "treated": 12,
+     "treated_ci": [
+      0.7353515306029488,
+      1.0
+     ]
+    },
+    "rapid_false": 0,
+    "rapid_missing": 0,
+    "rapid_reversal_compatible": false,
+    "shortens_count": 12,
+    "shortens_sign_p_unadjusted": 0.000244140625,
+    "speed": "N/A",
+    "tier": "HIGH",
+    "twin": 0,
+    "verdict": "INCONCLUSIVE (write gate)",
+    "write_gate": false
+   },
+   "ci": [
+    0.7353515306029488,
+    1.0
+   ],
+   "count_label": "PREVENTS",
+   "eval_carried_overlap": {
+    "ci": [
+     0.08694899679135198,
+     0.6804886874504502
+    ],
+    "control": 7,
+    "control_ci": [
+     0.2766696856821058,
+     0.8483477701915696
+    ],
+    "difference": 0.4166666666666667,
+    "n": 12,
+    "p": 0.03125,
+    "table": {
+     "a": 7,
+     "b": 5,
+     "c": 0,
+     "d": 0
+    },
+    "treated": 12,
+    "treated_ci": [
+     0.7353515306029488,
+     1.0
+    ]
+   },
+   "holm_pass": true,
+   "k": 12,
+   "kv_specific_descriptive": true,
+   "manipulation": "OK",
+   "n": 12,
+   "ncf": 0,
+   "p": 0.000244140625,
+   "paired_ncf": {
+    "ci": [
+     0.6570616869939667,
+     1.0
+    ],
+    "control": 0,
+    "control_ci": [
+     0.0,
+     0.264648469397051
+    ],
+    "difference": 1.0,
+    "n": 12,
+    "p": 0.000244140625,
+    "table": {
+     "a": 0,
+     "b": 12,
+     "c": 0,
+     "d": 0
+    },
+    "treated": 12,
+    "treated_ci": [
+     0.7353515306029488,
+     1.0
+    ]
+   },
+   "paired_twin": {
+    "ci": [
+     0.6570616869939667,
+     1.0
+    ],
+    "control": 0,
+    "control_ci": [
+     0.0,
+     0.264648469397051
+    ],
+    "difference": 1.0,
+    "n": 12,
+    "p": 0.000244140625,
+    "table": {
+     "a": 0,
+     "b": 12,
+     "c": 0,
+     "d": 0
+    },
+    "treated": 12,
+    "treated_ci": [
+     0.7353515306029488,
+     1.0
+    ]
+   },
+   "rapid_false": 0,
+   "rapid_missing": 0,
+   "rapid_reversal_compatible": false,
+   "seeds": [
+    200,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212
+   ],
+   "selectivity": "eval-carried",
+   "shortens_count": 12,
+   "shortens_sign_p_unadjusted": 0.000244140625,
+   "speed": "N/A",
+   "tier": "HIGH",
+   "timing": {
+    "equal": 0,
+    "m": 0,
+    "status": "insufficient failures",
+    "within10": 0
+   },
+   "twin": 0,
+   "verdict": "INCONCLUSIVE (write gate)",
+   "write_gate": false
+  }
+ },
+ "frozen_n": 12,
+ "provenance": {
+  "effective_config": {
+   "T": 512,
+   "backbone_mult": 4,
+   "backend_factory": "tttmem.trg_pool:create_backend",
+   "batch": 32,
+   "branch_ckpt_every": 100,
+   "branch_ckpt_tags": [
+    "rp03",
+    "nc03"
+   ],
+   "candidate_seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215
+   ],
+   "cells": [
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 200,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 201,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 202,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 203,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 204,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 205,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 206,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 207,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 208,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 209,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 210,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 211,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 212,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 213,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 214,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb",
+     "eta_base": 40,
+     "seed": 215,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 200,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 201,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 202,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 203,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 204,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 205,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 206,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 207,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 208,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 209,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 210,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e2emb",
+     "eta_base": 40,
+     "seed": 211,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 200,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 201,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 202,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 203,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 204,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 205,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 206,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 207,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 208,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 209,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 210,
+     "task": "echo"
+    },
+    {
+     "arm": "e2e1emb_cn97",
+     "eta_base": 40,
+     "seed": 211,
+     "task": "echo"
+    }
+   ],
+   "chunk": 64,
+   "chunk_early": 5,
+   "chunk_late": 6,
+   "ckpt_dense_arms": [
+    "e2e1emb"
+   ],
+   "ckpt_steps": [
+    100,
+    125,
+    150,
+    175,
+    200,
+    225,
+    250,
+    275,
+    300,
+    325,
+    350,
+    375,
+    400,
+    425,
+    450,
+    475,
+    500,
+    525,
+    550,
+    575,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500
+   ],
+   "ckpt_steps_sparse": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500
+   ],
+   "copy_noise_q": [
+    0.99,
+    0.97,
+    0.95,
+    0.9
+   ],
+   "coverage_factory": "tttmem.trg_pool:create_logger",
+   "cross_every": 25,
+   "cross_rules": {
+    "e2e1emb": [
+     "rp03"
+    ],
+    "e2e1emb_cn97": [
+     "rs01"
+    ],
+    "e2e2emb": [
+     "rp03"
+    ]
+   },
+   "d_model": 128,
+   "device": "cuda",
+   "eta_lr": 0.0,
+   "eval_batch": 32,
+   "fast_mult": 4,
+   "final_rules": {
+    "e2e1emb": [
+     "rp03",
+     "rp10"
+    ],
+    "e2e1emb_cn97": [
+     "rs01",
+     "rp03"
+    ],
+    "e2e2emb": [
+     "rp03",
+     "rp10"
+    ]
+   },
+   "fork_acc": 0.9,
+   "fork_arms": [],
+   "g_clip": 10.0,
+   "grad_clip": 1.0,
+   "h5_limit": 12,
+   "hard_grace_minutes": 60,
+   "horizon": 400,
+   "job_modules": [
+    "tttmem.trg_pool",
+    "tttmem.exp_rdo"
+   ],
+   "late": true,
+   "late_horizon": 300,
+   "limit": 12,
+   "log_every": 5,
+   "lr": 0.001,
+   "lr_floor": 0.1,
+   "lr_total": 3000,
+   "max_minutes": 420,
+   "mediation_cap": 1000.0,
+   "mediation_p": 0.5,
+   "mps_memory_fraction": 0.2,
+   "n_eval": 256,
+   "n_heads": 4,
+   "n_keys": 16,
+   "n_layers": 4,
+   "n_probe": 32,
+   "n_quick_eval": 64,
+   "n_val": 64,
+   "probe_every": 25,
+   "protocol": "frs-a-full-v2",
+   "rdo_rpe": {
+    "candidate_seeds": [
+     200,
+     201,
+     202,
+     203,
+     204,
+     205,
+     206,
+     207,
+     208,
+     209,
+     210,
+     211,
+     212,
+     213,
+     214,
+     215
+    ],
+    "horizon": 400,
+    "late": true,
+    "late_horizon": 300,
+    "limit": 12
+   },
+   "require_cuda": true,
+   "resume": true,
+   "rf_probability": 0.05,
+   "rp_cap": 1000.0,
+   "smoke_only": false,
+   "steps": 1500,
+   "tf32": false,
+   "threads_per_worker": 2,
+   "trg_kappa": 3,
+   "warmup": 200,
+   "window": 64,
+   "workers": 5
+  },
+  "pool_provenance": {
+   "device": "cuda",
+   "effective_config": {
+    "T": 512,
+    "backbone_mult": 4,
+    "backend_factory": "tttmem.trg_pool:create_backend",
+    "batch": 32,
+    "branch_ckpt_every": 100,
+    "branch_ckpt_tags": [
+     "rp03",
+     "nc03"
+    ],
+    "cells": [
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 200,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 201,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 202,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 203,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 204,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 205,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 206,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 207,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 208,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 209,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 210,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 211,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 212,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 213,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 214,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb",
+      "eta_base": 40,
+      "seed": 215,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 200,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 201,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 202,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 203,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 204,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 205,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 206,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 207,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 208,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 209,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 210,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e2emb",
+      "eta_base": 40,
+      "seed": 211,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 200,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 201,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 202,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 203,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 204,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 205,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 206,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 207,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 208,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 209,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 210,
+      "task": "echo"
+     },
+     {
+      "arm": "e2e1emb_cn97",
+      "eta_base": 40,
+      "seed": 211,
+      "task": "echo"
+     }
+    ],
+    "chunk": 64,
+    "chunk_early": 5,
+    "chunk_late": 6,
+    "ckpt_dense_arms": [
+     "e2e1emb"
+    ],
+    "ckpt_steps": [
+     100,
+     125,
+     150,
+     175,
+     200,
+     225,
+     250,
+     275,
+     300,
+     325,
+     350,
+     375,
+     400,
+     425,
+     450,
+     475,
+     500,
+     525,
+     550,
+     575,
+     600,
+     700,
+     800,
+     900,
+     1000,
+     1100,
+     1200,
+     1300,
+     1400,
+     1500
+    ],
+    "ckpt_steps_sparse": [
+     100,
+     200,
+     300,
+     400,
+     500,
+     600,
+     700,
+     800,
+     900,
+     1000,
+     1100,
+     1200,
+     1300,
+     1400,
+     1500
+    ],
+    "copy_noise_q": [
+     0.99,
+     0.97,
+     0.95,
+     0.9
+    ],
+    "coverage_factory": "tttmem.trg_pool:create_logger",
+    "cross_every": 25,
+    "cross_rules": {
+     "e2e1emb": [
+      "rp03"
+     ],
+     "e2e1emb_cn97": [
+      "rs01"
+     ],
+     "e2e2emb": [
+      "rp03"
+     ]
+    },
+    "d_model": 128,
+    "device": "cuda",
+    "eta_lr": 0.0,
+    "eval_batch": 32,
+    "fast_mult": 4,
+    "final_rules": {
+     "e2e1emb": [
+      "rp03",
+      "rp10"
+     ],
+     "e2e1emb_cn97": [
+      "rs01",
+      "rp03"
+     ],
+     "e2e2emb": [
+      "rp03",
+      "rp10"
+     ]
+    },
+    "fork_acc": 0.9,
+    "fork_arms": [],
+    "g_clip": 10.0,
+    "grad_clip": 1.0,
+    "h5_limit": 12,
+    "hard_grace_minutes": 60,
+    "job_modules": [
+     "tttmem.trg_pool",
+     "tttmem.exp_rdo"
+    ],
+    "log_every": 5,
+    "lr": 0.001,
+    "lr_floor": 0.1,
+    "lr_total": 3000,
+    "max_minutes": 420,
+    "mediation_cap": 1000.0,
+    "mediation_p": 0.5,
+    "mps_memory_fraction": 0.2,
+    "n_eval": 256,
+    "n_heads": 4,
+    "n_keys": 16,
+    "n_layers": 4,
+    "n_probe": 32,
+    "n_quick_eval": 64,
+    "n_val": 64,
+    "probe_every": 25,
+    "protocol": "frs-a-full-v2",
+    "rdo_rpe": {
+     "candidate_seeds": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215
+     ],
+     "horizon": 400,
+     "late": true,
+     "late_horizon": 300,
+     "limit": 12
+    },
+    "require_cuda": true,
+    "resume": true,
+    "rf_probability": 0.05,
+    "rp_cap": 1000.0,
+    "smoke_only": false,
+    "steps": 1500,
+    "tf32": false,
+    "threads_per_worker": 2,
+    "trg_kappa": 3,
+    "warmup": 200,
+    "window": 64,
+    "workers": 5
+   },
+   "protocol": "frs-a-full-v2",
+   "smoke_only": false
+  },
+  "smoke_only": false
+ },
+ "smoke_only": false
+}

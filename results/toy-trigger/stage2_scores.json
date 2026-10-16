@@ -1,0 +1,1064 @@
+{
+ "H_T3": {
+  "FO": {
+   "adverse": 0,
+   "attempted": 15,
+   "discordant": 14,
+   "enrolled": 15,
+   "favorable": 14,
+   "holm_p": 0.0001220703125,
+   "kvm_nl2": 14,
+   "label": "SUPPORTED",
+   "missing_sensitive": false,
+   "n": 15,
+   "non_specific": false,
+   "observed_support": true,
+   "p": 6.103515625e-05,
+   "rnd_nl2": 0,
+   "worst": {
+    "adverse": 0,
+    "discordant": 14,
+    "favorable": 14,
+    "holm_p": 0.0001220703125,
+    "kvm_nl2": 14,
+    "n": 15,
+    "p": 6.103515625e-05,
+    "rnd_nl2": 0
+   },
+   "worst_case_survives": true
+  },
+  "noise": {
+   "adverse": 0,
+   "attempted": 12,
+   "discordant": 9,
+   "enrolled": 12,
+   "favorable": 9,
+   "holm_p": 0.001953125,
+   "kvm_nl2": 9,
+   "label": "SUPPORTED",
+   "missing_sensitive": false,
+   "n": 12,
+   "non_specific": false,
+   "observed_support": true,
+   "p": 0.001953125,
+   "rnd_nl2": 0,
+   "worst": {
+    "adverse": 0,
+    "discordant": 9,
+    "favorable": 9,
+    "holm_p": 0.001953125,
+    "kvm_nl2": 9,
+    "n": 12,
+    "p": 0.001953125,
+    "rnd_nl2": 0
+   },
+   "worst_case_survives": true
+  }
+ },
+ "H_T4": {
+  "attempted": 11,
+  "descriptive": true,
+  "engaged": 11,
+  "enrolled": 11,
+  "label": "NO REDUCTION",
+  "median_R": -0.36645962732919257,
+  "missing_sensitive": false,
+  "n": 11,
+  "non_tied": 11,
+  "nonpositive": 10,
+  "p": 0.99951171875,
+  "ratios": [
+   -0.2671232876712329,
+   -0.27439024390243905,
+   -0.35947712418300654,
+   -0.5454545454545454,
+   -0.5664335664335665,
+   -0.3735632183908046,
+   0.06598984771573604,
+   -0.5542857142857143,
+   -0.4649122807017544,
+   -0.3357142857142857,
+   -0.36645962732919257
+  ],
+  "ties": 0,
+  "wins": 1,
+  "worst": {
+   "median_R": -0.36645962732919257,
+   "n": 11,
+   "non_tied": 11,
+   "nonpositive": 10,
+   "p": 0.99951171875,
+   "ratios": [
+    -0.2671232876712329,
+    -0.27439024390243905,
+    -0.35947712418300654,
+    -0.5454545454545454,
+    -0.5664335664335665,
+    -0.3735632183908046,
+    0.06598984771573604,
+    -0.5542857142857143,
+    -0.4649122807017544,
+    -0.3357142857142857,
+    -0.36645962732919257
+   ],
+   "ties": 0,
+   "wins": 1
+  },
+  "worst_case_survives": false
+ },
+ "dispositions": [
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s200/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 200,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s200/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 200,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s200/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 200,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s201/e2e1emb/eta40/st1500",
+   "disposition": "no-acquisition",
+   "family": "FO",
+   "seed": 201
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s201/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 201,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s201/e2e2emb/eta40/st1500",
+   "disposition": "over-limit",
+   "family": "SO",
+   "seed": 201,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s202/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 202,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s202/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 202,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s202/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 202,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s203/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 203,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s203/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 203,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s203/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 203,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s204/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 204,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s204/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 204,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s204/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 204,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s205/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 205,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s205/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 205,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s205/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 205,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s206/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 206,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s206/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 206,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s206/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 206,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s207/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 207,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s207/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 207,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s207/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 207,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s208/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 208,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s208/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 208,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s208/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 208,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s209/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 209,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s209/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 209,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s209/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 209,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s210/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 210,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s210/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 210,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s210/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 210,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s211/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 211,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb_cn97",
+   "cell_id": "echo/s211/e2e1emb_cn97/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "noise",
+   "seed": 211,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e2emb",
+   "cell_id": "echo/s211/e2e2emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "SO",
+   "seed": 211,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s212/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 212,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s213/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 213,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s214/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 214,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  },
+  {
+   "arm": "e2e1emb",
+   "cell_id": "echo/s215/e2e1emb/eta40/st1500",
+   "disposition": "enrolled",
+   "family": "FO",
+   "seed": 215,
+   "trg_rpe_intersection_rule": "RPE's first 12 enrolled FO units in seed order with a valid t_acq state and t_acq <= 1100 are a subset of TRG's all eligible FO units; the intersection is RPE's enrolled units, reported before descriptive cross-route comparisons. Noise is TRG-only; TRG references the main, RPE its CE twin."
+  }
+ ],
+ "smoke_only": false,
+ "status": "SCORED",
+ "units": [
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 400
+   },
+   "seed": 200
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 345
+   },
+   "seed": 200
+  },
+  {
+   "drops": 161,
+   "family": "SO",
+   "length": 590,
+   "seed": 200,
+   "sham": {
+    "U": 107,
+    "deficit": 24.926953125000004,
+    "evidence_error": null,
+    "length": 590
+   },
+   "skip": {
+    "U": 146,
+    "deficit": 32.1626953125,
+    "evidence_error": null,
+    "length": 590
+   }
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 450
+   },
+   "seed": 201
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 465
+   },
+   "seed": 202
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 510
+   },
+   "seed": 202
+  },
+  {
+   "drops": 161,
+   "family": "SO",
+   "length": 570,
+   "seed": 202,
+   "sham": {
+    "U": 119,
+    "deficit": 35.992578125,
+    "evidence_error": null,
+    "length": 570
+   },
+   "skip": {
+    "U": 164,
+    "deficit": 39.51796875,
+    "evidence_error": null,
+    "length": 570
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 370
+   },
+   "seed": 203
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 340
+   },
+   "seed": 203
+  },
+  {
+   "drops": 186,
+   "family": "SO",
+   "length": 535,
+   "seed": 203,
+   "sham": {
+    "U": 98,
+    "deficit": 32.04765625,
+    "evidence_error": null,
+    "length": 535
+   },
+   "skip": {
+    "U": 153,
+    "deficit": 47.713671875,
+    "evidence_error": null,
+    "length": 535
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 375
+   },
+   "seed": 204
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 365
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 410
+   },
+   "seed": 204
+  },
+  {
+   "drops": 103,
+   "family": "SO",
+   "length": 335,
+   "seed": 204,
+   "sham": {
+    "U": 50,
+    "deficit": 11.761718750000002,
+    "evidence_error": null,
+    "length": 335
+   },
+   "skip": {
+    "U": 110,
+    "deficit": 31.990234374999996,
+    "evidence_error": null,
+    "length": 335
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 385
+   },
+   "seed": 205
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 380
+   },
+   "seed": 205
+  },
+  {
+   "drops": 151,
+   "family": "SO",
+   "length": 560,
+   "seed": 205,
+   "sham": {
+    "U": 62,
+    "deficit": 7.804882812500002,
+    "evidence_error": null,
+    "length": 560
+   },
+   "skip": {
+    "U": 143,
+    "deficit": 36.73125,
+    "evidence_error": null,
+    "length": 560
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 380
+   },
+   "seed": 206
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 405
+   },
+   "seed": 206
+  },
+  {
+   "drops": 192,
+   "family": "SO",
+   "length": 595,
+   "seed": 206,
+   "sham": {
+    "U": 109,
+    "deficit": 30.2884765625,
+    "evidence_error": null,
+    "length": 595
+   },
+   "skip": {
+    "U": 174,
+    "deficit": 52.51406250000001,
+    "evidence_error": null,
+    "length": 595
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 375
+   },
+   "seed": 207
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 330
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 400
+   },
+   "seed": 207
+  },
+  {
+   "drops": 169,
+   "family": "SO",
+   "length": 545,
+   "seed": 207,
+   "sham": {
+    "U": 197,
+    "deficit": 34.571484375,
+    "evidence_error": null,
+    "length": 545
+   },
+   "skip": {
+    "U": 184,
+    "deficit": 35.96621093750001,
+    "evidence_error": null,
+    "length": 545
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 300
+   },
+   "seed": 208
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 380
+   },
+   "seed": 208
+  },
+  {
+   "drops": 149,
+   "family": "SO",
+   "length": 485,
+   "seed": 208,
+   "sham": {
+    "U": 78,
+    "deficit": 19.0681640625,
+    "evidence_error": null,
+    "length": 485
+   },
+   "skip": {
+    "U": 175,
+    "deficit": 51.3974609375,
+    "evidence_error": null,
+    "length": 485
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 365
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 360
+   },
+   "seed": 209
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 345
+   },
+   "seed": 209
+  },
+  {
+   "drops": 152,
+   "family": "SO",
+   "length": 565,
+   "seed": 209,
+   "sham": {
+    "U": 61,
+    "deficit": 16.252539062500002,
+    "evidence_error": null,
+    "length": 565
+   },
+   "skip": {
+    "U": 114,
+    "deficit": 33.87734375,
+    "evidence_error": null,
+    "length": 565
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 440
+   },
+   "seed": 210
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 350
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 425
+   },
+   "seed": 210
+  },
+  {
+   "drops": 172,
+   "family": "SO",
+   "length": 565,
+   "seed": 210,
+   "sham": {
+    "U": 93,
+    "deficit": 10.205859375000001,
+    "evidence_error": null,
+    "length": 565
+   },
+   "skip": {
+    "U": 140,
+    "deficit": 34.9765625,
+    "evidence_error": null,
+    "length": 565
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 385
+   },
+   "seed": 211
+  },
+  {
+   "family": "noise",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 375
+   },
+   "seed": 211
+  },
+  {
+   "drops": 186,
+   "family": "SO",
+   "length": 565,
+   "seed": 211,
+   "sham": {
+    "U": 102,
+    "deficit": 37.504101562500004,
+    "evidence_error": null,
+    "length": 565
+   },
+   "skip": {
+    "U": 161,
+    "deficit": 46.634375000000006,
+    "evidence_error": null,
+    "length": 565
+   }
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 340
+   },
+   "seed": 212
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 375
+   },
+   "seed": 213
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 390
+   },
+   "seed": 214
+  },
+  {
+   "family": "FO",
+   "kvm": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": true,
+    "onset": null
+   },
+   "rnd": {
+    "evidence_error": null,
+    "missing": false,
+    "nl2": false,
+    "onset": 360
+   },
+   "seed": 215
+  }
+ ]
+}

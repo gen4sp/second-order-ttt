@@ -1,0 +1,45 @@
+{
+  "check": "central finite differences of unmodified official inner loop",
+  "reference_sha256": "e93a9b8f7c7bfe28f98be4fd34c182efafa4adc75c176d6abd1b3b32a1b73d86",
+  "directions": [
+    {
+      "direction": "all_parameters_meta_delta",
+      "epsilon": 0.0003,
+      "finite_difference": 6.097157796223959,
+      "autodiff_so": 6.117893304750324,
+      "autodiff_fo": -0.3469589438518626,
+      "absolute_error": 0.020735508526365187,
+      "tolerance": 0.06117893304750324
+    },
+    {
+      "direction": "all_parameters_meta_delta",
+      "epsilon": 0.0001,
+      "finite_difference": 6.117820739746094,
+      "autodiff_so": 6.117893304750324,
+      "autodiff_fo": -0.3469589438518626,
+      "absolute_error": 7.256500423036272e-05,
+      "tolerance": 0.06117893304750324
+    },
+    {
+      "direction": "prime_parameters_meta_delta",
+      "epsilon": 0.0003,
+      "finite_difference": 1.960595448811849,
+      "autodiff_so": 1.9609836364446576,
+      "autodiff_fo": -0.08963932026907873,
+      "absolute_error": 0.0003881876328084566,
+      "tolerance": 0.019609836364446576
+    },
+    {
+      "direction": "prime_parameters_meta_delta",
+      "epsilon": 0.0001,
+      "finite_difference": 1.9574165344238281,
+      "autodiff_so": 1.9609836364446576,
+      "autodiff_fo": -0.08963932026907873,
+      "absolute_error": 0.003567102020829438,
+      "tolerance": 0.019609836364446576
+    }
+  ],
+  "elapsed_seconds": 4.6955396248959005,
+  "peak_rss_mb": 427.016192,
+  "torch_imported": false
+}

@@ -1,0 +1,58 @@
+# G0: write-gain split + eval-time gain titration, job 1 of 2 (single CUDA GPU).
+# Reads run first (ce = V0 gate), then the gain split. Outputs: outputs/mini/matrix/g0/mini-m/<arm>/s<seed>.
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_g0"
+process_name = "TTM-g0-01"
+process_nn = 1
+data_dir = "data/p2data"
+device = "cuda"
+out_dir = "outputs/mini/matrix/g0/pod01"
+max_hours = 1.4
+n_docs = 1024
+n_ho_adapt = 128
+sigma_cap = 4.0
+n_split_docs = 256
+split_k = 32
+split_batch = 2
+ch_err_median_max = 0.02
+ch_err_p99_max = 0.10
+production_configs = { "mini-m/e2e2" = "configs/mini/e2e2-m.toml", "mini-m/e2e1-ce" = "configs/mini/e2e1-ce-m.toml" }
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+step = 1200
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/mini/matrix/g0/mini-m/e2e1-ce/s0"
+reads = ["ce", "eta125", "eta150", "eta200", "sig4", "sig4shuf", "const4"]
+split = true
+estimate_wall_s = 1500
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+step = 1200
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e1-ce/s1/model_step1200.pt"
+out = "outputs/mini/matrix/g0/mini-m/e2e1-ce/s1"
+reads = ["ce", "eta125", "eta150", "eta200", "sig4", "sig4shuf", "const4"]
+split = true
+estimate_wall_s = 1500
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+step = 1200
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e2/s2/model_step1200.pt"
+out = "outputs/mini/matrix/g0/mini-m/e2e2/s2"
+reads = ["ce", "eta200", "sig4"]
+split = true
+estimate_wall_s = 800

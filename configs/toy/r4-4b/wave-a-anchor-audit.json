@@ -1,0 +1,146 @@
+{
+  "source_run": "r4-4b-wave-a",
+  "source_commit": null,
+  "cells": [
+    {
+      "seed": 0,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "3381d736d365c1355e5c39a8e363bcaead47f994",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.499266,
+        "ce_late": 2.608803,
+        "query_acc": 0.287354,
+        "query_ce": 2.173107
+      }
+    },
+    {
+      "seed": 1,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "146f24225fe0a535a8be58c5864fbaafc211e99b",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.541636,
+        "ce_late": 2.678377,
+        "query_acc": 0.334717,
+        "query_ce": 2.077272
+      }
+    },
+    {
+      "seed": 2,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "f8dd416cd21a7191d915a7a9ec2c4fdf19d61601",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.494608,
+        "ce_late": 2.614317,
+        "query_acc": 0.356445,
+        "query_ce": 1.996169
+      }
+    },
+    {
+      "seed": 3,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "a33f9ce49282257bb535f90e892a7a043b4eb00e",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.502426,
+        "ce_late": 2.620025,
+        "query_acc": 0.345215,
+        "query_ce": 2.069231
+      }
+    },
+    {
+      "seed": 4,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "280a99503f9b6d78fe4fc25253e7284c9d36f150",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.512334,
+        "ce_late": 2.617606,
+        "query_acc": 0.326904,
+        "query_ce": 1.974833
+      }
+    },
+    {
+      "seed": 5,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "d6e14eb399949c3ce0744338351d372ec32a7336",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.495481,
+        "ce_late": 2.637565,
+        "query_acc": 0.430664,
+        "query_ce": 1.811649
+      }
+    },
+    {
+      "seed": 6,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "9ccfe67ed1cce51b6f7d12873b06dc750a298349",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.490337,
+        "ce_late": 2.619109,
+        "query_acc": 0.487549,
+        "query_ce": 1.631092
+      }
+    },
+    {
+      "seed": 7,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "32c3c66866388224399d0af577ad1ddeaf5bb27e",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.492199,
+        "ce_late": 2.613871,
+        "query_acc": 0.37793,
+        "query_ce": 1.94428
+      }
+    },
+    {
+      "seed": 8,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "590ae8820950ed2f9e52a6ef3a4701c15f06e988",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.533559,
+        "ce_late": 2.687654,
+        "query_acc": 0.450928,
+        "query_ce": 1.695267
+      }
+    },
+    {
+      "seed": 9,
+      "arm": "e2e1emb",
+      "first_batch_sha1": "49abb571bbdd4c776f1b30abc0ad0bbd65e5d620",
+      "bound_ever": true,
+      "bound_final": false,
+      "t_lose": null,
+      "eval": {
+        "ce": 2.531482,
+        "ce_late": 2.673606,
+        "query_acc": 0.417969,
+        "query_ce": 1.865744
+      }
+    }
+  ]
+}

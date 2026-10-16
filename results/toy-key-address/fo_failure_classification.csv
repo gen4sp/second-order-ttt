@@ -1,0 +1,7 @@
+label,arm,seed,content_inf,memory_inf,address_dot,meets_gain,meets_address,meets_content
+r2b-e2e1-s0,e2e1,0,0.283935546875,0.024169921875,0.06396484375,False,False,True
+r2b-e2e1-s1,e2e1,1,0.296630859375,0.00341796875,0.06005859375,False,False,True
+r2b-e2e1-s2,e2e1,2,0.1572265625,0.0302734375,0.063232421875,False,False,True
+r2b-e2e1-s3,e2e1,3,0.34912109375,0.002685546875,0.062744140625,False,False,False
+r2b-e2e1-s4,e2e1,4,0.5322265625,0.033203125,0.064208984375,False,False,False
+r2b-e2e1-s5,e2e1,5,0.103515625,0.021484375,0.0615234375,False,False,True

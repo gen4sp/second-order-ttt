@@ -1,0 +1,95 @@
+# RTW toy wave
+experiment = "rtw"
+seed = 300
+
+[rtw]
+process_name = "TTM-rtw-05-w0"
+device = "cuda"
+workers = 8
+threads_per_worker = 2
+pod_smoke = true
+tf32 = false
+resume = true
+output_root = "outputs/rtw/podsmoke-05"
+steps = 30
+batch = 32
+T = 512
+chunk = 64
+window = 64
+n_keys = 16
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+eta_base = 40.0
+eta_lr = 0.0
+g_clip = 10.0
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+grad_clip = 1.0
+log_every = 5
+quick_every = 25
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+seeds = [300]
+arms = ["A0", "SO", "G-hi", "G-lo", "G-scalar", "G-sg", "G-hi-c", "M-p125", "M-p25", "M-p50", "M-late", "M-early", "RP-all", "NC-all"]
+[[rtw.cells]]
+arm = "A0"
+seed = 300
+
+[[rtw.cells]]
+arm = "SO"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-hi"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-lo"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-scalar"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-sg"
+seed = 300
+
+[[rtw.cells]]
+arm = "G-hi-c"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-p125"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-p25"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-p50"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-late"
+seed = 300
+
+[[rtw.cells]]
+arm = "M-early"
+seed = 300
+
+[[rtw.cells]]
+arm = "RP-all"
+seed = 300
+
+[[rtw.cells]]
+arm = "NC-all"
+seed = 300

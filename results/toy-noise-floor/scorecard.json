@@ -1,0 +1,1048 @@
+{
+ "meta": {
+  "retry": [],
+  "warnings": []
+ },
+ "score": {
+  "primary": {
+   "design": "full",
+   "full_complete_blocks": 6,
+   "R_complete_blocks": 6,
+   "bw1b_launched": true
+  },
+  "B-W1c3": {
+   "verdict": "F",
+   "reversal": "no",
+   "label": "F",
+   "n_complete": 6,
+   "D_complete": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "T": 2,
+   "p_plus": 0.25,
+   "p_minus": 1.0,
+   "p_two": 0.5,
+   "T_best": 2,
+   "T_worst": 2,
+   "completions": 1,
+   "completions_reversal": 0,
+   "S_pairs": 2,
+   "n_plus": 2,
+   "n_minus": 0,
+   "mcnemar_naive_descriptive": 0.5
+  },
+  "B-W1c3-R": {
+   "verdict": "F",
+   "reversal": "no",
+   "label": "F",
+   "n_complete": 6,
+   "D_complete": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "T": 1,
+   "p_plus": 0.5,
+   "p_minus": 1.0,
+   "p_two": 1.0,
+   "T_best": 1,
+   "T_worst": 1,
+   "completions": 1,
+   "completions_reversal": 0,
+   "S_pairs": 1,
+   "n_plus": 1,
+   "n_minus": 0,
+   "mcnemar_naive_descriptive": 1.0
+  },
+  "B-W1c3-primary": {
+   "verdict": "F",
+   "reversal": "no",
+   "label": "F",
+   "n_complete": 6,
+   "D_complete": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "T": 2,
+   "p_plus": 0.25,
+   "p_minus": 1.0,
+   "p_two": 0.5,
+   "T_best": 2,
+   "T_worst": 2,
+   "completions": 1,
+   "completions_reversal": 0,
+   "S_pairs": 2,
+   "n_plus": 2,
+   "n_minus": 0,
+   "mcnemar_naive_descriptive": 0.5
+  },
+  "B-W1-c2-pooled": {
+   "verdict": "F",
+   "n_pairs": 24,
+   "S": 2,
+   "n_plus": 2,
+   "n_minus": 0,
+   "p": 0.5
+  },
+  "B-W2": {
+   "verdict": "F",
+   "possible": [
+    "F"
+   ],
+   "deltas": [
+    [
+     "exact",
+     0
+    ]
+   ],
+   "qc10": [
+    [
+     1,
+     "exact"
+    ]
+   ],
+   "qc40": [
+    [
+     1,
+     "exact"
+    ]
+   ]
+  },
+  "A-P4 (A's card)": {
+   "verdict": "S",
+   "possible": [
+    "S"
+   ],
+   "deltas": [
+    [
+     "exact",
+     0
+    ]
+   ],
+   "flags": {
+    "10/99": "no flag",
+    "10/97": "no flag",
+    "10/95": "no flag",
+    "10/90": "no flag",
+    "40/99": "no flag",
+    "40/97": "no flag",
+    "40/95": "no flag",
+    "40/90": "no flag"
+   },
+   "ratio_reading_sensitivity": "S"
+  },
+  "P1(a) c2/c3": {
+   "verdict": "F",
+   "possible": [
+    "F"
+   ],
+   "counts": {
+    "cn99@10": [
+     0,
+     0
+    ],
+    "cn97@10": [
+     5,
+     0
+    ],
+    "cn95@10": [
+     6,
+     0
+    ]
+   }
+  },
+  "P1 c1-as-registered": {
+   "gate_V1": "pass (observed cells)",
+   "gate_V2": "pass (TH-RC: linkv@10 6/6 retained; anchor@10 6/6 acquired)",
+   "gate_V3": {
+    "99": "pass",
+    "97": "pass",
+    "95": "pass"
+   },
+   "retention": "F",
+   "possible": [
+    "F"
+   ]
+  },
+  "P1(b)": {
+   "verdict": "S",
+   "median_intervals": {
+    "cn99@10": [
+     0.7817385,
+     0.7817385
+    ],
+    "cn97@10": [
+     0.9642335,
+     0.9642335
+    ],
+    "cn95@10": [
+     0.9836425,
+     0.9836425
+    ],
+    "cn90@10": [
+     0.997803,
+     0.997803
+    ]
+   }
+  },
+  "P2 c2/c3": {
+   "verdict": "S",
+   "possible": [
+    "S"
+   ],
+   "counts": {
+    "cn95": [
+     6,
+     0
+    ],
+    "cn99": [
+     1,
+     0
+    ]
+   }
+  },
+  "P2 c1-as-registered": {
+   "verdict": "NE",
+   "reason": "c1 gate V2 (linkv@40 retained >= 5/6) needs linkv@40, dropped from the 48-cell wave; reported, counts neither way"
+  },
+  "B-W0": {
+   "verdict": "S",
+   "per_group": {
+    "e2e1emb_cn99@10": "S",
+    "e2e1emb_cn99@40": "S",
+    "e2e1emb_cn97@10": "S",
+    "e2e1emb_cn97@40": "S",
+    "e2e1emb_cn95@10": "S",
+    "e2e1emb_cn95@40": "S",
+    "e2e1emb_cn90@10": "S",
+    "e2e1emb_cn90@40": "S"
+   }
+  },
+  "descriptive": {
+   "e2e1emb_cn99@10": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "6/6 (+0 missing)",
+    "retained": "0/6 (+0 missing)",
+    "acc_per_seed": [
+     0.7739,
+     0.8743,
+     0.7896,
+     0.7053,
+     0.8257,
+     0.7551
+    ],
+    "ce_per_seed": [
+     0.903549,
+     0.589648,
+     0.771459,
+     1.023607,
+     0.591017,
+     0.873206
+    ],
+    "median_acc": [
+     0.7817385,
+     0.7817385
+    ],
+    "median_ce": [
+     0.8223325,
+     0.8223325
+    ],
+    "median_first_bound_observed": 212.5,
+    "p_kv_1500": [
+     0.99117,
+     0.98904,
+     0.99078,
+     0.99077,
+     0.98699,
+     0.99142
+    ],
+    "corrupted_acc": [
+     0.7549,
+     0.8584,
+     0.7678,
+     0.6851,
+     0.8081,
+     0.739
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 6,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     6,
+     6
+    ],
+    "retained_completion": [
+     0,
+     0
+    ]
+   },
+   "e2e1emb_cn99@40": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "5/6 (+0 missing)",
+    "retained": "1/6 (+0 missing)",
+    "acc_per_seed": [
+     0.9578,
+     0.8882,
+     0.8494,
+     0.687,
+     0.8418,
+     0.7061
+    ],
+    "ce_per_seed": [
+     0.260478,
+     0.387547,
+     0.588554,
+     1.066892,
+     0.801002,
+     1.108031
+    ],
+    "median_acc": [
+     0.845581,
+     0.845581
+    ],
+    "median_ce": [
+     0.694778,
+     0.694778
+    ],
+    "median_first_bound_observed": 325,
+    "p_kv_1500": [
+     0.98765,
+     0.98212,
+     0.98796,
+     0.99085,
+     0.98944,
+     0.99217
+    ],
+    "corrupted_acc": [
+     0.9321,
+     0.8723,
+     0.8335,
+     0.6792,
+     0.8218,
+     0.6943
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 5,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     5,
+     5
+    ],
+    "retained_completion": [
+     1,
+     1
+    ]
+   },
+   "e2e1emb_cn97@10": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "6/6 (+0 missing)",
+    "retained": "5/6 (+0 missing)",
+    "acc_per_seed": [
+     0.9697,
+     0.9663,
+     0.9766,
+     0.9421,
+     0.8882,
+     0.9622
+    ],
+    "ce_per_seed": [
+     0.173493,
+     0.227595,
+     0.173536,
+     0.357954,
+     0.399363,
+     0.197548
+    ],
+    "median_acc": [
+     0.9642335,
+     0.9642335
+    ],
+    "median_ce": [
+     0.2125715,
+     0.2125715
+    ],
+    "median_first_bound_observed": 212.5,
+    "p_kv_1500": [
+     0.9687,
+     0.9722,
+     0.97487,
+     0.97138,
+     0.97607,
+     0.96646
+    ],
+    "corrupted_acc": [
+     0.946,
+     0.9075,
+     0.9424,
+     0.8892,
+     0.8577,
+     0.9429
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 6,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     6,
+     6
+    ],
+    "retained_completion": [
+     5,
+     5
+    ]
+   },
+   "e2e1emb_cn97@40": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "6/6 (+0 missing)",
+    "retained": "6/6 (+0 missing)",
+    "acc_per_seed": [
+     0.9741,
+     0.9526,
+     0.9119,
+     0.9436,
+     0.9441,
+     0.9346
+    ],
+    "ce_per_seed": [
+     0.189674,
+     0.224126,
+     0.328541,
+     0.303411,
+     0.262354,
+     0.29748
+    ],
+    "median_acc": [
+     0.943848,
+     0.943848
+    ],
+    "median_ce": [
+     0.27991699999999997,
+     0.27991699999999997
+    ],
+    "median_first_bound_observed": 337.5,
+    "p_kv_1500": [
+     0.97255,
+     0.96314,
+     0.97407,
+     0.97283,
+     0.97072,
+     0.97006
+    ],
+    "corrupted_acc": [
+     0.9438,
+     0.9373,
+     0.8916,
+     0.9148,
+     0.9133,
+     0.9028
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 6,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     6,
+     6
+    ],
+    "retained_completion": [
+     6,
+     6
+    ]
+   },
+   "e2e1emb_cn95@10": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "6/6 (+0 missing)",
+    "retained": "6/6 (+0 missing)",
+    "acc_per_seed": [
+     0.9795,
+     0.9917,
+     0.9941,
+     0.9641,
+     0.9753,
+     0.9878
+    ],
+    "ce_per_seed": [
+     0.119651,
+     0.098944,
+     0.059762,
+     0.181902,
+     0.158374,
+     0.090982
+    ],
+    "median_acc": [
+     0.9836425,
+     0.9836425
+    ],
+    "median_ce": [
+     0.10929749999999999,
+     0.10929749999999999
+    ],
+    "median_first_bound_observed": 200.0,
+    "p_kv_1500": [
+     0.95449,
+     0.95045,
+     0.9479,
+     0.95486,
+     0.95542,
+     0.94294
+    ],
+    "corrupted_acc": [
+     0.9541,
+     0.9475,
+     0.9646,
+     0.9382,
+     0.9382,
+     0.9617
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 6,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     6,
+     6
+    ],
+    "retained_completion": [
+     6,
+     6
+    ]
+   },
+   "e2e1emb_cn95@40": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "6/6 (+0 missing)",
+    "retained": "6/6 (+0 missing)",
+    "acc_per_seed": [
+     0.991,
+     0.9956,
+     0.9927,
+     0.9751,
+     0.9768,
+     0.9902
+    ],
+    "ce_per_seed": [
+     0.081905,
+     0.049521,
+     0.063673,
+     0.13797,
+     0.147698,
+     0.075215
+    ],
+    "median_acc": [
+     0.9906005,
+     0.9906005
+    ],
+    "median_ce": [
+     0.07856,
+     0.07856
+    ],
+    "median_first_bound_observed": 337.5,
+    "p_kv_1500": [
+     0.95409,
+     0.95802,
+     0.94929,
+     0.94546,
+     0.95123,
+     0.94347
+    ],
+    "corrupted_acc": [
+     0.9744,
+     0.9854,
+     0.9727,
+     0.9551,
+     0.9617,
+     0.9751
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 6,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     6,
+     6
+    ],
+    "retained_completion": [
+     6,
+     6
+    ]
+   },
+   "e2e1emb_cn90@10": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "6/6 (+0 missing)",
+    "retained": "6/6 (+0 missing)",
+    "acc_per_seed": [
+     0.999,
+     0.9973,
+     0.9966,
+     0.999,
+     0.9976,
+     0.998
+    ],
+    "ce_per_seed": [
+     0.01529,
+     0.031059,
+     0.031104,
+     0.024416,
+     0.026864,
+     0.020829
+    ],
+    "median_acc": [
+     0.997803,
+     0.997803
+    ],
+    "median_ce": [
+     0.02564,
+     0.02564
+    ],
+    "median_first_bound_observed": 200.0,
+    "p_kv_1500": [
+     0.89766,
+     0.90337,
+     0.91155,
+     0.90533,
+     0.90153,
+     0.89534
+    ],
+    "corrupted_acc": [
+     0.998,
+     0.9912,
+     0.9817,
+     0.9937,
+     0.9888,
+     0.9844
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 6,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     6,
+     6
+    ],
+    "retained_completion": [
+     6,
+     6
+    ]
+   },
+   "e2e1emb_cn90@40": {
+    "classes": {
+     "V-a": 6,
+     "V-b": 0,
+     "V-c": 0
+    },
+    "acquired": "6/6 (+0 missing)",
+    "retained": "6/6 (+0 missing)",
+    "acc_per_seed": [
+     0.9973,
+     0.9988,
+     0.9978,
+     0.9976,
+     0.9934,
+     0.9959
+    ],
+    "ce_per_seed": [
+     0.018378,
+     0.011398,
+     0.019512,
+     0.017762,
+     0.038129,
+     0.026881
+    ],
+    "median_acc": [
+     0.9974365000000001,
+     0.9974365000000001
+    ],
+    "median_ce": [
+     0.018945,
+     0.018945
+    ],
+    "median_first_bound_observed": 350.0,
+    "p_kv_1500": [
+     0.89893,
+     0.90561,
+     0.90741,
+     0.90043,
+     0.89325,
+     0.89757
+    ],
+    "corrupted_acc": [
+     0.9971,
+     0.9985,
+     0.9888,
+     0.9961,
+     0.9907,
+     0.99
+    ],
+    "flag_mismatch": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "first_bound_n_acquired": 6,
+    "first_bound_scope": "conditional on acquired observed cells",
+    "acquired_completion": [
+     6,
+     6
+    ],
+    "retained_completion": [
+     6,
+     6
+    ]
+   }
+  },
+  "cells": {
+   "echo/s0/e2e1emb_cn90/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s0/e2e1emb_cn90/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s0/e2e1emb_cn95/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s0/e2e1emb_cn95/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s0/e2e1emb_cn97/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s0/e2e1emb_cn97/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s0/e2e1emb_cn99/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s0/e2e1emb_cn99/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn90/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn90/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn95/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn95/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn97/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn97/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn99/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s1/e2e1emb_cn99/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn90/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn90/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn95/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn95/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn97/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn97/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn99/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s2/e2e1emb_cn99/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn90/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn90/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn95/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn95/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn97/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn97/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn99/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s3/e2e1emb_cn99/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn90/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn90/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn95/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn95/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn97/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn97/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn99/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s4/e2e1emb_cn99/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn90/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn90/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn95/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn95/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn97/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn97/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn99/eta10/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   },
+   "echo/s5/e2e1emb_cn99/eta40/st1500": {
+    "cls": "V-a",
+    "evidence": "CELL_RESULT valid"
+   }
+  },
+  "P1(b) c1-as-registered": {
+   "verdict": "S",
+   "median_intervals": {
+    "cn99@10": [
+     0.7817385,
+     0.7817385
+    ],
+    "cn97@10": [
+     0.9642335,
+     0.9642335
+    ],
+    "cn95@10": [
+     0.9836425,
+     0.9836425
+    ],
+    "cn90@10": [
+     0.997803,
+     0.997803
+    ]
+   },
+   "gate_V3": {
+    "99": "pass",
+    "97": "pass",
+    "95": "pass",
+    "90": "pass"
+   }
+  },
+  "P1(a) per dose c2/c3": {
+   "99": "S",
+   "97": "F",
+   "95": "F"
+  },
+  "eta40_minus_eta10": {
+   "99": {
+    "median_acc": [
+     0.06384250000000002,
+     0.06384250000000002
+    ],
+    "median_ce": [
+     -0.12755450000000002,
+     -0.12755450000000002
+    ]
+   },
+   "97": {
+    "median_acc": [
+     -0.020385499999999945,
+     -0.020385499999999945
+    ],
+    "median_ce": [
+     0.06734549999999997,
+     0.06734549999999997
+    ]
+   },
+   "95": {
+    "median_acc": [
+     0.00695800000000002,
+     0.00695800000000002
+    ],
+    "median_ce": [
+     -0.030737499999999987,
+     -0.030737499999999987
+    ]
+   },
+   "90": {
+    "median_acc": [
+     -0.0003664999999999363,
+     -0.0003664999999999363
+    ],
+    "median_ce": [
+     -0.0066949999999999996,
+     -0.0066949999999999996
+    ]
+   }
+  }
+ }
+}

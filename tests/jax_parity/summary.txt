@@ -1,0 +1,76 @@
+shapes: batch=(2, 32), V=101 D=32 I=40 L=4 H=4 suffix=2 chunk=8 window=64; all floats=float32
+mapping: 20 stacked official leaves -> 64 torch tensors; 43392 scalars; no unmapped leaves
+tied embedding scale=2; initializer std=0.02; model key=0; data seed=20251007
+loss_so=4.680289268; loss_fo=4.680289268; seq_loss_so=[4.677642  4.6829367]
+inner_norms (pre-clip, used updates 0..2)=[[2.7045712  1.5715569  0.38353232]
+ [2.7529786  1.7395517  0.8138333 ]]
+clip active=[[ True  True False]
+ [ True  True False]]; 4/6 used updates
+SO/FO gradient difference global norm=6.464852252
+tensor gradient norms: name | SO | FO
+  layers.0.attn.k_norm.weight | 0.0327460904 | 0.0143753947
+  layers.0.attn.q_norm.weight | 0.0355261306 | 0.0198560321
+  layers.0.attn.wk.weight | 2.36158549 | 1.42849244
+  layers.0.attn.wo.weight | 2.88828601 | 1.85172374
+  layers.0.attn.wq.weight | 1.89954408 | 1.15828391
+  layers.0.attn.wv.weight | 2.92107774 | 1.92186711
+  layers.0.feed_forward.w1.weight | 1.16673058 | 0.701286991
+  layers.0.feed_forward.w2.weight | 1.29682167 | 0.815789675
+  layers.0.feed_forward.w3.weight | 1.19725792 | 0.762971406
+  layers.0.ffn_norm.weight | 0.0389079034 | 0.0219813775
+  layers.0.ffn_post_norm.weight | 0.0332677981 | 0.0223902987
+  layers.0.seq_norm.weight | 0.109465568 | 0.0570214728
+  layers.0.seq_post_norm.weight | 0.0599668412 | 0.0382130316
+  layers.1.attn.k_norm.weight | 0.0100679125 | 0.0030912639
+  layers.1.attn.q_norm.weight | 0.00410819141 | 0.00360753545
+  layers.1.attn.wk.weight | 0.519009642 | 0.327660114
+  layers.1.attn.wo.weight | 1.72897056 | 0.985093953
+  layers.1.attn.wq.weight | 0.540232897 | 0.315899969
+  layers.1.attn.wv.weight | 1.76603903 | 1.00632625
+  layers.1.feed_forward.w1.weight | 0.788344463 | 0.440628752
+  layers.1.feed_forward.w2.weight | 0.761584915 | 0.441104751
+  layers.1.feed_forward.w3.weight | 0.910336327 | 0.544767237
+  layers.1.ffn_norm.weight | 0.0257231093 | 0.0137140481
+  layers.1.ffn_post_norm.weight | 0.0145494283 | 0.00821501752
+  layers.1.seq_norm.weight | 0.0313743829 | 0.021042732
+  layers.1.seq_post_norm.weight | 0.0339132535 | 0.0197355962
+  layers.2.attn.k_norm.weight | 0.00648524774 | 0.00217647088
+  layers.2.attn.q_norm.weight | 0.00555792136 | 0.00219022383
+  layers.2.attn.wk.weight | 0.334123927 | 0.139895715
+  layers.2.attn.wo.weight | 1.22141831 | 0.728873606
+  layers.2.attn.wq.weight | 0.28803178 | 0.142159758
+  layers.2.attn.wv.weight | 1.10199071 | 0.590211853
+  layers.2.feed_forward.w1.weight | 0.889527857 | 0.447582902
+  layers.2.feed_forward.w2.weight | 0.768616251 | 0.358984631
+  layers.2.feed_forward.w3.weight | 0.82351424 | 0.365229898
+  layers.2.feed_forward_prime.w1.weight | 0.989957699 | 0.23326823
+  layers.2.feed_forward_prime.w2.weight | 1.10824675 | 0.320117692
+  layers.2.feed_forward_prime.w3.weight | 0.887345842 | 0.250810352
+  layers.2.ffn_norm.weight | 0.0235922403 | 0.012712186
+  layers.2.ffn_post_norm.weight | 0.0130616883 | 0.00591452425
+  layers.2.ffn_prime_norm.weight | 0.0283888593 | 0.00714288806
+  layers.2.ffn_prime_post_norm.weight | 0.0332252841 | 0.0112459824
+  layers.2.seq_norm.weight | 0.0241705578 | 0.0126406696
+  layers.2.seq_post_norm.weight | 0.0306657447 | 0.0144075048
+  layers.3.attn.k_norm.weight | 0.0045880738 | 0.00151173849
+  layers.3.attn.q_norm.weight | 0.00422833245 | 0.0013849373
+  layers.3.attn.wk.weight | 0.323441373 | 0.127806533
+  layers.3.attn.wo.weight | 0.785298713 | 0.423367514
+  layers.3.attn.wq.weight | 0.296833948 | 0.105199813
+  layers.3.attn.wv.weight | 0.867226606 | 0.44491624
+  layers.3.feed_forward.w1.weight | 0.637281363 | 0.292850125
+  layers.3.feed_forward.w2.weight | 0.635840063 | 0.305661969
+  layers.3.feed_forward.w3.weight | 0.730254521 | 0.313410607
+  layers.3.feed_forward_prime.w1.weight | 0.576282952 | 0.188062099
+  layers.3.feed_forward_prime.w2.weight | 0.654434599 | 0.269921557
+  layers.3.feed_forward_prime.w3.weight | 0.667975864 | 0.191693333
+  layers.3.ffn_norm.weight | 0.0205362512 | 0.00647568094
+  layers.3.ffn_post_norm.weight | 0.0125361791 | 0.00629426132
+  layers.3.ffn_prime_norm.weight | 0.0123396843 | 0.00462676629
+  layers.3.ffn_prime_post_norm.weight | 0.0221915234 | 0.00961040038
+  layers.3.seq_norm.weight | 0.0178895717 | 0.00837674343
+  layers.3.seq_post_norm.weight | 0.0194230526 | 0.0090842778
+  ln_f.weight | 0.0447966651 | 0.0310552186
+  wte.weight | 2.51244588 | 1.66814059
+saved tests/jax_parity/official_tiny.npz
+elapsed=13.79s; peak RSS=1089.2 MB; torch never imported

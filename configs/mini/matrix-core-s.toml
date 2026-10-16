@@ -1,0 +1,66 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_matrix"
+preset = "mini-s"
+out_dir = "outputs/mini/matrix/core-s"
+workers = 1
+max_hours = 24.0
+process_nn = 32
+process_name = "TTM-min-32-matrix"
+production_configs = { e2e2 = "configs/mini/e2e2.toml", e2e1-ce = "configs/mini/e2e1-ce.toml", e2e1-rp = "configs/mini/e2e1-rp.toml", e2e1-nc = "configs/mini/e2e1-nc.toml" }
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e2"
+init_seed = 1
+data_seed = 1
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e1-rp"
+init_seed = 0
+data_seed = 0
+
+[[p2.cells]]
+preset = "mini-s"
+arm = "e2e1-nc"
+init_seed = 0
+data_seed = 0
+
+# measured in the GPU smoke runs; alloc GB x 1.1
+gpu_mem_budget_gb = 21
+concurrency_slowdown = 1.0
+memory_peaks_gb = { "mini-s/e2e2" = 6.16, "mini-s/e2e1-ce" = 6.91, "mini-s/e2e1-rp" = 10.67, "mini-s/e2e1-nc" = 12.32 }
+podsmoke_hours = { "mini-s/e2e2" = 2.35, "mini-s/e2e1-ce" = 0.98, "mini-s/e2e1-rp" = 2.34, "mini-s/e2e1-nc" = 2.81 }

@@ -1,0 +1,22 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "prepare"
+process_name = "TTM-tbb-12-prepare"
+out_dir = "data/micro16k-t4096"
+tokenizer_path = "data/micro16k/tokenizer.json"
+dataset_repo = "mlfoundations/dclm-baseline-1.0-parquet"
+dataset_revision = "817d6752765f6a41261085171dd546b104f60626"
+quotas = { eval = 1040, ho = 256, calib = 256, A = 9600 }
+min_chars = 30000
+workers = 4
+batch_size = 16
+chunk = 512
+eligible_seq = 4096
+require_eligible_eval = true
+near_dup_stride = 32
+near_dup_n = 64
+compute_eligible = true
+min_probes = 5
+pack_path = "data/micro16k-t4096.tar"

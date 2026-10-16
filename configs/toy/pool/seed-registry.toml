@@ -1,0 +1,52 @@
+schema = 1
+fresh_family = [200, 239]
+legacy_smoke = [0, 9]
+reserved_r5 = [216, 227]
+free = [228, 239]
+screen_rtw = [300, 323]
+b9_sham = "deterministic; no stream"
+
+[assignments]
+frs_fo = [200, 215]
+frs_so = [200, 211]
+frs_noise = [200, 211]
+frsb = [200, 211]
+r5 = [216, 227]
+
+[streams.init]
+rng = "torch global"
+purpose = "model initialization"
+historical_seed_ranges = [[0, 19], [90, 102]]
+
+[streams.frozen_code]
+rng = "torch Generator"
+purpose = "frozen key code"
+offset = 7919
+historical_seed_ranges = [[0, 19], [90, 102]]
+
+[streams.data]
+rng = "numpy Generator"
+purpose = "training batches"
+suffix = [20240101]
+historical_seed_ranges = [[0, 19], [90, 102]]
+
+[streams.copy_noise]
+rng = "numpy Generator"
+purpose = "copy corruption, stateless by step"
+suffix = [4406]
+historical_seed_ranges = [[0, 19], [90, 102]]
+
+[streams.chr_directions]
+rng = "torch Generator"
+purpose = "CHR final random direction"
+offset = 31337
+stride = 7919
+replicates = 4
+historical_seed_ranges = [[0, 9]]
+
+[streams.rnd_mask]
+rng = "numpy Generator"
+purpose = "outer random mask, fork-local"
+suffix = [4242]
+historical_seed_ranges = [[0, 9]]
+historical_arity = 2

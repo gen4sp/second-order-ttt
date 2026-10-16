@@ -1,0 +1,29 @@
+# P2-2: writer/reader swap on the P2-1 checkpoints (eval only).
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "swap"
+process_name = "TTM-p22-01-swap"
+so_dir = "outputs/p21/e2e2/attempt1"
+fo_dir = "outputs/p21/e2e1-ce/attempt1"
+data_dir = "data/p2data"
+out_dir = "outputs/p22/swap"
+preset = "125m"
+dtype = "bf16"
+device = "cuda"
+seq_len = 8192
+primary_step = 400
+primary_docs = 1024        # P2-1 endpoint N
+trajectory_steps = [30, 60, 100, 200]
+trajectory_docs = 256
+ref_docs = 256             # same-GPU reference (original eval path) and identical-arm control
+crossed = true             # crossed-start write cells at the primary step
+batch = 4                  # = P2-1 eval_batch
+fused_attn = true
+inner_lr = 1.0
+inner_clip = 1.0
+n_boot = 10000
+seed = 0
+alpha = 0.05
+# validity tolerances: swap.Tol defaults (registered before the run)

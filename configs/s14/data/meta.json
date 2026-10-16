@@ -1,0 +1,81 @@
+{
+  "acceptance": {
+    "chars_per_token_median": 4.446839639207106,
+    "docs_scanned": 79871,
+    "duplicates": 198,
+    "passed_char_prefilter": 79871,
+    "passed_token_length": 58041,
+    "rejected_full_split": 2873,
+    "shards_used": [
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_01_of_10/local-shard_8_of_10/shard_00000096_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_01_of_10/local-shard_9_of_10/shard_00000208_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_02_of_10/local-shard_0_of_10/shard_00000110_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_02_of_10/local-shard_0_of_10/shard_00000183_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_02_of_10/local-shard_2_of_10/shard_00000221_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_02_of_10/local-shard_2_of_10/shard_00000248_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_02_of_10/local-shard_5_of_10/shard_00000107_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_03_of_10/local-shard_2_of_10/shard_00000082_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_03_of_10/local-shard_5_of_10/shard_00000101_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_03_of_10/local-shard_9_of_10/shard_00000245_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_04_of_10/local-shard_4_of_10/shard_00000155_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_04_of_10/local-shard_6_of_10/shard_00000087_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_05_of_10/local-shard_0_of_10/shard_00000128_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_05_of_10/local-shard_5_of_10/shard_00000137_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_05_of_10/local-shard_7_of_10/shard_00000222_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_05_of_10/local-shard_9_of_10/shard_00000153_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_06_of_10/local-shard_0_of_10/shard_00000277_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_06_of_10/local-shard_1_of_10/shard_00000022_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_06_of_10/local-shard_4_of_10/shard_00000010_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_06_of_10/local-shard_6_of_10/shard_00000147_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_06_of_10/local-shard_8_of_10/shard_00000194_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_07_of_10/local-shard_5_of_10/shard_00000278_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_07_of_10/local-shard_7_of_10/shard_00000205_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_07_of_10/local-shard_8_of_10/shard_00000207_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_07_of_10/local-shard_9_of_10/shard_00000038_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_08_of_10/local-shard_3_of_10/shard_00000047_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_08_of_10/local-shard_4_of_10/shard_00000076_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_09_of_10/local-shard_1_of_10/shard_00000256_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_09_of_10/local-shard_5_of_10/shard_00000214_processed.parquet",
+      "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_10_of_10/local-shard_9_of_10/shard_00000234_processed.parquet"
+    ],
+    "tokenized": 79673,
+    "tokenized_chars_per_token": 4.432200718077177
+  },
+  "batch_size": 16,
+  "counts": {
+    "A": 25600,
+    "B": 25600,
+    "calib": 256,
+    "eval": 3200,
+    "ho": 512
+  },
+  "dataset": {
+    "repo": "mlfoundations/dclm-baseline-1.0-parquet",
+    "revision": "817d6752765f6a41261085171dd546b104f60626"
+  },
+  "dtype": "uint32",
+  "min_chars": 30000,
+  "near_dup_counts": {
+    "calib": 7,
+    "eval": 130,
+    "ho": 21
+  },
+  "near_dup_n": 64,
+  "near_dup_stride": 32,
+  "quotas": {
+    "A": 25600,
+    "B": 25600,
+    "calib": 256,
+    "eval": 3200,
+    "ho": 512
+  },
+  "seed": 0,
+  "seq": 8193,
+  "tokenizer": {
+    "commit": "315b20096dc791d381d514deb5f8bd9c8d6d3061",
+    "repo": "NousResearch/Meta-Llama-3-8B",
+    "revision": "315b20096dc791d381d514deb5f8bd9c8d6d3061"
+  },
+  "wall_time": 288.6297361254692,
+  "workers": 1
+}

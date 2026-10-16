@@ -1,0 +1,11 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_smoke"
+process_name = "TTM-min-30-smoke"
+device = "cpu"
+out_dir = "outputs/mini-smoke"
+data_dir = "outputs/mini-smoke/data"
+steps = 2
+data_seed = 0

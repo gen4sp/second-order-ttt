@@ -1,0 +1,66 @@
+experiment = "ttt"
+seed = 0
+
+[ttt]
+process_name = "TTM-r44a-01-podsmoke"
+device = "auto"
+workers = 6
+max_minutes = 120
+# TF32 off for matmul and cuDNN, asserted and logged by every worker before any
+# allocation, so the in-run S5 identity check holds at 1e-4.
+tf32 = false
+# torch's MPS fraction is relative to Metal's recommendedMaxWorkingSetSize (logged per
+# worker as MPS_CAP), not to RAM. The run is on CUDA, where this key is inert; it is
+# kept so an accidental local MPS launch is still capped.
+mps_memory_fraction = 0.20
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 60
+batch = 32
+n_keys = 16
+n_eval = 16
+n_val = 64
+n_quick_eval = 8
+eval_batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 10
+probe_every = 10
+n_probe = 8
+# R4-4a: all finals; dense acquisition/loss and Kamin switch windows at seeds 0-4.
+kamin_switch = 30
+copy_noise_q = [0.99, 0.97, 0.95, 0.90]
+rf_probability = 0.05
+kv_eta_lr = 0.01
+kv_eta10_lr = 0.1
+d1_n_eval = 16
+checkpoint_steps = [30]
+checkpoint_dense = []
+checkpoint_dense_arms = []
+checkpoint_dense_max_seed = 4
+checkpoint_arm_steps = []
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_edge", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn99", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn97", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn95", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn90", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_rf95", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_kamin", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_kaminlin", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_kaminctl", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_kveta", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_kveta10", eta_base = 10, diag = false },
+]

@@ -1,0 +1,33 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_matrix"
+preset = "mini-m"
+out_dir = "outputs/mini/matrix/g50"
+process_nn = 50
+process_name = "TTM-min-50-matrix"
+workers = 1
+max_hours = 4.0
+gpu_mem_budget_gb = 21
+production_configs = { e2e12-p125 = "configs/mini/e2e12-p125-m.toml" }
+memory_peaks_gb = { "mini-m/e2e12-p125" = 11.5 }
+podsmoke_hours = { "mini-m/e2e12-p125" = 1.10 }
+
+[[p2.cells]]
+preset = "mini-m"
+arm = "e2e12-p125"
+init_seed = 0
+data_seed = 0
+
+[[p2.cells]]
+preset = "mini-m"
+arm = "e2e12-p125"
+init_seed = 1
+data_seed = 1
+
+[[p2.cells]]
+preset = "mini-m"
+arm = "e2e12-p125"
+init_seed = 2
+data_seed = 2

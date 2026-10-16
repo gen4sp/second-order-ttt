@@ -1,0 +1,5 @@
+arm,task,eta_W1,eta_b1,eta_W2,eta_b2
+e2e2,icl_mc,19.4,0.006,0,0
+e2e1,icl_mc,0.34,0,0,0
+e2e2,echo,0.50,4.0,111,1.07
+e2e1,echo,0.02,0.06,35,110

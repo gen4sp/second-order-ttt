@@ -1,0 +1,20 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "mini_podsmoke"
+process_nn = 31
+config_dir = "configs/mini"
+out_dir = "outputs/mini/podsmoke"
+presets = ["mini-s", "mini-m"]
+arms = ["e2e2", "e2e1-ce", "e2e1-rp", "e2e1-nc"]
+include_mix = true
+data_dir = "data/p2data"
+code_data_dir = "data/mini-code"
+device = "cuda"
+steps = 20
+usd_per_hour = 0.89
+micro_batch_probe = true
+p23_probe = true
+head_benchmark = true
+concurrency_probe = true

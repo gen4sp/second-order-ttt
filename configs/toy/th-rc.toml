@@ -1,0 +1,83 @@
+experiment = "ttt"
+seed = 0
+
+# TH-RC: fixed-eta regime check (theory branches A and B).
+# eta_lr = 0 freezes rho at 0, so eta = eta_base for the whole run (shared by all fast tensors).
+# Pre-registered test: prediction P2 (+ SO companion).
+[ttt]
+process_name = "TTM-thrc-01"
+device = "auto"
+workers = 2
+max_minutes = 480
+tf32 = false
+mps_memory_fraction = 0.20
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 1500
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 25
+probe_every = 50
+n_probe = 32
+checkpoint_steps = []
+cells = [
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e2emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 1, arm = "e2e2emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 2, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 2, arm = "e2e2emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 2, arm = "e2e2emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 3, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 3, arm = "e2e2emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 3, arm = "e2e2emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 4, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 4, arm = "e2e2emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 4, arm = "e2e2emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+  { task = "echo", seed = 5, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 5, arm = "e2e2emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 5, arm = "e2e2emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb", eta_base = 40, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb", eta_base = 160, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb_linkv", eta_base = 10, diag = false },
+]

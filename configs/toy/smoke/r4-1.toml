@@ -1,0 +1,47 @@
+experiment = "ttt"
+seed = 0
+
+[ttt]
+process_name = "TTM-r41-02-test"
+device = "cpu"
+workers = 2
+max_minutes = 30
+d_model = 32
+n_layers = 1
+n_heads = 4
+backbone_mult = 2
+fast_mult = 2
+window = 16
+chunk = 16
+T = 128
+steps = 30
+batch = 2
+n_keys = 4
+n_eval = 4
+n_val = 4
+n_quick_eval = 4
+eval_batch = 2
+lr = 0.001
+lr_total = 60
+warmup = 4
+lr_floor = 0.1
+eta_lr = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 25
+probe_every = 25
+n_probe = 4
+cells = [
+  { task = "echo", seed = 0, arm = "e2e2", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1k", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1e", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e2", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1k", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1e", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e2emb", eta_base = 10, diag = false },
+]

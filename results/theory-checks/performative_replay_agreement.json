@@ -1,0 +1,499 @@
+{
+ "description": "Replay check on the toy itself, float64. The probe's manual replay of the inner loop (writes recorded, then W_c = W0 - eta * sum of earlier writes) recomputes the toy's own first-order and second-order training losses on the same batch (the first evaluation batch of each checkpoint, 16 sequences). Values are relative differences |L_toy - L_replay| / |L_toy|. eval_logits_max_abs_diff compares the probe's query logits with the toy's own evaluation.",
+ "dtype": "float64",
+ "summary": {
+  "registered_checkpoints": {
+   "n": 45,
+   "fo_loss_rel_diff_max": 3.6539339874775666e-16,
+   "so_loss_rel_diff_max": 3.6539339874775666e-16,
+   "eval_logits_max_abs_diff_max": 0.0
+  },
+  "compatibility_gate_checkpoints": {
+   "n": 3,
+   "fo_loss_rel_diff_max": 1.7934284606973715e-16,
+   "so_loss_rel_diff_max": 1.7934284606973715e-16,
+   "eval_logits_max_abs_diff_max": 0.0
+  }
+ },
+ "registered_checkpoints": [
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 0,
+   "step": 300,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 1,
+   "step": 300,
+   "fo_loss_rel_diff": 1.7492581701246967e-16,
+   "so_loss_rel_diff": 1.7492581701246967e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 3,
+   "step": 300,
+   "fo_loss_rel_diff": 1.751016766308898e-16,
+   "so_loss_rel_diff": 1.751016766308898e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 4,
+   "step": 350,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb_w600",
+   "eta": 10,
+   "seed": 0,
+   "step": 500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb_w600",
+   "eta": 10,
+   "seed": 1,
+   "step": 500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb_w600",
+   "eta": 10,
+   "seed": 2,
+   "step": 500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb_w600",
+   "eta": 10,
+   "seed": 3,
+   "step": 500,
+   "fo_loss_rel_diff": 1.7434918789317958e-16,
+   "so_loss_rel_diff": 1.7434918789317958e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_early_post_loss",
+   "arm": "e2e1emb_w600",
+   "eta": 10,
+   "seed": 4,
+   "step": 500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 0,
+   "step": 200,
+   "fo_loss_rel_diff": 1.714616154845366e-16,
+   "so_loss_rel_diff": 1.714616154845366e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 1,
+   "step": 200,
+   "fo_loss_rel_diff": 1.7167309101268175e-16,
+   "so_loss_rel_diff": 1.7167309101268175e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 3,
+   "step": 200,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 4,
+   "step": 200,
+   "fo_loss_rel_diff": 1.6770661740382357e-16,
+   "so_loss_rel_diff": 1.6770661740382357e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 5,
+   "step": 200,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 6,
+   "step": 200,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 7,
+   "step": 200,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 8,
+   "step": 200,
+   "fo_loss_rel_diff": 1.723264831922441e-16,
+   "so_loss_rel_diff": 1.723264831922441e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_pre_loss",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 9,
+   "step": 200,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 1,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.8229517577984078e-16,
+   "so_loss_rel_diff": 1.8229517577984078e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 2,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.820082331274317e-16,
+   "so_loss_rel_diff": 1.820082331274317e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 3,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 4,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 5,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 6,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 7,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 8,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "so_final",
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 9,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.7846636514037292e-16,
+   "so_loss_rel_diff": 1.7846636514037292e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 0,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.779065877172799e-16,
+   "so_loss_rel_diff": 1.779065877172799e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 1,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 3,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 4,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 5,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 6,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.779458038543854e-16,
+   "so_loss_rel_diff": 1.779458038543854e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 7,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 8,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_final",
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 9,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.758353385542976e-16,
+   "so_loss_rel_diff": 1.758353385542976e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 0,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 1,
+   "step": 1500,
+   "fo_loss_rel_diff": 3.6539339874775666e-16,
+   "so_loss_rel_diff": 3.6539339874775666e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 3,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.819266103687186e-16,
+   "so_loss_rel_diff": 1.819266103687186e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 4,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 5,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 6,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 7,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 8,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "set": "fo_linkv_final",
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 9,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.8235890784197206e-16,
+   "so_loss_rel_diff": 1.8235890784197206e-16,
+   "eval_logits_max_abs_diff": 0.0
+  }
+ ],
+ "compatibility_gate_checkpoints": [
+  {
+   "arm": "e2e1emb",
+   "eta": 10,
+   "seed": 2,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "arm": "e2e2emb",
+   "eta": 10,
+   "seed": 0,
+   "step": 1500,
+   "fo_loss_rel_diff": 1.7934284606973715e-16,
+   "so_loss_rel_diff": 1.7934284606973715e-16,
+   "eval_logits_max_abs_diff": 0.0
+  },
+  {
+   "arm": "e2e1emb_linkv",
+   "eta": 10,
+   "seed": 2,
+   "step": 1500,
+   "fo_loss_rel_diff": 0.0,
+   "so_loss_rel_diff": 0.0,
+   "eval_logits_max_abs_diff": 0.0
+  }
+ ]
+}

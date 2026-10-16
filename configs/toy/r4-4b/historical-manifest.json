@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "project_id": "second-order-ttt",
+  "checkpoints": [
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 0,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s0__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "6c5662d38d2e748cf0878c034cdba1bd7a0839aed4a79bcad099a53d74e31309"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 1,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s1__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "549c7b9352b41452bfe675ac1a4ed6e37290cd923089238f16508d3509d95611"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 2,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s2__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "84a85e11c723543231e338bdf5e0f7cb8c041691f756a15cd14fd743738970c4"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 3,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s3__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "f907acfdde85829759cd618b05dce01e7303dd6830293a11a0d18b3f1394b737"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 4,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s4__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "c32e7226c0cf46f214d23f8c51aa7fb81cde6f81908fd92af1317c2e4c33feb2"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 5,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s5__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "52f60582135efc94bcc4feef35d3ab853b4fed87bdcb2029c562d271251de098"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 6,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s6__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "213873c9dc2c091a8aa910de0c09ce66da9f215290d07b5ef9a102b3772a79cd"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 7,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s7__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "029e110653c9f25c1f76d592c66088255ef06dfdf7f71f1cad93bfc79ed1563b"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 8,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s8__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "cfd2155bf110fee7b3a530849c7503d7cfe7e86c53909a315372522f265db255"
+    },
+    {
+      "task": "echo",
+      "arm": "e2e1emb_lin",
+      "seed": 9,
+      "steps": 1500,
+      "source_run": "r4-2l",
+      "source_commit": null,
+      "path": "outputs/r4-2l/checkpoints/echo__s9__e2e1emb_lin__eta10__st1500.pt",
+      "sha256": "c63578aaf1ba37a0a1afd1e5a93aaaf1ee60555fe463b49d053a81b9267507ee"
+    },
+    {
+      "task": "icl_mc",
+      "arm": "e2e1",
+      "seed": 0,
+      "steps": 4000,
+      "source_run": "icl-mc-lin-cost",
+      "source_commit": null,
+      "path": "outputs/phase0-icl-mc-lin-cost/checkpoints/icl_mc__s0__e2e1__eta0.3__st4000.pt",
+      "sha256": "a7b093b2fc5c8fac4f09bf0d91b095213a2d6e3fcd24e779449b092499381b75"
+    },
+    {
+      "task": "icl_mc",
+      "arm": "e2e1",
+      "seed": 1,
+      "steps": 4000,
+      "source_run": "icl-mc-lin-cost",
+      "source_commit": null,
+      "path": "outputs/phase0-icl-mc-lin-cost/checkpoints/icl_mc__s1__e2e1__eta0.3__st4000.pt",
+      "sha256": "3a873fb597b49bbf7759d52934a59633f8fcd6360b006b5118c241b49bbd88c4"
+    },
+    {
+      "task": "icl_mc",
+      "arm": "e2e1",
+      "seed": 2,
+      "steps": 4000,
+      "source_run": "icl-mc-lin-cost",
+      "source_commit": null,
+      "path": "outputs/phase0-icl-mc-lin-cost/checkpoints/icl_mc__s2__e2e1__eta0.3__st4000.pt",
+      "sha256": "3f66fa4fe23e37b5ec775bceccf8bb6c7c307af86c287a8404e24939cdddb2a6"
+    },
+    {
+      "task": "icl_mc",
+      "arm": "e2e1",
+      "seed": 3,
+      "steps": 4000,
+      "source_run": "icl-mc-lin-cost",
+      "source_commit": null,
+      "path": "outputs/phase0-icl-mc-lin-cost/checkpoints/icl_mc__s3__e2e1__eta0.3__st4000.pt",
+      "sha256": "6ee9275f22c16e7c6d11891e982d23c273c2354d1e18cc682da32737d5bb3079"
+    },
+    {
+      "task": "icl_mc",
+      "arm": "e2e1",
+      "seed": 4,
+      "steps": 4000,
+      "source_run": "icl-mc-lin-cost",
+      "source_commit": null,
+      "path": "outputs/phase0-icl-mc-lin-cost/checkpoints/icl_mc__s4__e2e1__eta0.3__st4000.pt",
+      "sha256": "87eb91351f63985b088077086b6082ac0424e7af2cf2acdd074286cc81338e43"
+    },
+    {
+      "task": "icl_mc",
+      "arm": "e2e1",
+      "seed": 5,
+      "steps": 4000,
+      "source_run": "icl-mc-lin-cost",
+      "source_commit": null,
+      "path": "outputs/phase0-icl-mc-lin-cost/checkpoints/icl_mc__s5__e2e1__eta0.3__st4000.pt",
+      "sha256": "10add01f2f16a0f4d832530950ffb3f6ca0dd28e55b56d8ea5f797c009ee4b30"
+    }
+  ]
+}

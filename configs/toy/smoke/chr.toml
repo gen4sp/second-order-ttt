@@ -1,0 +1,87 @@
+# CHR smoke: same model/config as configs/toy/chr.toml, 40 steps, forks forced at the first
+# log (fork_acc 0). Never scored. Local CPU or CUDA (device auto).
+# Toy and training are BW1a/TH-RC's (R4-4b toy, fixed eta: eta_lr = 0). Runs on one
+# CUDA GPU (TF32 off); FO-CE cells fork at their first quick acc >= .90.
+experiment = "chr"
+seed = 0
+
+[chr]
+process_name = "TTM-chr-93-podsmoke"
+protocol = "chr-smoke-v2"
+hard_grace_minutes = 15
+device = "auto"
+workers = 5  # the full run's concurrency (VRAM / wall-time measurement)
+threads_per_worker = 2
+max_minutes = 30
+tf32 = false
+mps_memory_fraction = 0.20  # inert on CUDA
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 40
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+n_probe = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0
+grad_clip = 1.0
+g_clip = 10.0
+copy_noise_q = [0.99, 0.97, 0.95, 0.90]
+rf_probability = 0.05
+# CHR logging and forks (exp_chr.CHR_DEFAULTS)
+log_every = 5
+probe_every = 10
+cross_every = 10
+chunk_early = 5
+chunk_late = 6
+fork_arms = ["e2e1emb", "e2e1emb_cn97"]
+fork_acc = 0.0
+rp_cap = 1000.0
+mediation_p = 0.5  # G2 per-event mediation set (eval-only, every main final)
+mediation_cap = 1000.0
+ckpt_steps = [10, 20]
+branch_ckpt_every = 20
+branch_ckpt_tags = ["rp03", "nc03"]
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 1, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 1, arm = "e2e1emb_cn97", eta_base = 40 },
+]
+# Per-arm rule tables (after `cells`: TOML keys below a header belong to that table).
+[chr.forks]
+e2e1emb = [
+  { rule = "ce" },
+  { rule = "rp", r_min = 0.03 },
+  { rule = "nc", r_min = 0.03 },
+  { rule = "rp", r_min = 0.10 },
+  { rule = "nc", r_min = 0.10 },
+]
+e2e1emb_cn97 = [
+  { rule = "ce" },
+  { rule = "rs", r_cap = 0.01 },
+  { rule = "ns", r_cap = 0.01 },
+]
+
+[chr.cross_rules]
+e2e1emb = ["rp03"]
+e2e2emb = ["rp03"]
+e2e1emb_cn97 = ["rs01"]
+
+[chr.final_rules]
+e2e1emb = ["rp03", "rp10"]
+e2e2emb = ["rp03", "rp10"]
+e2e1emb_cn97 = ["rs01", "rp03"]

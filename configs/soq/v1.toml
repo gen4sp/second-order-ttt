@@ -1,0 +1,83 @@
+# SOQ V1: text echo validity on existing MINI step-1200 checkpoints.
+# The first item is the parity anchor; V1 reads are touched only after parity passes.
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "soq_v1"
+process_name = "TTM-sv1-01"
+process_nn = 1
+data_dir = "data/p2data"
+out_dir = "outputs/soq/v1"
+device = "cuda"
+dtype = "bf16"
+T = 8192
+S = 2048
+barriers = [2, 4, 6]
+p = 0.5
+echo_seed = 20261010
+# Generator v2 (natural wrappers, tables sha256 c41cbf19...): manifest_sha256 of
+# echo_text.make_injector(split="cal", f=1, p=.5, seed=20261010, T=8192, S=2048) with
+# data/p2data/excluded_vocab.npy.  A different generator ABORTs before any read.
+echo_manifest_sha256 = "5bd87f0383a2067d8e084f282ed7e00ac8c7f13d338adf0e134942041c4d97bf"
+n_docs = 256
+parity_docs = 16
+eval_batch = 2
+max_hours = 1.5
+# Basis: G0b 1024-doc reads were 840--1150 s for 5--7 reads; V1 uses
+# 2 reads x 256 docs per cell plus one parity read, with six model loads.
+estimate_wall_s = 2400
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+step = 1200
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e2/s0/model_step1200.pt"
+out = "outputs/soq/v1/mini-m/e2e2/s0"
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 1
+data_seed = 1
+step = 1200
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e2/s1/model_step1200.pt"
+out = "outputs/soq/v1/mini-m/e2e2/s1"
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e2"
+init_seed = 2
+data_seed = 2
+step = 1200
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e2/s2/model_step1200.pt"
+out = "outputs/soq/v1/mini-m/e2e2/s2"
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0
+step = 1200
+ckpt = "outputs/mini/matrix/g43/runs/mini-m/e2e1-ce/s0/model_step1200.pt"
+out = "outputs/soq/v1/mini-m/e2e1-ce/s0"
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 1
+data_seed = 1
+step = 1200
+ckpt = "outputs/mini/matrix/g44/runs/mini-m/e2e1-ce/s1/model_step1200.pt"
+out = "outputs/soq/v1/mini-m/e2e1-ce/s1"
+
+[[p2.items]]
+preset = "mini-m"
+arm = "e2e1-ce"
+init_seed = 2
+data_seed = 2
+step = 1200
+ckpt = "outputs/mini/matrix/g45/runs/mini-m/e2e1-ce/s2/model_step1200.pt"
+out = "outputs/soq/v1/mini-m/e2e1-ce/s2"

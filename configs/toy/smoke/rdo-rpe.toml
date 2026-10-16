@@ -1,0 +1,25 @@
+# Analysis-only entrypoint for the completed combined CPU smoke.
+experiment = "rdo_rpe"
+seed = 0
+
+[rdo_rpe]
+process_name = "TTM-pool-76-reanalysis"
+protocol = "rdo-rpe-smoke-v2"
+device = "cpu"
+require_cuda = false
+workers = 1
+threads_per_worker = 2
+max_minutes = 15
+hard_grace_minutes = 10
+smoke_only = true
+horizon = 20
+late_horizon = 20
+late = true
+limit = 1
+candidate_seeds = [0]
+pool_config = "config_pool_smoke.toml"
+pool_output_dir = "outputs/pool-smoke"
+output_dir = "outputs/pool-smoke/reanalysis/rdo-rpe"
+resume = false
+prepare_pool_smoke = false # this driver never trains
+smoke_minimal = false

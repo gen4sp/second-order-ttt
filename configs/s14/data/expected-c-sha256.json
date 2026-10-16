@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "C": 25600
+  },
+  "schema": "s14-C-pinned-v1",
+  "sha256": {
+    "C.bin": "c191e36802dad0f5bb82e1b62987a9708375ca0fb1e7fd80bef8c134de2c902d",
+    "C.jsonl": "d89b3a675311dc271879f83c9b98cae57682589f7bb226343f1cf0b4dac7e772",
+    "extend-C.meta.json": "d542928cd058b067c312ad57d917454e9d8b9bc587b0e85253c1da7d85ca1bb4",
+    "extensions.json": "8fd5501ef364e90e9a8c1b65f27de0437a93b1d56eb3742d4ad08358ad45701a"
+  }
+}

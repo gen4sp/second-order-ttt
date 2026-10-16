@@ -1,0 +1,39 @@
+# RTW-C registered SOMIX confirmation (seeds 312-323).
+experiment = "rtw"
+seed = 300
+
+[rtw]
+process_name = "TTM-rtw-07-w0"
+device = "cuda"
+workers = 8
+threads_per_worker = 2
+tf32 = false
+resume = true
+output_root = "outputs/rtw/wave-07"
+steps = 1500
+batch = 32
+T = 512
+chunk = 64
+window = 64
+n_keys = 16
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+eta_base = 40.0
+eta_lr = 0.0
+g_clip = 10.0
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+grad_clip = 1.0
+log_every = 5
+quick_every = 25
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+seeds = [312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323]
+arms = ["A0", "SO", "M-p125", "M-late"]

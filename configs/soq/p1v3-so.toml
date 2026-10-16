@@ -1,0 +1,89 @@
+# SOQ-P1-v3: registered 1200 -> 2400 continuation with the v3 echo reads.
+# SO arm continues from its own MINI g43/mini-m/e2e2/s0 step-1200 weights (no echo exposure),
+# weights only with fresh Adam: rows [19200, 38400) of perm(A)+perm(B), inner row_ids with the global
+# offset, outer LR re-warmed floor -> 3e-3 over 120 steps from step 1200, then cosine to the floor at 2400.
+# Echo generator v3 (verbatim reads, 16 slots, lookup docs, f = .5); echo reads N / A at 1200, 1800, 2400, P at 2400.
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "train"
+process_name = "TTM-pv3-04"
+arm = "e2e2"
+preset = "mini-m"
+init_seed = 0
+data_seed = 0
+data_dir = "data/p2data"
+out_dir = "outputs/soq/p1v3/so-s0-a1g"
+device = "cuda"
+steps = 1200
+global_batch = 16
+micro_batch = 1
+seq_len = 8192
+warmup = 120
+lr_peak = 3e-3
+inner_lr = 1.0
+inner_clip = 1.0
+barriers = [2, 4, 6]
+segment_len = 2048
+fused_attn = false
+eval_steps = [1800, 2400]
+full_eval_steps = [2400]
+trajectory_docs = 256
+n_eval = 1024
+ho_docs = 256
+pilot_docs = 64
+save_checkpoints = true
+
+crossover_rules = []
+assay_gate = false
+pilot_steps = [1240, 1280, 1320, 1360, 1400, 1440]
+# Divergence-only guard: the calib-rise guard (.10) is built for from-scratch SO instability and
+# trips on this continuation while train loss falls, so the guard here is calib rise > .5 or
+# non-finite, or logged train loss > first logged + .5 or non-finite.  Calib drift is reported as an LM cost.
+pilot_max_rise = 0.5
+train_loss_max_rise = 0.5
+attempt = 1
+sizing_steps = []
+inner_warmup = 120
+eval_batch = 2
+
+ho_trajectory_docs = 64
+eval_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+trajectory_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+full_extra_modes = []
+resume_every = 100
+
+# --- continuation ---------------------------------------------------------------------
+continue_weights_from = "outputs/mini/matrix/g43/runs/mini-m/e2e2/s0/model_step1200.pt"
+continue_parent_run_id = "mini/matrix/g43/mini-m/e2e2/s0"
+continue_lost_state_sha256 = ""
+continue_steps = 2400
+continue_lr_peak = 1e-3         # registered fallback peak (attempt 1)
+keep_final_state = true
+extra_train_splits = ["B"]
+echo_version = 3
+echo_f = 0.5
+echo_p = 0.5
+echo_lookup_share = 0.25
+echo_slots = 16
+echo_seed = 0
+echo_manifest_sha256 = "fa45d88d9c103c204f8711de7b8ed11fd5afc092ef28af185006a3d9868ced38"
+echo_eval_docs = 256
+echo_eval_split = "ho"
+echo_eval_offset = 256
+echo_eval_p = 0.5
+parity_ref = "outputs/mini/matrix/g43/runs/mini-m/e2e2/s0/eval_step1200.npz"
+parity_docs = 64
+parity_tol = 0.01
+# echo_diagnostics = true is what runs the step-1200 (pre-training) echo read; under v3 it runs
+# no v2 streams, and the echo_train_eval_* keys are inert.
+echo_diagnostics = true
+echo_eval_steps = [1200, 1800, 2400]
+echo_train_eval_split = "eval"
+echo_train_eval_offset = 2048
+echo_train_eval_seed = 1000003
+# max_hours is a safety cap outside the resume contract (P1 pilot: 10 751 s at 8.2 s/step),
+# set so a slower GPU still reaches step 2400 in one job.
+max_hours = 3.6
+estimate_wall_s = 10900

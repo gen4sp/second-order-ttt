@@ -1,0 +1,80 @@
+# E1-VE-D2: eval-only write budget and beta sweep on the 60 wave-1 checkpoints.
+# Per-chunk clip and update norms, own-write shares of the A/X margins over chunks, and erase_v0/add_v1
+# at the A writes for beta in {.5, 1, 1.5, 2, 3} (+ erase_rand at 2) in cells with base acc_A < .90.
+# Predictions S1-S3, B1 were registered before the run.
+experiment = "ve_budget"
+seed = 0
+
+[ve_budget]
+process_name = "TTM-vd2-01"
+device = "cpu"
+threads = 8
+ckpt_dir = "outputs/e1-ve/checkpoints"
+reference_csv = "outputs/e1-ve/data/cells.csv"
+diag_csv = "outputs/e1-ve-d/data/diag.csv"
+betas = [0.5, 1.0, 1.5, 2.0, 3.0]
+sweep_below = 0.90
+n_eval = 256
+eval_batch = 32
+cells = [
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 10 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 11 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 12 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 13 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 14 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 15 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 10 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 11 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 12 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 13 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 14 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 10 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 11 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 12 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 13 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 14 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 15 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 10 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 11 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 12 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 13 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 14 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 10 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 11 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 12 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 13 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 14 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 15 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 10 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 11 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 12 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 13 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 14 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 10 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 11 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 12 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 13 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 14 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 15 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 10 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 11 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 12 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 13 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 14 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 10, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 11, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 12, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 13, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 14, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 15, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 10, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 11, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 12, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 13, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 14, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 15, edge = true },
+]

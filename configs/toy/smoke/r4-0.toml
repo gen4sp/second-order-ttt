@@ -1,0 +1,20 @@
+experiment = "rnk"
+seed = 0
+
+[rnk]
+process_name = "TTM-r40-02-test"
+device = "cpu"
+smoke = true
+ckpt_root = "outputs"
+kag_reference = "configs/toy/r4-0/r2-4b-echo-reference.csv"
+checkpoints = [
+  { path = "r2b/checkpoints/echo__s0__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, label = "r2b-e2e2-s0", stratum = "bound" },
+  { path = "r2b/checkpoints/echo__s1__e2e2__eta10__st1500.pt", arm = "e2e2", eta_base = 10, label = "r2b-e2e2-s1", stratum = "collapsed_e2e2" },
+  { arm = "e2e2", eta_base = 10, label = "random-init", stratum = "random" },
+]
+
+[rnk.echo]
+T = 512
+n_keys = 16
+n_eval = 32
+eval_batch = 16

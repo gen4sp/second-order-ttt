@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "smoke_only": true,
+  "family_inputs": {
+    "R-LIN": {
+      "missing": [],
+      "test": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "comparator": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "diverged": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "R-ADDR": {
+      "missing": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "test": [
+        false
+      ],
+      "comparator": [
+        false
+      ],
+      "diverged": [
+        true
+      ],
+      "seeds": [
+        0
+      ]
+    }
+  }
+}

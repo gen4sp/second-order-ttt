@@ -1,0 +1,18 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "profile"
+process_name = "TTM-p20-cpu"
+preset = "tiny"
+seq_len = 64
+device = "cpu"
+micro_batches = [1, 2, 4]
+timed_steps = 2
+eval_batches = [2, 4]
+val_seq = 32
+exact_so_seq = 24
+compile_check = false
+loader_check = false
+max_minutes = 8
+cache_dir = "data/p2cache"

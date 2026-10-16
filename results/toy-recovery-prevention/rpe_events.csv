@@ -1,0 +1,133 @@
+disposition,nl2,nl_fine,lost_time,t_loss,t_re,tau,censored,diverged,retained,episodes,first_recovery,first_outage,t_div,min_acc,reacquired,retention,NL2,NL_fine,L,eval_immediate,start,rule,branch,seed,horizon,bound_at_H,block,eval_rule
+COMPLETE,False,,125,530,365,5,False,False,False,"[{""onset"": 530, ""recovery"": 575, ""outage"": 45, ""censored"": false}, {""onset"": 590, ""recovery"": null, ""outage"": 75, ""censored"": true}]",575,45,,0.732422,True,,False,,,True,360,rpf100,ce,200,400,False,rpe,rpf100
+COMPLETE,False,,45,625,365,5,False,False,False,"[{""onset"": 625, ""recovery"": null, ""outage"": 40, ""censored"": true}]",,40,,0.87207,True,,False,,,True,360,rpf30,ce,200,400,False,rpe,rpf30
+COMPLETE,False,,270,400,365,5,False,False,False,"[{""onset"": 400, ""recovery"": null, ""outage"": 265, ""censored"": true}]",,265,,0.720703,True,,False,,,True,360,rp10,ce,200,400,False,rpe,rp10
+COMPLETE,False,False,370,395,365,5,False,False,False,"[{""onset"": 395, ""recovery"": null, ""outage"": 365, ""censored"": true}]",,365,,0.443359,True,False,False,False,370,True,360,ce,ce,200,400,False,rpe,ce
+COMPLETE,False,False,30,400,365,5,False,False,True,"[{""onset"": 400, ""recovery"": 430, ""outage"": 30, ""censored"": false}]",430,30,,0.72168,True,True,False,False,30,True,360,rp10,rp10,200,400,True,rpe,rp10
+COMPLETE,True,True,0,,365,5,False,False,True,[],,,,0.955078,True,True,True,True,0,True,360,rpf30,rpf30,200,400,True,rpe,rpf30
+COMPLETE,False,False,370,395,365,5,False,False,False,"[{""onset"": 395, ""recovery"": null, ""outage"": 365, ""censored"": true}]",,365,,0.183594,True,False,False,False,370,True,360,ncf30,ncf30,200,400,False,rpe,ncf30
+COMPLETE,False,,150,510,365,5,False,False,False,"[{""onset"": 510, ""recovery"": 645, ""outage"": 135, ""censored"": false}, {""onset"": 655, ""recovery"": null, ""outage"": 10, ""censored"": true}]",645,135,,0.856445,True,,False,,,False,360,rpf30,ncf30,200,400,False,rpe,rpf30
+COMPLETE,True,True,0,,365,5,False,False,True,[],,,,0.959961,True,True,True,True,0,True,360,rpf100,rpf100,200,400,True,rpe,rpf100
+COMPLETE,True,,0,,365,5,False,False,True,[],,,,0.870117,True,,True,,,False,360,rpf100,ncf100,200,400,False,rpe,rpf100
+COMPLETE,False,False,370,395,365,5,False,False,False,"[{""onset"": 395, ""recovery"": null, ""outage"": 365, ""censored"": true}]",,365,,0.125977,True,False,False,False,370,True,360,ncf100,ncf100,200,400,False,rpe,ncf100
+COMPLETE,False,,15,655,440,5,False,False,True,"[{""onset"": 655, ""recovery"": 670, ""outage"": 15, ""censored"": false}]",670,15,,0.744141,True,,False,,,True,435,rpf100,ce,202,400,False,rpe,rpf100
+COMPLETE,True,,0,,440,5,False,False,True,[],,,,0.908203,True,,True,,,True,435,rpf30,ce,202,400,False,rpe,rpf30
+COMPLETE,False,,20,725,440,5,False,False,False,"[{""onset"": 725, ""recovery"": null, ""outage"": 15, ""censored"": true}]",,15,,0.810547,True,,False,,,True,435,rp10,ce,202,400,False,rpe,rp10
+COMPLETE,False,False,365,475,440,5,False,False,False,"[{""onset"": 475, ""recovery"": null, ""outage"": 360, ""censored"": true}]",,360,,0.470703,True,False,False,False,365,True,435,ce,ce,202,400,False,rpe,ce
+COMPLETE,False,True,10,630,440,5,False,False,True,"[{""onset"": 630, ""recovery"": 640, ""outage"": 10, ""censored"": false}]",640,10,,0.739258,True,True,False,True,10,True,435,rp10,rp10,202,400,True,rpe,rp10
+COMPLETE,True,True,0,,440,5,False,False,True,[],,,,0.936523,True,True,True,True,0,True,435,rpf30,rpf30,202,400,True,rpe,rpf30
+COMPLETE,False,False,355,485,440,5,False,False,False,"[{""onset"": 485, ""recovery"": null, ""outage"": 350, ""censored"": true}]",,350,,0.314453,True,False,False,False,355,True,435,ncf30,ncf30,202,400,False,rpe,ncf30
+COMPLETE,True,,0,,440,5,False,False,True,[],,,,0.895508,True,,True,,,False,435,rpf30,ncf30,202,400,False,rpe,rpf30
+COMPLETE,True,True,0,,440,5,False,False,True,[],,,,0.917969,True,True,True,True,0,True,435,rpf100,rpf100,202,400,True,rpe,rpf100
+COMPLETE,False,,35,660,440,5,False,False,False,"[{""onset"": 660, ""recovery"": 680, ""outage"": 20, ""censored"": false}, {""onset"": 730, ""recovery"": null, ""outage"": 10, ""censored"": true}]",680,20,,0.817383,True,,False,,,False,435,rpf100,ncf100,202,400,False,rpe,rpf100
+COMPLETE,False,False,375,465,440,5,False,False,False,"[{""onset"": 465, ""recovery"": null, ""outage"": 370, ""censored"": true}]",,370,,0.228516,True,False,False,False,375,True,435,ncf100,ncf100,202,400,False,rpe,ncf100
+COMPLETE,False,,65,375,335,5,False,False,True,"[{""onset"": 375, ""recovery"": 395, ""outage"": 20, ""censored"": false}, {""onset"": 440, ""recovery"": 450, ""outage"": 10, ""censored"": false}, {""onset"": 480, ""recovery"": 495, ""outage"": 15, ""censored"": false}, {""onset"": 525, ""recovery"": 545, ""outage"": 20, ""censored"": false}]",395,20,,0.814453,True,,False,,,True,330,rpf100,ce,203,400,False,rpe,rpf100
+COMPLETE,True,,0,,335,5,False,False,False,[],,,,0.904297,True,,True,,,True,330,rpf30,ce,203,400,False,rpe,rpf30
+COMPLETE,False,,270,370,335,5,False,False,False,"[{""onset"": 370, ""recovery"": null, ""outage"": 265, ""censored"": true}]",,265,,0.664062,True,,False,,,True,330,rp10,ce,203,400,False,rpe,rp10
+COMPLETE,False,False,365,370,335,5,False,False,False,"[{""onset"": 370, ""recovery"": null, ""outage"": 360, ""censored"": true}]",,360,,0.457031,True,False,False,False,365,True,330,ce,ce,203,400,False,rpe,ce
+COMPLETE,False,False,30,370,335,5,False,False,True,"[{""onset"": 370, ""recovery"": 400, ""outage"": 30, ""censored"": false}]",400,30,,0.663086,True,True,False,False,30,True,330,rp10,rp10,203,400,True,rpe,rp10
+COMPLETE,True,True,0,,335,5,False,False,True,[],,,,0.919922,True,True,True,True,0,True,330,rpf30,rpf30,203,400,True,rpe,rpf30
+COMPLETE,False,False,365,370,335,5,False,False,False,"[{""onset"": 370, ""recovery"": null, ""outage"": 360, ""censored"": true}]",,360,,0.226562,True,False,False,False,365,True,330,ncf30,ncf30,203,400,False,rpe,ncf30
+COMPLETE,True,,0,,335,5,False,False,True,[],,,,0.908203,True,,True,,,False,330,rpf30,ncf30,203,400,False,rpe,rpf30
+COMPLETE,True,True,0,,335,5,False,False,True,[],,,,0.899414,True,True,True,True,0,True,330,rpf100,rpf100,203,400,True,rpe,rpf100
+COMPLETE,False,,55,435,335,5,False,False,False,"[{""onset"": 435, ""recovery"": 445, ""outage"": 10, ""censored"": false}, {""onset"": 460, ""recovery"": 505, ""outage"": 45, ""censored"": false}]",445,10,,0.822266,True,,False,,,False,330,rpf100,ncf100,203,400,False,rpe,rpf100
+COMPLETE,False,False,375,360,335,5,False,False,False,"[{""onset"": 360, ""recovery"": null, ""outage"": 370, ""censored"": true}]",,370,,0.114258,True,False,False,False,375,True,330,ncf100,ncf100,203,400,False,rpe,ncf100
+COMPLETE,False,,155,400,370,5,False,False,False,"[{""onset"": 400, ""recovery"": 410, ""outage"": 10, ""censored"": false}, {""onset"": 460, ""recovery"": 490, ""outage"": 30, ""censored"": false}, {""onset"": 500, ""recovery"": 580, ""outage"": 80, ""censored"": false}, {""onset"": 640, ""recovery"": null, ""outage"": 30, ""censored"": true}]",410,10,,0.53418,True,,False,,,True,365,rpf100,ce,204,400,False,rpe,rpf100
+COMPLETE,False,,50,535,370,5,False,False,False,"[{""onset"": 535, ""recovery"": 575, ""outage"": 40, ""censored"": false}, {""onset"": 665, ""recovery"": null, ""outage"": 5, ""censored"": true}]",575,40,,0.822266,True,,False,,,True,365,rpf30,ce,204,400,False,rpe,rpf30
+COMPLETE,False,,300,375,,305,True,False,False,"[{""onset"": 375, ""recovery"": null, ""outage"": 295, ""censored"": true}]",,295,,0.738281,False,,False,,,True,365,rp10,ce,204,400,False,rpe,rp10
+COMPLETE,False,False,395,375,,400,True,False,False,"[{""onset"": 375, ""recovery"": null, ""outage"": 390, ""censored"": true}]",,390,,0.332031,False,False,False,False,395,True,365,ce,ce,204,400,False,rpe,ce
+COMPLETE,False,False,45,375,420,55,False,False,True,"[{""onset"": 375, ""recovery"": 420, ""outage"": 45, ""censored"": false}]",420,45,,0.762695,True,True,False,False,45,True,365,rp10,rp10,204,400,True,rpe,rp10
+COMPLETE,True,True,0,,370,5,False,False,True,[],,,,0.923828,True,True,True,True,0,True,365,rpf30,rpf30,204,400,True,rpe,rpf30
+COMPLETE,False,False,395,375,,400,True,False,False,"[{""onset"": 375, ""recovery"": null, ""outage"": 390, ""censored"": true}]",,390,,0.243164,False,False,False,False,395,True,365,ncf30,ncf30,204,400,False,rpe,ncf30
+COMPLETE,False,,70,395,370,5,False,False,True,"[{""onset"": 395, ""recovery"": 405, ""outage"": 10, ""censored"": false}, {""onset"": 480, ""recovery"": 500, ""outage"": 20, ""censored"": false}, {""onset"": 585, ""recovery"": 595, ""outage"": 10, ""censored"": false}, {""onset"": 620, ""recovery"": 650, ""outage"": 30, ""censored"": false}]",405,10,,0.779297,True,,False,,,False,365,rpf30,ncf30,204,400,False,rpe,rpf30
+COMPLETE,True,True,0,,370,5,False,False,True,[],,,,0.94043,True,True,True,True,0,True,365,rpf100,rpf100,204,400,True,rpe,rpf100
+COMPLETE,False,,25,650,375,10,False,False,False,"[{""onset"": 650, ""recovery"": null, ""outage"": 20, ""censored"": true}]",,20,,0.855469,True,,False,,,False,365,rpf100,ncf100,204,400,False,rpe,rpf100
+COMPLETE,False,False,400,370,,400,True,False,False,"[{""onset"": 370, ""recovery"": null, ""outage"": 395, ""censored"": true}]",,395,,0.161133,False,False,False,False,400,False,365,ncf100,ncf100,204,400,False,rpe,ncf100
+COMPLETE,False,,35,405,330,5,False,False,True,"[{""onset"": 405, ""recovery"": 415, ""outage"": 10, ""censored"": false}, {""onset"": 530, ""recovery"": 545, ""outage"": 15, ""censored"": false}, {""onset"": 595, ""recovery"": 605, ""outage"": 10, ""censored"": false}]",415,10,,0.833984,True,,False,,,True,325,rpf100,ce,205,400,False,rpe,rpf100
+COMPLETE,True,,0,,330,5,False,False,False,[],,,,0.870117,True,,True,,,True,325,rpf30,ce,205,400,False,rpe,rpf30
+COMPLETE,False,,210,390,330,5,False,False,False,"[{""onset"": 390, ""recovery"": 455, ""outage"": 65, ""censored"": false}, {""onset"": 470, ""recovery"": 545, ""outage"": 75, ""censored"": false}, {""onset"": 565, ""recovery"": null, ""outage"": 65, ""censored"": true}]",455,65,,0.676758,True,,False,,,True,325,rp10,ce,205,400,False,rpe,rp10
+COMPLETE,False,False,340,390,330,5,False,False,False,"[{""onset"": 390, ""recovery"": null, ""outage"": 335, ""censored"": true}]",,335,,0.382812,True,False,False,False,340,True,325,ce,ce,205,400,False,rpe,ce
+COMPLETE,False,False,50,390,330,5,False,False,True,"[{""onset"": 390, ""recovery"": 440, ""outage"": 50, ""censored"": false}]",440,50,,0.762695,True,True,False,False,50,True,325,rp10,rp10,205,400,True,rpe,rp10
+COMPLETE,True,True,0,,330,5,False,False,True,[],,,,0.927734,True,True,True,True,0,True,325,rpf30,rpf30,205,400,True,rpe,rpf30
+COMPLETE,False,False,340,390,330,5,False,False,False,"[{""onset"": 390, ""recovery"": null, ""outage"": 335, ""censored"": true}]",,335,,0.239258,True,False,False,False,340,True,325,ncf30,ncf30,205,400,False,rpe,ncf30
+COMPLETE,True,,0,,330,5,False,False,True,[],,,,0.90918,True,,True,,,False,325,rpf30,ncf30,205,400,False,rpe,rpf30
+COMPLETE,True,True,0,,330,5,False,False,True,[],,,,0.947266,True,True,True,True,0,True,325,rpf100,rpf100,205,400,True,rpe,rpf100
+COMPLETE,False,,40,550,330,5,False,False,False,"[{""onset"": 550, ""recovery"": 560, ""outage"": 10, ""censored"": false}, {""onset"": 585, ""recovery"": 600, ""outage"": 15, ""censored"": false}, {""onset"": 620, ""recovery"": null, ""outage"": 10, ""censored"": true}]",560,10,,0.740234,True,,False,,,False,325,rpf100,ncf100,205,400,False,rpe,rpf100
+COMPLETE,False,False,350,380,330,5,False,False,False,"[{""onset"": 380, ""recovery"": null, ""outage"": 345, ""censored"": true}]",,345,,0.219727,True,False,False,False,350,True,325,ncf100,ncf100,205,400,False,rpe,ncf100
+COMPLETE,False,,25,580,325,5,False,False,False,"[{""onset"": 580, ""recovery"": 595, ""outage"": 15, ""censored"": false}, {""onset"": 605, ""recovery"": 615, ""outage"": 10, ""censored"": false}]",595,15,,0.736328,True,,False,,,True,320,rpf100,ce,206,400,False,rpe,rpf100
+COMPLETE,False,,55,575,325,5,False,False,False,"[{""onset"": 575, ""recovery"": null, ""outage"": 50, ""censored"": true}]",,50,,0.871094,True,,False,,,True,320,rpf30,ce,206,400,False,rpe,rpf30
+COMPLETE,False,,155,375,325,5,False,False,False,"[{""onset"": 375, ""recovery"": 400, ""outage"": 25, ""censored"": false}, {""onset"": 465, ""recovery"": 490, ""outage"": 25, ""censored"": false}, {""onset"": 525, ""recovery"": null, ""outage"": 100, ""censored"": true}]",400,25,,0.753906,True,,False,,,True,320,rp10,ce,206,400,False,rpe,rp10
+COMPLETE,False,False,350,375,325,5,False,False,False,"[{""onset"": 375, ""recovery"": null, ""outage"": 345, ""censored"": true}]",,345,,0.292969,True,False,False,False,350,True,320,ce,ce,206,400,False,rpe,ce
+COMPLETE,False,False,15,375,325,5,False,False,True,"[{""onset"": 375, ""recovery"": 390, ""outage"": 15, ""censored"": false}]",390,15,,0.832031,True,True,False,False,15,True,320,rp10,rp10,206,400,True,rpe,rp10
+COMPLETE,True,True,0,,325,5,False,False,True,[],,,,0.954102,True,True,True,True,0,True,320,rpf30,rpf30,206,400,True,rpe,rpf30
+COMPLETE,False,False,350,375,325,5,False,False,False,"[{""onset"": 375, ""recovery"": null, ""outage"": 345, ""censored"": true}]",,345,,0.238281,True,False,False,False,350,True,320,ncf30,ncf30,206,400,False,rpe,ncf30
+COMPLETE,True,,0,,325,5,False,False,True,[],,,,0.954102,True,,True,,,False,320,rpf30,ncf30,206,400,False,rpe,rpf30
+COMPLETE,True,True,0,,325,5,False,False,True,[],,,,0.93457,True,True,True,True,0,True,320,rpf100,rpf100,206,400,True,rpe,rpf100
+COMPLETE,True,,0,,325,5,False,False,True,[],,,,0.823242,True,,True,,,False,320,rpf100,ncf100,206,400,False,rpe,rpf100
+COMPLETE,False,False,350,375,325,5,False,False,False,"[{""onset"": 375, ""recovery"": null, ""outage"": 345, ""censored"": true}]",,345,,0.204102,True,False,False,False,350,True,320,ncf100,ncf100,206,400,False,rpe,ncf100
+COMPLETE,False,,105,420,305,5,False,False,False,"[{""onset"": 420, ""recovery"": 485, ""outage"": 65, ""censored"": false}, {""onset"": 540, ""recovery"": 550, ""outage"": 10, ""censored"": false}, {""onset"": 560, ""recovery"": 570, ""outage"": 10, ""censored"": false}, {""onset"": 590, ""recovery"": null, ""outage"": 15, ""censored"": true}]",485,65,,0.569336,True,,False,,,True,300,rpf100,ce,207,400,False,rpe,rpf100
+COMPLETE,False,,30,450,310,10,False,False,False,"[{""onset"": 450, ""recovery"": 480, ""outage"": 30, ""censored"": false}]",480,30,,0.573242,True,,False,,,True,300,rpf30,ce,207,400,False,rpe,rpf30
+COMPLETE,False,,190,380,310,10,False,False,False,"[{""onset"": 380, ""recovery"": 485, ""outage"": 105, ""censored"": false}, {""onset"": 525, ""recovery"": null, ""outage"": 80, ""censored"": true}]",485,105,,0.462891,True,,False,,,True,300,rp10,ce,207,400,False,rpe,rp10
+COMPLETE,False,False,325,380,310,10,False,False,False,"[{""onset"": 380, ""recovery"": null, ""outage"": 320, ""censored"": true}]",,320,,0.310547,True,False,False,False,325,True,300,ce,ce,207,400,False,rpe,ce
+COMPLETE,False,False,30,380,310,10,False,False,True,"[{""onset"": 380, ""recovery"": 410, ""outage"": 30, ""censored"": false}]",410,30,,0.648438,True,True,False,False,30,True,300,rp10,rp10,207,400,True,rpe,rp10
+COMPLETE,True,True,0,,310,10,False,False,True,[],,,,0.357422,True,True,True,True,0,True,300,rpf30,rpf30,207,400,True,rpe,rpf30
+COMPLETE,False,False,325,380,310,10,False,False,False,"[{""onset"": 380, ""recovery"": null, ""outage"": 320, ""censored"": true}]",,320,,0.265625,True,False,False,False,325,True,300,ncf30,ncf30,207,400,False,rpe,ncf30
+COMPLETE,False,,10,515,310,10,False,False,True,"[{""onset"": 515, ""recovery"": 525, ""outage"": 10, ""censored"": false}]",525,10,,0.882812,True,,False,,,False,300,rpf30,ncf30,207,400,False,rpe,rpf30
+COMPLETE,True,True,0,,305,5,False,False,True,[],,,,0.90625,True,True,True,True,0,True,300,rpf100,rpf100,207,400,True,rpe,rpf100
+COMPLETE,True,,0,,305,5,False,False,True,[],,,,0.783203,True,,True,,,False,300,rpf100,ncf100,207,400,False,rpe,rpf100
+COMPLETE,False,False,330,375,305,5,False,False,False,"[{""onset"": 375, ""recovery"": null, ""outage"": 325, ""censored"": true}]",,325,,0.198242,True,False,False,False,330,True,300,ncf100,ncf100,207,400,False,rpe,ncf100
+COMPLETE,False,,95,300,280,5,False,False,False,"[{""onset"": 300, ""recovery"": 315, ""outage"": 15, ""censored"": false}, {""onset"": 365, ""recovery"": 375, ""outage"": 10, ""censored"": false}, {""onset"": 445, ""recovery"": 475, ""outage"": 30, ""censored"": false}, {""onset"": 485, ""recovery"": 495, ""outage"": 10, ""censored"": false}, {""onset"": 520, ""recovery"": 535, ""outage"": 15, ""censored"": false}, {""onset"": 555, ""recovery"": 570, ""outage"": 15, ""censored"": false}]",315,15,,0.688477,True,,False,,,True,275,rpf100,ce,208,400,False,rpe,rpf100
+COMPLETE,False,,55,450,285,10,False,False,True,"[{""onset"": 450, ""recovery"": 485, ""outage"": 35, ""censored"": false}, {""onset"": 505, ""recovery"": 525, ""outage"": 20, ""censored"": false}]",485,35,,0.661133,True,,False,,,True,275,rpf30,ce,208,400,False,rpe,rpf30
+COMPLETE,False,,260,300,285,10,False,False,False,"[{""onset"": 300, ""recovery"": 415, ""outage"": 115, ""censored"": false}, {""onset"": 440, ""recovery"": null, ""outage"": 140, ""censored"": true}]",415,115,,0.625,True,,False,,,True,275,rp10,ce,208,400,False,rpe,rp10
+COMPLETE,False,False,380,300,285,10,False,False,False,"[{""onset"": 300, ""recovery"": null, ""outage"": 375, ""censored"": true}]",,375,,0.375977,True,False,False,False,380,True,275,ce,ce,208,400,False,rpe,ce
+COMPLETE,False,False,50,300,285,10,False,False,True,"[{""onset"": 300, ""recovery"": 350, ""outage"": 50, ""censored"": false}]",350,50,,0.625,True,True,False,False,50,True,275,rp10,rp10,208,400,True,rpe,rp10
+COMPLETE,True,True,0,,285,10,False,False,True,[],,,,0.669922,True,True,True,True,0,True,275,rpf30,rpf30,208,400,True,rpe,rpf30
+COMPLETE,False,False,380,300,285,10,False,False,False,"[{""onset"": 300, ""recovery"": null, ""outage"": 375, ""censored"": true}]",,375,,0.004883,True,False,False,False,380,True,275,ncf30,ncf30,208,400,False,rpe,ncf30
+COMPLETE,True,,0,,285,10,False,False,True,[],,,,0.03418,True,,True,,,False,275,rpf30,ncf30,208,400,False,rpe,rpf30
+COMPLETE,True,True,0,,280,5,False,False,True,[],,,,0.893555,True,True,True,True,0,True,275,rpf100,rpf100,208,400,True,rpe,rpf100
+COMPLETE,True,,0,,285,10,False,False,True,[],,,,0.896484,True,,True,,,False,275,rpf100,ncf100,208,400,False,rpe,rpf100
+COMPLETE,False,False,380,300,285,10,False,False,False,"[{""onset"": 300, ""recovery"": null, ""outage"": 375, ""censored"": true}]",,375,,0.178711,True,False,False,False,380,True,275,ncf100,ncf100,208,400,False,rpe,ncf100
+COMPLETE,True,,0,,360,5,False,False,True,[],,,,0.856445,True,,True,,,True,355,rpf100,ce,209,400,False,rpe,rpf100
+COMPLETE,True,,0,,360,5,False,False,True,[],,,,0.911133,True,,True,,,True,355,rpf30,ce,209,400,False,rpe,rpf30
+COMPLETE,False,,55,360,415,60,False,False,False,"[{""onset"": 360, ""recovery"": 415, ""outage"": 55, ""censored"": false}]",415,55,,0.695312,True,,False,,,True,355,rp10,ce,209,400,False,rpe,rp10
+COMPLETE,False,False,400,360,,400,True,False,False,"[{""onset"": 360, ""recovery"": null, ""outage"": 395, ""censored"": true}]",,395,,0.399414,False,False,False,False,400,True,355,ce,ce,209,400,False,rpe,ce
+COMPLETE,False,False,30,360,390,35,False,False,True,"[{""onset"": 360, ""recovery"": 390, ""outage"": 30, ""censored"": false}]",390,30,,0.658203,True,True,False,False,30,True,355,rp10,rp10,209,400,True,rpe,rp10
+COMPLETE,True,True,0,,360,5,False,False,True,[],,,,0.532227,True,True,True,True,0,True,355,rpf30,rpf30,209,400,True,rpe,rpf30
+COMPLETE,False,False,400,360,,400,True,False,False,"[{""onset"": 360, ""recovery"": null, ""outage"": 395, ""censored"": true}]",,395,,0.233398,False,False,False,False,400,True,355,ncf30,ncf30,209,400,False,rpe,ncf30
+COMPLETE,True,,0,,360,5,False,False,True,[],,,,0.907227,True,,True,,,False,355,rpf30,ncf30,209,400,False,rpe,rpf30
+COMPLETE,True,True,0,,360,5,False,False,True,[],,,,0.888672,True,True,True,True,0,True,355,rpf100,rpf100,209,400,True,rpe,rpf100
+COMPLETE,True,,0,,365,10,False,False,True,[],,,,0.890625,True,,True,,,False,355,rpf100,ncf100,209,400,False,rpe,rpf100
+COMPLETE,False,False,400,360,,400,True,False,False,"[{""onset"": 360, ""recovery"": null, ""outage"": 395, ""censored"": true}]",,395,,0.205078,False,False,False,False,400,False,355,ncf100,ncf100,209,400,False,rpe,ncf100
+COMPLETE,True,,0,,360,5,False,False,False,[],,,,0.858398,True,,True,,,True,355,rpf100,ce,210,400,False,rpe,rpf100
+COMPLETE,True,,0,,360,5,False,False,False,[],,,,0.910156,True,,True,,,True,355,rpf30,ce,210,400,False,rpe,rpf30
+COMPLETE,False,,120,445,360,5,False,False,False,"[{""onset"": 445, ""recovery"": 480, ""outage"": 35, ""censored"": false}, {""onset"": 580, ""recovery"": null, ""outage"": 80, ""censored"": true}]",480,35,,0.654297,True,,False,,,True,355,rp10,ce,210,400,False,rpe,rp10
+COMPLETE,False,False,320,440,360,5,False,False,False,"[{""onset"": 440, ""recovery"": null, ""outage"": 315, ""censored"": true}]",,315,,0.443359,True,False,False,False,320,True,355,ce,ce,210,400,False,rpe,ce
+COMPLETE,False,False,30,445,360,5,False,False,True,"[{""onset"": 445, ""recovery"": 475, ""outage"": 30, ""censored"": false}]",475,30,,0.699219,True,True,False,False,30,True,355,rp10,rp10,210,400,True,rpe,rp10
+COMPLETE,True,True,0,,360,5,False,False,True,[],,,,0.972656,True,True,True,True,0,True,355,rpf30,rpf30,210,400,True,rpe,rpf30
+COMPLETE,False,False,320,440,360,5,False,False,False,"[{""onset"": 440, ""recovery"": null, ""outage"": 315, ""censored"": true}]",,315,,0.276367,True,False,False,False,320,True,355,ncf30,ncf30,210,400,False,rpe,ncf30
+COMPLETE,True,,0,,360,5,False,False,True,[],,,,0.898438,True,,True,,,False,355,rpf30,ncf30,210,400,False,rpe,rpf30
+COMPLETE,True,True,0,,360,5,False,False,True,[],,,,0.980469,True,True,True,True,0,True,355,rpf100,rpf100,210,400,True,rpe,rpf100
+COMPLETE,True,,0,,360,5,False,False,True,[],,,,0.982422,True,,True,,,False,355,rpf100,ncf100,210,400,False,rpe,rpf100
+COMPLETE,False,False,330,430,360,5,False,False,False,"[{""onset"": 430, ""recovery"": null, ""outage"": 325, ""censored"": true}]",,325,,0.197266,True,False,False,False,330,True,355,ncf100,ncf100,210,400,False,rpe,ncf100
+COMPLETE,True,,0,,350,5,False,False,True,[],,,,0.930664,True,,True,,,False,345,rpf100,ce,211,400,False,rpe,rpf100
+COMPLETE,True,,0,,350,5,False,False,True,[],,,,0.941406,True,,True,,,True,345,rpf30,ce,211,400,False,rpe,rpf30
+COMPLETE,False,,110,385,350,5,False,False,False,"[{""onset"": 385, ""recovery"": 460, ""outage"": 75, ""censored"": false}, {""onset"": 525, ""recovery"": 535, ""outage"": 10, ""censored"": false}, {""onset"": 630, ""recovery"": null, ""outage"": 20, ""censored"": true}]",460,75,,0.710938,True,,False,,,True,345,rp10,ce,211,400,False,rpe,rp10
+COMPLETE,False,False,365,385,350,5,False,False,False,"[{""onset"": 385, ""recovery"": null, ""outage"": 360, ""censored"": true}]",,360,,0.44043,True,False,False,False,365,True,345,ce,ce,211,400,False,rpe,ce
+COMPLETE,False,False,30,385,350,5,False,False,True,"[{""onset"": 385, ""recovery"": 415, ""outage"": 30, ""censored"": false}]",415,30,,0.741211,True,True,False,False,30,True,345,rp10,rp10,211,400,True,rpe,rp10
+COMPLETE,True,True,0,,350,5,False,False,True,[],,,,0.898438,True,True,True,True,0,True,345,rpf30,rpf30,211,400,True,rpe,rpf30
+COMPLETE,False,False,365,385,350,5,False,False,False,"[{""onset"": 385, ""recovery"": null, ""outage"": 360, ""censored"": true}]",,360,,0.235352,True,False,False,False,365,True,345,ncf30,ncf30,211,400,False,rpe,ncf30
+COMPLETE,True,,0,,350,5,False,False,True,[],,,,0.886719,True,,True,,,False,345,rpf30,ncf30,211,400,False,rpe,rpf30
+COMPLETE,True,True,0,,350,5,False,False,True,[],,,,0.235352,True,True,True,True,0,False,345,rpf100,rpf100,211,400,True,rpe,rpf100
+COMPLETE,True,,0,,350,5,False,False,True,[],,,,0.943359,True,,True,,,False,345,rpf100,ncf100,211,400,False,rpe,rpf100
+COMPLETE,False,False,365,385,350,5,False,False,False,"[{""onset"": 385, ""recovery"": null, ""outage"": 360, ""censored"": true}]",,360,,0.211914,True,False,False,False,365,True,345,ncf100,ncf100,211,400,False,rpe,ncf100
+COMPLETE,False,,20,360,315,5,False,False,False,"[{""onset"": 360, ""recovery"": 370, ""outage"": 10, ""censored"": false}, {""onset"": 555, ""recovery"": 565, ""outage"": 10, ""censored"": false}]",370,10,,0.847656,True,,False,,,True,310,rpf100,ce,212,400,False,rpe,rpf100
+COMPLETE,True,,0,,315,5,False,False,True,[],,,,0.875977,True,,True,,,True,310,rpf30,ce,212,400,False,rpe,rpf30
+COMPLETE,False,,270,340,315,5,False,False,False,"[{""onset"": 340, ""recovery"": 475, ""outage"": 135, ""censored"": false}, {""onset"": 485, ""recovery"": null, ""outage"": 130, ""censored"": true}]",475,135,,0.700195,True,,False,,,True,310,rp10,ce,212,400,False,rpe,rp10
+COMPLETE,False,False,375,340,315,5,False,False,False,"[{""onset"": 340, ""recovery"": null, ""outage"": 370, ""censored"": true}]",,370,,0.462891,True,False,False,False,375,True,310,ce,ce,212,400,False,rpe,ce
+COMPLETE,False,False,30,340,315,5,False,False,True,"[{""onset"": 340, ""recovery"": 370, ""outage"": 30, ""censored"": false}]",370,30,,0.707031,True,True,False,False,30,True,310,rp10,rp10,212,400,True,rpe,rp10
+COMPLETE,True,True,0,,315,5,False,False,True,[],,,,0.946289,True,True,True,True,0,True,310,rpf30,rpf30,212,400,True,rpe,rpf30
+COMPLETE,False,False,375,340,315,5,False,False,False,"[{""onset"": 340, ""recovery"": null, ""outage"": 370, ""censored"": true}]",,370,,0.210938,True,False,False,False,375,True,310,ncf30,ncf30,212,400,False,rpe,ncf30
+COMPLETE,False,,50,550,315,5,False,False,True,"[{""onset"": 550, ""recovery"": 600, ""outage"": 50, ""censored"": false}]",600,50,,0.830078,True,,False,,,False,310,rpf30,ncf30,212,400,False,rpe,rpf30
+COMPLETE,False,True,10,380,315,5,False,False,True,"[{""onset"": 380, ""recovery"": 390, ""outage"": 10, ""censored"": false}]",390,10,,0.890625,True,True,False,True,10,True,310,rpf100,rpf100,212,400,True,rpe,rpf100
+COMPLETE,False,,105,375,315,5,False,False,True,"[{""onset"": 375, ""recovery"": 390, ""outage"": 15, ""censored"": false}, {""onset"": 495, ""recovery"": 525, ""outage"": 30, ""censored"": false}, {""onset"": 535, ""recovery"": 570, ""outage"": 35, ""censored"": false}, {""onset"": 585, ""recovery"": 610, ""outage"": 25, ""censored"": false}]",390,15,,0.713867,True,,False,,,False,310,rpf100,ncf100,212,400,False,rpe,rpf100
+COMPLETE,False,False,380,335,315,5,False,False,False,"[{""onset"": 335, ""recovery"": null, ""outage"": 375, ""censored"": true}]",,375,,0.195312,True,False,False,False,380,True,310,ncf100,ncf100,212,400,False,rpe,ncf100

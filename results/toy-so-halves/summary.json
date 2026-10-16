@@ -1,0 +1,357 @@
+{
+ "counts": {
+  "e2e1e_emb": {
+   "collapsed": 0,
+   "degraded": 0,
+   "ever": 10,
+   "final": 10,
+   "n": 10,
+   "partial": 0
+  },
+  "e2e1emb": {
+   "collapsed": 9,
+   "degraded": 1,
+   "ever": 10,
+   "final": 0,
+   "n": 10,
+   "partial": 0
+  },
+  "e2e1emb_kvm": {
+   "collapsed": 0,
+   "degraded": 0,
+   "ever": 10,
+   "final": 10,
+   "n": 10,
+   "partial": 0
+  },
+  "e2e1k_emb": {
+   "collapsed": 0,
+   "degraded": 1,
+   "ever": 10,
+   "final": 9,
+   "n": 10,
+   "partial": 0
+  },
+  "e2e2": {
+   "collapsed": 3,
+   "degraded": 0,
+   "ever": 12,
+   "final": 9,
+   "n": 20,
+   "partial": 0
+  },
+  "e2e2_kvm": {
+   "collapsed": 1,
+   "degraded": 0,
+   "ever": 18,
+   "final": 17,
+   "n": 20,
+   "partial": 0
+  },
+  "e2e2emb": {
+   "collapsed": 0,
+   "degraded": 0,
+   "ever": 10,
+   "final": 10,
+   "n": 10,
+   "partial": 0
+  }
+ },
+ "details": {
+  "E": {
+   "acquisition": 10,
+   "bound_final": 10,
+   "common_acquired": 10,
+   "n": 10,
+   "p_holm": 0.001953125,
+   "p_raw": 0.0009765625,
+   "partial_floor": 4,
+   "ret_contrast": {
+    "ci95": [
+     0.290390024296432,
+     1.0
+    ],
+    "difference": 1.0,
+    "mcnemar_one_sided": 0.0009765625,
+    "mcnemar_reverse": 1.0,
+    "n": 10,
+    "negative": 0,
+    "positive": 10
+   },
+   "x_partial_difference": 9
+  },
+  "FM": {
+   "kvm_bound_final": 10,
+   "test": {
+    "ci95": [
+     0.290390024296432,
+     1.0
+    ],
+    "difference": 1.0,
+    "mcnemar_one_sided": 0.0009765625,
+    "mcnemar_reverse": 1.0,
+    "n": 10,
+    "negative": 0,
+    "positive": 10
+   }
+  },
+  "K": {
+   "acquisition": 10,
+   "bound_final": 9,
+   "common_acquired": 10,
+   "n": 10,
+   "p_holm": 0.001953125,
+   "p_raw": 0.001953125,
+   "partial_floor": 4,
+   "ret_contrast": {
+    "ci95": [
+     0.15455890619276402,
+     0.9987429125765128
+    ],
+    "difference": 0.9,
+    "mcnemar_one_sided": 0.001953125,
+    "mcnemar_reverse": 1.0,
+    "n": 10,
+    "negative": 0,
+    "positive": 9
+   },
+   "x_partial_difference": 9
+  },
+  "MS1_E": {
+   "absolute_separator_0069": true,
+   "all_seed": {
+    "median_e_kv_abs": 0.045032489113509655,
+    "median_e_kv_abs_ref": 0.02142215706408024,
+    "median_p_kv": 0.9521834254264832
+   },
+   "bound_seeds": 10,
+   "median_e_kv_abs": 0.045032489113509655,
+   "median_e_kv_abs_ref": 0.02142215706408024,
+   "median_p_kv": 0.9521834254264832,
+   "n": 10,
+   "not_confident": true,
+   "ratio_to_ref": 2.102145408550767,
+   "ref_bound_seeds": 10,
+   "surprise_kept": true
+  },
+  "MS1_K": {
+   "absolute_separator_0069": false,
+   "all_seed": {
+    "median_e_kv_abs": 0.0006966610526433215,
+    "median_e_kv_abs_ref": 0.02142215706408024,
+    "median_p_kv": 0.9992472380399704
+   },
+   "bound_seeds": 9,
+   "median_e_kv_abs": 0.0007320478034671396,
+   "median_e_kv_abs_ref": 0.02142215706408024,
+   "median_p_kv": 0.9992161095142365,
+   "n": 10,
+   "not_confident": false,
+   "ratio_to_ref": 0.034172459910426396,
+   "ref_bound_seeds": 10,
+   "surprise_kept": false
+  },
+  "MS2_E": {
+   "passed": 6,
+   "retained": 10
+  },
+  "MS2_K": {
+   "passed": 3,
+   "retained": 9
+  },
+  "S2": {
+   "acq": "the mask helps second order acquire",
+   "acq_contrast": {
+    "ci95": [
+     -0.09450488201903717,
+     0.573647252829171
+    ],
+    "difference": 0.3,
+    "mcnemar_one_sided": 0.015625,
+    "mcnemar_reverse": 1.0,
+    "n": 20,
+    "negative": 0,
+    "positive": 6
+   },
+   "anchor_lost_after_acquiring": 3,
+   "n_common_acquired": 12,
+   "n_pairs": 20,
+   "overall": "label (S2-acq or S2-ret fired)",
+   "overall_contrast": {
+    "ci95": [
+     -0.07240188933884789,
+     0.7112972490703642
+    ],
+    "difference": 0.4,
+    "mcnemar_one_sided": 0.0107421875,
+    "mcnemar_reverse": 0.9990234375,
+    "n": 20,
+    "negative": 1,
+    "positive": 9
+   },
+   "ret": "untestable at this n",
+   "ret_contrast": {
+    "ci95": [
+     -0.3844792883194111,
+     0.6096502583238308
+    ],
+    "difference": 0.16666666666666666,
+    "mcnemar_one_sided": 0.3125,
+    "mcnemar_reverse": 0.9375,
+    "n": 12,
+    "negative": 1,
+    "positive": 3
+   }
+  },
+  "S2_mechanism": {
+   "e2e2_bound": {
+    "median_kv_write_eff": 26.61809253692627,
+    "median_p_kv": 0.9801939129829407,
+    "n": 9
+   },
+   "e2e2_unbound": {
+    "median_kv_write_eff": 0.13673581928014755,
+    "median_p_kv": 0.9982364177703857,
+    "n": 11
+   },
+   "p_kv_paired": {
+    "median_difference": -0.9909250072960276,
+    "median_e2e2_p_kv": 0.9977250844240189,
+    "median_kvm_p_kv": 0.0011754962906707078,
+    "n": 20,
+    "seeds_kvm_lower": 20
+   }
+  },
+  "S2_wilcoxon": {
+   "mean_diff": 0.4217071875,
+   "median_diff": 0.7884519999999999,
+   "n": 20,
+   "n_nonzero": 16,
+   "p_one_sided": 0.0002899169921875,
+   "w_plus": 129.0
+  }
+ },
+ "ek_manipulation": {
+  "E": true,
+  "K": true,
+  "median_cos_E": 0.1269886638864761,
+  "median_cos_K": 0.7339369204597382,
+  "median_rel_E": 1.3570513733238814,
+  "median_rel_K": 2.928461894258117,
+  "median_share_E": 0.49000507967638324,
+  "median_share_K": 1.0574111135604922,
+  "n_seeds": 3,
+  "per_seed_cos_E": [
+   0.006954571112701056,
+   0.1395790006001473,
+   0.1269886638864761
+  ],
+  "per_seed_cos_K": [
+   0.644784617654617,
+   0.7339369204597382,
+   0.8017337492587483
+  ],
+  "per_seed_rel_E": [
+   2.0322417206451853,
+   1.3570513733238814,
+   1.1830641964047222
+  ],
+  "per_seed_rel_K": [
+   3.65473640405843,
+   2.928461894258117,
+   2.661965930331592
+  ],
+  "per_seed_share_E": [
+   0.7432169618914221,
+   0.49000507967638324,
+   0.46321971481100394
+  ],
+  "per_seed_share_K": [
+   1.336584156866902,
+   1.0574111135604922,
+   1.0422723490678423
+  ],
+  "source": "R43_EK_SHARE",
+  "status": "computed",
+  "threshold": 0.05
+ },
+ "floor_occ_minus": 0.3167660932004193,
+ "holm": {
+  "E": 0.001953125,
+  "K": 0.001953125
+ },
+ "issues": [],
+ "labels": {
+  "E": "E-retains",
+  "EK_joint": "Both retain: either half suffices.",
+  "FM": "FM-rescue",
+  "FM_S2_joint": "FM-rescue and S2-ret untestable: no reading for second-order retention.",
+  "K": "K-retains",
+  "MS1_E": true,
+  "MS1_K": false,
+  "MS2_E": false,
+  "MS2_K": false,
+  "MS_reading_E": "E resists starvation by keeping surprise at the write",
+  "MS_reading_K": "K keeps the binding by another route",
+  "S2-acq": "the mask helps second order acquire",
+  "S2-overall": "label (S2-acq or S2-ret fired)",
+  "S2-ret": "untestable at this n",
+  "S2_acq_note": "S2-acq fired: the mask also acts on the first barrier (address) in second order, a different mechanism from starvation; reported separately.",
+  "S2_wilcoxon": "descriptive; paired Wilcoxon on final query accuracy over 20 pairs, one-sided p=0.0002899169921875",
+  "V3a": "holds",
+  "V3b": "holds",
+  "V3c": "holds"
+ },
+ "n_complete": {
+  "ek_E": 10,
+  "ek_K": 10,
+  "first_order_emb": 10,
+  "ms1_E": 10,
+  "ms1_K": 10,
+  "second_order": 20
+ },
+ "s2_labels": {
+  "acq": "the mask helps second order acquire",
+  "acq_contrast": {
+   "ci95": [
+    -0.09450488201903717,
+    0.573647252829171
+   ],
+   "difference": 0.3,
+   "mcnemar_one_sided": 0.015625,
+   "mcnemar_reverse": 1.0,
+   "n": 20,
+   "negative": 0,
+   "positive": 6
+  },
+  "anchor_lost_after_acquiring": 3,
+  "n_common_acquired": 12,
+  "n_pairs": 20,
+  "overall": "label (S2-acq or S2-ret fired)",
+  "overall_contrast": {
+   "ci95": [
+    -0.07240188933884789,
+    0.7112972490703642
+   ],
+   "difference": 0.4,
+   "mcnemar_one_sided": 0.0107421875,
+   "mcnemar_reverse": 0.9990234375,
+   "n": 20,
+   "negative": 1,
+   "positive": 9
+  },
+  "ret": "untestable at this n",
+  "ret_contrast": {
+   "ci95": [
+    -0.3844792883194111,
+    0.6096502583238308
+   ],
+   "difference": 0.16666666666666666,
+   "mcnemar_one_sided": 0.3125,
+   "mcnemar_reverse": 0.9375,
+   "n": 12,
+   "negative": 1,
+   "positive": 3
+  }
+ }
+}

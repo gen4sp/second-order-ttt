@@ -1,0 +1,50 @@
+experiment = "b9"
+seed = 0
+
+[b9]
+process_name = "TTM-b9-79-podsmoke"
+output_dir = "outputs/b9-podsmoke"
+smoke = true
+device = "cuda"
+workers = 5
+threads = 2
+max_minutes = 480
+tf32 = false
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 40
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 256
+n_quick_eval = 64
+eval_batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.01
+eta_lr = 0.01
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 25
+probe_every = 25
+n_probe = 32
+checkpoint_steps = [20]
+frsb_result_path = "outputs/frsb-podsmoke/result.json"
+frsb_source_sha256 = "ba96fcca208847b7e5df5a816bf78d16194a2a992364c8cc4e7d394593497cbf"
+frsb_config_sha256 = "e672c879f1c515ebd98a62dae94c760a1a03d669b684d4d22bf48ea39b4fca80"
+seeds = [0]
+cells = [
+  { task = "echo", block = "core", seed = 0, arm = "e2e1_lin_b9", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 0, arm = "e2e1_b9", eta_base = 10, eta_lr = 0.01, diag = false },
+  { task = "echo", block = "core", seed = 0, arm = "e2e1_lin_b9f", eta_base = 10, eta_lr = 0.01, diag = false },
+]

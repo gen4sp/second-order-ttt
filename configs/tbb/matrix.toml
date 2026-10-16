@@ -1,0 +1,22 @@
+experiment = "p2"
+seed = 0
+[p2]
+mode = "mini_matrix"
+preset = "micro16k"
+out_dir = "data/micro16k/runs"
+workers = 1
+process_nn = 2
+process_name = "TTM-tbb-02-matrix"
+max_hours = 12.0
+gpu_mem_budget_gb = 4.0
+production_configs = { e2e2 = "configs/tbb/e2e2.toml", e2e1-ce = "configs/tbb/e2e1-ce.toml", e2e12-p125 = "configs/tbb/e2e12-p125.toml", e2e1-rp = "configs/tbb/e2e1-rp.toml" }
+[[p2.cells]]
+preset = "micro16k"
+arm = "e2e2"
+init_seed = 0
+data_seed = 0
+[[p2.cells]]
+preset = "micro16k"
+arm = "e2e1-ce"
+init_seed = 0
+data_seed = 0

@@ -1,0 +1,50 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+mode = "train"
+process_name = "TTM-min-50-p125"
+arm = "e2e12-p125"
+preset = "mini-m"
+init_seed = 0
+data_seed = 0
+data_dir = "data/p2data"
+out_dir = "outputs/mini/runs/mini-m/e2e12-p125/seed0"
+device = "cuda"
+steps = 1200
+global_batch = 16
+micro_batch = 2
+so_micro_batch = 1
+so_fraction = 0.125
+seq_len = 8192
+warmup = 120
+lr_peak = 3e-3
+inner_lr = 1.0
+inner_clip = 1.0
+barriers = [2, 4, 6]
+segment_len = 2048
+fused_attn = false
+eval_steps = [300, 600, 1200]
+full_eval_steps = [1200]
+n_eval = 1024
+trajectory_docs = 256
+ho_docs = 256
+save_checkpoints = true
+
+crossover_rules = []
+assay_gate = false
+pilot_steps = []
+sizing_steps = []
+inner_warmup = 120
+eval_batch = 2
+
+ho_trajectory_docs = 64
+eval_at_init = false
+init_eval_docs = 256
+init_ho_docs = 64
+init_eval_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+init_crossover_rules = []
+eval_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+trajectory_modes = ["adapt", "noadapt", "fP_focal", "fP_nonfocal"]
+full_extra_modes = []
+resume_every = 100

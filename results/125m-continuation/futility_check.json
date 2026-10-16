@@ -1,0 +1,17 @@
+{
+ "D": {
+  "est": 0.01113604346755892,
+  "hi": 0.014670629580137968,
+  "lo": 0.007657462230601933,
+  "unsupported": 0.0
+ },
+ "U_100": 0.014670629580137968,
+ "domains": 243,
+ "launch_rule_arms": false,
+ "n_boot": 10000,
+ "n_docs": 256,
+ "reason": "upper_bound_below_0.05",
+ "seed": 0,
+ "step": 100,
+ "threshold": 0.05
+}

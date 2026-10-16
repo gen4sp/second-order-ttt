@@ -1,0 +1,44 @@
+experiment = "trg"
+seed = 0
+
+[trg]
+process_name = "TTM-trg-72-cpusmoke"
+device = "cpu"
+workers = 1
+threads_per_worker = 2
+smoke_only = true
+smoke_steps = 40
+smoke_fork = 10
+resume = false
+probes = true
+output_dir = "outputs/trg-smoke"
+eta = 40.0
+horizon = 30
+so_end = 40
+ladder_cap = 20
+so_ladder_every = 5
+d_model = 16
+n_layers = 4
+n_heads = 2
+backbone_mult = 2
+fast_mult = 2
+window = 16
+chunk = 16
+T = 128
+steps = 100
+batch = 1
+n_keys = 4
+n_quick_eval = 2
+eval_batch = 2
+n_probe = 2
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0
+grad_clip = 1.0
+g_clip = 10.0
+cells = [
+  {family = "FO", seed = 0, arm = "e2e1emb", rerun = true},
+  {family = "SO", seed = 0, arm = "e2e2emb", rerun = true},
+]

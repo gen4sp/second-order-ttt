@@ -1,0 +1,11 @@
+version = 1
+project_code = "TTM"
+experiment_code = "lod"
+training = [216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227]
+secondary = [216, 217, 218, 219, 220, 221, 222, 223]
+anchor_bridge_stretch = [216, 217, 218, 219]
+smoke = [0]
+frozen_code_offset = 7919
+train_stream_tag = 20240101
+eval_seed = 991
+reserved_other_route = [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215]

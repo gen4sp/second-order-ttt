@@ -1,0 +1,341 @@
+{
+ "scores": {
+  "P1_eta10": {
+   "verdict": "S",
+   "N_retained": 0,
+   "k": 5,
+   "median_resid0_A": 0.0020992206409573555,
+   "median_resid0_N": 0.002144448459148407,
+   "cheap_path_at_world_writes": true
+  },
+  "P2_eta10": {
+   "verdict": "S",
+   "A_retained": 0,
+   "median_stale_err_A": 0.9970674486803519,
+   "k": 5,
+   "median_resid0_A": 0.0020992206409573555,
+   "median_resid0_N": 0.002144448459148407,
+   "cheap_path_at_world_writes": true
+  },
+  "P3_eta10": {
+   "verdict": "S",
+   "X_retained": 5,
+   "k": 5
+  },
+  "P4_eta10": {
+   "verdict": "S",
+   "unconditional": {
+    "verdict": "S",
+    "retained": {
+     "A": 6,
+     "N": 6
+    },
+    "k": 6
+   },
+   "copy_formed": {
+    "verdict": "S",
+    "retained": {
+     "A": 6,
+     "N": 6
+    },
+    "k": 6
+   }
+  },
+  "P5_eta10": {
+   "verdict": "S",
+   "unconditional": {
+    "verdict": "S",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "A": 5,
+     "X": 6,
+     "N": 6
+    },
+    "k": 6
+   },
+   "copy_formed": {
+    "verdict": "S",
+    "retained": {
+     "U": 4,
+     "S": 4,
+     "A": 4,
+     "X": 4,
+     "N": 4
+    },
+    "k": 4
+   }
+  },
+  "P6_eta10": {
+   "verdict": "S",
+   "unconditional": {
+    "verdict": "S",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "A": 6,
+     "X": 6,
+     "N": 6
+    },
+    "k": 6
+   },
+   "copy_formed": {
+    "verdict": "S",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "A": 6,
+     "X": 6,
+     "N": 6
+    },
+    "k": 6
+   }
+  },
+  "P12_eta10": {
+   "verdict": "F",
+   "retained": {
+    "A": 0,
+    "N": 4
+   },
+   "k": 4,
+   "median_resid0_A": 0.9375646710395813,
+   "median_resid0_N": 0.9374286830425262,
+   "lesion_retained_USX": {
+    "U": 4,
+    "S": 4,
+    "X": 4
+   },
+   "fo_ce_retained_USX": {
+    "U": 5,
+    "S": 5,
+    "X": 5
+   }
+  },
+  "P7_eta10": {
+   "verdict": "S",
+   "fo_oldp_A": 0.003099206369370222,
+   "fo_oldp_X": 0.4960246682167053,
+   "so_gt_fo_pairs": 5,
+   "pairs": 5,
+   "paired_seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  "P8_eta10": {
+   "verdict": "S",
+   "so_gt_fo_pairs": 5,
+   "pairs": 5
+  },
+  "P9_eta10": {
+   "verdict": "S",
+   "scored": 5,
+   "ordered": 5,
+   "not_ordered": 0,
+   "tie": 0,
+   "never_acquired": 0,
+   "never_lost": 0,
+   "crossings": {
+    "10": {
+     "acquired": 275,
+     "copy": 1625,
+     "lost": 1725
+    },
+    "11": {
+     "acquired": 275,
+     "copy": 800,
+     "lost": 825
+    },
+    "12": {
+     "acquired": 250,
+     "copy": 600,
+     "lost": 625
+    },
+    "13": {
+     "acquired": 250,
+     "copy": 1075,
+     "lost": 1100
+    },
+    "14": {
+     "acquired": 250,
+     "copy": 850,
+     "lost": 875
+    }
+   }
+  },
+  "P1_eta40": {
+   "verdict": "S",
+   "N_retained": 0,
+   "k": 6,
+   "median_resid0_A": 0.0009069708175957203,
+   "median_resid0_N": 0.0009158717875834554,
+   "cheap_path_at_world_writes": true
+  },
+  "P2_eta40": {
+   "verdict": "S",
+   "A_retained": 0,
+   "median_stale_err_A": 0.9985346789467253,
+   "k": 6,
+   "median_resid0_A": 0.0009069708175957203,
+   "median_resid0_N": 0.0009158717875834554,
+   "cheap_path_at_world_writes": true
+  },
+  "P3_eta40": {
+   "verdict": "S",
+   "X_retained": 6,
+   "k": 6
+  },
+  "P4_eta40": {
+   "verdict": "S",
+   "unconditional": {
+    "verdict": "S",
+    "retained": {
+     "A": 5,
+     "N": 5
+    },
+    "k": 6
+   },
+   "copy_formed": {
+    "verdict": "S",
+    "retained": {
+     "A": 4,
+     "N": 4
+    },
+    "k": 4
+   }
+  },
+  "P5_eta40": {
+   "verdict": "I",
+   "unconditional": {
+    "verdict": "I",
+    "retained": {
+     "U": 6,
+     "S": 6,
+     "A": 4,
+     "X": 6,
+     "N": 6
+    },
+    "k": 6
+   },
+   "copy_formed": {
+    "verdict": "S",
+    "retained": {
+     "U": 4,
+     "S": 4,
+     "A": 4,
+     "X": 4,
+     "N": 4
+    },
+    "k": 4
+   }
+  },
+  "P6_eta40": {
+   "verdict": "F",
+   "unconditional": {
+    "verdict": "F",
+    "retained": {
+     "U": 4,
+     "S": 4,
+     "A": 3,
+     "X": 4,
+     "N": 4
+    },
+    "k": 6
+   },
+   "copy_formed": {
+    "verdict": "F",
+    "retained": {
+     "U": 3,
+     "S": 3,
+     "A": 2,
+     "X": 3,
+     "N": 3
+    },
+    "k": 4
+   }
+  },
+  "P12_eta40": {
+   "verdict": "F",
+   "retained": {
+    "A": 0,
+    "N": 5
+   },
+   "k": 5,
+   "median_resid0_A": 0.937507152557373,
+   "median_resid0_N": 0.9375178813934326,
+   "lesion_retained_USX": {
+    "U": 5,
+    "S": 5,
+    "X": 5
+   },
+   "fo_ce_retained_USX": {
+    "U": 6,
+    "S": 6,
+    "X": 6
+   }
+  },
+  "P7_eta40": {
+   "verdict": "S",
+   "fo_oldp_A": 0.0008915842627175152,
+   "fo_oldp_X": 0.4747047871351242,
+   "so_gt_fo_pairs": 4,
+   "pairs": 4,
+   "paired_seeds": [
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  "P8_eta40": {
+   "verdict": "S",
+   "so_gt_fo_pairs": 4,
+   "pairs": 4
+  },
+  "P9_eta40": {
+   "verdict": "S",
+   "scored": 6,
+   "ordered": 6,
+   "not_ordered": 0,
+   "tie": 0,
+   "never_acquired": 0,
+   "never_lost": 0,
+   "crossings": {
+    "10": {
+     "acquired": 425,
+     "copy": 575,
+     "lost": 625
+    },
+    "11": {
+     "acquired": 475,
+     "copy": 800,
+     "lost": 825
+    },
+    "12": {
+     "acquired": 400,
+     "copy": 775,
+     "lost": 900
+    },
+    "13": {
+     "acquired": 375,
+     "copy": 950,
+     "lost": 1000
+    },
+    "14": {
+     "acquired": 400,
+     "copy": 1175,
+     "lost": 1200
+    },
+    "15": {
+     "acquired": 375,
+     "copy": 725,
+     "lost": 1025
+    }
+   }
+  }
+ },
+ "n_cells": 60
+}

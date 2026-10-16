@@ -1,0 +1,112 @@
+# FRS-A production protocol; execution requires the combined verified seal.
+experiment = "frs"
+seed = 0
+
+[frs]
+process_name = "TTM-frs-80"
+protocol = "frs-a-full-v2"
+require_cuda = true  # the full protocol runs on CUDA only
+hard_grace_minutes = 60  # watchdog: hard stop at max_minutes + this
+device = "cuda"
+workers = 5
+threads_per_worker = 2
+max_minutes = 420  # checked at each cell start
+tf32 = false
+mps_memory_fraction = 0.20  # inert on CUDA
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 1500
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+n_probe = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0
+grad_clip = 1.0
+g_clip = 10.0
+copy_noise_q = [0.99, 0.97, 0.95, 0.90]
+rf_probability = 0.05
+log_every = 5
+probe_every = 25
+cross_every = 25
+chunk_early = 5
+chunk_late = 6
+fork_arms = []
+fork_acc = 0.90
+rp_cap = 1000.0
+mediation_p = 0.5  # G2 per-event mediation set (eval-only, every main final)
+mediation_cap = 1000.0
+ckpt_steps = [100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+ckpt_dense_arms = ["e2e1emb"]
+ckpt_steps_sparse = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+branch_ckpt_every = 100
+branch_ckpt_tags = ["rp03", "nc03"]
+output_dir = "outputs/frs"
+smoke_only = false
+resume = true
+h5_limit = 12
+job_modules = [] # filled and hashed by the orchestrator at seal
+coverage_factory = "" # supplied by TRG, required at seal
+cells = [
+  { task = "echo", seed = 200, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 201, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 202, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 203, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 204, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 205, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 206, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 207, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 208, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 209, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 210, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 211, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 212, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 213, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 214, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 215, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 200, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 201, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 202, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 203, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 204, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 205, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 206, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 207, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 208, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 209, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 210, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 211, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 200, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 201, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 202, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 203, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 204, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 205, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 206, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 207, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 208, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 209, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 210, arm = "e2e1emb_cn97", eta_base = 40 },
+  { task = "echo", seed = 211, arm = "e2e1emb_cn97", eta_base = 40 },
+]
+[frs.cross_rules]
+e2e1emb = ["rp03"]
+e2e2emb = ["rp03"]
+e2e1emb_cn97 = ["rs01"]
+
+[frs.final_rules]
+e2e1emb = ["rp03", "rp10"]
+e2e2emb = ["rp03", "rp10"]
+e2e1emb_cn97 = ["rs01", "rp03"]

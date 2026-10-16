@@ -1,0 +1,79 @@
+# BW1a: copy-noise arms cn97 and cn95 x eta 10/40 on the echo task, seeds 0-5 (24 cells).
+# Model, task and optimiser settings as in configs/toy/r4-4a.toml, with eta_lr = 0, no checkpoints
+# and 2 workers.
+experiment = "ttt"
+seed = 0
+
+[ttt]
+process_name = "TTM-bw1a-01"
+device = "mps"
+workers = 2
+max_minutes = 120  # ceil5(1.3*(t_start 1.5 + (ceil(24/2)-1) * t_cell 8.2)); checks cell STARTS
+# TF32 off for matmul and cuDNN, asserted and logged by every worker before any
+# allocation, so the in-run S5 identity check holds at 1e-4.
+tf32 = false
+# torch's MPS fraction is relative to Metal's recommendedMaxWorkingSetSize (logged per
+# worker as MPS_CAP), not to RAM.
+mps_memory_fraction = 0.20
+d_model = 128
+n_layers = 4
+n_heads = 4
+backbone_mult = 4
+fast_mult = 4
+window = 64
+chunk = 64
+T = 512
+steps = 1500
+batch = 32
+n_keys = 16
+n_eval = 256
+n_val = 64
+n_quick_eval = 64
+eval_batch = 32
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0  # freezes shared rho (all four fast-tensor etas = eta_base)
+grad_clip = 1.0
+g_clip = 10.0
+quick_every = 25
+probe_every = 25
+n_probe = 32
+kamin_switch = 500
+copy_noise_q = [0.99, 0.97, 0.95, 0.90]
+rf_probability = 0.05
+kv_eta_lr = 0.01
+kv_eta10_lr = 0.1
+d1_n_eval = 256
+checkpoint_steps = []
+checkpoint_dense = []
+checkpoint_dense_arms = []
+checkpoint_dense_max_seed = 4
+checkpoint_arm_steps = []
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb_cn97", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn97", eta_base = 40, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn95", eta_base = 10, diag = false },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn95", eta_base = 40, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_cn97", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_cn97", eta_base = 40, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_cn95", eta_base = 10, diag = false },
+  { task = "echo", seed = 1, arm = "e2e1emb_cn95", eta_base = 40, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb_cn97", eta_base = 10, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb_cn97", eta_base = 40, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb_cn95", eta_base = 10, diag = false },
+  { task = "echo", seed = 2, arm = "e2e1emb_cn95", eta_base = 40, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb_cn97", eta_base = 10, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb_cn97", eta_base = 40, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb_cn95", eta_base = 10, diag = false },
+  { task = "echo", seed = 3, arm = "e2e1emb_cn95", eta_base = 40, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb_cn97", eta_base = 10, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb_cn97", eta_base = 40, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb_cn95", eta_base = 10, diag = false },
+  { task = "echo", seed = 4, arm = "e2e1emb_cn95", eta_base = 40, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb_cn97", eta_base = 10, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb_cn97", eta_base = 40, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb_cn95", eta_base = 10, diag = false },
+  { task = "echo", seed = 5, arm = "e2e1emb_cn95", eta_base = 40, diag = false },
+]

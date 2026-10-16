@@ -1,0 +1,22 @@
+round,arm,seeds,A_retained,A_median,Au_retained,Au_median,N_retained,N_median,X_retained,Fp_median,Fu_median,competence_V3,note
+R1,FO-CE,10-15,0/6,.006,0/6,.21,0/6,.14,6/6,.006,.28,6/6,reference; stale share .994-.999
+R1,FO-CE-lesion,10-15,0/6,.16,0/6,.12,6/6,.99,6/6,.13,.13,6/6,copy edge cut at C; M1 removed for N
+R1,SO-CE,10-15,keeps all 6/6,,keeps all 6/6,1.000 (R23-C none read),keeps all 6/6,,keeps all 6/6,,,6/6,second-order reference; eta 40 not competent
+R2,FO-LIN (everywhere),10-15,6/6,1.00,0/6,.21,6/6,>=.999,6/6,1.00,.23,6/6,M2 pattern without M1
+R2+R2-EXT,FO-DOT-k0.03,10-21,lost-stale S 8/8,.59,lost-stale S 8/8,.49,7/7,.99,lost I 6/8,.61,.52,9/12,no ln_f in the write; X partly lost
+R2,FO-MSE-k1-l0.003,10-15,NE,,NE,,NE,,NE,,,0/6,never forms a memory (S .061 U .064)
+R3,FO-EFCOPY-k1-l0.0625-n,10-15,0/6,.000,0/6,.000,NE (never acquired),,6/6,.004,.24,6/6,dose d/r .020 at A
+R3,FO-EFCE-kc42.9-l0.0625,10-15,0/6,.000,descriptive,.000,NE (never acquired),,6/6,,,6/6,error-family control; A and N starved
+R3,FO-EFLIN (action tokens),10-15,6/6,1.00,0/6,.26,6/6,1.00,6/6,.003,.39,6/6,agency-specific rescue of confident actions
+R3,FO-SIGCE,10-15,0/6,.001,0/6,.41,0/6,.19,6/6,.003,.48,6/6,Au +.195 [+.005 +.400] vs FO-CE
+R3,FO-FLOOR-r0.03,10-15,0/6,.012,0/6,.29,0/6,.39,6/6,.007,.27,6/6,N retention predicted S; F
+R3b,FO-EFCOPY-k1-l1-n,10-15,NE (k 3; V1-only 0/6),.21-.74 (range),NE (k 3; 0/3),,NE (k 0),,NE (3/3),,,6/6,copy path late in 3/6; stale share .01-.37
+R3b,FO-EFCOPY-k1-l0.5-n,10-15,descriptive,+.001 vs FO-CE,descriptive,,descriptive,,descriptive,,,6/6,never flips the read (R3b-T)
+R2b,MSE-n-seq lambda .25 and 1,10-15,NE,,NE,,NE (never acquired),,NE,,,0/12,U .105-.384; S .157-.486
+R3c+R3c-EXT-G,FO-CE anchor,10-21,0/12,.005,0/12,.216,0/12,.147,12/12,.006,.295,12/12,MPS rerun of the R1 reference
+R3c+R3c-EXT-G,FO-EFLINS-c2-l0 (primary),10-21,12/12,1.000,9/12,.971,12/12,1.000,12/12,.005,.284,12/12,G2' PERSISTENT_I; misses .893 .877 .863
+R3c,FO-EFLINS-c4-l0 (secondary),10-15,6/6,1.000,6/6,.9995,6/6,1.000,6/6,.003,.346,6/6,no load row; G2' not evaluated
+R3c,FO-EFLINS-c2-l0.5 (erase),10-15,6/6,1.000,6/6,.9986,6/6,1.000,6/6,.003,.241,6/6,no load row; G2' not evaluated
+R3d,FO-CE anchor,22-27,0/6,.005,0/6,.355,0/6,.148,6/6,.006,.372,6/6,shared warm-up per (row seed)
+R3d,FO-EFLINS-c4-l0 (primary; chosen after R3c),22-27,6/6,1.000,6/6,.998,6/6,1.000,6/6,.013,.348,6/6,G2'-c4 PASS; Au min .978; L32 noninf S
+R3d,FO-EFLINS-c8-l0 (dose secondary; chosen after R3c),22-27,6/6,1.000,6/6,1.000,6/6,1.000,6/6,.005,.245,6/6,gated row S; G2' not evaluated (no load row)

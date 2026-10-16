@@ -1,0 +1,92 @@
+# Whole-session CPU smoke, legacy seed 0; no production seal required.
+experiment = "frs"
+seed = 0
+
+[frs]
+process_name = "TTM-pool-75"
+protocol = "frs-a-smoke-v2"
+require_cuda = false  # the full protocol runs on CUDA only
+hard_grace_minutes = 60  # watchdog: hard stop at max_minutes + this
+device = "cpu"
+workers = 1
+threads_per_worker = 2
+max_minutes = 15  # checked every attempted update
+tf32 = false
+mps_memory_fraction = 0.20  # inert on CUDA
+d_model = 16
+n_layers = 4
+n_heads = 2
+backbone_mult = 2
+fast_mult = 2
+window = 16
+chunk = 16
+T = 128
+steps = 65
+batch = 2
+n_keys = 4
+n_eval = 4
+n_val = 4
+n_quick_eval = 4
+eval_batch = 2
+n_probe = 2
+lr = 0.001
+lr_total = 3000
+warmup = 200
+lr_floor = 0.1
+eta_lr = 0.0
+grad_clip = 1.0
+g_clip = 10.0
+copy_noise_q = [0.99, 0.97, 0.95, 0.90]
+rf_probability = 0.05
+log_every = 5
+probe_every = 25
+cross_every = 25
+chunk_early = 5
+chunk_late = 6
+fork_arms = []
+fork_acc = 0.90
+rp_cap = 1000.0
+mediation_p = 0.5  # G2 per-event mediation set (eval-only, every main final)
+mediation_cap = 1000.0
+ckpt_steps = [100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+ckpt_dense_arms = ["e2e1emb"]
+ckpt_steps_sparse = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+branch_ckpt_every = 100
+branch_ckpt_tags = ["rp03", "nc03"]
+output_dir = "outputs/pool-smoke"
+smoke_only = true
+resume = false
+h5_limit = 1
+job_modules = ["tttmem.trg_pool", "tttmem.exp_rdo"]
+coverage_factory = "tttmem.trg_pool:create_logger"
+backend_factory = "tttmem.trg_pool:create_backend"
+trg_kappa = 3
+trg_smoke_horizon = 20
+trg_smoke_so_stop = 40
+trigger_bind = 0.0
+trigger_residual = 2.0
+smoke_force_loss = true
+coverage_span = 20
+coverage_tail = 10
+so_coverage_stop = 40
+cells = [
+  { task = "echo", seed = 0, arm = "e2e1emb", eta_base = 40 },
+  { task = "echo", seed = 0, arm = "e2e2emb", eta_base = 40 },
+  { task = "echo", seed = 0, arm = "e2e1emb_cn97", eta_base = 40 },
+]
+[frs.cross_rules]
+e2e1emb = ["rp03"]
+e2e2emb = ["rp03"]
+e2e1emb_cn97 = ["rs01"]
+
+[frs.final_rules]
+e2e1emb = ["rp03", "rp10"]
+e2e2emb = ["rp03", "rp10"]
+e2e1emb_cn97 = ["rs01", "rp03"]
+
+[frs.rdo_rpe]
+candidate_seeds = [0]
+limit = 1
+horizon = 20
+late_horizon = 20
+late = true

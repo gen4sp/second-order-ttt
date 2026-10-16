@@ -1,0 +1,24 @@
+experiment = "p2"
+seed = 0
+
+[p2]
+# P2-0 GPU profile: throughput and peak memory per arm at the real 125M / 8K shape,
+# eval modes, validation of each optimization, and the checkpoint loader check. Not a training run.
+# Datacenter-class GPU: throughput and memory only.
+mode = "profile"
+process_name = "TTM-p20-13-profile"
+preset = "125m"
+seq_len = 8192
+device = "cuda"
+arms = ["e2e2", "e2e1-ce", "e2e1-lin", "e2e1-aice"]
+micro_batches = [1, 2, 4, 8]
+timed_steps = 3
+eval_batches = [8, 16, 32]
+eval_modes = ["ce", "lin", "aice", "noadapt", "heldout"]
+validate = false            # numerics validated on an RTX 5090 profile
+val_seq = 4096
+exact_so_seq = 3072
+compile_check = false
+loader_check = false
+cache_dir = "data/p2cache"
+max_minutes = 12

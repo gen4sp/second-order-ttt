@@ -1,0 +1,5 @@
+a,a_only,alternative,b,b_only,init,mode_a,mode_b,n,n_expected,p_exact,p_holm,paired_seeds,reject_holm_05,retained_a,retained_b,status,test
+e2e1emb_lin,4,greater,e2e1emb,0,e2e2emb,floor,floor,10,10,0.0625,0.75,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,6,complete,C3_e2e1emb_floor
+e2e1emb_lin,0,two-sided,e2e2emb,0,e2e2emb,floor,floor,10,10,1.0,1.0,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,10,complete,C3_e2e2emb_floor
+e2e1emb_lin,10,greater,e2e1emb,0,e2e2emb,rewarm,rewarm,10,10,0.0009765625,0.0146484375,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",True,10,0,complete,C3_e2e1emb_rewarm
+e2e1emb_lin,0,two-sided,e2e2emb,0,e2e2emb,rewarm,rewarm,10,10,1.0,1.0,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",False,10,10,complete,C3_e2e2emb_rewarm

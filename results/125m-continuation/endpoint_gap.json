@@ -1,0 +1,35 @@
+{
+ "D": {
+  "est": 0.018019913171883672,
+  "hi": 0.019742235119272717,
+  "lo": 0.016294148635316925,
+  "unsupported": 0.0
+ },
+ "G2": null,
+ "N_eval": 1024,
+ "delta_M": {
+  "est": 0.014270249637775123,
+  "hi": 0.015130699162742319,
+  "lo": 0.01341470343305329,
+  "unsupported": 0.0
+ },
+ "evaluable": false,
+ "n_docs": 1024,
+ "n_ho": 512,
+ "paired_change_D": {
+  "est": 0.017931545502506196,
+  "hi": 0.019662389277884933,
+  "lo": 0.01620772229292085,
+  "unsupported": 0.0
+ },
+ "paired_change_delta_M": {
+  "est": 0.014080945227760822,
+  "hi": 0.014992519656532918,
+  "lo": 0.01317597981917194,
+  "unsupported": 0.0
+ },
+ "reason": "not evaluable (rule arms stopped for futility at step 100)",
+ "rule": "lin",
+ "smoke": false,
+ "step": 400
+}

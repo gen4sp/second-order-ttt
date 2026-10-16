@@ -1,0 +1,76 @@
+# E1-VE-D4: eval-only split of the read-out gain ||delta||/||g|| on the 60 wave-1 checkpoints:
+# unembedding pull-back ||U^T g||/||g||, ln_f gamma, LN projection retention, 1/sigma(o),
+# at every E and C write. Prediction L1 was registered before the run.
+experiment = "ve_gain"
+seed = 0
+
+[ve_gain]
+process_name = "TTM-vd4-01"
+device = "cpu"
+threads = 8
+ckpt_dir = "outputs/e1-ve/checkpoints"
+reference_csv = "outputs/e1-ve/data/cells.csv"
+n_eval = 256
+eval_batch = 32
+cells = [
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 10 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 11 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 12 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 13 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 14 },
+  { order = "so", rule = "ce", eta = 10, slip = 0, seed = 15 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 10 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 11 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 12 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 13 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 14 },
+  { order = "so", rule = "ce", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 10 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 11 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 12 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 13 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 14 },
+  { order = "fo", rule = "aice", eta = 10, slip = 0, seed = 15 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 10 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 11 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 12 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 13 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 14 },
+  { order = "fo", rule = "aice", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 10 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 11 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 12 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 13 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 14 },
+  { order = "fo", rule = "linev", eta = 10, slip = 0, seed = 15 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 10 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 11 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 12 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 13 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 14 },
+  { order = "fo", rule = "linev", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 10 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 11 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 12 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 13 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 14 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 15 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 10 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 11 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 12 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 13 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 14 },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 15 },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 10, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 11, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 12, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 13, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 14, edge = true },
+  { order = "fo", rule = "ce", eta = 10, slip = 0, seed = 15, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 10, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 11, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 12, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 13, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 14, edge = true },
+  { order = "fo", rule = "ce", eta = 40, slip = 0, seed = 15, edge = true },
+]
